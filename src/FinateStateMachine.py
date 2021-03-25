@@ -1,6 +1,9 @@
 class FSM:
-    def __init__(self, final_states: set):
-        self.states = [dict()]
+    def __init__(self, final_states: set, states: list = None):
+        if states is None:
+            self.states = [dict()]
+        else:
+            self.states = states
         self.final_states = final_states
 
     def add_word(self, word):
@@ -28,3 +31,10 @@ class FSM:
             for b in self.states[cur_state[short_id]].keys():
                 res.append((len(word), b, short_id))
         return res
+
+    def to_dict(self):
+        return {"states": self.states, "final_states": list(self.final_states)}
+
+    @classmethod
+    def from_dict(cls, d: dict):
+        return cls(final_states=set(d["final_states"]), states=d["states"])

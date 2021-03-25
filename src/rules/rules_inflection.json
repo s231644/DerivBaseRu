@@ -28,22 +28,22 @@
         {
           "case_id": "ов-m",
           "tags_a": {"gender": "m", "inflect_type": "ов"},
-          "rules": "(onlysfx, {'ов', 'ев'})"
+          "rules": "(onlysfx, {'ов', 'ев', 'ёв'})"
         },
         {
           "case_id": "ов-f",
           "tags_a": {"gender": "f", "inflect_type": "ов"},
-          "rules": "(onlysfx, {'ова', 'ева'})"
+          "rules": "(onlysfx, {'ова', 'ева', 'ёва'})"
         },
         {
           "case_id": "ов-n",
           "tags_a": {"gender": "n", "inflect_type": "ов"},
-          "rules": "(onlysfx, {'ово', 'ево'})"
+          "rules": "(onlysfx, {'ово', 'ево', 'ёво'})"
         },
         {
           "case_id": "ов-p",
           "tags_a": {"gender": "p", "inflect_type": "ов"},
-          "rules": "(onlysfx, {'овы', 'евы'})"
+          "rules": "(onlysfx, {'овы', 'евы', 'ёвы'})"
         },
 
         {
@@ -148,7 +148,6 @@
         }
       ]
     },
-
 
     {
       "rule_id": "nouns",
@@ -406,7 +405,6 @@
       ]
     },
 
-
     {
       "rule_id": "verbs",
       "pos_b": "verb",
@@ -622,9 +620,6 @@
           "tags_a": {"form": "per3", "inflect_type": "5е"},
           "rules": "(try delptfx) & (onlysfx, {'ит'})"
         },
-
-
-
         {
           "case_id": "5ща",
           "tags_a": {"form": "inf", "inflect_type": "5ща"},
@@ -1332,19 +1327,23 @@
           "tags_a": {"form": "per3", "inflect_type": "идти"},
           "rules": "(try delptfx) & (onlysfx, {'дет'})"
         }
+      ]
+    },
 
-
-
-
-
-
-
-
-
-
-
-
-
+    {
+      "rule_id": "parts",
+      "pos_b": "part",
+      "cases": [
+        {
+          "case_id": "act1-m",
+          "tags_a": {"gender": "m", "form": "full", "inflect_type": "4"},
+          "rules": "(delsfx, {'ий'}) & [(delsfx, {'ущ'}) & (onlysfx, morphobad) | (delsfx, {'ющ'}) & (excsfx, morphobad)]"
+        },
+        {
+          "case_id": "act2-m",
+          "tags_a": {"gender": "m", "form": "full", "inflect_type": "4"},
+          "rules": "(delsfx, {'ий'}) & [(delsfx, {'ащ'}) & (onlysfx, morphobad) | (delsfx, {'ящ'}) & (excsfx, morphobad)]"
+        }
       ]
     }
   ]

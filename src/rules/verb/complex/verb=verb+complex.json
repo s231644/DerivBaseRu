@@ -98,7 +98,7 @@
       "pos_a": "verb",
       "complex": [
         "rule836(verb + ну2(ть) -> verb)",
-        "rule855(вз + verb -> verb)"
+        "rule875(при + verb -> verb)"
       ]
     },
     {

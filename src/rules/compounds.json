@@ -119,7 +119,6 @@
         "after_merge": []
       }
     },
-
     {
       "rule_id": "rule560([noun + ITFX] + verb + щик -> noun)",
       "info": "COMPOUND,SFX",
@@ -133,7 +132,6 @@
         "after_merge": []
       }
     },
-
     {
       "rule_id": "rule561([noun + ITFX] + verb + льщик -> noun)",
       "info": "COMPOUND,SFX",
@@ -147,7 +145,6 @@
         "after_merge": []
       }
     },
-
     {
       "rule_id": "rule562([noun + ITFX] + verb + ник/еник/енник/ик -> noun)",
       "info": "COMPOUND,SFX",
@@ -226,8 +223,19 @@
         "after_merge": []
       }
     },
-
-
+    {
+      "rule_id": "rule568([noun + ITFX] + verb + ин(а) -> noun)",
+      "info": "COMPOUND,SFX",
+      "pos_b": "verb",
+      "pos_a": "noun",
+      "compound_rules": {
+        "head": ["rule248*(verb + ин(а) -> noun)"],
+        "modifiers": [{"pos_m": "noun", "complex": ["ruleINTERFIX(noun)"]}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    },
     {
       "rule_id": "rule570([noun + ITFX] + noun + ник/атник/арник/овник -> noun)",
       "info": "COMPOUND,SFX",
@@ -280,8 +288,6 @@
         "after_merge": []
       }
     },
-
-
     {
       "rule_id": "rule572([noun + ITFX] + noun + к(а) -> noun)",
       "info": "COMPOUND,SFX",
@@ -321,8 +327,6 @@
         "after_merge": []
       }
     },
-
-
     {
       "rule_id": "rule573([noun + ITFX] + noun + j(е) -> noun)",
       "info": "COMPOUND,SFX",
@@ -362,11 +366,6 @@
         "after_merge": []
       }
     },
-
-
-
-
-
     {
       "rule_id": "rule576([adj + ITFX] + noun + ан-ин/чан-ин -> noun)",
       "info": "COMPOUND,SFX",
@@ -380,7 +379,6 @@
         "after_merge": []
       }
     },
-
     {
       "rule_id": "rule578([noun + ITFX] + noun + иj(а) -> noun)",
       "info": "COMPOUND,SFX",
@@ -394,7 +392,6 @@
         "after_merge": []
       }
     },
-
 
     {
       "rule_id": "rule579([noun + ITFX] + verb + 0m2 -> noun)",
@@ -422,10 +419,34 @@
         "after_merge": []
       }
     },
-
-
     {
-      "rule_id": "rule580([noun + ITFX] + noun + 0 -> noun)",
+      "rule_id": "rule582([noun + ITFX] + verb + 0f3 -> noun)",
+      "info": "COMPOUND,SFX",
+      "pos_b": "verb",
+      "pos_a": "noun",
+      "compound_rules": {
+        "head": ["rule454*(verb + 0f3 -> noun)"],
+        "modifiers": [{"pos_m": "noun", "complex": ["ruleINTERFIX(noun)"]}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    },
+    {
+      "rule_id": "rule582([adj + ITFX] + verb + 0f3 -> noun)",
+      "info": "COMPOUND,SFX",
+      "pos_b": "verb",
+      "pos_a": "noun",
+      "compound_rules": {
+        "head": ["rule454*(verb + 0f3 -> noun)"],
+        "modifiers": [{"pos_m": "adj", "complex": ["ruleINTERFIX(adj)"]}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    },
+    {
+      "rule_id": "rule584([noun + ITFX] + noun + 0 -> noun)",
       "info": "COMPOUND,SFX",
       "pos_b": "noun",
       "pos_a": "noun",
@@ -438,7 +459,7 @@
       }
     },
     {
-      "rule_id": "rule580([adj + ITFX] + noun + 0 -> noun)",
+      "rule_id": "rule584([adj + ITFX] + noun + 0 -> noun)",
       "info": "COMPOUND,SFX",
       "pos_b": "noun",
       "pos_a": "noun",
@@ -451,7 +472,7 @@
       }
     },
     {
-      "rule_id": "rule580([num + ITFX] + noun + 0 -> noun)",
+      "rule_id": "rule584([num + ITFX] + noun + 0 -> noun)",
       "info": "COMPOUND,SFX",
       "pos_b": "noun",
       "pos_a": "noun",
@@ -463,6 +484,73 @@
         "after_merge": []
       }
     },
+
+    {
+      "rule_id": "rule754([adj + ITFX] + adj -> adj)",
+      "info": "COMPOUND",
+      "pos_b": "adj",
+      "pos_a": "adj",
+      "compound_rules": {
+        "head": [],
+        "modifiers": [{"pos_m": "adj", "complex": ["ruleINTERFIX(adj)"]}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    },
+    {
+      "rule_id": "rule754([noun + ITFX] + adj -> adj)",
+      "info": "COMPOUND",
+      "pos_b": "adj",
+      "pos_a": "adj",
+      "compound_rules": {
+        "head": [],
+        "modifiers": [{"pos_m": "noun", "complex": ["ruleINTERFIX(noun)"]}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    },
+    {
+      "rule_id": "rule754([num + ITFX] + adj -> adj)",
+      "info": "COMPOUND",
+      "pos_b": "adj",
+      "pos_a": "adj",
+      "compound_rules": {
+        "head": [],
+        "modifiers": [{"pos_m": "num", "complex": ["ruleINTERFIX(num)"]}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    },
+    {
+      "rule_id": "rule754([adj + ITFX] + part -> adj)",
+      "info": "COMPOUND",
+      "pos_b": "part",
+      "pos_a": "adj",
+      "compound_rules": {
+        "head": [],
+        "modifiers": [{"pos_m": "adj", "complex": ["ruleINTERFIX(adj)"]}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    },
+    {
+      "rule_id": "rule754([noun + ITFX] + part -> adj)",
+      "info": "COMPOUND",
+      "pos_b": "part",
+      "pos_a": "adj",
+      "compound_rules": {
+        "head": [],
+        "modifiers": [{"pos_m": "noun", "complex": ["ruleINTERFIX(noun)"]}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    },
+
     {
       "rule_id": "rule761([noun + ITFX] + noun + н1(ый) -> adj)",
       "info": "COMPOUND,SFX",
@@ -528,7 +616,6 @@
         "after_merge": []
       }
     },
-
     {
       "rule_id": "rule763([adj + ITFX] + noun + ов(ый) -> adj)",
       "info": "COMPOUND,SFX",
@@ -569,7 +656,7 @@
       }
     },
     {
-      "rule_id": "rule764([adj + ITFX] + noun + лив(ый)/ив(ый) -> adj)",
+      "rule_id": "rule765([adj + ITFX] + noun + лив(ый)/ив(ый) -> adj)",
       "info": "COMPOUND,SFX",
       "pos_b": "noun",
       "pos_a": "adj",
@@ -582,7 +669,7 @@
       }
     },
     {
-      "rule_id": "rule764([num + ITFX] + noun + лив(ый)/ив(ый) -> adj)",
+      "rule_id": "rule765([num + ITFX] + noun + лив(ый)/ив(ый) -> adj)",
       "info": "COMPOUND,SFX",
       "pos_b": "noun",
       "pos_a": "adj",
@@ -660,71 +747,6 @@
       }
     },
     {
-      "rule_id": "rule754([adj + ITFX] + adj -> adj)",
-      "info": "COMPOUND",
-      "pos_b": "adj",
-      "pos_a": "adj",
-      "compound_rules": {
-        "head": [],
-        "modifiers": [{"pos_m": "adj", "complex": ["ruleINTERFIX(adj)"]}],
-        "order": [1, 0],
-        "before_merge": [],
-        "after_merge": []
-      }
-    },
-    {
-      "rule_id": "rule754([noun + ITFX] + adj -> adj)",
-      "info": "COMPOUND",
-      "pos_b": "adj",
-      "pos_a": "adj",
-      "compound_rules": {
-        "head": [],
-        "modifiers": [{"pos_m": "noun", "complex": ["ruleINTERFIX(noun)"]}],
-        "order": [1, 0],
-        "before_merge": [],
-        "after_merge": []
-      }
-    },
-    {
-      "rule_id": "rule754([num + ITFX] + adj -> adj)",
-      "info": "COMPOUND",
-      "pos_b": "adj",
-      "pos_a": "adj",
-      "compound_rules": {
-        "head": [],
-        "modifiers": [{"pos_m": "num", "complex": ["ruleINTERFIX(num)"]}],
-        "order": [1, 0],
-        "before_merge": [],
-        "after_merge": []
-      }
-    },
-    {
-      "rule_id": "rule754([adj + ITFX] + part -> adj)",
-      "info": "COMPOUND",
-      "pos_b": "part",
-      "pos_a": "adj",
-      "compound_rules": {
-        "head": [],
-        "modifiers": [{"pos_m": "adj", "complex": ["ruleINTERFIX(adj)"]}],
-        "order": [1, 0],
-        "before_merge": [],
-        "after_merge": []
-      }
-    },
-    {
-      "rule_id": "rule754([noun + ITFX] + part -> adj)",
-      "info": "COMPOUND",
-      "pos_b": "part",
-      "pos_a": "adj",
-      "compound_rules": {
-        "head": [],
-        "modifiers": [{"pos_m": "noun", "complex": ["ruleINTERFIX(noun)"]}],
-        "order": [1, 0],
-        "before_merge": [],
-        "after_merge": []
-      }
-    },
-    {
       "rule_id": "rule772([noun + ITFX] + noun + 0(ый) -> adj)",
       "info": "COMPOUND,SFX",
       "pos_b": "noun",
@@ -763,7 +785,6 @@
         "after_merge": []
       }
     },
-
     {
       "rule_id": "rule773([adv] + verb + 0(ий) -> adj)",
       "info": "COMPOUND,SFX",
@@ -803,6 +824,7 @@
         "after_merge": []
       }
     },
+
     {
       "rule_id": "rule961([полу/само] + verb -> verb)",
       "info": "COMPOUND",
@@ -868,6 +890,7 @@
         "after_merge": []
       }
     },
+
     {
       "rule_id": "rule1026([полу] + tgr -> adv)",
       "info": "COMPOUND",

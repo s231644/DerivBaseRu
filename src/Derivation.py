@@ -46,6 +46,8 @@ class Derivation:
         # complex rules
         for pos in self.pos_all:
             rule_folder = os.path.join(os.path.dirname(__file__), 'rules', pos, 'complex')
+            if not os.path.exists(rule_folder):
+                continue
             for rule_file in os.listdir(rule_folder):
                 if not rule_file.endswith('.json'):
                     continue

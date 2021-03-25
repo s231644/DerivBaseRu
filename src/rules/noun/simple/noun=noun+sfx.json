@@ -2597,19 +2597,19 @@
       "cases": [
         {
           "tags_b": {"gender": "f,m,n,p", "inflect_type": "1,2"},
-          "rules": "(try delsfx, {'я', 'а', 'ь', 'й', 'и', 'о', 'е', 'ы'}) & (opt delvowel) & (addsfx, {'ика'})"
+          "rules": "(try delsfx, {'я', 'а', 'ь', 'й', 'и', 'о', 'е', 'ы'}) & (opt delvowel) & (addsfx, {'ина'})"
         },
         {
           "tags_b": {"gender": "f,m,n,p", "inflect_type": "3,4,5"},
-          "rules": "(try delsfx, {'я', 'а', 'ь', 'й', 'и', 'о', 'е', 'ы'}) & (opt delvowel) & [(delsfx, {'ник'}) | (excsfx, {'ник'}) & (opt delsfx, {'к'}) & (try plt)] & (try plt5) & (addsfx, {'ика'})"
+          "rules": "(try delsfx, {'я', 'а', 'ь', 'й', 'и', 'о', 'е', 'ы'}) & (opt delvowel) & [(delsfx, {'ник'}) | (excsfx, {'ник'}) & (opt delsfx, {'к'}) & (try plt)] & (try plt5) & (addsfx, {'ина'})"
         },
         {
           "tags_b": {"gender": "f,m,n,p", "inflect_type": "6"},
-          "rules": "(try delsfx, {'я', 'а', 'ь', 'й', 'и', 'о', 'е', 'ы'}) & (addsfx, {'ика'})"
+          "rules": "(try delsfx, {'я', 'а', 'ь', 'й', 'и', 'о', 'е', 'ы'}) & (addsfx, {'ина'})"
         },
         {
           "tags_b": {"gender": "f,p", "inflect_type": "8"},
-          "rules": "(delsfx, {'ь'}) & (opt delvowel) & (addsfx, {'ика'})"
+          "rules": "(delsfx, {'ь'}) & (opt delvowel) & (addsfx, {'ина'})"
         }
       ]
     },
