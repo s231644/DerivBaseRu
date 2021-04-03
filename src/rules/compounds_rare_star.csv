@@ -2,9 +2,30 @@ lemma;pos;form;with_rule_id;index
 половина;noun;полу;rule1026([полу] + adv -> adv);1
 мимо;adv;мимо;rule1027([мимо/само] + verb + ом -> adv);1
 сам;pron;само;rule1027([мимо/само] + verb + ом -> adv);1
+половина;noun;пол;rule552([пол] + noun + GEN -> noun);1
 половина;noun;пол;rule1028(в + [пол] + noun + GEN -> adv);1
 половина;noun;пол;rule1029(в + [пол/три] + adj + а -> adv);1
 три;num;три;rule1029(в + [пол/три] + adj + а -> adv);1
 половина;noun;полу;rule961([полу/само] + verb -> verb);1
 сам;pron;само;rule961([полу/само] + verb -> verb);1
 фицировать;suffixoid;фицировать;rule962(noun + [фицировать] -> verb);1
+выше;comporative;выше;adv;1
+ниже;comporative;ниже;adv;1
+всё;pron;все;adv;1
+много;adv;много;ruleINTERFIX(num);1
+мало;adv;мало;ruleINTERFIX(num);1
+половина;noun;полу;ruleINTERFIX(num);1
+образный;suffixoid;образный;adj;0
+валентный;suffixoid;валентный;adj;0
+геничный;suffixoid;геничный;adj;0
+генный;suffixoid;генный;adj;0
+достойный;adj;досто;ruleINTERFIX(adj);1
+все;pron;все;ruleINTERFIX(adj);1
+сам;pron;само;ruleINTERFIX(adj);1
+самый;pron;само;ruleINTERFIX(adj);1
+себя;pron;само;ruleINTERFIX(adj);1
+свой;pron;само;ruleINTERFIX(adj);1
+еже;prefixoid;еже;ruleINTERFIX(adj);1
+псевдо;prefixoid;псевдо;ruleINTERFIX(adj);1
+квази;prefixoid;квази;ruleINTERFIX(adj);1
+иначе;adv;инако;ruleINTERFIX(adj);1

@@ -16,7 +16,7 @@ class SubRule:
         self.logical_form, self.operators = normalize_raw_text(raw_rules)
         self.tree = short_parser.parse(self.logical_form)
 
-    def plot_tree(self, filename: str='tree'):
+    def plot_tree(self, filename: str = 'tree'):
         pydot__tree_to_png(self.tree, filename + ".png")
 
     def compute_tree(self, tree, cur_results: List[str]) -> List[str]:

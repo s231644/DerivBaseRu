@@ -3727,6 +3727,26 @@
     },
 
     {
+      "rule_id": "rule575*(noun + -ец -> noun)",
+      "short_id": "-ец",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "noun",
+      "only_complex": "1",
+      "cases": [
+        {
+          "tags_b": {"gender": "f,m,n,p", "inflect_type": "1,2"},
+          "rules": "(try delsfx, {'о', 'а', 'я', 'е', 'ь', 'и', 'ы'}) & (opt addvowel) & (addsfx, {'ец'})"
+        },
+        {
+          "tags_b": {"gender": "f,m,n", "inflect_type": "7"},
+          "rules": "(delsfx, {'ия', 'ий', 'ие'}) & (addsfx, {'ец'})"
+        }
+      ],
+      "rare": []
+    },
+
+    {
       "rule_id": "ruleINTERFIX(noun)",
       "short_id": "INTERFIX",
       "info": "INTERFIX",
