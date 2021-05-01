@@ -171,6 +171,32 @@
       }
     },
     {
+      "rule_id": "rule563([adj + ITFX] + verb + к(а)/овк(а)/ёжк(а) -> noun)",
+      "info": "COMPOUND,SFX",
+      "pos_b": "verb",
+      "pos_a": "noun",
+      "compound_rules": {
+        "head": ["rule262(verb + к(а)/овк(а)/ёжк(а) -> noun)"],
+        "modifiers": [{"pos_m": "adj", "complex": ["ruleINTERFIX(adj)"]}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    },
+    {
+      "rule_id": "rule563([num + ITFX] + verb + к(а)/овк(а)/ёжк(а) -> noun)",
+      "info": "COMPOUND,SFX",
+      "pos_b": "verb",
+      "pos_a": "noun",
+      "compound_rules": {
+        "head": ["rule262(verb + к(а)/овк(а)/ёжк(а) -> noun)"],
+        "modifiers": [{"pos_m": "num", "complex": ["ruleINTERFIX(num)"]}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    },
+    {
       "rule_id": "rule564([noun + ITFX] + verb + лк(а) -> noun)",
       "info": "COMPOUND,SFX",
       "pos_b": "verb",
@@ -442,20 +468,6 @@
       "compound_rules": {
         "head": ["rule337(noun + ан-ин/чан-ин -> noun)"],
         "modifiers": [{"pos_m": "num", "complex": ["ruleINTERFIX(num)"]}],
-        "order": [1, 0],
-        "before_merge": [],
-        "after_merge": []
-      }
-    },
-
-    {
-      "rule_id": "rule578([noun + ITFX] + noun + иj(а) -> noun)",
-      "info": "COMPOUND,SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
-      "compound_rules": {
-        "head": ["rule578*(noun + иj(а) -> noun)"],
-        "modifiers": [{"pos_m": "noun", "complex": ["ruleINTERFIX(noun)"]}],
         "order": [1, 0],
         "before_merge": [],
         "after_merge": []
@@ -750,6 +762,7 @@
         "after_merge": []
       }
     },
+
     {
       "rule_id": "rule767([adj + ITFX] + verb + н1(ый) -> adj)",
       "info": "COMPOUND",
@@ -1023,6 +1036,19 @@
         "order": [1, 0],
         "before_merge": [],
         "after_merge": ["rule993*(в + adv -> adv)"]
+      }
+    },
+    {
+      "rule_id": "rule981*(adj + ым + adv -> adv)",
+      "info": "PFX,COMPOUND,SFX",
+      "pos_b": "adj",
+      "pos_a": "adv",
+      "compound_rules": {
+        "head": [],
+        "modifiers": [{"pos_m": "adj", "complex": ["rule981(adj + ым -> adv)"]}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
       }
     }
   ]
