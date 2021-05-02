@@ -8,7 +8,7 @@
       "pos_a": "adj",
       "cases": [
         {
-          "tags_b": {"form": "inf", "inflect_type": "1,2,4,4щ,4*"},
+          "tags_b": {"form": "inf", "inflect_type": "1,2,4,4щ,4*,5,5щ,6"},
           "rules": "(try delptfx) & [(delsfx, {'ивать', 'ывать', 'евать', 'овать'}) | (excsfx, {'ивать', 'ывать', 'евать', 'овать'}) & (delsfx, {'еть', 'ать', 'ять', 'ить'})] & [(opt altcons) | (opt inv_altcons)] & [(try l_soft) | (onlysfx, vowels) & (addsfx, {'й'})] & (addsfx, {'ный', 'ной'})"
         },
         {
@@ -62,6 +62,10 @@
         {
           "tags_b": {"form": "inf", "inflect_type": "2,3,12ы"},
           "rules": "(try delptfx) & [(replsfx, {('нуть', 'нов'), ('крыть', 'кров')}) | (delsfx, {'овать', 'евать'})] & (addsfx, {'енный'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "14н"},
+          "rules": "(try delptfx) & (replsfx, {('ть', 'т')}) & (addsfx, {'ный'})"
         },
         {
           "tags_b": {"form": "inf", "inflect_type": "15,быть,дать"},
