@@ -108,8 +108,12 @@
       "only_complex": "1",
       "cases": [
         {
-          "tags_b": {"form": "inf", "inflect_type": "1,2,3,4,4щ,4*,5,5щ,6,6*,9,10ол,10ел,10ор"},
+          "tags_b": {"form": "inf", "inflect_type": "1,2,4,4щ,4*,5,5щ,6,6*,9,10ол,10ел,10ор"},
           "rules": "(try delptfx) & (delsfx, {'ть'}) & (delsfx, {'а', 'и', 'я', 'е', 'о', 'ну'}) & (opt delsfx, {'ыв', 'ив'}) & (try plt) & [(onlysfx, vowels) & (addsfx, {'й'}) | (excsfx, vowels)] & (addsfx, {'ку'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "3"},
+          "rules": "(try delptfx) & (delsfx, {'нуть'}) & (try replsfx, {('тя', 'тяг')}) & (try plt) & (addsfx, {'ку'})"
         },
         {
           "tags_b": {"form": "inf", "inflect_type": "7з,7с"},

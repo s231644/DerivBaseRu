@@ -1,6 +1,6 @@
 from typing import Optional
 
-from src.fsm_part import DerivedFSM
+from src.compounding.fsm_part import DerivedFSM
 
 
 class CompoundAnalyzer:

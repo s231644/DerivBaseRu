@@ -1,20 +1,14 @@
 import os
-import json
 import pymorphy2
-from itertools import chain as chain
-from functools import reduce
-from src.Rule import *
 import warnings
 
-"""
-converter_of_verb_types = {'1а': '1', '1я': '1', '1е': '1',
-                           '2о': '2', '2е*': '2', '2е': '2',
-                           '5а': '5', '5я': '5', '5е': '5',
-                           '5ща': '5щ', '5щя': '5щ', '5ще': '5щ',
-                           '6а': '6', '6я': '6',
-                           '6ща': '6щ', '6щя': '6щ',
-                           }
-"""
+from itertools import chain as chain
+from functools import reduce
+from typing import List, Dict
+
+from src.rule import load_rules_from_json
+
+
 converter_of_verb_types = {
     '1а': '1', '1я': '1', '1е': '1',
     '2о': '2', '2е*': '2', '2е': '2',
@@ -42,7 +36,7 @@ order_of_verb_types = {
     '14н': 1, '14м': 1, '14ним': 1, '14ьм': 1, '14ым': 1, '14им': 1, '14йм': 1,
     '15': 2,
     '16': 1,
-    'клясть': 1, 'есть': 1, 'дать': 1,'быть': 1, 'ехать': 1, 'идти': 1
+    'клясть': 1, 'есть': 1, 'дать': 1, 'быть': 1, 'ехать': 1, 'идти': 1
 }
 
 

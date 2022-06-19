@@ -294,7 +294,7 @@
         },
         {
           "tags_b": {"form": "inf", "inflect_type": "3"},
-          "rules": "(delsfx, {'нуть'}) & (try replsfx, {('тя', 'тяг')}) & (replsfx, {('г', 'ж')}) & (addsfx, {'имый'})"
+          "rules": "(delsfx, {'нуть'}) & (try replsfx, {('тя', 'тяг')}) & (try plt) & (addsfx, {'имый'})"
         },
         {
           "tags_b": {"form": "inf", "inflect_type": "8г,8*3"},
@@ -658,11 +658,11 @@
         },
         {
           "tags_b": {"form": "inf", "inflect_type": "4,4щ,4*"},
-          "rules": "(delptfx) & (delsfx, {'ить'}) & [(try altcons) | (replsfx, {('д', 'жд'), ('т', 'щ')})] & (addsfx, {'енный'})"
+          "rules": "(try delptfx) & (delsfx, {'ить'}) & [(try altcons) | (replsfx, {('д', 'жд'), ('т', 'щ')})] & (addsfx, {'енный'})"
         },
         {
           "tags_b": {"form": "inf", "inflect_type": "3"},
-          "rules": "(delptfx) & (replsfx, {('тянуть', 'тяж')}) & (addsfx, {'енный'})"
+          "rules": "(try delptfx) & (replsfx, {('тянуть', 'тяж')}) & (addsfx, {'енный'})"
         }
       ]
     },

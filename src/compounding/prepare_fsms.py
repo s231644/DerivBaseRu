@@ -4,10 +4,12 @@ from tqdm import tqdm
 from collections import defaultdict
 from typing import List, Optional, Dict
 
-from src.fsm_part import DerivedFSM
+from src.derivation import Derivation
+from src.compounding.fsm_part import DerivedFSM
 
 
 def build_fsm(
+        derivator: Derivation,
         wordlist: Dict[str, List[str]],
         rule_name: str,
         pos_b: str,
@@ -24,7 +26,9 @@ def build_fsm(
         except FileNotFoundError:
             warnings.warn("File does not exist!")
     fsm = DerivedFSM(
-        rule_name, pos_b, pos_a, rule_id, wordlist.get(pos_b, [])
+        derivator, rule_name,
+        pos_b, pos_a,
+        rule_id, wordlist.get(pos_b, [])
     )
     for lemma, pos, form in rare_dict.get(rule_name, []):
         fsm.add_word(form, lemma, pos)
@@ -33,20 +37,27 @@ def build_fsm(
     return fsm
 
 
-def prepare_fsms(wordlist: Dict[str, List[str]], load: bool = True, save: bool = True):
-    derivator = DerivedFSM.derivator
-
+def prepare_fsms(
+        derivator: Derivation,
+        wordlist: Dict[str, List[str]],
+        load: bool = True,
+        save: bool = True
+):
     # loading rare forms
     mod_rare = defaultdict(list)
     head_rare = defaultdict(list)
 
-    rare_star = pd.read_csv('../src/rules/compounds_rare_star.csv', sep=";")
+    rare_star = pd.read_csv('../rules/compounds_rare_star.csv', sep=";")
     for i in range(len(rare_star)):
         d = dict(rare_star.iloc[i])
         if d["index"] == 0:
-            head_rare[d["with_rule_id"]].append((d["lemma"], d["pos"], d["form"]))
+            head_rare[d["with_rule_id"]].append(
+                (d["lemma"], d["pos"], d["form"])
+            )
         else:
-            mod_rare[d["with_rule_id"]].append((d["lemma"], d["pos"], d["form"]))
+            mod_rare[d["with_rule_id"]].append(
+                (d["lemma"], d["pos"], d["form"])
+            )
 
     # processing normal words
     head_parts = defaultdict(DerivedFSM)
@@ -74,7 +85,10 @@ def prepare_fsms(wordlist: Dict[str, List[str]], load: bool = True, save: bool =
 
         if head_rule_name not in head_parts:
             head_parts[head_rule_name] = build_fsm(
-                wordlist, head_rule_name, pos_b, pos_a, head_rule_id, head_rare,
+                derivator,
+                wordlist, head_rule_name,
+                pos_b, pos_a,
+                head_rule_id, head_rare,
                 load=load, save=save
             )
         # filling in the modifier FSM
@@ -95,7 +109,10 @@ def prepare_fsms(wordlist: Dict[str, List[str]], load: bool = True, save: bool =
             mod_rule_id = None
             pos_b, pos_a = pos_m, pos_m
         mod_parts[mod_rule_name] = build_fsm(
-            wordlist, mod_rule_name, pos_b, pos_a, mod_rule_id, mod_rare,
+            derivator,
+            wordlist, mod_rule_name,
+            pos_b, pos_a,
+            mod_rule_id, mod_rare,
             load=load, save=save
         )
-    return derivator, head_parts, mod_parts, head_rare, mod_rare
+    return head_parts, mod_parts, head_rare, mod_rare

@@ -1,16 +1,20 @@
 from tqdm import tqdm
-from collections import defaultdict
 from typing import Dict, List
 
-from src.compound_analyzer import CompoundAnalyzer
-from src.prepare_fsms import prepare_fsms
+from src.derivation import Derivation
+from src.compounding.compound_analyzer import CompoundAnalyzer
+from src.compounding.prepare_fsms import prepare_fsms
 
 
 def prepare_compound_fsms(
-        wordlist: Dict[str, List[str]], load: bool = True, save: bool = True
+        derivator: Derivation,
+        wordlist: Dict[str, List[str]],
+        load: bool = True,
+        save: bool = True
 ) -> Dict[str, CompoundAnalyzer]:
-    derivator, head_parts, mod_parts, head_rare, mod_rare = prepare_fsms(
-        wordlist, load=load, save=save
+    head_parts, mod_parts, head_rare, mod_rare = prepare_fsms(
+        derivator, wordlist,
+        load=load, save=save
     )
 
     cas = dict()
@@ -56,13 +60,15 @@ def analyze_word(cas: Dict[str, CompoundAnalyzer], word: str, pos: str):
     return analyzes
 
 
-wordlist = defaultdict(list)
-wordlist["adv"] = ["сидя"]
-wordlist["adj"] = ["сладкий", "недельный"]
-wordlist["noun"] = ["монета", "неделя"]
-wordlist["num"] = ["один", "два"]
-wordlist["verb"] = ["ходить", "идти"]
-cas = prepare_compound_fsms(wordlist, load=False, save=False)
-print(analyze_word(cas, "полусладкий", "adj"))
-print(analyze_word(cas, "мимоходом", "adv"))
-print(analyze_word(cas, "двухнедельный", "adj"))
+# derivator = Derivation(use_guesser=True)
+#
+# wordlist = dict()
+# wordlist["adv"] = ["сидя"]
+# wordlist["adj"] = ["сладкий", "недельный"]
+# wordlist["noun"] = ["монета", "неделя"]
+# wordlist["num"] = ["один", "два"]
+# wordlist["verb"] = ["ходить", "идти"]
+# cas = prepare_compound_fsms(derivator, wordlist, load=False, save=False)
+# print(analyze_word(cas, "полусладкий", "adj"))
+# print(analyze_word(cas, "мимоходом", "adv"))
+# print(analyze_word(cas, "двухнедельный", "adj"))
