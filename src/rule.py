@@ -1,11 +1,10 @@
-import json
 from collections import defaultdict
 from itertools import product
 from lark import Lark
 from lark.tree import pydot__tree_to_png
 from typing import Dict, List, Set
 
-from src.stringops.language import LanguageOps, StringOperation
+from src.stringops.base import LanguageOps, StringOperation
 
 
 class SubRule:
@@ -61,7 +60,9 @@ class SubRule:
                     args = {}
                     mode_and_operator = oper_str
                 else:
-                    args = self.lang_ops.eval_args(oper_str[sep_ind + 1:].strip())
+                    args = self.lang_ops.eval_args(
+                        oper_str[sep_ind + 1:].strip()
+                    )
                     mode_and_operator = oper_str[:sep_ind]
                 mode_and_operator = mode_and_operator.split()
                 if len(mode_and_operator) == 1:
@@ -186,7 +187,8 @@ class ComplexRule(WholeRule):
             name, '-', pos_b, pos_a, info, only_complex, rare, None
         )
         self.simple_rule_ids = simple_rule_ids or []
-        self.simple_rules = []  # need to get WholeRule_s by their ids later in Derivation class
+        # need to get WholeRule_s by their ids later in Derivation class
+        self.simple_rules = []
 
     def apply(self, word: str, **kwargs):
         cur_results = {word}
@@ -320,71 +322,3 @@ class CompoundRule(WholeRule):
                 new_results |= simple_rule.apply(word)
             results = new_results
         return results
-
-
-def load_rules_from_json(
-        json_file,
-        tag_type='b',
-        rule_type='simple',
-        lang='rus'
-):
-    if lang == "rus":
-        from src.stringops.rus import RussianOps
-        lang_ops = RussianOps()
-    else:
-        raise NotImplementedError(f"Unsupported language {lang}!")
-
-    rules = []
-    with open(json_file, encoding='utf-8') as data_file:
-        try:
-            data = json.loads(data_file.read())
-        except:
-            raise AssertionError('error loading file', json_file)
-        for json_rule in data['data']:
-            try:
-                if rule_type == 'simple':
-                    subrules = [
-                        SubRule(
-                            tags_b=case[f'tags_{tag_type}'],
-                            raw_rules=case['rules'],
-                            lang_ops=lang_ops
-
-                        ) for case in json_rule.get('cases', [])
-                    ]
-                    rule = WholeRule(
-                        name=json_rule.get('rule_id'),
-                        short_id=json_rule.get('short_id'),
-                        pos_b=json_rule.get('pos_b'),
-                        pos_a=json_rule.get('pos_a'),
-                        info=json_rule.get('info'),
-                        only_complex=json_rule.get('only_complex') is not None,
-                        rare=json_rule.get('rare') or [],
-                        subrules=subrules
-                    )
-                elif rule_type == 'complex':
-                    rule = ComplexRule(
-                        name=json_rule.get('rule_id'),
-                        pos_b=json_rule.get('pos_b'),
-                        pos_a=json_rule.get('pos_a'),
-                        info=json_rule.get('info'),
-                        only_complex=False,
-                        rare=json_rule.get('rare') or [],
-                        simple_rule_ids=json_rule.get('complex')
-                    )
-                elif rule_type == 'compound':
-                    rule = CompoundRule(
-                        name=json_rule.get('rule_id'),
-                        pos_b=json_rule.get('pos_b'),
-                        pos_a=json_rule.get('pos_a'),
-                        info=json_rule.get('info'),
-                        only_complex=False,
-                        rare=json_rule.get('rare') or [],
-                        compound_rules=json_rule.get('compound_rules')
-                    )
-                else:
-                    continue
-                rules.append(rule)
-            except:
-                print("ERROR reading a rule!", json_rule.get('rule_id'))
-
-    return rules

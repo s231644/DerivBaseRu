@@ -1,8 +1,6 @@
-from ast import literal_eval
+from typing import Set, Any
 
-from typing import Set, Tuple, Any
-
-from src.stringops.language import (
+from src.stringops.base import (
     LanguageOps,
     LanguageAlphabet,
     StringOperation,

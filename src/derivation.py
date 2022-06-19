@@ -4,7 +4,8 @@ import warnings
 from collections import defaultdict
 from typing import Set, Optional, List
 
-from src.rule import WholeRule, load_rules_from_json
+from src.rule import WholeRule
+from src.rule_utils import load_rules_from_json
 
 
 class Results:
@@ -232,29 +233,10 @@ class Derivation:
             )
 
         if is_extended:
-            return {k: results.data[k] for k in results.data if results.data[k]}
+            d = defaultdict(list)
+            for k in results.data:
+                for wa in results.data[k]:
+                    d[wa].append(k)
+            return d
         else:
             return results.derived
-
-
-# evaluator = Derivation(lang="rus", guesser=None)
-# res = evaluator.derive(
-#     'нога',
-#     pos_b='noun',
-#     pos_a="noun",
-#     poss_m=["noun"],
-#     words_m=["рука"],
-#     tags_m=[{"inflect_type": "3", "gender": "f"}],
-#     derive_simple=True,
-#     derive_complex=True,
-#     is_extended=False,
-# )
-# res = evaluator.derive(
-#     'нога',
-#     pos_b='noun',
-#     pos_a="adj",
-#     derive_simple=True,
-#     derive_complex=True,
-#     is_extended=False,
-# )
-# print(res)

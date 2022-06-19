@@ -6,7 +6,7 @@ from itertools import chain as chain
 from functools import reduce
 from typing import List, Dict
 
-from src.rule import load_rules_from_json
+from src.rule_utils import load_rules_from_json
 
 
 converter_of_verb_types = {
