@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "rule_id": "rule901(с + num + и1(ть) -> verb)",
+      "info": "PFX,SFX",
+      "pos_b": "num",
+      "pos_a": "verb",
+      "complex": [
+        "rule798(num + и1(ть) -> verb)",
+        "rule879(с + verb -> verb)"
+      ]
+    },
+    {
+      "rule_id": "rule902(у + num + и1(ть) -> verb)",
+      "info": "PFX,SFX",
+      "pos_b": "num",
+      "pos_a": "verb",
+      "complex": [
+        "rule798(num + и1(ть) -> verb)",
+        "rule881(у + verb -> verb)"
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "data": [
+    {
+      "rule_id": "rule1017(в + num + ом -> adv)",
+      "info": "PFX,SFX",
+      "pos_b": "num",
+      "pos_a": "adv",
+      "complex": [
+        "rule1017(num + ом -> adj)",
+        "rule993*(в + adv -> adv)"
+      ],
+      "rare": []
+    },
+    {
+      "rule_id": "rule1018(в + num + о -> adv)",
+      "info": "PFX,SFX",
+      "pos_b": "num",
+      "pos_a": "adv",
+      "complex": [
+        "rule1033(num + о -> adv)",
+        "rule993*(в + adv -> adv)"
+      ],
+      "rare": []
+    },
+    {
+      "rule_id": "rule1018(на + num + о -> adv)",
+      "info": "PFX,SFX",
+      "pos_b": "num",
+      "pos_a": "adv",
+      "complex": [
+        "rule1033(num + о -> adv)",
+        "rule993(на + adv -> adv)"
+      ],
+      "rare": []
+    }
+  ]
+}

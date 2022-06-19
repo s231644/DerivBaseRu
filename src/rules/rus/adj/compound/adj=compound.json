@@ -65,6 +65,19 @@
         "after_merge": []
       }
     },
+    {
+      "rule_id": "rule758([num] + adj -> adj)",
+      "info": "COMPOUND",
+      "pos_b": "adj",
+      "pos_a": "adj",
+      "compound_rules": {
+        "head": [],
+        "modifiers": [{"pos_m": "num", "complex": []}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    },
 
     {
       "rule_id": "rule761([noun + ITFX] + noun + н1(ый) -> adj)",
