@@ -1,17 +1,22 @@
 import os
+import warnings
 
 from collections import defaultdict
-from typing import Set
+from typing import Set, Optional, List
 
 from src.rule import WholeRule, load_rules_from_json
 
 
 class Results:
-    def __init__(self, words_a: Set[str] = {}, rule_id: str = None):
+    def __init__(
+            self,
+            words_a: Optional[Set[str]] = None,
+            rule_id: Optional[str] = None
+    ):
         self.data = defaultdict(set)
         self.derived = set()
 
-        if rule_id is not None:
+        if rule_id is not None and words_a is not None:
             self.data[rule_id] |= words_a
             self.derived |= words_a
 
@@ -23,81 +28,59 @@ class Results:
         return self
 
 
-class Derivation:
-    def __init__(self, use_guesser: bool = False, **kwargs):
-        self.use_guesser = use_guesser
-        if self.use_guesser:
+class TagGuesserWrapper:
+    def __init__(self, lang: str = "rus", **kwargs):
+        if lang == "rus":
             from src.guesser.ZaliznyakGuesser import ZaliznyakGuesser
-            self.tag_guesser = ZaliznyakGuesser(**kwargs)
-        self.pos_all = ['noun', 'adj', 'verb', 'adv', 'num']
-        self.rules = []
-        self.rules_complex = []
+            self.guesser = ZaliznyakGuesser(**kwargs)
+            pass
+        else:
+            raise ValueError(f"Unsupported language {lang}!")
+
+    def guess(self, *args, **kwargs):
+        return self.guesser.guess(*args, **kwargs)
+
+
+class Derivation:
+    pos_all = ['noun', 'adj', 'verb', 'adv', 'num']
+    complexities = ['simple', 'complex', 'compound']
+
+    def __init__(
+            self,
+            lang: str = "rus",
+            guesser: Optional[TagGuesserWrapper] = None,
+    ):
+        self.lang = lang
+        self.tag_guesser = guesser
+
         self.rules_dict = dict()
 
-        # basic rules
-        for pos in self.pos_all:
-            rule_folder = os.path.join(
-                os.path.dirname(__file__),
-                'rules', pos, 'simple'
-            )
-            for rule_file in os.listdir(rule_folder):
-                if not rule_file.endswith('.json'):
-                    continue
-                self.rules.extend(
-                    load_rules_from_json(
-                        os.path.join(rule_folder, rule_file),
-                        'b',
-                        rule_type='simple'
-                    )
-                )
+        # load rules from files
+        self.loaded_rules = {
+            complexity: []
+            for complexity in self.complexities
+        }
+        for complexity in self.complexities:
+            for pos in self.pos_all:
+                self._load_rules_from_file(pos, complexity)
 
-        for rule in self.rules:
+        # initialize simple rules
+        for rule in self.loaded_rules["simple"]:
             self.rules_dict[rule.name] = rule
 
-        # complex rules
-        for pos in self.pos_all:
-            rule_folder = os.path.join(
-                os.path.dirname(__file__),
-                'rules', pos, 'complex'
-            )
-            if not os.path.exists(rule_folder):
-                continue
-            for rule_file in os.listdir(rule_folder):
-                if not rule_file.endswith('.json'):
-                    continue
-                self.rules_complex.extend(
-                    load_rules_from_json(
-                        os.path.join(rule_folder, rule_file),
-                        'b',
-                        rule_type='complex'
-                    )
-                )
-
-        for rule in self.rules_complex:
+        # initialize complex rules
+        for rule in self.loaded_rules["complex"]:
             try:
                 rule.simple_rules = [
                     self.rules_dict[simple_rule_id]
                     for simple_rule_id in rule.simple_rule_ids
                 ]
-            except AttributeError:
-                print("AttributeError:", rule.name)
-
-        for rule in self.rules_complex:
+            except Exception as e:
+                warnings.warn(f"Could not load rule {rule.name}: {e}")
+                continue
             self.rules_dict[rule.name] = rule
 
-        self.rules.extend(self.rules_complex)
-        
-        self.rules_compound = []
-        
-        rule_folder = os.path.join(os.path.dirname(__file__), 'rules')
-        self.rules_compound.extend(
-            load_rules_from_json(
-                os.path.join(rule_folder, 'compounds.json'),
-                'b',
-                rule_type='compound'
-            )
-        )
-        for rule in self.rules_compound:
+        for rule in self.loaded_rules["compound"]:
             try:
                 for simple_rule_ids in rule.simple_rule_ids:
                     rule.simple_rules.append(
@@ -114,15 +97,39 @@ class Derivation:
                     self.rules_dict[simple_rule_id]
                     for simple_rule_id in rule.after_merge_rule_ids
                 ]
-            except:
-                print("Error:", rule.name)
+            except Exception as e:
+                warnings.warn(f"Could not load rule {rule.name}: {e}")
+                continue
+            self.rules_dict[rule.name] = rule
+
+    def _load_rules_from_file(self, pos: str, complexity: str):
+        rule_folder = os.path.join(
+            os.path.dirname(__file__),
+            'rules', self.lang, pos, complexity
+        )
+        if not os.path.exists(rule_folder):
+            warnings.warn(
+                f"Could not load {complexity} rules "
+                f"for lang={self.lang} pos={pos}"
+            )
+            return
+        for rule_file in os.listdir(rule_folder):
+            if not rule_file.endswith('.json'):
+                continue
+            new_rules = load_rules_from_json(
+                os.path.join(rule_folder, rule_file),
+                'b',
+                rule_type=complexity,
+                lang=self.lang
+            )
+            self.loaded_rules[complexity].extend(new_rules)
 
     def _derive_with_rule(
             self,
+            rule: WholeRule,
             word_b: str,
-            pos_b: str = None,
-            pos_a: str = None,
-            rule: WholeRule = None,
+            pos_b: Optional[str] = None,
+            pos_a: Optional[str] = None,
             **kwargs
     ) -> Results:
         results = []
@@ -141,45 +148,88 @@ class Derivation:
             word_b: str,
             pos_b: str = None,
             pos_a: str = None,
-            rule: WholeRule = None,
+            rule: Optional[WholeRule] = None,
+            derive_simple: bool = True,
+            derive_complex: bool = True,
+            derive_compound: bool = True,
+            tags_m: Optional[List[dict]] = None,
             **kwargs
     ) -> Results:
         results = Results()
         if rule is not None:
             results += self._derive_with_rule(
-                word_b, pos_b, pos_a, rule, **kwargs
+                rule, word_b, pos_b, pos_a, **kwargs
             )
         else:
-            for rule_ in self.rules:
+            rules = []
+            if derive_simple:
+                rules.extend(self.loaded_rules["simple"])
+            if derive_complex:
+                rules.extend(self.loaded_rules["complex"])
+            if derive_compound:
+                rules.extend(self.loaded_rules["compound"])
+
+            for rule_cls in rules:
+                rule_ = self.rules_dict.get(rule_cls.name)
+                if not rule_:
+                    continue
                 if (not rule_.only_complex) or kwargs.get('force_complex'):
                     results += self._derive_with_rule(
-                        word_b, pos_b, pos_a, rule_, **kwargs
+                        rule_, word_b, pos_b, pos_a,
+                        tags_m=tags_m,
+                        **kwargs
                     )
         return results
 
     def derive(
             self,
             word_b: str,
-            pos_b: str = None,
-            pos_a: str = None,
-            rule_id: str = None,
+            pos_b: Optional[str] = None,
+            pos_a: Optional[str] = None,
+            words_m: Optional[List[str]] = None,
+            poss_m: Optional[List[str]] = None,
+            rule_id: Optional[str] = None,
             is_extended: bool = True,
+            derive_simple: bool = True,
+            derive_complex: bool = True,
+            derive_compound: bool = True,
+            tags: Optional[dict] = None,
+            tags_m: Optional[List[dict]] = None,
             **kwargs
     ):
-        if self.use_guesser:
-            tags_all = self.tag_guesser.guess(word=word_b, pos=pos_b, **kwargs)
-        else:
-            tags_all = [dict()]
+        tags_m_all = []
 
-        if not tags_all:
-            tags_all = [dict()]
+        if self.tag_guesser:
+            tags_all = self.tag_guesser.guess(word=word_b, pos=pos_b, **kwargs)
+            if not tags_all:
+                tags_all = [tags or dict()]
+
+            if words_m:
+                for i, word_m in enumerate(words_m):
+                    pos_m = poss_m[i] if poss_m else None
+                    tags_m_all.append(
+                        self.tag_guesser.guess(word=word_m, pos=pos_m, **kwargs)
+                    )
+        else:
+            tags_all = [tags or dict()]
+            if words_m:
+                tags_m_all = tags_m or [dict()] * len(words_m)
 
         rule = self.rules_dict.get(rule_id)
 
         results = Results()
         for tags in tags_all:
             tags.update(**kwargs)
-            results += self._derive(word_b, pos_b, pos_a, rule, **tags)
+            results += self._derive(
+                word_b, pos_b, pos_a, rule,
+                words_m=words_m,
+                tags_m=tags_m_all,
+                poss_m=poss_m,
+                derive_simple=derive_simple,
+                derive_complex=derive_complex,
+                derive_compound=derive_compound,
+                **tags
+            )
 
         if is_extended:
             return {k: results.data[k] for k in results.data if results.data[k]}
@@ -187,6 +237,24 @@ class Derivation:
             return results.derived
 
 
-# evaluator = Derivation(use_guesser=True)
-# res = evaluator.derive('напрячь', pos_b='verb', is_extended=True)
+# evaluator = Derivation(lang="rus", guesser=None)
+# res = evaluator.derive(
+#     'нога',
+#     pos_b='noun',
+#     pos_a="noun",
+#     poss_m=["noun"],
+#     words_m=["рука"],
+#     tags_m=[{"inflect_type": "3", "gender": "f"}],
+#     derive_simple=True,
+#     derive_complex=True,
+#     is_extended=False,
+# )
+# res = evaluator.derive(
+#     'нога',
+#     pos_b='noun',
+#     pos_a="adj",
+#     derive_simple=True,
+#     derive_complex=True,
+#     is_extended=False,
+# )
 # print(res)

@@ -47,7 +47,7 @@ def prepare_fsms(
     mod_rare = defaultdict(list)
     head_rare = defaultdict(list)
 
-    rare_star = pd.read_csv('../rules/compounds_rare_star.csv', sep=";")
+    rare_star = pd.read_csv('../rules/rus/compounds_rare_star.csv', sep=";")
     for i in range(len(rare_star)):
         d = dict(rare_star.iloc[i])
         if d["index"] == 0:

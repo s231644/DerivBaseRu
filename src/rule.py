@@ -34,13 +34,12 @@ class SubRule:
 
         self.tags_b = dict()
         for tag in tags_b:
-            possible_values = tags_b[tag].split(',')
-            self.tags_b[tag] = possible_values
+            self.tags_b[tag] = set(tags_b[tag].split(','))
 
-        self.logical_form, self.operators = self.normalize_raw_text(raw_rules)
+        self.logical_form, self.operators = self._normalize_raw_text(raw_rules)
         self.tree = self.short_parser.parse(self.logical_form)
 
-    def normalize_raw_text(self, raw_text: str):
+    def _normalize_raw_text(self, raw_text: str):
         operators = []
         logical_form = ''
         round_brackets = 0
@@ -101,9 +100,11 @@ class SubRule:
         return new_results
 
     def check(self, **kwargs) -> bool:
-        for tag in self.tags_b:
-            if kwargs.get(tag) is not None \
-                    and not (set(kwargs[tag]) & set(self.tags_b[tag])):
+        for tag, accepted_tag_values in self.tags_b.items():
+            if (
+                    kwargs.get(tag) is not None
+                    and not (set(kwargs[tag]) & accepted_tag_values)
+            ):
                 return False
         return True
 
@@ -256,9 +257,10 @@ class CompoundRule(WholeRule):
     ):
         return self.pos_b, self.pos_a, self.poss_m == pos_b, pos_a, poss_m
 
-    def apply(self, word_b: str, words_m: List[str] = [], **kwargs):
+    def apply(self, word_b: str, words_m: List[str] = None, **kwargs):
         results = []
 
+        words_m = words_m or []
         for i, word_ in enumerate([word_b] + words_m):
             cur_results = {word_}
             for simple_rule in self.simple_rules[i]:
@@ -283,12 +285,16 @@ class CompoundRule(WholeRule):
             pos_a: str = None,
             words_m: List[str] = [],
             poss_m: List[str] = [],
-            tags_dict: List[dict] = [],
+            tags_m: List[dict] = [],
             **kwargs
     ):
         if not self.check(pos_b, poss_m, pos_a):
             return set()
         # TODO: make possible inner tag analysis by Guesser
+        if not words_m:
+            return set()
+
+        tags_dict = [kwargs] + tags_m
         results = []
 
         for i, word_ in enumerate([word_b] + words_m):
@@ -320,9 +326,9 @@ def load_rules_from_json(
         json_file,
         tag_type='b',
         rule_type='simple',
-        lang='ru'
+        lang='rus'
 ):
-    if lang == "ru":
+    if lang == "rus":
         from src.stringops.rus import RussianOps
         lang_ops = RussianOps()
     else:
@@ -379,7 +385,6 @@ def load_rules_from_json(
                     continue
                 rules.append(rule)
             except:
-                raise
-                # print("ERROR reading a rule!", json_rule.get('rule_id'))
+                print("ERROR reading a rule!", json_rule.get('rule_id'))
 
     return rules

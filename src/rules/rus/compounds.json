@@ -1,0 +1,17 @@
+{
+  "data": [
+    {
+      "rule_id": "rule1034([adj + ITFX] + verb + ств(о) -> noun)",
+      "info": "COMPOUND,SFX",
+      "pos_b": "verb",
+      "pos_a": "noun",
+      "compound_rules": {
+        "head": ["rule264(verb + ств(о) -> noun)"],
+        "modifiers": [{"pos_m": "adj", "complex": ["ruleINTERFIX(adj)"]}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    }
+  ]
+}
