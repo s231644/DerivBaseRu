@@ -25,7 +25,10 @@ class BarakhninGuesser:
     ) -> List[Dict[str, str]]:
         if len(word) < 2:
             return []
-        stem_end = word[-1]
+        stem = word
+        while stem.endswith("ь"):
+            stem = stem[:-1]
+        stem_end = stem[-1]
         is_hard = self.guess_if_hard(word)
         if is_hard:
             if stem_end in self.all_vowels:
@@ -73,6 +76,8 @@ class BarakhninGuesser:
             return []
 
         stem = word[:-1]
+        while stem.endswith("ь"):
+            stem = stem[:-1]
         stem_end = stem[-1]
         is_hard = self.guess_if_hard(stem)
 
