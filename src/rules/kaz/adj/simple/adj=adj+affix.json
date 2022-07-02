@@ -1,0 +1,135 @@
+{
+  "data": [
+    {
+      "rule_id": "Romanenko25.1(adj + рақ/рек/ырақ/iрек -> adj)",
+      "short_id": "-рақ/рек/ырақ/iрек",
+      "info": "SFX",
+      "pos_b": "adj",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1"},
+          "rules": "(addsfx, {'рақ'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,3,4,5,6"},
+          "rules": "(addsfx, {'ырақ'})"
+        },
+        {
+          "tags_b": {"stem_class": "7"},
+          "rules": "(opt regrassim) & (addsfx, {'ырақ'})"
+        },
+        {
+          "tags_b": {"stem_class": "8"},
+          "rules": "(addsfx, {'рек'})"
+        },
+        {
+          "tags_b": {"stem_class": "9,10,11,12,13"},
+          "rules": "(addsfx, {'iрек'})"
+        },
+        {
+          "tags_b": {"stem_class": "14"},
+          "rules": "(opt regrassim) & (addsfx, {'iрек'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko25.2(adj + лау/леу/дау/деу/тау/теу -> adj)",
+      "short_id": "-лау/леу/дау/деу/тау/теу",
+      "info": "SFX",
+      "pos_b": "adj",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,6"},
+          "rules": "(addsfx, {'лау'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,7"},
+          "rules": "(addsfx, {'тау'})"
+        },
+        {
+          "tags_b": {"stem_class": "3,4,5"},
+          "rules": "(addsfx, {'дау'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,13"},
+          "rules": "(addsfx, {'леу'})"
+        },
+        {
+          "tags_b": {"stem_class": "9,14"},
+          "rules": "(addsfx, {'теу'})"
+        },
+        {
+          "tags_b": {"stem_class": "10,11,12"},
+          "rules": "(addsfx, {'деу'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko25.3.1(syl1($1) + п + adj -> adj)",
+      "short_id": "-syl1($1)п",
+      "info": "REDUP-L",
+      "pos_b": "adj",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,2,3,4,5,6,7,8,9,10,11,12,13,14"},
+          "rules": "(syl1p)"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko25.3.2(өте + adj -> adj)",
+      "short_id": "өте",
+      "info": "PFX",
+      "pos_b": "adj",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,2,3,4,5,6,7,8,9,10,11,12,13,14"},
+          "rules": "(addpfx, {'өте_'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko25.3.3(тым + adj -> adj)",
+      "short_id": "тым",
+      "info": "PFX",
+      "pos_b": "adj",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,2,3,4,5,6,7,8,9,10,11,12,13,14"},
+          "rules": "(addpfx, {'тым_'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko25.4.1(ең + adj -> adj)",
+      "short_id": "ең",
+      "info": "PFX",
+      "pos_b": "adj",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,2,3,4,5,6,7,8,9,10,11,12,13,14"},
+          "rules": "(addpfx, {'ең_'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko25.4.2(аса + adj -> adj)",
+      "short_id": "аса",
+      "info": "PFX",
+      "pos_b": "adj",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,2,3,4,5,6,7,8,9,10,11,12,13,14"},
+          "rules": "(addpfx, {'аса_'})"
+        }
+      ]
+    }
+  ]
+}

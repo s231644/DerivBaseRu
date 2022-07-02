@@ -35,6 +35,9 @@ class TagGuesserWrapper:
             from src.guesser.ZaliznyakGuesser import ZaliznyakGuesser
             self.guesser = ZaliznyakGuesser(**kwargs)
             pass
+        elif lang == "kaz":
+            from src.guesser.kazakh_guesser import BarakhninGuesser
+            self.guesser = BarakhninGuesser(**kwargs)
         else:
             raise ValueError(f"Unsupported language {lang}!")
 
@@ -109,10 +112,10 @@ class Derivation:
             'rules', self.lang, pos, complexity
         )
         if not os.path.exists(rule_folder):
-            warnings.warn(
-                f"Could not load {complexity} rules "
-                f"for lang={self.lang} pos={pos}"
-            )
+            # warnings.warn(
+            #     f"Could not load {complexity} rules "
+            #     f"for lang={self.lang} pos={pos}"
+            # )
             return
         for rule_file in os.listdir(rule_folder):
             if not rule_file.endswith('.json'):

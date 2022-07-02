@@ -1,0 +1,50 @@
+{
+  "data": [
+    {
+      "rule_id": "Romanenko24.6(verb + (ғ)ыш/гiш/(қ)ыш/(к)iш -> adj)",
+      "short_id": "-(ғ)ыш/гiш/(қ)ыш/(к)iш",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1"},
+          "rules": "(addsfx, {'ыш'})"
+        },
+        {
+          "tags_b": {"stem_class": "3,5,7,9,11,15,17"},
+          "rules": "(try replsfx, {('ю', 'йу')}) & (delsfx, {'у'}) & (addsfx, {'ғыш'})"
+        },
+        {
+          "tags_b": {"stem_class": "13"},
+          "rules": "(delsfx, {'у'}) & (addsfx, {'қыш'})"
+        },
+        {
+          "tags_b": {"stem_class": "2"},
+          "rules": "(addsfx, {'iш'})"
+        },
+        {
+          "tags_b": {"stem_class": "4,6,8,10,12,16"},
+          "rules": "(try replsfx, {('ю', 'йу')}) & (delsfx, {'у'}) & (addsfx, {'гiш'})"
+        },
+        {
+          "tags_b": {"stem_class": "14"},
+          "rules": "(delsfx, {'у'}) & (addsfx, {'кiш'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko24.7.1(verb + шек -> adj)",
+      "short_id": "-шек",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {},
+          "rules": "(try replsfx, {('ю', 'йу')}) & (delsfx, {'у'}) & (addsfx, {'шек'})"
+        }
+      ]
+    }
+  ]
+}

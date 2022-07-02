@@ -1,3 +1,4 @@
+import warnings
 from collections import defaultdict
 from itertools import product
 from lark import Lark
@@ -74,6 +75,8 @@ class SubRule:
                     raise ValueError("Incorrect command!")
                 cur_operator = ''
                 logical_form += str(len(operators))
+                if not hasattr(self.lang_ops, operator):
+                    warnings.warn(f"Unknown operator {operator}!")
                 operators.append((operator, args, mode))
         return logical_form, operators
 

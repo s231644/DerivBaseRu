@@ -142,7 +142,7 @@ class LHardOperation(ReplsfxOperation):
         return super().apply(word, ({('ль', 'л')}), mode=mode)
 
 
-class Alt7Operation(ReplsfxOperation):
+class Alt7Operation(StringOperation):
     @classmethod
     def apply_do(cls, word: str, args: Set[Any]) -> Set[str]:
         # вывести -> вывод

@@ -11,15 +11,17 @@ def load_rules_from_json(
         lang='rus'
 ):
     if lang == "rus":
-        from src.stringops.rus import RussianOps
-        lang_ops = RussianOps()
+        from src.stringops.rus import RussianOps as Ops
+    elif lang == "kaz":
+        from src.stringops.kaz import KazakhOps as Ops
     else:
-        from src.stringops.base import LanguageOps
-        lang_ops = LanguageOps()
+        from src.stringops.base import LanguageOps as Ops
         warnings.warn(
             f"Unsupported language {lang}! "
             f"You can use only language-independent functions on strings."
         )
+
+    lang_ops = Ops()
 
     rules = []
     with open(json_file, encoding='utf-8') as data_file:

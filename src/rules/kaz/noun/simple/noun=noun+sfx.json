@@ -1,0 +1,147 @@
+{
+  "data": [
+    {
+      "rule_id": "Romanenko23.1(noun + шы/шi -> noun)",
+      "short_id": "-шы/шi",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "noun",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,2,3,4,5,6,7"},
+          "rules": "(addsfx, {'шы'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,9,10,11,12,13,14"},
+          "rules": "(addsfx, {'шi'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko23.2(noun + шыл/шiл -> noun)",
+      "short_id": "-шыл/шiл",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "noun",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,2,3,4,5,6,7"},
+          "rules": "(addsfx, {'шыл'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,9,10,11,12,13,14"},
+          "rules": "(addsfx, {'шiл'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko23.4(noun + лық/лiк/дық/дiк/тық/тiк -> noun)",
+      "short_id": "-лық/лiк/дық/дiк/тық/тiк",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "noun",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,6"},
+          "rules": "(addsfx, {'лық'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,7"},
+          "rules": "(addsfx, {'тық'})"
+        },
+        {
+          "tags_b": {"stem_class": "3,4,5"},
+          "rules": "(addsfx, {'дық'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,13"},
+          "rules": "(addsfx, {'лiк'})"
+        },
+        {
+          "tags_b": {"stem_class": "9,14"},
+          "rules": "(addsfx, {'тiк'})"
+        },
+        {
+          "tags_b": {"stem_class": "10,11,12"},
+          "rules": "(addsfx, {'дiк'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko23.5(noun + лас/лес/дас/дес/тас/тес -> noun)",
+      "short_id": "-лас/лес/дас/дес/тас/тес",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "noun",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,6"},
+          "rules": "(addsfx, {'лас'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,7"},
+          "rules": "(addsfx, {'тас'})"
+        },
+        {
+          "tags_b": {"stem_class": "3,4,5"},
+          "rules": "(addsfx, {'дас'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,13"},
+          "rules": "(addsfx, {'лес'})"
+        },
+        {
+          "tags_b": {"stem_class": "9,14"},
+          "rules": "(addsfx, {'тес'})"
+        },
+        {
+          "tags_b": {"stem_class": "10,11,12"},
+          "rules": "(addsfx, {'дес'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko23.6(noun + гер/кер -> noun)",
+      "short_id": "-гер/кер",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "noun",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,2,3,4,5,6,8,9,10,11,12,13"},
+          "rules": "(addsfx, {'гер'})"
+        },
+        {
+          "tags_b": {"stem_class": "7,14"},
+          "rules": "(addsfx, {'кер'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko23.7(noun + хана -> noun)",
+      "short_id": "-хана",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "noun",
+      "cases": [
+        {
+          "tags_b": {},
+          "rules": "(addsfx, {'хана'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko23.8(noun + нама -> noun)",
+      "short_id": "-нама",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "noun",
+      "cases": [
+        {
+          "tags_b": {},
+          "rules": "(addsfx, {'нама'})"
+        }
+      ]
+    }
+  ]
+}
