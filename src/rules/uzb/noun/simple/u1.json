@@ -1,11 +1,11 @@
 {
   "data": [
     {
-      "rule_id": "Tense&PersonSuffixes_0",
+      "rule_id": "Tense&PersonSuffixes_1",
       "short_id": "-di",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -15,11 +15,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_1",
+      "rule_id": "Tense&PersonSuffixes_2",
       "short_id": "-sa",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -29,11 +29,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_2",
+      "rule_id": "Tense&PersonSuffixes_3",
       "short_id": "-m",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -43,11 +43,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_3",
+      "rule_id": "Tense&PersonSuffixes_4",
       "short_id": "-k",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -57,11 +57,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_4",
+      "rule_id": "Tense&PersonSuffixes_5",
       "short_id": "-lar",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -71,11 +71,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_5",
+      "rule_id": "Tense&PersonSuffixes_6",
       "short_id": "-ng",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -85,11 +85,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_6",
+      "rule_id": "Tense&PersonSuffixes_7",
       "short_id": "-nzig",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -99,11 +99,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_7",
+      "rule_id": "Tense&PersonSuffixes_8",
       "short_id": "-Y",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -113,11 +113,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_8",
+      "rule_id": "Tense&PersonSuffixes_9",
       "short_id": "-man",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -127,11 +127,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_9",
+      "rule_id": "Tense&PersonSuffixes_10",
       "short_id": "-miz",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -141,11 +141,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_10",
+      "rule_id": "Tense&PersonSuffixes_11",
       "short_id": "-lik",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -155,11 +155,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_11",
+      "rule_id": "Tense&PersonSuffixes_12",
       "short_id": "-san",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -169,11 +169,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_12",
+      "rule_id": "Tense&PersonSuffixes_13",
       "short_id": "-siz",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -183,11 +183,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_13",
+      "rule_id": "Tense&PersonSuffixes_14",
       "short_id": "-sin",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -197,11 +197,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_14",
+      "rule_id": "Tense&PersonSuffixes_15",
       "short_id": "-gin",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -211,11 +211,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_15",
+      "rule_id": "Tense&PersonSuffixes_16",
       "short_id": "-(i)ng",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -225,11 +225,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_16",
+      "rule_id": "Tense&PersonSuffixes_17",
       "short_id": "-(i)ngiz",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -239,11 +239,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_17",
+      "rule_id": "Tense&PersonSuffixes_18",
       "short_id": "-yap",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -253,11 +253,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_18",
+      "rule_id": "Tense&PersonSuffixes_19",
       "short_id": "-ti",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -267,11 +267,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_19",
+      "rule_id": "Tense&PersonSuffixes_20",
       "short_id": "-ar",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -281,11 +281,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_20",
+      "rule_id": "Tense&PersonSuffixes_21",
       "short_id": "-mas",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -295,11 +295,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_21",
+      "rule_id": "Tense&PersonSuffixes_22",
       "short_id": "-mi",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -309,11 +309,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_22",
+      "rule_id": "Tense&PersonSuffixes_23",
       "short_id": "-kan",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -323,11 +323,11 @@
       "rare": []
     },
     {
-      "rule_id": "Tense&PersonSuffixes_23",
+      "rule_id": "Tense&PersonSuffixes_24",
       "short_id": "-mish",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -337,11 +337,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_24",
+      "rule_id": "VerbSuffixes_1",
       "short_id": "-Gan",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -351,11 +351,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_25",
+      "rule_id": "VerbSuffixes_2",
       "short_id": "-moqda",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -365,11 +365,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_26",
+      "rule_id": "VerbSuffixes_3",
       "short_id": "-ayotgan",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -379,11 +379,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_27",
+      "rule_id": "VerbSuffixes_4",
       "short_id": "-moqchi",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -393,11 +393,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_28",
+      "rule_id": "VerbSuffixes_5",
       "short_id": "-lay",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -407,11 +407,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_29",
+      "rule_id": "VerbSuffixes_6",
       "short_id": "-ay",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -421,11 +421,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_30",
+      "rule_id": "VerbSuffixes_7",
       "short_id": "-Ydigan",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -435,11 +435,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_31",
+      "rule_id": "VerbSuffixes_8",
       "short_id": "-(a)yotir",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -449,11 +449,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_32",
+      "rule_id": "VerbSuffixes_9",
       "short_id": "-Gancha",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -463,11 +463,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_33",
+      "rule_id": "VerbSuffixes_10",
       "short_id": "-Guncha",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -477,11 +477,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_34",
+      "rule_id": "VerbSuffixes_11",
       "short_id": "-gudek",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -491,11 +491,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_35",
+      "rule_id": "VerbSuffixes_12",
       "short_id": "-Gani",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -505,11 +505,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_36",
+      "rule_id": "VerbSuffixes_13",
       "short_id": "-(i)b",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -519,11 +519,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_37",
+      "rule_id": "VerbSuffixes_14",
       "short_id": "-(u)v",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -533,11 +533,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_38",
+      "rule_id": "VerbSuffixes_15",
       "short_id": "-(a)r",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -547,11 +547,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_39",
+      "rule_id": "VerbSuffixes_16",
       "short_id": "-(i)sh",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -561,11 +561,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_40",
+      "rule_id": "VerbSuffixes_17",
       "short_id": "-moq",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -575,11 +575,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_41",
+      "rule_id": "VerbSuffixes_18",
       "short_id": "-moqliK",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -589,11 +589,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_42",
+      "rule_id": "VerbSuffixes_19",
       "short_id": "-ma",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -603,11 +603,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_43",
+      "rule_id": "VerbSuffixes_20",
       "short_id": "-may",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -617,11 +617,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_44",
+      "rule_id": "VerbSuffixes_21",
       "short_id": "-mayin",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -631,11 +631,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_45",
+      "rule_id": "VerbSuffixes_22",
       "short_id": "-masliK",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -645,11 +645,11 @@
       "rare": []
     },
     {
-      "rule_id": "VerbSuffixes_46",
+      "rule_id": "VerbSuffixes_23",
       "short_id": "-liK",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -659,11 +659,11 @@
       "rare": []
     },
     {
-      "rule_id": "RelativeVerbSuffixes_47",
+      "rule_id": "RelativeVerbSuffixes_1",
       "short_id": "-lat",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -673,11 +673,11 @@
       "rare": []
     },
     {
-      "rule_id": "RelativeVerbSuffixes_48",
+      "rule_id": "RelativeVerbSuffixes_2",
       "short_id": "-Tir",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -687,11 +687,11 @@
       "rare": []
     },
     {
-      "rule_id": "RelativeVerbSuffixes_49",
+      "rule_id": "RelativeVerbSuffixes_3",
       "short_id": "-ir",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -701,11 +701,11 @@
       "rare": []
     },
     {
-      "rule_id": "RelativeVerbSuffixes_50",
+      "rule_id": "RelativeVerbSuffixes_4",
       "short_id": "-sat",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -715,11 +715,11 @@
       "rare": []
     },
     {
-      "rule_id": "RelativeVerbSuffixes_51",
+      "rule_id": "RelativeVerbSuffixes_5",
       "short_id": "-ar",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -729,11 +729,11 @@
       "rare": []
     },
     {
-      "rule_id": "RelativeVerbSuffixes_52",
+      "rule_id": "RelativeVerbSuffixes_6",
       "short_id": "-(i)n",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -743,11 +743,11 @@
       "rare": []
     },
     {
-      "rule_id": "RelativeVerbSuffixes_53",
+      "rule_id": "RelativeVerbSuffixes_7",
       "short_id": "-(i)l",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -757,11 +757,11 @@
       "rare": []
     },
     {
-      "rule_id": "RelativeVerbSuffixes_54",
+      "rule_id": "RelativeVerbSuffixes_8",
       "short_id": "-t",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -771,11 +771,11 @@
       "rare": []
     },
     {
-      "rule_id": "RelativeVerbSuffixes_55",
+      "rule_id": "RelativeVerbSuffixes_9",
       "short_id": "-(i)sh",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -785,39 +785,39 @@
       "rare": []
     },
     {
-      "rule_id": "RelativeVerbSuffixes_56",
+      "rule_id": "RelativeVerbSuffixes_10",
       "short_id": "-Qaz",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
-          "rules": "(addsfx, {'g\\'az', 'gaz', 'kaz', 'qaz'})"
+          "rules": "(addsfx, {'g‘az', 'gaz', 'kaz', 'qaz'})"
         }
       ],
       "rare": []
     },
     {
-      "rule_id": "RelativeVerbSuffixes_57",
+      "rule_id": "RelativeVerbSuffixes_11",
       "short_id": "-Qiz",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
-          "rules": "(addsfx, {'g\\'iz', 'giz', 'kiz', 'qiz'})"
+          "rules": "(addsfx, {'g‘iz', 'giz', 'kiz', 'qiz'})"
         }
       ],
       "rare": []
     },
     {
-      "rule_id": "RelativeVerbSuffixes_58",
+      "rule_id": "RelativeVerbSuffixes_12",
       "short_id": "-iz",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -827,11 +827,11 @@
       "rare": []
     },
     {
-      "rule_id": "RelativeVerbSuffixes_59",
+      "rule_id": "RelativeVerbSuffixes_13",
       "short_id": "-ol",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -841,11 +841,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_60",
+      "rule_id": "DerivationalSuffixes_1",
       "short_id": "-liK",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -855,11 +855,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_61",
+      "rule_id": "DerivationalSuffixes_2",
       "short_id": "-chiliK",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -869,11 +869,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_62",
+      "rule_id": "DerivationalSuffixes_3",
       "short_id": "-on",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -883,11 +883,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_63",
+      "rule_id": "DerivationalSuffixes_4",
       "short_id": "-aki",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -897,25 +897,25 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_64",
+      "rule_id": "DerivationalSuffixes_5",
       "short_id": "-do'z",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
-          "rules": "(addsfx, {'do\\'z'})"
+          "rules": "(addsfx, {'do‘z'})"
         }
       ],
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_65",
+      "rule_id": "DerivationalSuffixes_6",
       "short_id": "-dor",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -925,11 +925,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_66",
+      "rule_id": "DerivationalSuffixes_7",
       "short_id": "-gar",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -939,11 +939,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_67",
+      "rule_id": "DerivationalSuffixes_8",
       "short_id": "-in",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -953,11 +953,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_68",
+      "rule_id": "DerivationalSuffixes_9",
       "short_id": "-iq",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -967,11 +967,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_69",
+      "rule_id": "DerivationalSuffixes_10",
       "short_id": "-ma",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -981,11 +981,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_70",
+      "rule_id": "DerivationalSuffixes_11",
       "short_id": "-ona",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -995,11 +995,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_71",
+      "rule_id": "DerivationalSuffixes_12",
       "short_id": "-mand",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1009,11 +1009,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_72",
+      "rule_id": "DerivationalSuffixes_13",
       "short_id": "-oq",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1023,11 +1023,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_73",
+      "rule_id": "DerivationalSuffixes_14",
       "short_id": "-ot",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1037,11 +1037,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_74",
+      "rule_id": "DerivationalSuffixes_15",
       "short_id": "-qin",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1051,11 +1051,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_75",
+      "rule_id": "DerivationalSuffixes_16",
       "short_id": "-la",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1065,11 +1065,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_76",
+      "rule_id": "DerivationalSuffixes_17",
       "short_id": "-iz",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1079,11 +1079,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_77",
+      "rule_id": "DerivationalSuffixes_18",
       "short_id": "-ir",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1093,11 +1093,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_78",
+      "rule_id": "DerivationalSuffixes_19",
       "short_id": "-Tir",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1107,11 +1107,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_79",
+      "rule_id": "DerivationalSuffixes_20",
       "short_id": "-lat",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1121,25 +1121,25 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_80",
+      "rule_id": "DerivationalSuffixes_21",
       "short_id": "-Qich",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
-          "rules": "(addsfx, {'g\\'ich', 'gich', 'kich', 'qich'})"
+          "rules": "(addsfx, {'g‘ich', 'gich', 'kich', 'qich'})"
         }
       ],
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_81",
+      "rule_id": "DerivationalSuffixes_22",
       "short_id": "-yi",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1149,11 +1149,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_82",
+      "rule_id": "DerivationalSuffixes_23",
       "short_id": "-siz",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1163,11 +1163,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_83",
+      "rule_id": "DerivationalSuffixes_24",
       "short_id": "-lan",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1177,11 +1177,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_84",
+      "rule_id": "DerivationalSuffixes_25",
       "short_id": "-lash",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1191,11 +1191,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_85",
+      "rule_id": "DerivationalSuffixes_26",
       "short_id": "-shunos",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1205,11 +1205,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_86",
+      "rule_id": "DerivationalSuffixes_27",
       "short_id": "-soz",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1219,11 +1219,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_87",
+      "rule_id": "DerivationalSuffixes_28",
       "short_id": "-zor",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1233,11 +1233,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_88",
+      "rule_id": "DerivationalSuffixes_29",
       "short_id": "-(uv)chan",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1247,11 +1247,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_89",
+      "rule_id": "DerivationalSuffixes_30",
       "short_id": "-paz",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1261,11 +1261,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_90",
+      "rule_id": "DerivationalSuffixes_31",
       "short_id": "-parast",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1275,11 +1275,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_91",
+      "rule_id": "DerivationalSuffixes_32",
       "short_id": "-parvar",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1289,11 +1289,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_92",
+      "rule_id": "DerivationalSuffixes_33",
       "short_id": "-xon",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1303,25 +1303,25 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_93",
+      "rule_id": "DerivationalSuffixes_34",
       "short_id": "-xo'r",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
-          "rules": "(addsfx, {'xo\\'r'})"
+          "rules": "(addsfx, {'xo‘r'})"
         }
       ],
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_94",
+      "rule_id": "DerivationalSuffixes_35",
       "short_id": "-viy",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1331,11 +1331,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_95",
+      "rule_id": "DerivationalSuffixes_36",
       "short_id": "-vor",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1345,11 +1345,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_96",
+      "rule_id": "DerivationalSuffixes_37",
       "short_id": "-vorchi",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1359,11 +1359,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_97",
+      "rule_id": "DerivationalSuffixes_38",
       "short_id": "-voz",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1373,11 +1373,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_98",
+      "rule_id": "DerivationalSuffixes_39",
       "short_id": "-(u)vchi",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1387,11 +1387,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_99",
+      "rule_id": "DerivationalSuffixes_40",
       "short_id": "-qoq",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1401,11 +1401,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_100",
+      "rule_id": "DerivationalSuffixes_41",
       "short_id": "-boz",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1415,11 +1415,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_101",
+      "rule_id": "DerivationalSuffixes_42",
       "short_id": "-kash",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1429,11 +1429,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_102",
+      "rule_id": "DerivationalSuffixes_43",
       "short_id": "-mas",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1443,11 +1443,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_103",
+      "rule_id": "DerivationalSuffixes_44",
       "short_id": "-li",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1457,11 +1457,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_104",
+      "rule_id": "DerivationalSuffixes_45",
       "short_id": "-kor",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1471,11 +1471,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_105",
+      "rule_id": "DerivationalSuffixes_46",
       "short_id": "-chi",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1485,11 +1485,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_106",
+      "rule_id": "DerivationalSuffixes_47",
       "short_id": "-dosh",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1499,11 +1499,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_107",
+      "rule_id": "DerivationalSuffixes_48",
       "short_id": "-doshli",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1513,11 +1513,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_108",
+      "rule_id": "DerivationalSuffixes_49",
       "short_id": "-gor",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1527,25 +1527,25 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_109",
+      "rule_id": "DerivationalSuffixes_50",
       "short_id": "-go'y",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
-          "rules": "(addsfx, {'go\\'y'})"
+          "rules": "(addsfx, {'go‘y'})"
         }
       ],
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_110",
+      "rule_id": "DerivationalSuffixes_51",
       "short_id": "-goh",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1555,11 +1555,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_111",
+      "rule_id": "DerivationalSuffixes_52",
       "short_id": "-garchiliK",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1569,11 +1569,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_112",
+      "rule_id": "DerivationalSuffixes_53",
       "short_id": "-a",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1583,11 +1583,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_113",
+      "rule_id": "DerivationalSuffixes_54",
       "short_id": "-iy",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1597,11 +1597,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_114",
+      "rule_id": "DerivationalSuffixes_55",
       "short_id": "-ak",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1611,11 +1611,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_115",
+      "rule_id": "DerivationalSuffixes_56",
       "short_id": "-an",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1625,11 +1625,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_116",
+      "rule_id": "DerivationalSuffixes_57",
       "short_id": "-at",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1639,11 +1639,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_117",
+      "rule_id": "DerivationalSuffixes_58",
       "short_id": "-larcha",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1653,11 +1653,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_118",
+      "rule_id": "DerivationalSuffixes_59",
       "short_id": "-lidoq",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1667,11 +1667,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_119",
+      "rule_id": "DerivationalSuffixes_60",
       "short_id": "-liq",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1681,11 +1681,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_120",
+      "rule_id": "DerivationalSuffixes_61",
       "short_id": "-simon",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1695,11 +1695,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_121",
+      "rule_id": "DerivationalSuffixes_62",
       "short_id": "-xona",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1709,11 +1709,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_122",
+      "rule_id": "DerivationalSuffixes_63",
       "short_id": "-(i)mtir",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1723,11 +1723,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_123",
+      "rule_id": "DerivationalSuffixes_64",
       "short_id": "-roq",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1737,11 +1737,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_124",
+      "rule_id": "DerivationalSuffixes_65",
       "short_id": "-don",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1751,11 +1751,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_125",
+      "rule_id": "DerivationalSuffixes_66",
       "short_id": "-bop",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1765,11 +1765,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_126",
+      "rule_id": "DerivationalSuffixes_67",
       "short_id": "-lay",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1779,11 +1779,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_127",
+      "rule_id": "DerivationalSuffixes_68",
       "short_id": "-layin",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1793,11 +1793,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_128",
+      "rule_id": "DerivationalSuffixes_69",
       "short_id": "-sira",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1807,11 +1807,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_129",
+      "rule_id": "DerivationalSuffixes_70",
       "short_id": "-lashtir",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1821,11 +1821,11 @@
       "rare": []
     },
     {
-      "rule_id": "DerivationalSuffixes_130",
+      "rule_id": "DerivationalSuffixes_71",
       "short_id": "-qila",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1835,11 +1835,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_131",
+      "rule_id": "NounSuffixes_1",
       "short_id": "-(i)m",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1849,11 +1849,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_132",
+      "rule_id": "NounSuffixes_2",
       "short_id": "-(i)ng",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1863,11 +1863,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_133",
+      "rule_id": "NounSuffixes_3",
       "short_id": "-(i)miz",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1877,11 +1877,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_134",
+      "rule_id": "NounSuffixes_4",
       "short_id": "-(i)ngiz",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1891,11 +1891,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_135",
+      "rule_id": "NounSuffixes_5",
       "short_id": "-(s)i",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1905,11 +1905,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_136",
+      "rule_id": "NounSuffixes_6",
       "short_id": "-ni",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1919,11 +1919,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_137",
+      "rule_id": "NounSuffixes_7",
       "short_id": "-ning",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1933,11 +1933,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_138",
+      "rule_id": "NounSuffixes_8",
       "short_id": "-da",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1947,11 +1947,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_139",
+      "rule_id": "NounSuffixes_9",
       "short_id": "-dan",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1961,11 +1961,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_140",
+      "rule_id": "NounSuffixes_10",
       "short_id": "-Ga",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1975,11 +1975,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_141",
+      "rule_id": "NounSuffixes_11",
       "short_id": "-(n)iki",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -1989,11 +1989,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_142",
+      "rule_id": "NounSuffixes_12",
       "short_id": "-dagi",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2003,11 +2003,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_143",
+      "rule_id": "NounSuffixes_13",
       "short_id": "-day",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2017,11 +2017,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_144",
+      "rule_id": "NounSuffixes_14",
       "short_id": "-dek",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2031,11 +2031,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_145",
+      "rule_id": "NounSuffixes_15",
       "short_id": "-gina",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2045,11 +2045,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_146",
+      "rule_id": "NounSuffixes_16",
       "short_id": "-mi",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2059,11 +2059,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_147",
+      "rule_id": "NounSuffixes_17",
       "short_id": "-lar",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2073,11 +2073,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_148",
+      "rule_id": "NounSuffixes_18",
       "short_id": "-san",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2087,11 +2087,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_149",
+      "rule_id": "NounSuffixes_19",
       "short_id": "-man",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2101,11 +2101,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_150",
+      "rule_id": "NounSuffixes_20",
       "short_id": "-siz",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2115,11 +2115,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_151",
+      "rule_id": "NounSuffixes_21",
       "short_id": "-miz",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2129,11 +2129,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_152",
+      "rule_id": "NounSuffixes_22",
       "short_id": "-kan",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2143,11 +2143,11 @@
       "rare": []
     },
     {
-      "rule_id": "NounSuffixes_153",
+      "rule_id": "NounSuffixes_23",
       "short_id": "-mish",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2157,11 +2157,11 @@
       "rare": []
     },
     {
-      "rule_id": "Prefixes_154",
+      "rule_id": "Prefixes_1",
       "short_id": "ba-",
       "info": "PFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2171,11 +2171,11 @@
       "rare": []
     },
     {
-      "rule_id": "Prefixes_155",
+      "rule_id": "Prefixes_2",
       "short_id": "be-",
       "info": "PFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2185,11 +2185,11 @@
       "rare": []
     },
     {
-      "rule_id": "Prefixes_156",
+      "rule_id": "Prefixes_3",
       "short_id": "bo-",
       "info": "PFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2199,11 +2199,11 @@
       "rare": []
     },
     {
-      "rule_id": "Prefixes_157",
+      "rule_id": "Prefixes_4",
       "short_id": "bar-",
       "info": "PFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2213,11 +2213,11 @@
       "rare": []
     },
     {
-      "rule_id": "Prefixes_158",
+      "rule_id": "Prefixes_5",
       "short_id": "no-",
       "info": "PFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2227,11 +2227,11 @@
       "rare": []
     },
     {
-      "rule_id": "Prefixes_159",
+      "rule_id": "Prefixes_6",
       "short_id": "ser-",
       "info": "PFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2241,11 +2241,11 @@
       "rare": []
     },
     {
-      "rule_id": "Prefixes_160",
+      "rule_id": "Prefixes_7",
       "short_id": "alla-",
       "info": "PFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2255,11 +2255,11 @@
       "rare": []
     },
     {
-      "rule_id": "NumberSuffixes_161",
+      "rule_id": "NumberSuffixes_1",
       "short_id": "-(i)nchi",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2269,11 +2269,11 @@
       "rare": []
     },
     {
-      "rule_id": "NumberSuffixes_162",
+      "rule_id": "NumberSuffixes_2",
       "short_id": "-ta",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2283,11 +2283,11 @@
       "rare": []
     },
     {
-      "rule_id": "NumberSuffixes_163",
+      "rule_id": "NumberSuffixes_3",
       "short_id": "-tacha",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2297,11 +2297,11 @@
       "rare": []
     },
     {
-      "rule_id": "NumberSuffixes_164",
+      "rule_id": "NumberSuffixes_4",
       "short_id": "-larcha",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2311,11 +2311,11 @@
       "rare": []
     },
     {
-      "rule_id": "NumberSuffixes_165",
+      "rule_id": "NumberSuffixes_5",
       "short_id": "-ala",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2325,11 +2325,11 @@
       "rare": []
     },
     {
-      "rule_id": "NumberSuffixes_166",
+      "rule_id": "NumberSuffixes_6",
       "short_id": "-lab",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2339,11 +2339,11 @@
       "rare": []
     },
     {
-      "rule_id": "NumberSuffixes_167",
+      "rule_id": "NumberSuffixes_7",
       "short_id": "-ov",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2353,11 +2353,11 @@
       "rare": []
     },
     {
-      "rule_id": "NumberSuffixes_168",
+      "rule_id": "NumberSuffixes_8",
       "short_id": "-ovlab",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2367,11 +2367,11 @@
       "rare": []
     },
     {
-      "rule_id": "NumberSuffixes_169",
+      "rule_id": "NumberSuffixes_9",
       "short_id": "-ovlash",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2381,11 +2381,11 @@
       "rare": []
     },
     {
-      "rule_id": "NumberSuffixes_170",
+      "rule_id": "NumberSuffixes_10",
       "short_id": "-ovlashib",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
@@ -2395,11 +2395,11 @@
       "rare": []
     },
     {
-      "rule_id": "NumberSuffixes_171",
+      "rule_id": "NumberSuffixes_11",
       "short_id": "-ovlon",
       "info": "SFX",
-      "pos_b": "noun",
-      "pos_a": "noun",
+      "pos_b": "NOUN",
+      "pos_a": "NOUN",
       "cases": [
         {
           "tags_b": {},
