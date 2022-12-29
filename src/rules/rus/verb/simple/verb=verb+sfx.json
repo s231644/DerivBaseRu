@@ -1,0 +1,495 @@
+{
+  "data": [
+    {
+      "rule_id": "rule836(verb + ну2(ть) -> verb)",
+      "short_id": "-ну2-",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "verb",
+      "cases": [
+        { "tags_b": {"form": "inf", "inflect_type": "1,2,4,4щ,4*,5,5щ,6,6щ"},
+          "rules": "(delptfx) & (delsfx, {'ать', 'ять', 'еть', 'ить'}) & (try l_soft) & (opt delsfx, {'г', 'д', 'к', 'т'}) & [(onlysfx, vowels) & (addsfx, {'й'}) | (opt inv_altcons)] & (addsfx, {'нуться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "1,2,4,4щ,4*,5,5щ,6,6щ"},
+          "rules": "(delsfx, {'ать', 'ять', 'еть', 'ить'}) & (try l_soft) & (opt delsfx, {'г', 'д', 'к', 'т'}) & [(onlysfx, vowels) & (addsfx, {'й'}) | (opt inv_altcons)] & (addsfx, {'нуть'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "2"},
+          "rules": "(delptfx) & (delsfx, {'овать', 'евать'}) & (try delsfx, {'ир'}) & (try l_soft) & (opt delsfx, {'г', 'д', 'к', 'т'}) & [(onlysfx, vowels) & (addsfx, {'й'}) | (opt inv_altcons)] & (addsfx, {'нуться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "2"},
+          "rules": "(delsfx, {'овать', 'евать'}) & (try delsfx, {'ир'}) & (try l_soft) & (opt delsfx, {'г', 'д', 'к', 'т'}) & [(onlysfx, vowels) & (addsfx, {'й'}) | (opt inv_altcons)] & (addsfx, {'нуть'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7т"},
+          "rules": "(delptfx) & (delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'т')}) & (addsfx, {'нуться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7т"},
+          "rules": "(delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'т')}) & (addsfx, {'нуть'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7б"},
+          "rules": "(delptfx) & (delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'б')}) & (addsfx, {'нуться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7б"},
+          "rules": "(delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'б')}) & (addsfx, {'нуть'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7д"},
+          "rules": "(delptfx) & (delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'д')}) & (addsfx, {'нуться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7д"},
+          "rules": "(delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'д')}) & (addsfx, {'нуть'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7з,7с"},
+          "rules": "(delptfx) & (delsfx, {'ти', 'ть'}) & (addsfx, {'нуться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7з,7с"},
+          "rules": "(delsfx, {'ти', 'ть'}) & (addsfx, {'нуть'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7ст"},
+          "rules": "(delptfx) & (delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'ст')}) & (addsfx, {'нуться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7ст"},
+          "rules": "(delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'ст')}) & (addsfx, {'нуть'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "10ол,10ор"},
+          "rules": "[(delptfx) & (delsfx, {'оть'}) & (try l_soft) & (addsfx, {'нуться'}) | (delsfx, {'оть'}) & (try l_soft) & (addsfx, {'нуть'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "10ел"},
+          "rules": "[(delptfx) & (delsfx, {'оть'}) & (replsfx, {('ол', 'ел')}) & (l_soft) & (addsfx, {'нуться'}) | (delsfx, {'оть'}) & (replsfx, {('ол', 'ел')}) & (l_soft) & (addsfx, {'нуть'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "11,12у,15"},
+          "rules": "[(delptfx) & (delsfx, {'ть'}) & (addsfx, {'нуться'}) | (delsfx, {'ть'}) & (addsfx, {'нуть'})]"
+        }
+      ],
+      "rare": [
+        "спать;снуть",
+        "смеяться;смехнуться",
+        "трясти;тряхнуть",
+        "кашлять;кашлянуть",
+        "клевать;клюнуть",
+        "плевать;плюнуть",
+        "совать;сунуть",
+        "трескаться;треснуть",
+        "лопать;лопнуть",
+        "окунать;окунуть",
+        "пинать;пнуть",
+        "трусить;трухнуть",
+        "трещать;треснуть",
+        "пихать;пхнуть",
+        "тыкать;ткнуть",
+        "чихать;чхнуть",
+        "дышать;дохнуть"
+      ]
+    },
+    {
+      "rule_id": "rule840(verb + ану(ть) -> verb)",
+      "short_id": "-ану-",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "verb",
+      "cases": [
+        {
+          "tags_b": {"form": "inf", "inflect_type": "1,2,4,4щ,4*,5,5щ,6,6щ,ехать"},
+          "rules": "(delptfx) & (delsfx, {'ать', 'ять', 'еть', 'ить'}) & (try delsfx, {'ов', 'ев'}) & (excsfx, vowels | {'л'} - sh_soft) & (opt inv_plt) & (addsfx, {'ануться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "1,2,4,4щ,4*,5,5щ,6,6щ,ехать"},
+          "rules": "(delsfx, {'ать', 'ять', 'еть', 'ить'}) & (try delsfx, {'ов', 'ев'}) & (excsfx, vowels | {'л'} - sh_soft) & (opt inv_plt) & (addsfx, {'ануть'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7т"},
+          "rules": "(delptfx) & (delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'т')}) & (addsfx, {'ануться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7т"},
+          "rules": "(delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'т')}) & (addsfx, {'ануть'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7б"},
+          "rules": "(delptfx) & (delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'б')}) & (addsfx, {'ануться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7б"},
+          "rules": "(delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'б')}) & (addsfx, {'ануть'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7д"},
+          "rules": "(delptfx) & (delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'д')}) & (addsfx, {'ануться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7д"},
+          "rules": "(delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'д')}) & (addsfx, {'ануть'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7з,7с"},
+          "rules": "(delptfx) & (delsfx, {'ти', 'ть'}) & (addsfx, {'ануться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7з,7с"},
+          "rules": "(delsfx, {'ти', 'ть'}) & (addsfx, {'ануть'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7ст"},
+          "rules": "(delptfx) & (delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'ст')}) & (addsfx, {'ануться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7ст"},
+          "rules": "(delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'ст')}) & (addsfx, {'ануть'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "8к"},
+          "rules": "[(delptfx) & (replsfx, {('чь', 'к')}) & (addsfx, {'ануться'}) | (replsfx, {('чь', 'к')}) & (addsfx, {'ануть'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "8г"},
+          "rules": "[(delptfx) & (replsfx, {('чь', 'г')}) & (addsfx, {'ануться'}) | (replsfx, {('чь', 'г')}) & (addsfx, {'ануть'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "11"},
+          "rules": "[(delptfx) & (delsfx, {'ть'}) & (addsfx, {'в'}) & (addsfx, {'ануться'}) | (delsfx, {'ть'}) & (addsfx, {'в'}) & (addsfx, {'ануть'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "есть"},
+          "rules": "[(delptfx) & (delsfx, {'сть'}) & (addsfx, {'дануться'}) | (delsfx, {'сть'}) & (addsfx, {'дануть'})]"
+        }
+      ],
+      "rare": [
+        "трясти;тряхануть"
+      ]
+    },
+    {
+      "rule_id": "rule842(verb + ива(ть)/ва(ть)/а3(ть) -> verb)",
+      "short_id": "-ива-",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "verb",
+      "cases": [
+        {
+          "tags_b": {"form": "inf", "inflect_type": "11,12у,12ы,12и,12греть,12брить,12петь,15,16,быть,дать"},
+          "rules": "[(delptfx) & (delsfx, {'ть'}) & (addsfx, {'ваться'}) | (delsfx, {'ть'}) & (addsfx, {'вать'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "1"},
+          "rules": "[(delptfx) & (delsfx, {'ть'}) & (onlysfx, {'е'}) & (addsfx, {'ваться'}) | (delsfx, {'ть'}) & (onlysfx, {'е'}) & (addsfx, {'вать'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "6,6щ"},
+          "rules": "[(delptfx) & (delsfx, {'ть'}) & (delsfx, {'я'}) & (onlysfx, {'се', 'ве'}) & (addsfx, {'ваться'}) | (delsfx, {'ть'}) & (delsfx, {'я'}) & (onlysfx, {'се', 'ве'}) & (addsfx, {'вать'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "3,4,4щ,4*,5,5щ"},
+          "rules": "(delsfx, {'нуть', 'ить', 'еть'}) & (opt alt_a) & [(opt altcons) | (opt replsfx, {('д', 'жд'), ('зд', 'жд'), ('сл', 'шл'), ('тв', 'щв')})] & [(onlysfx, vowels) & (addsfx, {'ять'}) | (onlysfx, morphobad) & (addsfx, {'ать'}) | (excsfx, morphobad | vowels) & (addsfx, {'ять', 'ать'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "3,4,4щ,4*,5,5щ"},
+          "rules": "(delptfx) & (delsfx, {'нуть', 'ить', 'еть'}) & (opt alt_a) & [(opt altcons) | (opt replsfx, {('д', 'жд'), ('зд', 'жд'), ('сл', 'шл'), ('тв', 'щв')})] & [(onlysfx, vowels) & (addsfx, {'ять'}) | (onlysfx, morphobad) & (addsfx, {'ать'}) | (excsfx, morphobad | vowels) & (addsfx, {'ять', 'ать'})] & (addsfx, {'ся'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7т,7д,7с"},
+          "rules": "(replsfx, {('честься', 'читываться'), ('честь', 'читывать'), ('сесть', 'саживать'), ('сесться', 'саживаться'), ('трясти', 'тряхивать'), ('трястись', 'тряхиваться')})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7т"},
+          "rules": "(delptfx) & (delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'т')}) & (addsfx, {'аться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7т"},
+          "rules": "(delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'т')}) & (addsfx, {'ать'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7б"},
+          "rules": "(delptfx) & (delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'б')}) & (addsfx, {'аться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7б"},
+          "rules": "(delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'б')}) & (addsfx, {'ать'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7б"},
+          "rules": "(delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'б')}) & (addsfx, {'ывать'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7б"},
+          "rules": "(delptfx) & (delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'б')}) & (addsfx, {'ываться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7д"},
+          "rules": "(delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'д')}) & (addsfx, {'ывать'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7д"},
+          "rules": "(delptfx) & (delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'д')}) & (addsfx, {'ываться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7д"},
+          "rules": "(delptfx) & (delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'д')}) & (addsfx, {'аться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7д"},
+          "rules": "(delsfx, {'ти', 'ть'}) & (replsfx, {('с', 'д')}) & (addsfx, {'ать'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7з,7с"},
+          "rules": "(delptfx) & (delsfx, {'ти', 'ть'}) & (addsfx, {'аться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7з,7с"},
+          "rules": "(delsfx, {'ти', 'ть'}) & (addsfx, {'ать'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7ст"},
+          "rules": "(delptfx) & (delsfx, {'и'}) & (addsfx, {'аться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7ст"},
+          "rules": "(delsfx, {'и'}) & (addsfx, {'ать'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "8к"},
+          "rules": "[(delptfx) & (replsfx, {('чь', 'к')}) & (addsfx, {'аться'}) | (replsfx, {('чь', 'к')}) & (addsfx, {'ать'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "8г"},
+          "rules": "[(delptfx) & (replsfx, {('чь', 'г')}) & (try replsfx, {('же', 'жи')}) & (addsfx, {'аться'}) | (replsfx, {('чь', 'г')}) & (try replsfx, {('же', 'жи')}) & (addsfx, {'ать'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "9"},
+          "rules": "[(replsfx, {('ереться', 'ираться')}) | (replsfx, {('ереть', 'ирать')})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "4,4щ,4*,5,5щ,ехать,есть"},
+          "rules": "(replsfx, {('пустить', 'пускать'), ('ложить', 'лагать'), ('помнить', 'поминать'), ('гореть', 'горать'), ('обидеть', 'обижать'), ('ехать', 'езжать'), ('бежать', 'бегать'), ('есть', 'едать'), ('чтить', 'читать'), ('бросить', 'бросать'), ('кипеть', 'кипать'), ('гнать', 'гонять'), ('кипеть', 'кипать')})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "4,4щ,4*,5,5щ,ехать,есть"},
+          "rules": "(replsfx, {('пуститься', 'пускаться'), ('ложиться', 'лагаться'), ('помниться', 'поминаться'), ('спаться', 'сыпаться'), ('гореться', 'гораться'), ('обидеться', 'обижаться'), ('ехаться', 'езжаться'), ('бежаться', 'бегаться'), ('есться', 'едаться'), ('чтиться', 'читаться'), ('броситься', 'бросаться'), ('кипеться', 'кипаться'), ('гнаться', 'гоняться'), ('кипеться', 'кипаться')})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "3,5,5щ,6,6щ"},
+          "rules": "[(delsfx, {'лгнуть'}) & (try delsfx, {'о'}) & (addsfx, {'лыгать'}) | (delsfx, {'лгать'}) & (try delsfx, {'о'}) & (addsfx, {'лыгать'}) | (delsfx, {'врать'}) & (try delsfx, {'о'}) & (addsfx, {'вирать'}) | (delsfx, {'гнуть'}) & (try delsfx, {'о'}) & (addsfx, {'гибать'}) | (delsfx, {'мкнуть'}) & (try delsfx, {'о'}) & (addsfx, {'мыкать'}) | (delsfx, {'гнать'}) & (try delsfx, {'о'}) & (addsfx, {'гонять'}) | (delsfx, {'брать'}) & (try delsfx, {'о'}) & (addsfx, {'бирать'}) | (delsfx, {'рвать'}) & (try delsfx, {'о'}) & (addsfx, {'рывать'}) | (delsfx, {'звать'}) & (try delsfx, {'о'}) & (addsfx, {'зывать'}) |  (delsfx, {'драть'}) & (try delsfx, {'о'}) & (addsfx, {'дирать'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "3,5,5щ,6,6щ"},
+          "rules": "[(delsfx, {'лгнуться'}) & (try delsfx, {'о'}) & (addsfx, {'лыгаться'}) | (delsfx, {'лгаться'}) & (try delsfx, {'о'}) & (addsfx, {'лыгаться'}) | (delsfx, {'враться'}) & (try delsfx, {'о'}) & (addsfx, {'вираться'}) | (delsfx, {'гнуться'}) & (try delsfx, {'о'}) & (addsfx, {'гибаться'}) | (delsfx, {'мкнуться'}) & (try delsfx, {'о'}) & (addsfx, {'мыкаться'}) | (delsfx, {'гнаться'}) & (try delsfx, {'о'}) & (addsfx, {'гоняться'}) | (delsfx, {'браться'}) & (try delsfx, {'о'}) & (addsfx, {'бираться'}) | (delsfx, {'рваться'}) & (try delsfx, {'о'}) & (addsfx, {'рываться'}) | (delsfx, {'зваться'}) & (try delsfx, {'о'}) & (addsfx, {'зываться'}) |  (delsfx, {'драться'}) & (try delsfx, {'о'}) & (addsfx, {'дираться'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "3,4*,5,5щ,6,6щ,клясть"},
+          "rules": "(replsfx, {('охнуть', 'ыхать'), ('вергнуть', 'вергать'), ('сыпать', 'сыпать'), ('ждать', 'жидать'), ('шибить', 'шибать'), ('клясть', 'клинать')})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "3,4*,5,5щ,6,клясть"},
+          "rules": "(replsfx, {('охнуться', 'ыхаться'), ('вергнуться', 'вергаться'), ('сыпаться', 'сыпаться'), ('ждаться', 'жидаться'), ('шибиться', 'шибаться'), ('клясться', 'клинаться')})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "3,5,5щ,6"},
+          "rules": "[(delsfx, {'спать'}) & (try delsfx, {'о'}) & (try replsfx, {('з', 'с')}) & (addsfx, {'сыпать'}) | (delsfx, {'слать'}) & (try delsfx, {'о'}) & (try replsfx, {('з', 'с')}) & (addsfx, {'сылать'}) | (delsfx, {'прать'}) & (try delsfx, {'о'}) & (try replsfx, {('з', 'с')}) & (addsfx, {'пирать'}) | (delsfx, {'снуть'}) & (try delsfx, {'о'}) & (try replsfx, {('з', 'с')}) & (addsfx, {'сыпать'}) | (delsfx, {'стлать'}) & (try delsfx, {'о'}) & (try replsfx, {('з', 'с')}) & (addsfx, {'стилать'}) | (delsfx, {'ткнуть'}) & (try delsfx, {'о'}) & (try replsfx, {('з', 'с')}) & (addsfx, {'тыкать'}) | (delsfx, {'слать'}) & (try delsfx, {'о'}) & (try replsfx, {('з', 'с')}) & (addsfx, {'сылать'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "3,5,5щ,6"},
+          "rules": "[(delsfx, {'спаться'}) & (try delsfx, {'о'}) & (try replsfx, {('з', 'с')}) & (addsfx, {'сыпаться'}) | (delsfx, {'слаться'}) & (try delsfx, {'о'}) & (try replsfx, {('з', 'с')}) & (addsfx, {'сылаться'}) | (delsfx, {'праться'}) & (try delsfx, {'о'}) & (try replsfx, {('з', 'с')}) & (addsfx, {'пираться'}) | (delsfx, {'снуться'}) & (try delsfx, {'о'}) & (try replsfx, {('з', 'с')}) & (addsfx, {'сыпаться'}) | (delsfx, {'стлаться'}) & (try delsfx, {'о'}) & (try replsfx, {('з', 'с')}) & (addsfx, {'стилаться'}) | (delsfx, {'ткнуться'}) & (try delsfx, {'о'}) & (try replsfx, {('з', 'с')}) & (addsfx, {'тыкаться'}) | (delsfx, {'слаться'}) & (try delsfx, {'о'}) & (try replsfx, {('з', 'с')}) & (addsfx, {'сылаться'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "14н,14м,14ним,14ьм,14ым,14им,14йм"},
+          "rules": "(delsfx, {'ять', 'ать'}) & [(delsfx, {'ь'}) & (addsfx, {'ым'}) | (excsfx, {'ь'}) & (addsfx, {'им'})] & (addsfx, {'ать'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "14н,14м,14ним,14ьм,14ым,14им,14йм"},
+          "rules": "(delsfx, {'яться', 'аться'}) & [(delsfx, {'ь'}) & (addsfx, {'ым'}) | (excsfx, {'ь'}) & (addsfx, {'им'})] & (addsfx, {'аться'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "2"},
+          "rules": "[(delptfx) & (delsfx, {'ать'}) & (try replsfx, {('цев', 'цов')}) & (addsfx, {'ываться'}) | (delsfx, {'ать'}) & (try replsfx, {('цев', 'цов')}) & (addsfx, {'ывать'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "1,3,4,4щ,4*,5,5щ,6,6щ"},
+          "rules": "(delptfx) & (delsfx, {'ать', 'ять', 'еть', 'ить', 'нуть'}) & (try l_hard) & [(opt altcons) | (opt inv_altcons)] & (opt alt_a) & [(addsfx, {'иваться'}) | (excsfx, morphobad | vowels) & (addsfx, {'ываться'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "1,3,4,4щ,4*,5,5щ,6,6щ"},
+          "rules": "(delsfx, {'ать', 'ять', 'еть', 'ить', 'нуть'}) & (try l_hard) & [(opt altcons) | (opt inv_altcons)] & (opt alt_a) & [(addsfx, {'ивать'}) | (excsfx, morphobad | vowels) & (addsfx, {'ывать'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "10ор,10ол,10ел"},
+          "rules": "[(delptfx) & (delsfx, {'оть'}) & (alt_a) & (addsfx, {'ываться'}) | (delsfx, {'оть'}) & (alt_a) & (addsfx, {'ывать'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "8к"},
+          "rules": "[(delptfx) & (replsfx, {('чь', 'к')}) & (try alt_a) & (addsfx, {'иваться'}) | (replsfx, {('чь', 'к')}) & (try alt_a) & (addsfx, {'ивать'})]"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "3"},
+          "rules": "(delsfx, {'нуть'}) & (replsfx, {('тя', 'тягив'), ('плю', 'плевыв'), ('су', 'совыв'), ('вя', 'вяд'), ('то', 'топ'), ('дер', 'дергив'), ('ки', 'кидыв'), ('тис', 'тискив'), ('дви', 'двиг'), ('вер', 'вертыв'), ('вер', 'ворачив')}) & (addsfx, {'ать'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "3"},
+          "rules": "(delsfx, {'нуться'}) & (replsfx, {('тя', 'тягив'), ('плю', 'плевыв'), ('су', 'совыв'), ('вя', 'вяд'), ('то', 'топ'), ('дер', 'дергив'), ('ки', 'кидыв'), ('тис', 'тискив'), ('дви', 'двиг'), ('вер', 'вертыв'), ('вер', 'ворачив')}) & (addsfx, {'аться'})"
+        }
+      ],
+      "rare": [
+        "обмануть;обманывать",
+        "помянуть;поминать",
+        "воскликнуть;восклицать",
+        "обезлесить;обезлесивать",
+        "обуржуазить;обуржуазивать",
+        "обуять;обуевать",
+        "затмить;затмевать",
+        "продлить;продлевать",
+        "застрять;застревать",
+        "претерпеть;претерпевать",
+        "обокрасть;обкрадывать",
+        "собрать;собирать",
+        "созвать;созывать"
+      ]
+    },
+    {
+      "rule_id": "rule846(verb + и2(ть) -> verb)",
+      "short_id": "-и2-",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "verb",
+      "cases": [
+        {
+          "tags_b": {"form": "inf", "inflect_type": "8г"},
+          "rules": "(replsfx, {('лечь', 'лож')}) & (addsfx, {'ить'})"
+        }
+      ],
+       "rare": [
+         "воскреснуть;воскресить",
+         "гаснуть;гасить",
+         "гнить;гноить",
+         "пить;поить",
+         "гибнуть;губить",
+         "зажить;заживить",
+         "звенеть;звонить",
+         "кипеть;кипятить",
+         "липнуть;лепить",
+         "мереть;морить",
+         "мерзнуть;морозить",
+         "плыть;плавить",
+         "расти;растить",
+         "рухнуть;рушить",
+         "смеяться;смешить",
+         "стынуть;студить",
+         "тлеть;тлить",
+         "тонуть;топить",
+         "течь;точить",
+         "тухнуть;тушить",
+         "уснуть;усыпить",
+         "цепенеть;цепенить",
+         "коченеть;коченить",
+         "стать;ставить",
+         "стоять;ставить",
+         "завязнуть;завязить",
+         "увязнуть;увязить"
+       ]
+    },
+    {
+      "rule_id": "rule847(verb + а4(ть) -> verb)",
+      "short_id": "-а4-",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "verb",
+      "cases": [],
+       "rare": [
+         "сесть;сажать",
+         "сидеть;сажать",
+         "виснуть;вешать",
+         "висеть;вешать",
+         "слышать;слушать"
+       ]
+    },
+    {
+      "rule_id": "rule848(verb + и3(ть) -> verb)",
+      "short_id": "-и3-",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "verb",
+      "cases": [],
+       "rare": [
+         "брести;бродить",
+         "везти;возить",
+         "вести;водить",
+         "ехать;ездить",
+         "лезть;лазить",
+         "нести;носить",
+         "идти;ходить"
+       ]
+    },
+    {
+      "rule_id": "rule849(verb + а5(ть) -> verb)",
+      "short_id": "-а5-",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "verb",
+      "cases": [],
+       "rare": [
+         "бежать;бегать",
+         "гнать;гонять",
+         "катить;катать",
+         "лезть;лазать",
+         "лететь;летать",
+         "плыть;плавать",
+         "ползти;ползать",
+         "тащить;таскать"
+       ]
+    },
+    {
+      "rule_id": "rule850(verb + и4(ть) -> verb)",
+      "short_id": "-и4-",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "verb",
+      "only_complex": "1",
+      "cases": [],
+      "rare": [
+         "вешать;весить",
+         "ворочать;воротить",
+         "глотать;глотить",
+         "кланяться;клониться",
+         "кусать;кусить",
+         "кушать;кусить",
+         "менять;менить",
+         "подозревать;подозрить",
+         "ронять;ронить",
+         "ручаться;ручиться",
+         "сажать;садить",
+         "скакать;скочить",
+         "сомневаться;сомниться",
+         "стрелять;стрелить",
+         "хватать;хватить",
+         "цеплять;цепить",
+         "щепать;щепить",
+         "блуждать;блудить",
+         "жалеть;жалить"
+       ]
+    },
+
+    {
+      "rule_id": "rule930(verb + ся -> verb)",
+      "short_id": "-ся",
+      "info": "PTFX",
+      "pos_b": "verb",
+      "pos_a": "verb",
+      "cases": [
+        {
+          "tags_b": {"form": "inf", "inflect_type": "1,2,3,4,4щ,4*,5,5щ,6,6щ,7з,7б,7с,7д,7т,7ст,8г,8к,8*3,9,10ор,10ел,10ол,11,12ы,12у,12и,12греть,12брить,12петь,13,14н,14м,14ним,14ьм,14ым,14им,14йм,15,16,клясть,есть,дать,быть,ехать,идти"},
+          "rules": "(excsfx, {'ся', 'сь'}) & [(onlysfx, {'и'}) & (addsfx, {'сь'}) | (excsfx, {'и'}) & (addsfx, {'ся'})]"
+        }
+      ]
+    }
+  ]
+}

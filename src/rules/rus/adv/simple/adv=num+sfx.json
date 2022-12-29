@@ -1,0 +1,35 @@
+{
+  "data": [
+    {
+      "rule_id": "rule983(num + ю -> adv)",
+      "short_id": "-ю",
+      "info": "SFX",
+      "pos_b": "num",
+      "pos_a": "adv",
+      "cases": [
+        {
+          "tags_b": {},
+          "rules": "(onlysfx, {'ь'}) & (addsfx, {'ю'})"
+        }
+      ],
+      "rare": []
+    },
+
+    {
+      "rule_id": "rule1033(num + о -> adv)",
+      "short_id": "-о",
+      "info": "SFX",
+      "pos_b": "num",
+      "pos_a": "adv",
+      "only_complex": "1",
+      "cases": [
+        {
+          "tags_b": {},
+          "rules": "(onlysfx, {'ое', 'еро'})"
+        }
+      ],
+      "rare": []
+    }
+
+  ]
+}

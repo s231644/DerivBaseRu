@@ -1,0 +1,145 @@
+{
+  "data": [
+    {
+      "rule_id": "Romanenko34.1(noun + ша/ше -> adv)",
+      "short_id": "-ша/ше",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "adv",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,2,3,4,5,6,7"},
+          "rules": "(addsfx, {'ша'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,9,10,11,12,13,14"},
+          "rules": "(addsfx, {'ше'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko34.2(noun + дай/дей/тай/тей -> adv)",
+      "short_id": "-дай/дей/тай/тей",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "adv",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,3,4,5,6"},
+          "rules": "(addsfx, {'дай'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,7"},
+          "rules": "(addsfx, {'тай'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,10,11,12,13"},
+          "rules": "(addsfx, {'дей'})"
+        },
+        {
+          "tags_b": {"stem_class": "9,14"},
+          "rules": "(addsfx, {'тей'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko34.3(noun + да/де/та/те/нда/нде -> adv)",
+      "short_id": "-да/де/та/те/нда/нде",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "adv",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,3,4,5,6"},
+          "rules": "(addsfx, {'да'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,7"},
+          "rules": "(addsfx, {'та'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,10,11,12,13"},
+          "rules": "(addsfx, {'де'})"
+        },
+        {
+          "tags_b": {"stem_class": "9,14"},
+          "rules": "(addsfx, {'те'})"
+        },
+        {
+          "tags_b": {"stem_class": "1"},
+          "rules": "(addsfx, {'нда'})"
+        },
+        {
+          "tags_b": {"stem_class": "8"},
+          "rules": "(addsfx, {'нде'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko34.4(noun + ға/ге/қа/ке/на/не -> adv)",
+      "short_id": "-ға/ге/қа/ке/на/не",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "adv",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,2,3,4,5,6"},
+          "rules": "(addsfx, {'ға'})"
+        },
+        {
+          "tags_b": {"stem_class": "7"},
+          "rules": "(addsfx, {'қа'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,9,10,11,12,13"},
+          "rules": "(addsfx, {'ге'})"
+        },
+        {
+          "tags_b": {"stem_class": "14"},
+          "rules": "(addsfx, {'ке'})"
+        },
+        {
+          "tags_b": {"stem_class": "1"},
+          "rules": "(addsfx, {'на'})"
+        },
+        {
+          "tags_b": {"stem_class": "8"},
+          "rules": "(addsfx, {'не'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko34.5(noun + дан/ден/тан/тен/нан/нен -> adv)",
+      "short_id": "-дан/ден/тан/тен/нан/нен",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "adv",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,3,4,5,6"},
+          "rules": "(addsfx, {'дан'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,7"},
+          "rules": "(addsfx, {'тан'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,10,11,12,13"},
+          "rules": "(addsfx, {'ден'})"
+        },
+        {
+          "tags_b": {"stem_class": "9,14"},
+          "rules": "(addsfx, {'тен'})"
+        },
+        {
+          "tags_b": {"stem_class": "1"},
+          "rules": "(addsfx, {'нан'})"
+        },
+        {
+          "tags_b": {"stem_class": "8"},
+          "rules": "(addsfx, {'нен'})"
+        }
+      ]
+    }
+  ]
+}

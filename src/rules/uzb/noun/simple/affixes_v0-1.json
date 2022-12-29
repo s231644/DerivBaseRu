@@ -1,0 +1,4218 @@
+{
+  "data": [
+  {
+    "rule_id": "rule0[MЕNGLIYЕV:22](ADJ + a -> VERB)",
+    "short_id": "-a",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'a'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule1[MЕNGLIYЕV:22](IMIT + a -> VERB)",
+    "short_id": "-a",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'a'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule2[MЕNGLIYЕV:22](NOUN + a -> VERB)",
+    "short_id": "-a",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'a'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule3[MЕNGLIYЕV:22](NOUN + an -> VERB)",
+    "short_id": "-an",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'an'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule4[MЕNGLIYЕV:22](ADV + chi//shi -> VERB)",
+    "short_id": "-chi//shi",
+    "info": "SFX",
+    "pos_b": "ADV",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'shi', 'chi'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule5[MЕNGLIYЕV:22](IMIT + chi//shi -> VERB)",
+    "short_id": "-chi//shi",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'shi', 'chi'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule6[MЕNGLIYЕV:22](ADJ + i -> VERB)",
+    "short_id": "-i",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'i'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule7[MЕNGLIYЕV:22](NOUN + i -> VERB)",
+    "short_id": "-i",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'i'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule8[MЕNGLIYЕV:22](ADV + ik -> VERB)",
+    "short_id": "-ik",
+    "info": "SFX",
+    "pos_b": "ADV",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule9[MЕNGLIYЕV:22](NOUN + ik -> VERB)",
+    "short_id": "-ik",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule10[MЕNGLIYЕV:22](NUM + ik -> VERB)",
+    "short_id": "-ik",
+    "info": "SFX",
+    "pos_b": "NUM",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule11[MЕNGLIYЕV:22](IMIT + illa -> VERB)",
+    "short_id": "-illa",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'illa'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule12[MЕNGLIYЕV:22](ADV + ir//ur -> VERB)",
+    "short_id": "-ir//ur",
+    "info": "SFX",
+    "pos_b": "ADV",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ur', 'ir'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule13[MЕNGLIYЕV:22](IMIT + ir//ur -> VERB)",
+    "short_id": "-ir//ur",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ur', 'ir'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule14[MЕNGLIYЕV:22](NOUN + ir//ur -> VERB)",
+    "short_id": "-ir//ur",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ur', 'ir'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule15[MЕNGLIYЕV:22](IMIT + ira -> VERB)",
+    "short_id": "-ira",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ira'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule16[MЕNGLIYЕV:22](NOUN + ka -> VERB)",
+    "short_id": "-ka",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ka'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule17[MЕNGLIYЕV:22](ADJ + la -> VERB)",
+    "short_id": "-la",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'la'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule18[MЕNGLIYЕV:22](ADV + la -> VERB)",
+    "short_id": "-la",
+    "info": "SFX",
+    "pos_b": "ADV",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'la'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule19[MЕNGLIYЕV:22](INTJ + la -> VERB)",
+    "short_id": "-la",
+    "info": "SFX",
+    "pos_b": "INTJ",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'la'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule20[MЕNGLIYЕV:22](IMIT + la -> VERB)",
+    "short_id": "-la",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'la'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule21[MЕNGLIYЕV:22](AUX + la -> VERB)",
+    "short_id": "-la",
+    "info": "SFX",
+    "pos_b": "AUX",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'la'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule22[MЕNGLIYЕV:22](NOUN + la -> VERB)",
+    "short_id": "-la",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'la'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule23[MЕNGLIYЕV:22](PRON + la -> VERB)",
+    "short_id": "-la",
+    "info": "SFX",
+    "pos_b": "PRON",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'la'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule24[MЕNGLIYЕV:22](ADJ + lan -> VERB)",
+    "short_id": "-lan",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lan'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule25[MЕNGLIYЕV:22](NOUN + lan -> VERB)",
+    "short_id": "-lan",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lan'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule26[MЕNGLIYЕV:22](NUM + lan -> VERB)",
+    "short_id": "-lan",
+    "info": "SFX",
+    "pos_b": "NUM",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lan'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule27[MЕNGLIYЕV:22](ADJ + lash -> VERB)",
+    "short_id": "-lash",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lash'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule28[MЕNGLIYЕV:22](ADV + lash -> VERB)",
+    "short_id": "-lash",
+    "info": "SFX",
+    "pos_b": "ADV",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lash'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule29[MЕNGLIYЕV:22](NOUN + lash -> VERB)",
+    "short_id": "-lash",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lash'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule30[MЕNGLIYЕV:22](NUM + lash -> VERB)",
+    "short_id": "-lash",
+    "info": "SFX",
+    "pos_b": "NUM",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lash'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule31[MЕNGLIYЕV:22](ADJ + lashtir -> VERB)",
+    "short_id": "-lashtir",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lashtir'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule32[MЕNGLIYЕV:22](NOUN + lashtir -> VERB)",
+    "short_id": "-lashtir",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lashtir'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule33[MЕNGLIYЕV:22](ADJ + lat -> VERB)",
+    "short_id": "-lat",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lat'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule34[MЕNGLIYЕV:22](AUX + ol -> VERB)",
+    "short_id": "-ol",
+    "info": "SFX",
+    "pos_b": "AUX",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ol'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule35[MЕNGLIYЕV:22](ADJ + q//iq -> VERB)",
+    "short_id": "-q//iq",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'q', 'iq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule36[MЕNGLIYЕV:22](NOUN + q//iq -> VERB)",
+    "short_id": "-q//iq",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'q', 'iq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule37[MЕNGLIYЕV:22](IMIT + qar//g‘ar//qir -> VERB)",
+    "short_id": "-qar//g‘ar//qir",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'g‘ar', 'qar', 'qir'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule38[MЕNGLIYЕV:22](NOUN + qar//g‘ar//qir -> VERB)",
+    "short_id": "-qar//g‘ar//qir",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'g‘ar', 'qar', 'qir'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule39[MЕNGLIYЕV:22](ADJ + r//ar -> VERB)",
+    "short_id": "-r//ar",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'r', 'ar'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule40[MЕNGLIYЕV:22](IMIT + ra -> VERB)",
+    "short_id": "-ra",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ra'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule41[MЕNGLIYЕV:22](ADJ + si -> VERB)",
+    "short_id": "-si",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'si'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule42[MЕNGLIYЕV:22](PRON + si -> VERB)",
+    "short_id": "-si",
+    "info": "SFX",
+    "pos_b": "PRON",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'si'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule43[MЕNGLIYЕV:22](ADJ + sin -> VERB)",
+    "short_id": "-sin",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'sin'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule44[MЕNGLIYЕV:22](ADJ + sira -> VERB)",
+    "short_id": "-sira",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'sira'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule45[MЕNGLIYЕV:22](NOUN + sira -> VERB)",
+    "short_id": "-sira",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'sira'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule46[MЕNGLIYЕV:22](PRON + sira -> VERB)",
+    "short_id": "-sira",
+    "info": "SFX",
+    "pos_b": "PRON",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'sira'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule47[MЕNGLIYЕV:22](ADV + sit -> VERB)",
+    "short_id": "-sit",
+    "info": "SFX",
+    "pos_b": "ADV",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'sit'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule48[MЕNGLIYЕV:22](NOUN + sit -> VERB)",
+    "short_id": "-sit",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'sit'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule49[MЕNGLIYЕV:22](ADJ + t//it//ot -> VERB)",
+    "short_id": "-t//it//ot",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'it', 'ot', 't'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule50[MЕNGLIYЕV:22](AUX + t//it//ot -> VERB)",
+    "short_id": "-t//it//ot",
+    "info": "SFX",
+    "pos_b": "AUX",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'it', 'ot', 't'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule51[MЕNGLIYЕV:22](ADJ + y//ay -> VERB)",
+    "short_id": "-y//ay",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'y', 'ay'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule52[MЕNGLIYЕV:22](ADV + y//ay -> VERB)",
+    "short_id": "-y//ay",
+    "info": "SFX",
+    "pos_b": "ADV",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'y', 'ay'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule53[MЕNGLIYЕV:22](NOUN + y//ay -> VERB)",
+    "short_id": "-y//ay",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "VERB",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'y', 'ay'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule54[MЕNGLIYЕV:23](NOUN + ak -> NOUN)",
+    "short_id": "-ak",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ak'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule55[MЕNGLIYЕV:23](NOUN + bek -> NOUN)",
+    "short_id": "-bek",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'bek'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule56[MЕNGLIYЕV:23](NOUN + boy -> NOUN)",
+    "short_id": "-boy",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'boy'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule57[MЕNGLIYЕV:23](NOUN + cha -> NOUN)",
+    "short_id": "-cha",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'cha'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule58[MЕNGLIYЕV:23](NOUN + choq//chak -> NOUN)",
+    "short_id": "-choq//chak",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'choq', 'chak'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule59[MЕNGLIYЕV:23](NOUN + gina//kina//qina -> NOUN)",
+    "short_id": "-gina//kina//qina",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'gina', 'kina', 'qina'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule60[MЕNGLIYЕV:23](NOUN + jon -> NOUN)",
+    "short_id": "-jon",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'jon'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule61[MЕNGLIYЕV:23](NOUN + kay -> NOUN)",
+    "short_id": "-kay",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'kay'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule62[MЕNGLIYЕV:23](NOUN + loq//aloq -> NOUN)",
+    "short_id": "-loq//aloq",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'loq', 'aloq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule63[MЕNGLIYЕV:23](NOUN + oy -> NOUN)",
+    "short_id": "-oy",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'oy'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule64[MЕNGLIYЕV:23](NOUN + xon -> NOUN)",
+    "short_id": "-xon",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'xon'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule65[MЕNGLIYЕV:25](ADJ + a1 -> NOUN)",
+    "short_id": "-a1",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'a'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule66[MЕNGLIYЕV:25](IMIT + a1 -> NOUN)",
+    "short_id": "-a1",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'a'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule67[MЕNGLIYЕV:25](VERB + a1 -> NOUN)",
+    "short_id": "-a1",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'a'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule68[MЕNGLIYЕV:25](ADJ + a2 -> NOUN)",
+    "short_id": "-a2",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'a'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule69[MЕNGLIYЕV:25](IMIT + ak -> NOUN)",
+    "short_id": "-ak",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ak'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule70[MЕNGLIYЕV:25](IMIT + archilik -> NOUN)",
+    "short_id": "-archilik",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'archilik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule71[MЕNGLIYЕV:25](ADJ + at -> NOUN)",
+    "short_id": "-at",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'at'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule72[MЕNGLIYЕV:25](VERB + at -> NOUN)",
+    "short_id": "-at",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'at'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule73[MЕNGLIYЕV:25](NOUN + bin -> NOUN)",
+    "short_id": "-bin",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'bin'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule74[MЕNGLIYЕV:25](NOUN + bon -> NOUN)",
+    "short_id": "-bon",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'bon'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule75[MЕNGLIYЕV:25](NOUN + boz -> NOUN)",
+    "short_id": "-boz",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'boz'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule76[MЕNGLIYЕV:25](VERB + ch//j//inch -> NOUN)",
+    "short_id": "-ch//j//inch",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ch', 'inch', 'j'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule77[MЕNGLIYЕV:25](ADJ + cha -> NOUN)",
+    "short_id": "-cha",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'cha'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule78[MЕNGLIYЕV:25](NOUN + cha -> NOUN)",
+    "short_id": "-cha",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'cha'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule79[MЕNGLIYЕV:25](VERB + cha -> NOUN)",
+    "short_id": "-cha",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'cha'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule80[MЕNGLIYЕV:25](NOUN + chak//choq -> NOUN)",
+    "short_id": "-chak//choq",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'choq', 'chak'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule81[MЕNGLIYЕV:25](VERB + chak//choq -> NOUN)",
+    "short_id": "-chak//choq",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'choq', 'chak'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule82[MЕNGLIYЕV:25](ADJ + chi -> NOUN)",
+    "short_id": "-chi",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chi'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule83[MЕNGLIYЕV:25](INTJ + chi -> NOUN)",
+    "short_id": "-chi",
+    "info": "SFX",
+    "pos_b": "INTJ",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chi'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule84[MЕNGLIYЕV:25](NOUN + chi -> NOUN)",
+    "short_id": "-chi",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chi'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule85[MЕNGLIYЕV:25](VERB + chi -> NOUN)",
+    "short_id": "-chi",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chi'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule86[MЕNGLIYЕV:25](ADJ + chilik -> NOUN)",
+    "short_id": "-chilik",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chilik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule87[MЕNGLIYЕV:25](ADV + chilik -> NOUN)",
+    "short_id": "-chilik",
+    "info": "SFX",
+    "pos_b": "ADV",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chilik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule88[MЕNGLIYЕV:25](NOUN + chilik -> NOUN)",
+    "short_id": "-chilik",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chilik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule89[MЕNGLIYЕV:25](VERB + chiq -> NOUN)",
+    "short_id": "-chiq",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chiq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule90[MЕNGLIYЕV:25](VERB + dak//doq -> NOUN)",
+    "short_id": "-dak//doq",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'doq', 'dak'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule91[MЕNGLIYЕV:25](NOUN + diq//dik -> NOUN)",
+    "short_id": "-diq//dik",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'dik', 'diq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule92[MЕNGLIYЕV:25](VERB + diq//dik -> NOUN)",
+    "short_id": "-diq//dik",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'dik', 'diq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule93[MЕNGLIYЕV:25](NOUN + don -> NOUN)",
+    "short_id": "-don",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'don'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule94[MЕNGLIYЕV:25](NOUN + dor -> NOUN)",
+    "short_id": "-dor",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'dor'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule95[MЕNGLIYЕV:25](NOUN + dosh -> NOUN)",
+    "short_id": "-dosh",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'dosh'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule96[MЕNGLIYЕV:25](NOUN + do‘z -> NOUN)",
+    "short_id": "-do‘z",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'do‘z'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule97[MЕNGLIYЕV:25](NOUN + furush -> NOUN)",
+    "short_id": "-furush",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'furush'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule98[MЕNGLIYЕV:25](VERB + gach//kich//qich//g‘ich -> NOUN)",
+    "short_id": "-gach//kich//qich//g‘ich",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'qich', 'gach', 'g‘ich', 'kich'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule99[MЕNGLIYЕV:25](NOUN + gar//kar -> NOUN)",
+    "short_id": "-gar//kar",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'gar', 'kar'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule100[MЕNGLIYЕV:25](ADJ + garchilik -> NOUN)",
+    "short_id": "-garchilik",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'garchilik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule101[MЕNGLIYЕV:25](NOUN + garchilik -> NOUN)",
+    "short_id": "-garchilik",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'garchilik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule102[MЕNGLIYЕV:25](VERB + gi//ki//qi//g‘i//g‘u -> NOUN)",
+    "short_id": "-gi//ki//qi//g‘i//g‘u",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'gi', 'g‘u', 'ki', 'qi', 'g‘i'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule103[MЕNGLIYЕV:25](VERB + gin//qin//kin//gun//qun -> NOUN)",
+    "short_id": "-gin//qin//kin//gun//qun",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'qun', 'qin', 'gun', 'kin', 'gin'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule104[MЕNGLIYЕV:25](NOUN + gir -> NOUN)",
+    "short_id": "-gir",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'gir'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule105[MЕNGLIYЕV:25](NOUN + goh -> NOUN)",
+    "short_id": "-goh",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'goh'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule106[MЕNGLIYЕV:25](NOUN + go‘y -> NOUN)",
+    "short_id": "-go‘y",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'go‘y'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule107[MЕNGLIYЕV:25](NOUN + ham -> NOUN)",
+    "short_id": "ham-",
+    "info": "PFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addpfx, {'ham'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule108[MЕNGLIYЕV:25](VERB + ich -> NOUN)",
+    "short_id": "-ich",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ich'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule109[MЕNGLIYЕV:25](ADV + ik -> NOUN)",
+    "short_id": "-ik",
+    "info": "SFX",
+    "pos_b": "ADV",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule110[MЕNGLIYЕV:25](VERB + ik -> NOUN)",
+    "short_id": "-ik",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule111[MЕNGLIYЕV:25](VERB + ik -> NOUN)",
+    "short_id": "-ik",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule112[MЕNGLIYЕV:25](VERB + imlik -> NOUN)",
+    "short_id": "-imlik",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'imlik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule113[MЕNGLIYЕV:25](VERB + in//un -> NOUN)",
+    "short_id": "-in//un",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'un', 'in'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule114[MЕNGLIYЕV:25](VERB + indi//undi//ndi -> NOUN)",
+    "short_id": "-indi//undi//ndi",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'undi', 'indi', 'ndi'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule115[MЕNGLIYЕV:25](VERB + iq//uq -> NOUN)",
+    "short_id": "-iq//uq",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'iq', 'uq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule116[MЕNGLIYЕV:25](VERB + ish -> NOUN)",
+    "short_id": "-ish",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ish'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule117[MЕNGLIYЕV:25](NOUN + iston -> NOUN)",
+    "short_id": "-iston",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'iston'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule118[MЕNGLIYЕV:25](VERB + it -> NOUN)",
+    "short_id": "-it",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'it'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule119[MЕNGLIYЕV:25](VERB + k -> NOUN)",
+    "short_id": "-k",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'k'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule120[MЕNGLIYЕV:25](NOUN + kash -> NOUN)",
+    "short_id": "-kash",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'kash'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule121[MЕNGLIYЕV:25](VERB + kilik/gilik -> NOUN)",
+    "short_id": "-kilik/gilik",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'kilik/gilik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule122[MЕNGLIYЕV:25](NOUN + kor -> NOUN)",
+    "short_id": "-kor",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'kor'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule123[MЕNGLIYЕV:25](NOUN + kov -> NOUN)",
+    "short_id": "-kov",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'kov'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule124[MЕNGLIYЕV:25](IMIT + lidoq -> NOUN)",
+    "short_id": "-lidoq",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lidoq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule125[MЕNGLIYЕV:25](ADJ + lik//liq -> NOUN)",
+    "short_id": "-lik//liq",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lik', 'liq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule126[MЕNGLIYЕV:25](ADV + lik//liq -> NOUN)",
+    "short_id": "-lik//liq",
+    "info": "SFX",
+    "pos_b": "ADV",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lik', 'liq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule127[MЕNGLIYЕV:25](AUX + lik//liq -> NOUN)",
+    "short_id": "-lik//liq",
+    "info": "SFX",
+    "pos_b": "AUX",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lik', 'liq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule128[MЕNGLIYЕV:25](NOUN + lik//liq -> NOUN)",
+    "short_id": "-lik//liq",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lik', 'liq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule129[MЕNGLIYЕV:25](NUM + lik//liq -> NOUN)",
+    "short_id": "-lik//liq",
+    "info": "SFX",
+    "pos_b": "NUM",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lik', 'liq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule130[MЕNGLIYЕV:25](PRON + lik//liq -> NOUN)",
+    "short_id": "-lik//liq",
+    "info": "SFX",
+    "pos_b": "PRON",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lik', 'liq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule131[MЕNGLIYЕV:25](NOUN + loq -> NOUN)",
+    "short_id": "-loq",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'loq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule132[MЕNGLIYЕV:25](IMIT + m//im//um -> NOUN)",
+    "short_id": "-m//im//um",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'im', 'm', 'um'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule133[MЕNGLIYЕV:25](VERB + m//im//um -> NOUN)",
+    "short_id": "-m//im//um",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'im', 'm', 'um'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule134[MЕNGLIYЕV:25](VERB + ma -> NOUN)",
+    "short_id": "-ma",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ma'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule135[MЕNGLIYЕV:25](VERB + machoq -> NOUN)",
+    "short_id": "-machoq",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'machoq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule136[MЕNGLIYЕV:25](VERB + mak//moq -> NOUN)",
+    "short_id": "-mak//moq",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'moq', 'mak'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule137[MЕNGLIYЕV:25](VERB + mish -> NOUN)",
+    "short_id": "-mish",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'mish'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule138[MЕNGLIYЕV:25](VERB + movchilik -> NOUN)",
+    "short_id": "-movchilik",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'movchilik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule139[MЕNGLIYЕV:25](NOUN + navis -> NOUN)",
+    "short_id": "-navis",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'navis'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule140[MЕNGLIYЕV:25](VERB + noma -> NOUN)",
+    "short_id": "-noma",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'noma'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule141[MЕNGLIYЕV:25](VERB + on -> NOUN)",
+    "short_id": "-on",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'on'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule142[MЕNGLIYЕV:25](IMIT + os -> NOUN)",
+    "short_id": "-os",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'os'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule143[MЕNGLIYЕV:25](ADJ + ot//at -> NOUN)",
+    "short_id": "-ot//at",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'at', 'ot'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule144[MЕNGLIYЕV:25](NOUN + paz -> NOUN)",
+    "short_id": "-paz",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'paz'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule145[MЕNGLIYЕV:25](VERB + q//oq -> NOUN)",
+    "short_id": "-q//oq",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'q', 'oq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule146[MЕNGLIYЕV:25](NOUN + shunos -> NOUN)",
+    "short_id": "-shunos",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'shunos'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule147[MЕNGLIYЕV:25](NOUN + soz -> NOUN)",
+    "short_id": "-soz",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'soz'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule148[MЕNGLIYЕV:25](VERB + vchi//uvchi -> NOUN)",
+    "short_id": "-vchi//uvchi",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'vchi', 'uvchi'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule149[MЕNGLIYЕV:25](NOUN + voy -> NOUN)",
+    "short_id": "-voy",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'voy'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule150[MЕNGLIYЕV:25](NOUN + xon -> NOUN)",
+    "short_id": "-xon",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'xon'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule151[MЕNGLIYЕV:25](NOUN + xona -> NOUN)",
+    "short_id": "-xona",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'xona'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule152[MЕNGLIYЕV:25](NOUN + xo‘r -> NOUN)",
+    "short_id": "-xo‘r",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'xo‘r'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule153[MЕNGLIYЕV:25](NOUN + zor -> NOUN)",
+    "short_id": "-zor",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "NOUN",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'zor'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule154[MЕNGLIYЕV:27](VERB + a -> ADJ)",
+    "short_id": "-a",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'a'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule155[MЕNGLIYЕV:27](VERB + ag‘on -> ADJ)",
+    "short_id": "-ag‘on",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ag‘on'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule156[MЕNGLIYЕV:27](ADJ + aki -> ADJ)",
+    "short_id": "-aki",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'aki'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule157[MЕNGLIYЕV:27](IMIT + aki -> ADJ)",
+    "short_id": "-aki",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'aki'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule158[MЕNGLIYЕV:27](NOUN + aki -> ADJ)",
+    "short_id": "-aki",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'aki'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule159[MЕNGLIYЕV:27](NOUN + al -> ADJ)",
+    "short_id": "-al",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'al'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule160[MЕNGLIYЕV:27](NOUN + aro -> ADJ)",
+    "short_id": "-aro",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'aro'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule161[MЕNGLIYЕV:27](PRON + aro -> ADJ)",
+    "short_id": "-aro",
+    "info": "SFX",
+    "pos_b": "PRON",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'aro'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule162[MЕNGLIYЕV:27](ADJ + avon -> ADJ)",
+    "short_id": "-avon",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'avon'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule163[MЕNGLIYЕV:27](NOUN + ba//bo -> ADJ)",
+    "short_id": "ba//bo-",
+    "info": "PFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addpfx, {'bo', 'ba'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule164[MЕNGLIYЕV:27](NOUN + bad -> ADJ)",
+    "short_id": "bad-",
+    "info": "PFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addpfx, {'bad'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule165[MЕNGLIYЕV:27](NOUN + bar -> ADJ)",
+    "short_id": "bar-",
+    "info": "PFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addpfx, {'bar'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule166[MЕNGLIYЕV:27](NOUN + baxsh -> ADJ)",
+    "short_id": "-baxsh",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'baxsh'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule167[MЕNGLIYЕV:27](NOUN + be -> ADJ)",
+    "short_id": "be-",
+    "info": "PFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addpfx, {'be'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule168[MЕNGLIYЕV:27](ADJ + bin -> ADJ)",
+    "short_id": "-bin",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'bin'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule169[MЕNGLIYЕV:27](NOUN + bon -> ADJ)",
+    "short_id": "-bon",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'bon'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule170[MЕNGLIYЕV:27](NOUN + bop -> ADJ)",
+    "short_id": "-bop",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'bop'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule171[MЕNGLIYЕV:27](PRON + bop -> ADJ)",
+    "short_id": "-bop",
+    "info": "SFX",
+    "pos_b": "PRON",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'bop'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule172[MЕNGLIYЕV:27](NOUN + boz -> ADJ)",
+    "short_id": "-boz",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'boz'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule173[MЕNGLIYЕV:27](VERB + ch -> ADJ)",
+    "short_id": "-ch",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ch'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule174[MЕNGLIYЕV:27](NOUN + cha -> ADJ)",
+    "short_id": "-cha",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'cha'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule175[MЕNGLIYЕV:27](VERB + chak//choq//chiq -> ADJ)",
+    "short_id": "-chak//choq//chiq",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chiq', 'choq', 'chak'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule176[MЕNGLIYЕV:27](NOUN + chan -> ADJ)",
+    "short_id": "-chan",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chan'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule177[MЕNGLIYЕV:27](PARTICIPLE + chan -> ADJ)",
+    "short_id": "-chan",
+    "info": "SFX",
+    "pos_b": "PARTICIPLE",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chan'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule178[MЕNGLIYЕV:27](ADJ + chi -> ADJ)",
+    "short_id": "-chi",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chi'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule179[MЕNGLIYЕV:27](NOUN + chi -> ADJ)",
+    "short_id": "-chi",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chi'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule180[MЕNGLIYЕV:27](ADJ + chil -> ADJ)",
+    "short_id": "-chil",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chil'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule181[MЕNGLIYЕV:27](NOUN + chil -> ADJ)",
+    "short_id": "-chil",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chil'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule182[MЕNGLIYЕV:27](VERB + diq -> ADJ)",
+    "short_id": "-diq",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'diq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule183[MЕNGLIYЕV:27](NOUN + don -> ADJ)",
+    "short_id": "-don",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'don'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule184[MЕNGLIYЕV:27](NOUN + dor -> ADJ)",
+    "short_id": "-dor",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'dor'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule185[MЕNGLIYЕV:27](NOUN + dosh -> ADJ)",
+    "short_id": "-dosh",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'dosh'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule186[MЕNGLIYЕV:27](NOUN + gar -> ADJ)",
+    "short_id": "-gar",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'gar'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule187[MЕNGLIYЕV:27](ADJ + gay//kay -> ADJ)",
+    "short_id": "-gay//kay",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'kay', 'gay'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule188[MЕNGLIYЕV:27](NOUN + gay//kay -> ADJ)",
+    "short_id": "-gay//kay",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'kay', 'gay'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule189[MЕNGLIYЕV:27](NOUN + gin//gun -> ADJ)",
+    "short_id": "-gin//gun",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'gin', 'gun'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule190[MЕNGLIYЕV:27](VERB + gir//kir//qir//g‘ir//qur -> ADJ)",
+    "short_id": "-gir//kir//qir//g‘ir//qur",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'g‘ir', 'qir', 'kir', 'qur', 'gir'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule191[MЕNGLIYЕV:27](NOUN + go‘y -> ADJ)",
+    "short_id": "-go‘y",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'go‘y'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule192[MЕNGLIYЕV:27](ADJ + g‘ayri -> ADJ)",
+    "short_id": "g‘ayri-",
+    "info": "PFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addpfx, {'g‘ayri'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule193[MЕNGLIYЕV:27](NOUN + ham -> ADJ)",
+    "short_id": "ham-",
+    "info": "PFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addpfx, {'ham'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule194[MЕNGLIYЕV:27](NOUN + i -> ADJ)",
+    "short_id": "-i",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'i'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule195[MЕNGLIYЕV:27](NOUN + ik -> ADJ)",
+    "short_id": "-ik",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule196[MЕNGLIYЕV:27](IMIT + ildoq -> ADJ)",
+    "short_id": "-ildoq",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ildoq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule197[MЕNGLIYЕV:27](VERB + imli -> ADJ)",
+    "short_id": "-imli",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'imli'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule198[MЕNGLIYЕV:27](NOUN + in1 -> ADJ)",
+    "short_id": "-in1",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'in'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule199[MЕNGLIYЕV:27](VERB + in1 -> ADJ)",
+    "short_id": "-in1",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'in'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule200[MЕNGLIYЕV:27](VERB + in2 -> ADJ)",
+    "short_id": "-in2",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'in'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule201[MЕNGLIYЕV:27](VERB + inch -> ADJ)",
+    "short_id": "-inch",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'inch'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule202[MЕNGLIYЕV:27](VERB + inki -> ADJ)",
+    "short_id": "-inki",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'inki'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule203[MЕNGLIYЕV:27](NOUN + iv -> ADJ)",
+    "short_id": "-iv",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'iv'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule204[MЕNGLIYЕV:27](AUX + iy//biy -> ADJ)",
+    "short_id": "-iy//biy",
+    "info": "SFX",
+    "pos_b": "AUX",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'iy', 'biy'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule205[MЕNGLIYЕV:27](NOUN + iy//biy -> ADJ)",
+    "short_id": "-iy//biy",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'iy', 'biy'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule206[MЕNGLIYЕV:27](VERB + k//q//g‘//ik//iq//uq -> ADJ)",
+    "short_id": "-k//q//g‘//ik//iq//uq",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ik', 'k', 'g‘', 'uq', 'q', 'iq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule207[MЕNGLIYЕV:27](NOUN + kash -> ADJ)",
+    "short_id": "-kash",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'kash'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule208[MЕNGLIYЕV:27](VERB + kin//qin//g‘in//kun//g‘un -> ADJ)",
+    "short_id": "-kin//qin//g‘in//kun//g‘un",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'g‘in', 'qin', 'kin', 'g‘un', 'kun'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule209[MЕNGLIYЕV:27](NOUN + kor -> ADJ)",
+    "short_id": "-kor",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'kor'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule210[MЕNGLIYЕV:27](VERB + l -> ADJ)",
+    "short_id": "-l",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'l'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule211[MЕNGLIYЕV:27](AUX + li -> ADJ)",
+    "short_id": "-li",
+    "info": "SFX",
+    "pos_b": "AUX",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'li'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule212[MЕNGLIYЕV:27](NOUN + li -> ADJ)",
+    "short_id": "-li",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'li'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule213[MЕNGLIYЕV:27](NOUN + lik -> ADJ)",
+    "short_id": "-lik",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lik'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule214[MЕNGLIYЕV:27](ADJ + lom -> ADJ)",
+    "short_id": "-lom",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lom'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule215[MЕNGLIYЕV:27](VERB + m -> ADJ)",
+    "short_id": "-m",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'m'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule216[MЕNGLIYЕV:27](VERB + ma -> ADJ)",
+    "short_id": "-ma",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ma'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule217[MЕNGLIYЕV:27](NOUN + mand -> ADJ)",
+    "short_id": "-mand",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'mand'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule218[MЕNGLIYЕV:27](VERB + mas -> ADJ)",
+    "short_id": "-mas",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'mas'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule219[MЕNGLIYЕV:27](VERB + mon -> ADJ)",
+    "short_id": "-mon",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'mon'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule220[MЕNGLIYЕV:27](VERB + msiq//imsiq -> ADJ)",
+    "short_id": "-msiq//imsiq",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'msiq', 'imsiq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule221[MЕNGLIYЕV:27](ADJ + namo -> ADJ)",
+    "short_id": "-namo",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'namo'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule222[MЕNGLIYЕV:27](NOUN + namo -> ADJ)",
+    "short_id": "-namo",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'namo'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule223[MЕNGLIYЕV:27](VERB + ndi -> ADJ)",
+    "short_id": "-ndi",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ndi'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule224[MЕNGLIYЕV:27](ADJ + no -> ADJ)",
+    "short_id": "no-",
+    "info": "PFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addpfx, {'no'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule225[MЕNGLIYЕV:27](NOUN + no -> ADJ)",
+    "short_id": "no-",
+    "info": "PFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addpfx, {'no'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule226[MЕNGLIYЕV:27](NOUN + nok -> ADJ)",
+    "short_id": "-nok",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'nok'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule227[MЕNGLIYЕV:27](NOUN + omuz -> ADJ)",
+    "short_id": "-omuz",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'omuz'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule228[MЕNGLIYЕV:27](NOUN + on//an -> ADJ)",
+    "short_id": "-on//an",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'an', 'on'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule229[MЕNGLIYЕV:27](VERB + ong‘ich//ng‘ich -> ADJ)",
+    "short_id": "-ong‘ich//ng‘ich",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ong‘ich', 'ng‘ich'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule230[MЕNGLIYЕV:27](VERB + oq -> ADJ)",
+    "short_id": "-oq",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'oq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule231[MЕNGLIYЕV:27](IMIT + os -> ADJ)",
+    "short_id": "-os",
+    "info": "SFX",
+    "pos_b": "IMIT",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'os'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule232[MЕNGLIYЕV:27](NOUN + parast -> ADJ)",
+    "short_id": "-parast",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'parast'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule233[MЕNGLIYЕV:27](NOUN + parvar -> ADJ)",
+    "short_id": "-parvar",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'parvar'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule234[MЕNGLIYЕV:27](VERB + q -> ADJ)",
+    "short_id": "-q",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'q'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule235[MЕNGLIYЕV:27](NOUN + qa -> ADJ)",
+    "short_id": "-qa",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'qa'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule236[MЕNGLIYЕV:27](VERB + qa -> ADJ)",
+    "short_id": "-qa",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'qa'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule237[MЕNGLIYЕV:27](VERB + qi -> ADJ)",
+    "short_id": "-qi",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'qi'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule238[MЕNGLIYЕV:27](ADV + qi//ki//qi -> ADJ)",
+    "short_id": "-qi//ki//qi",
+    "info": "SFX",
+    "pos_b": "ADV",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ki', 'qi'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule239[MЕNGLIYЕV:27](NOUN + qi//ki//qi -> ADJ)",
+    "short_id": "-qi//ki//qi",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ki', 'qi'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule240[MЕNGLIYЕV:27](VERB + qoq -> ADJ)",
+    "short_id": "-qoq",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'qoq'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule241[MЕNGLIYЕV:27](VERB + rli//arli -> ADJ)",
+    "short_id": "-rli//arli",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'rli', 'arli'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule242[MЕNGLIYЕV:27](NOUN + saro -> ADJ)",
+    "short_id": "-saro",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'saro'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule243[MЕNGLIYЕV:27](NOUN + ser -> ADJ)",
+    "short_id": "ser-",
+    "info": "PFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addpfx, {'ser'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule244[MЕNGLIYЕV:27](VERB + shta -> ADJ)",
+    "short_id": "-shta",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'shta'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule245[MЕNGLIYЕV:27](NOUN + shumul -> ADJ)",
+    "short_id": "-shumul",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'shumul'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule246[MЕNGLIYЕV:27](NOUN + simon -> ADJ)",
+    "short_id": "-simon",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'simon'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule247[MЕNGLIYЕV:27](NOUN + siz -> ADJ)",
+    "short_id": "-siz",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'siz'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule248[MЕNGLIYЕV:27](NOUN + vash -> ADJ)",
+    "short_id": "-vash",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'vash'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule249[MЕNGLIYЕV:27](ADJ + vor -> ADJ)",
+    "short_id": "-vor",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'vor'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule250[MЕNGLIYЕV:27](NOUN + vor -> ADJ)",
+    "short_id": "-vor",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'vor'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule251[MЕNGLIYЕV:27](VERB + vuch//ovuch -> ADJ)",
+    "short_id": "-vuch//ovuch",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'vuch', 'ovuch'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule252[MЕNGLIYЕV:27](ADJ + xo‘r -> ADJ)",
+    "short_id": "-xo‘r",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'xo‘r'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule253[MЕNGLIYЕV:27](NOUN + xo‘r -> ADJ)",
+    "short_id": "-xo‘r",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'xo‘r'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule254[MЕNGLIYЕV:27](NOUN + xush -> ADJ)",
+    "short_id": "xush-",
+    "info": "PFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addpfx, {'xush'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule255[MЕNGLIYЕV:27](NOUN + zada -> ADJ)",
+    "short_id": "-zada",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADJ",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'zada'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule256[MЕNGLIYЕV:30](NOUN + aki -> ADV)",
+    "short_id": "-aki",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'aki'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule257[MЕNGLIYЕV:30](NOUN + aki -> ADV)",
+    "short_id": "-aki",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'aki'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule258[MЕNGLIYЕV:30](ADJ + an -> ADV)",
+    "short_id": "-an",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'an'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule259[MЕNGLIYЕV:30](AUX + an -> ADV)",
+    "short_id": "-an",
+    "info": "SFX",
+    "pos_b": "AUX",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'an'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule260[MЕNGLIYЕV:30](NOUN + an -> ADV)",
+    "short_id": "-an",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'an'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule261[MЕNGLIYЕV:30](NOUN + bar -> ADV)",
+    "short_id": "bar-",
+    "info": "PFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addpfx, {'bar'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule262[MЕNGLIYЕV:30](NOUN + be -> ADV)",
+    "short_id": "be-",
+    "info": "PFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addpfx, {'be'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule263[MЕNGLIYЕV:30](ADJ + cha -> ADV)",
+    "short_id": "-cha",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'cha'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule264[MЕNGLIYЕV:30](ADV + cha -> ADV)",
+    "short_id": "-cha",
+    "info": "SFX",
+    "pos_b": "ADV",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'cha'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule265[MЕNGLIYЕV:30](AUX + cha -> ADV)",
+    "short_id": "-cha",
+    "info": "SFX",
+    "pos_b": "AUX",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'cha'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule266[MЕNGLIYЕV:30](NOUN + cha -> ADV)",
+    "short_id": "-cha",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'cha'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule267[MЕNGLIYЕV:30](PARTICIPLE + cha -> ADV)",
+    "short_id": "-cha",
+    "info": "SFX",
+    "pos_b": "PARTICIPLE",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'cha'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule268[MЕNGLIYЕV:30](PRON + cha -> ADV)",
+    "short_id": "-cha",
+    "info": "SFX",
+    "pos_b": "PRON",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'cha'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule269[MЕNGLIYЕV:30](NOUN + chang -> ADV)",
+    "short_id": "-chang",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chang'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule270[MЕNGLIYЕV:30](ADJ + chasiga -> ADV)",
+    "short_id": "-chasiga",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chasiga'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule271[MЕNGLIYЕV:30](NOUN + chasiga -> ADV)",
+    "short_id": "-chasiga",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'chasiga'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule272[MЕNGLIYЕV:30](ADJ + dek//day -> ADV)",
+    "short_id": "-dek//day",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'dek', 'day'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule273[MЕNGLIYЕV:30](NOUN + dek//day -> ADV)",
+    "short_id": "-dek//day",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'dek', 'day'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule274[MЕNGLIYЕV:30](VERB + dek//day -> ADV)",
+    "short_id": "-dek//day",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'dek', 'day'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule275[MЕNGLIYЕV:30](ADJ + iga//siga -> ADV)",
+    "short_id": "-iga//siga",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'iga', 'siga'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule276[MЕNGLIYЕV:30](ADV + iga//siga -> ADV)",
+    "short_id": "-iga//siga",
+    "info": "SFX",
+    "pos_b": "ADV",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'iga', 'siga'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule277[MЕNGLIYЕV:30](NOUN + iga//siga -> ADV)",
+    "short_id": "-iga//siga",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'iga', 'siga'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule278[MЕNGLIYЕV:30](PRON + iga//siga -> ADV)",
+    "short_id": "-iga//siga",
+    "info": "SFX",
+    "pos_b": "PRON",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'iga', 'siga'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule279[MЕNGLIYЕV:30](ADJ + lab -> ADV)",
+    "short_id": "-lab",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lab'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule280[MЕNGLIYЕV:30](ADV + lab -> ADV)",
+    "short_id": "-lab",
+    "info": "SFX",
+    "pos_b": "ADV",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lab'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule281[MЕNGLIYЕV:30](NOUN + lab -> ADV)",
+    "short_id": "-lab",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lab'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule282[MЕNGLIYЕV:30](NUM + lab -> ADV)",
+    "short_id": "-lab",
+    "info": "SFX",
+    "pos_b": "NUM",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lab'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule283[MЕNGLIYЕV:30](ADJ + larcha -> ADV)",
+    "short_id": "-larcha",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'larcha'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule284[MЕNGLIYЕV:30](NOUN + larcha -> ADV)",
+    "short_id": "-larcha",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'larcha'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule285[MЕNGLIYЕV:30](ADJ + lay//layin -> ADV)",
+    "short_id": "-lay//layin",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lay', 'layin'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule286[MЕNGLIYЕV:30](PRON + lay//layin -> ADV)",
+    "short_id": "-lay//layin",
+    "info": "SFX",
+    "pos_b": "PRON",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'lay', 'layin'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule287[MЕNGLIYЕV:30](ADJ + ligicha -> ADV)",
+    "short_id": "-ligicha",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ligicha'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule288[MЕNGLIYЕV:30](ADJ + n//in -> ADV)",
+    "short_id": "-n//in",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'n', 'in'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule289[MЕNGLIYЕV:30](ADV + n//in -> ADV)",
+    "short_id": "-n//in",
+    "info": "SFX",
+    "pos_b": "ADV",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'n', 'in'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule290[MЕNGLIYЕV:30](NOUN + n//in -> ADV)",
+    "short_id": "-n//in",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'n', 'in'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule291[MЕNGLIYЕV:30](ADJ + namo -> ADV)",
+    "short_id": "-namo",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'namo'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule292[MЕNGLIYЕV:30](ADJ + namo -> ADV)",
+    "short_id": "-namo",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'namo'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule293[MЕNGLIYЕV:30](NOUN + namo -> ADV)",
+    "short_id": "-namo",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'namo'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule294[MЕNGLIYЕV:30](ADJ + ona -> ADV)",
+    "short_id": "-ona",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ona'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule295[MЕNGLIYЕV:30](NOUN + ona -> ADV)",
+    "short_id": "-ona",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'ona'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule296[MЕNGLIYЕV:30](ADJ + simon -> ADV)",
+    "short_id": "-simon",
+    "info": "SFX",
+    "pos_b": "ADJ",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'simon'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule297[MЕNGLIYЕV:30](NOUN + simon -> ADV)",
+    "short_id": "-simon",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'simon'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule298[MЕNGLIYЕV:30](PARTICIPLE + simon -> ADV)",
+    "short_id": "-simon",
+    "info": "SFX",
+    "pos_b": "PARTICIPLE",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'simon'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule299[MЕNGLIYЕV:30](NOUN + siz -> ADV)",
+    "short_id": "-siz",
+    "info": "SFX",
+    "pos_b": "NOUN",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'siz'})"
+      }
+    ],
+    "rare": []
+  },
+  {
+    "rule_id": "rule300[MЕNGLIYЕV:30](VERB + siz -> ADV)",
+    "short_id": "-siz",
+    "info": "SFX",
+    "pos_b": "VERB",
+    "pos_a": "ADV",
+    "cases": [
+      {
+        "tags_b": {},
+        "rules": "(addsfx, {'siz'})"
+      }
+    ],
+    "rare": []
+  }
+]
+}

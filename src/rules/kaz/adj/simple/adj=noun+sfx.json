@@ -1,0 +1,193 @@
+{
+  "data": [
+    {
+      "rule_id": "Romanenko24.1(noun + лы/лi/ды/дi/ты/тi -> adj)",
+      "short_id": "-лы/лi/ды/дi/ты/тi",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,6"},
+          "rules": "(addsfx, {'лы'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,7"},
+          "rules": "(addsfx, {'ты'})"
+        },
+        {
+          "tags_b": {"stem_class": "3,4,5"},
+          "rules": "(addsfx, {'ды'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,13"},
+          "rules": "(addsfx, {'лi'})"
+        },
+        {
+          "tags_b": {"stem_class": "9,14"},
+          "rules": "(addsfx, {'тi'})"
+        },
+        {
+          "tags_b": {"stem_class": "10,11,12"},
+          "rules": "(addsfx, {'дi'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko24.2(noun + лық/лiк/дық/дiк/тық/тiк -> adj)",
+      "short_id": "-лық/лiк/дық/дiк/тық/тiк",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,6"},
+          "rules": "(addsfx, {'лық'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,7"},
+          "rules": "(addsfx, {'тық'})"
+        },
+        {
+          "tags_b": {"stem_class": "3,4,5"},
+          "rules": "(addsfx, {'дық'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,13"},
+          "rules": "(addsfx, {'лiк'})"
+        },
+        {
+          "tags_b": {"stem_class": "9,14"},
+          "rules": "(addsfx, {'тiк'})"
+        },
+        {
+          "tags_b": {"stem_class": "10,11,12"},
+          "rules": "(addsfx, {'дiк'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko24.3(noun + сыз/сiз -> adj)",
+      "short_id": "-сыз/сiз",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,2,3,4,5,6,7"},
+          "rules": "(addsfx, {'сыз'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,9,10,11,12,13,14"},
+          "rules": "(addsfx, {'сiз'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko24.4(noun + дай/дей/тай/тей -> adj)",
+      "short_id": "-дай/дей/тай/тей",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,3,4,5,6"},
+          "rules": "(addsfx, {'дай'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,7"},
+          "rules": "(addsfx, {'тай'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,10,11,12,13"},
+          "rules": "(addsfx, {'дей'})"
+        },
+        {
+          "tags_b": {"stem_class": "9,14"},
+          "rules": "(addsfx, {'тей'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko24.5(noun + ғы/гi/қы/кi -> adj)",
+      "short_id": "-ғы/гi/қы/кi",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,2,3,4,5,6"},
+          "rules": "(addsfx, {'ғы'})"
+        },
+        {
+          "tags_b": {"stem_class": "7"},
+          "rules": "(addsfx, {'қы'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,9,10,11,12,13"},
+          "rules": "(addsfx, {'гi'})"
+        },
+        {
+          "tags_b": {"stem_class": "14"},
+          "rules": "(addsfx, {'кi'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko24.7.1(noun + шек -> adj)",
+      "short_id": "-шек",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {},
+          "rules": "(addsfx, {'шек'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko24.7.2(noun + паз -> adj)",
+      "short_id": "-паз",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {},
+          "rules": "(addsfx, {'паз'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko24.7.2(noun + паз -> adj)",
+      "short_id": "-паз",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {},
+          "rules": "(addsfx, {'паз'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko24.7.3(noun + шыл/шiл -> adj)",
+      "short_id": "-шыл/шiл",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "adj",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,2,3,4,5,6,7"},
+          "rules": "(addsfx, {'шыл'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,9,10,11,12,13,14"},
+          "rules": "(addsfx, {'шiл'})"
+        }
+      ]
+    }
+  ]
+}

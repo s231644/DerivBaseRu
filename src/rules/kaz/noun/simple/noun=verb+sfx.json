@@ -1,0 +1,138 @@
+{
+  "data": [
+    {
+      "rule_id": "Romanenko23.1(verb + шы/шi -> noun)",
+      "short_id": "-шы/шi",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "noun",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,3,5,7,9,11,13"},
+          "rules": "(addsfx, {'шы'})"
+        },
+        {
+          "tags_b": {"stem_class": "15,17"},
+          "rules": "(try replsfx, {('ю', 'йу')}) & (delsfx, {'у'}) & (addsfx, {'шы'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,4,6,8,10,12,14"},
+          "rules": "(addsfx, {'шi'})"
+        },
+        {
+          "tags_b": {"stem_class": "16"},
+          "rules": "(try replsfx, {('ю', 'йу')}) & (delsfx, {'у'}) & (addsfx, {'шi'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko23.2(verb + шыл/шiл -> noun)",
+      "short_id": "-шыл/шiл",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "noun",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,3,5,7,9,11,13"},
+          "rules": "(addsfx, {'шыл'})"
+        },
+        {
+          "tags_b": {"stem_class": "15,17"},
+          "rules": "(try replsfx, {('ю', 'йу')}) & (delsfx, {'у'}) & (addsfx, {'шыл'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,4,6,8,10,12,14"},
+          "rules": "(addsfx, {'шiл'})"
+        },
+        {
+          "tags_b": {"stem_class": "16"},
+          "rules": "(try replsfx, {('ю', 'йу')}) & (delsfx, {'у'}) & (addsfx, {'шiл'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko23.3(verb + (ғ)ыш/гiш/(қ)ыш/(к)iш -> noun)",
+      "short_id": "-(ғ)ыш/гiш/(қ)ыш/(к)iш",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "noun",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1"},
+          "rules": "(addsfx, {'ыш'})"
+        },
+        {
+          "tags_b": {"stem_class": "3,5,7,9,11,15,17"},
+          "rules": "(try replsfx, {('ю', 'йу')}) & (delsfx, {'у'}) & (addsfx, {'ғыш'})"
+        },
+        {
+          "tags_b": {"stem_class": "13"},
+          "rules": "(delsfx, {'у'}) & (addsfx, {'қыш'})"
+        },
+        {
+          "tags_b": {"stem_class": "2"},
+          "rules": "(addsfx, {'iш'})"
+        },
+        {
+          "tags_b": {"stem_class": "4,6,8,10,12,16"},
+          "rules": "(try replsfx, {('ю', 'йу')}) & (delsfx, {'у'}) & (addsfx, {'гiш'})"
+        },
+        {
+          "tags_b": {"stem_class": "14"},
+          "rules": "(delsfx, {'у'}) & (addsfx, {'кiш'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko23.9.1(verb + ма/ме -> noun)",
+      "short_id": "-ма/ме",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "noun",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,3,5,7,9,11,13,15,17"},
+          "rules": "(try replsfx, {('ю', 'йу')}) & (delsfx, {'у'}) & (addsfx, {'ма'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,4,6,8,10,12,14,16"},
+          "rules": "(try replsfx, {('ю', 'йу')}) & (delsfx, {'у'}) & (addsfx, {'ме'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko23.9.2(verb + ба/бе -> noun)",
+      "short_id": "-ба/бе",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "noun",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,3,5,7,9,11,13,15,17"},
+          "rules": "(try replsfx, {('ю', 'йу')}) & (delsfx, {'у'}) & (addsfx, {'ба'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,4,6,8,10,12,14,16"},
+          "rules": "(try replsfx, {('ю', 'йу')}) & (delsfx, {'у'}) & (addsfx, {'бе'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko23.9.3(verb + па/пе -> noun)",
+      "short_id": "-па/пе",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "noun",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,3,5,7,9,11,13,15,17"},
+          "rules": "(try replsfx, {('ю', 'йу')}) & (delsfx, {'у'}) & (addsfx, {'па'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,4,6,8,10,12,14,16"},
+          "rules": "(try replsfx, {('ю', 'йу')}) & (delsfx, {'у'}) & (addsfx, {'пе'})"
+        }
+      ]
+    }
+  ]
+}

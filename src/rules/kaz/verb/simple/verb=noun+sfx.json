@@ -1,0 +1,121 @@
+{
+  "data": [
+
+
+
+
+    {
+      "rule_id": "Romanenko28.1(noun + ла/ле/да/де/та/те_у -> verb)",
+      "short_id": "-ла/ле/да/де/та/те_у",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "verb",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,6"},
+          "rules": "(addsfx, {'лау'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,7"},
+          "rules": "(addsfx, {'тау'})"
+        },
+        {
+          "tags_b": {"stem_class": "3,4,5"},
+          "rules": "(addsfx, {'дау'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,13"},
+          "rules": "(addsfx, {'леу'})"
+        },
+        {
+          "tags_b": {"stem_class": "9,14"},
+          "rules": "(addsfx, {'теу'})"
+        },
+        {
+          "tags_b": {"stem_class": "10,11,12"},
+          "rules": "(addsfx, {'деу'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko28.2(noun + лас/лес/дас/дес/тас/тес_у -> verb)",
+      "short_id": "-лас/лес/дас/дес/тас/тес_у",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "verb",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,6"},
+          "rules": "(addsfx, {'ласу'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,7"},
+          "rules": "(addsfx, {'тасу'})"
+        },
+        {
+          "tags_b": {"stem_class": "3,4,5"},
+          "rules": "(addsfx, {'дасу'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,13"},
+          "rules": "(addsfx, {'лесу'})"
+        },
+        {
+          "tags_b": {"stem_class": "9,14"},
+          "rules": "(addsfx, {'тесу'})"
+        },
+        {
+          "tags_b": {"stem_class": "10,11,12"},
+          "rules": "(addsfx, {'десу'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko28.3(noun + а/е_у -> verb)",
+      "short_id": "-а/е_у",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "verb",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,2,3,4,5,6,7"},
+          "rules": "(addsfx, {'ау'})"
+        },
+        {
+          "tags_b": {"stem_class": "8,9,10,11,12,13,14"},
+          "rules": "(addsfx, {'еу'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "Romanenko28.4(noun + р/(қ)ар/(к)ер_у -> verb)",
+      "short_id": "-р/(қ)ар/(к)ер_у",
+      "info": "SFX",
+      "pos_b": "noun",
+      "pos_a": "verb",
+      "cases": [
+        {
+          "tags_b": {"stem_class": "1,8"},
+          "rules": "(addsfx, {'ру'})"
+        },
+        {
+          "tags_b": {"stem_class": "2,3,4,5,6"},
+          "rules": "(addsfx, {'қару', 'ару'})"
+        },
+        {
+          "tags_b": {"stem_class": "7"},
+          "rules": "(opt regrassim) & (addsfx, {'қару', 'ару'})"
+        },
+        {
+          "tags_b": {"stem_class": "9,10,11,12,13"},
+          "rules": "(addsfx, {'керу', 'еру'})"
+        },
+        {
+          "tags_b": {"stem_class": "14"},
+          "rules": "(try regrassim) & (addsfx, {'керу', 'еру'})"
+        }
+
+      ]
+    }
+  ]
+}

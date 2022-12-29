@@ -1,0 +1,26 @@
+{
+  "data": [
+    {
+      "rule_id": "rule445(adv + ник -> noun)",
+      "short_id": "-ник",
+      "info": "SFX",
+      "pos_b": "adv",
+      "pos_a": "noun",
+      "cases": [],
+      "rare": [
+        "сообща;сообщник"
+      ]
+    },
+    {
+      "rule_id": "rule445(adv + еств(о) -> noun)",
+      "short_id": "-еств(о)",
+      "info": "SFX",
+      "pos_b": "adv",
+      "pos_a": "noun",
+      "cases": [],
+      "rare": [
+        "сообща;сообщество"
+      ]
+    }
+  ]
+}

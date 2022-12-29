@@ -1,0 +1,157 @@
+{
+  "data": [
+    {
+      "rule_id": "rule985(verb + мя -> adv)",
+      "short_id": "-мя",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "adv",
+      "cases": [
+        {
+          "tags_b": {"form": "inf", "inflect_type": "4,4щ,4*,5,5щ"},
+          "rules": "(delsfx, {'ть'}) & (delsfx, {'а', 'я', 'е', 'и'}) & [(onlysfx, vowels) & (addsfx, {'й'}) | (try l_soft)] & (addsfx, {'мя'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "11,16"},
+          "rules": "(delsfx, {'ть'}) & (addsfx, {'в'}) & (addsfx, {'мя'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule986(verb + ом/ком -> adv)",
+      "short_id": "-ом",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "adv",
+      "cases": [],
+      "rare": [
+        "мелькать;мельком",
+        "кувыркаться;кувырком",
+        "волочь;волоком",
+        "дыбиться;дыбом",
+        "скользить;скользом",
+        "катить;катом",
+        "насыпать;насыпом",
+        "слышать;слыхом",
+        "поедать;поедом",
+        "наезжать;наездом",
+        "проезжать;проездом",
+        "ползти;ползком",
+        "молчать;молчком",
+        "щипать;щипком",
+        "стоять;стойком",
+        "трусить;труском",
+        "валить;валом",
+        "рвать;рывом",
+        "набить;битком",
+        "ходить;ходуном",
+        "ходить;ходом",
+        "плыть;плавом",
+        "учиться;уком",
+        "ездить;ездом",
+        "лететь;лётом"
+      ]
+    },
+    {
+      "rule_id": "rule987(verb + ю -> adv)",
+      "short_id": "-ю",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "adv",
+      "cases": [],
+      "rare": [
+        "ощупать;ощупью",
+        "насыпать;насыпью"
+      ]
+    },
+    {
+      "rule_id": "rule987(verb + е -> adv)",
+      "short_id": "-е",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "adv",
+      "cases": [],
+      "rare": [
+        "насторожиться;настороже"
+      ]
+    },
+    {
+      "rule_id": "rule987(verb + ками -> adv)",
+      "short_id": "-ками",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "adv",
+      "cases": [],
+      "rare": [
+        "урывать;урывками"
+      ]
+    },
+    {
+      "rule_id": "rule987*(verb + ючи -> adv)",
+      "short_id": "-ючи",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "adv",
+      "cases": [
+        {
+          "tags_b": {"form": "inf", "inflect_type": "1"},
+          "rules": "(delsfx, {'ть'}) & (addsfx, {'ючи'})"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule987*(verb + ку -> adv)",
+      "short_id": "-ку",
+      "info": "SFX",
+      "pos_b": "verb",
+      "pos_a": "adv",
+      "only_complex": "1",
+      "cases": [
+        {
+          "tags_b": {"form": "inf", "inflect_type": "1,2,4,4щ,4*,5,5щ,6,6*,9,10ол,10ел,10ор"},
+          "rules": "(try delptfx) & (delsfx, {'ть'}) & (delsfx, {'а', 'и', 'я', 'е', 'о', 'ну'}) & (opt delsfx, {'ыв', 'ив'}) & (try plt) & [(onlysfx, vowels) & (addsfx, {'й'}) | (excsfx, vowels)] & (addsfx, {'ку'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "3"},
+          "rules": "(try delptfx) & (delsfx, {'нуть'}) & (try replsfx, {('тя', 'тяг')}) & (try plt) & (addsfx, {'ку'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7з,7с"},
+          "rules": "(try delptfx) & (delsfx, {'ть', 'ти'}) & (opt alt7) & (addsfx, {'ку'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7ст"},
+          "rules": "(try delptfx) & (delsfx, {'и', 'ь'}) & (opt replsfx, {('раст', 'рост')}) & (addsfx, {'ку'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7д"},
+          "rules": "(try delptfx) & (delsfx, {'ть', 'ти'}) & (opt alt7) & (replsfx, {('с', 'д')}) & (addsfx, {'ку'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7б"},
+          "rules": "(try delptfx) & (delsfx, {'ть', 'ти'}) & (replsfx, {('с', 'б')}) & (addsfx, {'ку'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "7т"},
+          "rules": "(try delptfx) & (delsfx, {'ть', 'ти'}) & (replsfx, {('с', 'т')}) & (addsfx, {'ку'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "8г"},
+          "rules": "(try delptfx) & (replsfx, {('чь', 'ж')}) & (addsfx, {'ку'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "8к"},
+          "rules": "(try delptfx) & (replsfx, {('чь', 'ч')}) & (addsfx, {'ку'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "11"},
+          "rules": "(onlysfx, {'бить'}) & (delsfx, {'ить'}) & (addsfx, {'ойку'})"
+        },
+        {
+          "tags_b": {"form": "inf", "inflect_type": "14н,14м,14ним,14ьм,14ым,14им,14йм"},
+          "rules": "(delsfx, {'нять'}) & [(onlysfx, consonants) & (addsfx, {'ъ'}) | (excsfx, consonants)] & (addsfx, {'ёмку'})"
+        }
+      ]
+    }
+  ]
+}

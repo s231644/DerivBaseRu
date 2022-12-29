@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "rule_id": "rule961([полу/само] + verb -> verb)",
+      "info": "COMPOUND",
+      "pos_b": "verb",
+      "pos_a": "verb",
+      "compound_rules": {
+        "head": [],
+        "modifiers": [{"pos_m": "*", "complex": []}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    },
+    {
+      "rule_id": "rule961([noun + ITFX] + verb -> verb)",
+      "info": "COMPOUND",
+      "pos_b": "verb",
+      "pos_a": "verb",
+      "compound_rules": {
+        "head": [],
+        "modifiers": [{"pos_m": "noun", "complex": ["ruleINTERFIX(noun)"]}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    },
+    {
+      "rule_id": "rule961([adj + ITFX] + verb -> verb)",
+      "info": "COMPOUND",
+      "pos_b": "verb",
+      "pos_a": "verb",
+      "compound_rules": {
+        "head": [],
+        "modifiers": [{"pos_m": "adj", "complex": ["ruleINTERFIX(adj)"]}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    },
+    {
+      "rule_id": "rule962(noun + [фицировать] -> verb)",
+      "info": "COMPOUND",
+      "pos_b": "noun",
+      "pos_a": "verb",
+      "compound_rules": {
+        "head": [],
+        "modifiers": [{"pos_m": "*", "complex": []}],
+        "order": [0, 1],
+        "before_merge": [],
+        "after_merge": []
+      }
+    },
+    {
+      "rule_id": "rule962(adj + [фицировать] -> verb)",
+      "info": "COMPOUND",
+      "pos_b": "adj",
+      "pos_a": "verb",
+      "compound_rules": {
+        "head": [],
+        "modifiers": [{"pos_m": "*", "complex": []}],
+        "order": [0, 1],
+        "before_merge": [],
+        "after_merge": []
+      }
+    }
+  ]
+}

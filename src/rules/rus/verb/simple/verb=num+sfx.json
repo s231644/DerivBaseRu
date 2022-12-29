@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "rule_id": "rule798(num + и1(ть) -> verb)",
+      "short_id": "-и1-",
+      "info": "SFX",
+      "pos_b": "num",
+      "pos_a": "verb",
+      "cases": [
+        {
+          "tags_b": {},
+          "rules": "(replsfx, {('ое', 'оить'), ('о', 'ить')})"
+        }
+      ],
+      "rare": []
+    }
+  ]
+}

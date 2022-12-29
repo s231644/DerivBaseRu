@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "rule_id": "rule1034([num] + num + GEN -> num)",
+      "info": "COMPOUND,SFX",
+      "pos_b": "num",
+      "pos_a": "num",
+      "compound_rules": {
+        "head": ["rule1334*(num + GEN -> num)"],
+        "modifiers": [{"pos_m": "noun", "complex": []}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    },
+    {
+      "rule_id": "rule1034([num] + num -> num)",
+      "info": "COMPOUND",
+      "pos_b": "num",
+      "pos_a": "num",
+      "compound_rules": {
+        "head": [],
+        "modifiers": [{"pos_m": "noun", "complex": []}],
+        "order": [1, 0],
+        "before_merge": [],
+        "after_merge": []
+      }
+    }
+  ]
+}
