@@ -288,10 +288,15 @@ def iter_dump(path, word=None, limit=None):
             rev = el.find("{*}revision")
             text = (rev.findtext("{*}text") if rev is not None else "") or ""
             if ns == "0" and text:
-                yield parse_page(title, text,
-                                 el.findtext("{*}id"),
-                                 rev.findtext("{*}id") if rev is not None else None,
-                                 rev.findtext("{*}timestamp") if rev is not None else None)
+                try:
+                    obj = parse_page(title, text,
+                                     el.findtext("{*}id"),
+                                     rev.findtext("{*}id") if rev is not None else None,
+                                     rev.findtext("{*}timestamp") if rev is not None else None)
+                except Exception:
+                    el.clear()
+                    continue
+                yield obj
                 n += 1
                 if word or (limit and n >= limit):
                     el.clear(); return
@@ -304,31 +309,36 @@ def main(argv=None):
     ap.add_argument("--file", help="single page XML file (e.g. sample_article.xml)")
     ap.add_argument("--word", help="extract only this title")
     ap.add_argument("--limit", type=int, help="max pages")
-    ap.add_argument("--out", help="output file (json or jsonl)")
-    ap.add_argument("--jsonl", action="store_true", help="emit JSONL")
+    ap.add_argument("--out", help="output file")
+    ap.add_argument("--jsonl", action="store_true", help="emit JSONL (streaming, default for --dump)")
     args = ap.parse_args(argv)
-    objs = []
     if args.file:
         root = ET.parse(args.file).getroot()
         title = root.findtext("{*}title") or ""
         rev = root.find("{*}revision")
         text = (rev.findtext("{*}text") if rev is not None else "") or ""
-        objs.append(parse_page(title, text, root.findtext("{*}id"),
-                               rev.findtext("{*}id") if rev is not None else None,
-                               rev.findtext("{*}timestamp") if rev is not None else None))
-    elif args.dump:
-        objs = list(iter_dump(args.dump, args.word, args.limit))
-    else:
+        obj = parse_page(title, text, root.findtext("{*}id"),
+                         rev.findtext("{*}id") if rev is not None else None,
+                         rev.findtext("{*}timestamp") if rev is not None else None)
+        payload = json.dumps(obj, ensure_ascii=False, indent=2)
+        if args.out:
+            with open(args.out, "w", encoding="utf-8") as f:
+                f.write(payload)
+            print("wrote", args.out, "1 page")
+        else:
+            print(payload)
+        return
+    if not args.dump:
         ap.error("need --file or --dump")
-    payload = json.dumps(objs[0] if (args.word and len(objs) == 1) else objs,
-                         ensure_ascii=False, indent=2)
-    if args.out:
-        with open(args.out, "w", encoding="utf-8") as f:
-            f.write(payload)
-        print("wrote", args.out, "objects", len(objs))
-    else:
-        print(payload)
-
+    out = args.out or "data/wiktionary/parsed.jsonl"
+    n = 0
+    with open(out, "w", encoding="utf-8") as f:
+        for obj in iter_dump(args.dump, args.word, args.limit):
+            f.write(json.dumps(obj, ensure_ascii=False) + chr(10))
+            n += 1
+            if n % 1000 == 0:
+                print("parsed", n, flush=True)
+    print("done:", n, "pages ->", out)
 
 if __name__ == "__main__":
     main()
