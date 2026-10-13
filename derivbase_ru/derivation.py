@@ -4,6 +4,7 @@ import warnings
 from collections import defaultdict
 from typing import Set, Optional, List
 
+from derivbase_ru.cache import ResultCache, rule_fingerprint
 from derivbase_ru.rule import WholeRule
 from derivbase_ru.rule_utils import load_rules_from_json
 
@@ -53,9 +54,11 @@ class Derivation:
             self,
             lang: str = "rus",
             guesser: Optional[TagGuesserWrapper] = None,
+            cache: Optional[ResultCache] = None,
     ):
         self.lang = lang
         self.tag_guesser = guesser
+        self.cache = cache
 
         self.rules_dict = dict()
 
@@ -136,6 +139,21 @@ class Derivation:
             pos_a: Optional[str] = None,
             **kwargs
     ) -> Results:
+        cache = getattr(self, "cache", None)
+        key = None
+        if cache is not None:
+            fingerprint = rule.__dict__.get("_fingerprint")
+            if fingerprint is None:
+                fingerprint = rule_fingerprint(rule)
+                rule.__dict__["_fingerprint"] = fingerprint
+            key = cache.make_key(
+                word_b, pos_b, pos_a, fingerprint,
+                {"use_rare": bool(kwargs.get("use_rare"))},
+            )
+            cached = cache.get(key)
+            if cached is not None:
+                return Results(set(cached), rule.name)
+
         results = []
         pos_b_all = [pos_b] if pos_b is not None else self.pos_all
         pos_a_all = [pos_a] if pos_a is not None else self.pos_all
@@ -145,7 +163,10 @@ class Derivation:
                     rule.apply_with_tags(word_b, pos_b_, pos_a_, **kwargs)
                 )
 
-        return Results(set(results), rule.name)
+        derived = Results(set(results), rule.name)
+        if cache is not None:
+            cache.set(key, derived.derived)
+        return derived
 
     def _derive(
             self,
