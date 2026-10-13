@@ -2,7 +2,7 @@
 import os, sys
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, REPO)
-from src.derivation import Derivation, TagGuesserWrapper
+from derivbase_ru.derivation import Derivation, TagGuesserWrapper
 
 guesser = TagGuesserWrapper(lang='kaz')
 derivation = Derivation(lang='kaz', guesser=guesser)

@@ -1,9 +1,9 @@
 '''Copy of demo/Demo compounds.ipynb (2022_version branch).
 
-The original notebook uses an older API: import paths src.fsm_part /
-src.compound_analyzer, a class-level DerivedFSM.derivator, positional DerivedFSM
+The original notebook uses an older API: import paths derivbase_ru.compounding.fsm_part /
+derivbase_ru.compounding.compound_analyzer, a class-level DerivedFSM.derivator, positional DerivedFSM
 arguments and Derivation(use_guesser=True). This copy targets the current code:
-  * imports from src.compounding.*
+  * imports from derivbase_ru.compounding.*
   * DerivedFSM(derivator, name, pos_b, pos_a, rule_id, wordlist)
   * Derivation(guesser=TagGuesserWrapper())
   * guarded multiprocessing entry point (DerivedFSM uses Pool) to avoid spawn recursion
@@ -12,9 +12,9 @@ import os, sys
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, REPO)
 
-from src.derivation import Derivation, TagGuesserWrapper
-from src.compounding.fsm_part import DerivedFSM
-from src.compounding.compound_analyzer import CompoundAnalyzer
+from derivbase_ru.derivation import Derivation, TagGuesserWrapper
+from derivbase_ru.compounding.fsm_part import DerivedFSM
+from derivbase_ru.compounding.compound_analyzer import CompoundAnalyzer
 
 
 def main():

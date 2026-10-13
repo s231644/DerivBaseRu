@@ -4,7 +4,7 @@ from collections import defaultdict
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, REPO)
 import pandas as pd
-from src.derivation import Derivation, TagGuesserWrapper
+from derivbase_ru.derivation import Derivation, TagGuesserWrapper
 
 DEMO = os.path.join(REPO, 'demo')
 train_df = pd.read_csv(os.path.join(DEMO, 'classification_train.csv'))

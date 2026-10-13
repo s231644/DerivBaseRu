@@ -1,7 +1,7 @@
 '''Adapted copy of demo/demo_usage.ipynb for the 2022_version code base.
 
 Fixes vs. the original notebook:
-  * import path case:  src.Derivation      -> src.derivation
+  * import path case:  derivbase_ru.derivation      -> derivbase_ru.derivation
   * constructor API:   use_guesser=True    -> guesser=TagGuesserWrapper(lang='rus')
   * attribute names:   derivator.rules     -> derivator.loaded_rules / rules_dict
 '''
@@ -9,7 +9,7 @@ import os, sys
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, REPO)
 
-from src.derivation import Derivation, TagGuesserWrapper
+from derivbase_ru.derivation import Derivation, TagGuesserWrapper
 
 derivator = Derivation(guesser=TagGuesserWrapper(lang='rus'))
 

@@ -1,5 +1,5 @@
 import json
-from src.derivation import Derivation
+from derivbase_ru.derivation import Derivation
 
 import pandas as pd
 df = pd.read_csv('wiki_ADV.csv')

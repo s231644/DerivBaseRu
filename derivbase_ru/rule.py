@@ -5,7 +5,7 @@ from lark import Lark
 from lark.tree import pydot__tree_to_png
 from typing import Dict, List, Set
 
-from src.stringops.base import LanguageOps, StringOperation
+from derivbase_ru.stringops.base import LanguageOps, StringOperation
 
 
 class SubRule:

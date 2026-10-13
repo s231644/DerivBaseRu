@@ -1,7 +1,7 @@
 import json
 import warnings
 
-from src.rule import SubRule, WholeRule, ComplexRule, CompoundRule
+from derivbase_ru.rule import SubRule, WholeRule, ComplexRule, CompoundRule
 
 
 def load_rules_from_json(
@@ -11,11 +11,11 @@ def load_rules_from_json(
         lang='rus'
 ):
     if lang == "rus":
-        from src.stringops.rus import RussianOps as Ops
+        from derivbase_ru.stringops.rus import RussianOps as Ops
     elif lang == "kaz":
-        from src.stringops.kaz import KazakhOps as Ops
+        from derivbase_ru.stringops.kaz import KazakhOps as Ops
     else:
-        from src.stringops.base import LanguageOps as Ops
+        from derivbase_ru.stringops.base import LanguageOps as Ops
         warnings.warn(
             f"Unsupported language {lang}! "
             f"You can use only language-independent functions on strings."

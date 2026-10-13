@@ -1,9 +1,9 @@
 from tqdm import tqdm
 from typing import Dict, List
 
-from src.derivation import Derivation
-from src.compounding.compound_analyzer import CompoundAnalyzer
-from src.compounding.prepare_fsms import prepare_fsms
+from derivbase_ru.derivation import Derivation
+from derivbase_ru.compounding.compound_analyzer import CompoundAnalyzer
+from derivbase_ru.compounding.prepare_fsms import prepare_fsms
 
 
 def prepare_compound_fsms(

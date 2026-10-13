@@ -4,8 +4,8 @@ from tqdm import tqdm
 from collections import defaultdict
 from typing import List, Optional, Dict
 
-from src.derivation import Derivation
-from src.compounding.fsm_part import DerivedFSM
+from derivbase_ru.derivation import Derivation
+from derivbase_ru.compounding.fsm_part import DerivedFSM
 
 
 def build_fsm(

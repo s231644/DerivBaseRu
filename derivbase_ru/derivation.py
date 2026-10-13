@@ -4,8 +4,8 @@ import warnings
 from collections import defaultdict
 from typing import Set, Optional, List
 
-from src.rule import WholeRule
-from src.rule_utils import load_rules_from_json
+from derivbase_ru.rule import WholeRule
+from derivbase_ru.rule_utils import load_rules_from_json
 
 
 class Results:
@@ -32,11 +32,11 @@ class Results:
 class TagGuesserWrapper:
     def __init__(self, lang: str = "rus", **kwargs):
         if lang == "rus":
-            from src.guesser.ZaliznyakGuesser import ZaliznyakGuesser
+            from derivbase_ru.guesser.ZaliznyakGuesser import ZaliznyakGuesser
             self.guesser = ZaliznyakGuesser(**kwargs)
             pass
         elif lang == "kaz":
-            from src.guesser.kazakh_guesser import BarakhninGuesser
+            from derivbase_ru.guesser.kazakh_guesser import BarakhninGuesser
             self.guesser = BarakhninGuesser(**kwargs)
         else:
             raise ValueError(f"Unsupported language {lang}!")

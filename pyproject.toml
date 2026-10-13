@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "derivbase-ru"
+version = "2026.0.0"
+description = "A library for building a Russian derivational morphology resource"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [{ name = "Daniil Vodolazsky", email = "daniil.vodolazsky@mail.ru" }]
+keywords = ["nlp", "morphology", "derivational morphology", "russian", "linguistics"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Natural Language :: Russian",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "pymorphy3",
+  "pymorphy3-dicts-ru",
+  "lark>=1.2",
+  "pandas",
+  "tqdm",
+  "lxml",
+  "requests",
+  "beautifulsoup4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff", "build"]
+
+[project.urls]
+Homepage = "https://github.com/s231644/DerivBaseRu"
+Repository = "https://github.com/s231644/DerivBaseRu"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["derivbase_ru*"]
+
+[tool.setuptools.package-data]
+derivbase_ru = ["rules/**/*.json", "rules/**/*.csv", "guesser/data/*", "guesser/*.txt"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["demo", "demo_copies", "evaluation"]

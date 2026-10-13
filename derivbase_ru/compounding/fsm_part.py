@@ -3,8 +3,8 @@ from tqdm import tqdm
 from typing import Optional, List
 from multiprocessing import Pool
 
-from src.derivation import Derivation
-from src.compounding.fsm import FSM
+from derivbase_ru.derivation import Derivation
+from derivbase_ru.compounding.fsm import FSM
 
 
 class DerivedFSM:

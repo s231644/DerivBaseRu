@@ -1,6 +1,6 @@
 from typing import Set, Any
 
-from src.stringops.base import (
+from derivbase_ru.stringops.base import (
     LanguageOps,
     LanguageAlphabet,
     StringOperation,

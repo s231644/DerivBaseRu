@@ -30,7 +30,7 @@ cd DerivBaseRu
 Examples of using DerivBaseRu:
 
 ```
->>> from src.Derivation import Derivation
+>>> from derivbase_ru.derivation import Derivation
 >>> evaluator = Derivation()
 
 >>> print(evaluator.derive(word_b='красить', pos_b='verb', pos_a='adj'))

@@ -14,7 +14,7 @@ branch `2022_version`. The originals under `demo/` are left untouched.
 
 ## Fixes applied vs. the notebooks
 
-1. Import case: `from src.Derivation import ...` -> `from src.derivation import ...`.
+1. Import case: `from derivbase_ru.derivation import ...` -> `from derivbase_ru.derivation import ...`.
 2. Constructor: `Derivation(use_guesser=True)` -> `Derivation(guesser=TagGuesserWrapper(lang='rus'))`.
 3. Removed attribute `Derivation.rules` -> `loaded_rules` / `rules_dict`.
 4. `is_extended=True` returns `{word_a: [rule_id, ...]}` (the notebooks assumed `{rule_id: words}`).
