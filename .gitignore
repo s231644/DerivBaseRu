@@ -215,3 +215,5 @@ data/wiktionary/*.bz2
 data/dahl/dahl.jsonl
 
 data/wiktionary/*.jsonl
+
+.DS_Store
