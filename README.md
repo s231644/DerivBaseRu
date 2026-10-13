@@ -164,3 +164,14 @@ abstract = {Russian morphology has been studied for decades, but there is still 
 url = {https://www.aclweb.org/anthology/2020.lrec-1.484}
 }
 ```
+Daniil Vodolazsky, Hermann Petrov. Compound Splitting and Analysis for Russian (DeriMo 2021). [PDF](http://nabil.hathout.free.fr/DeriMo2021/pdf-files/DeriMo_2021_paper_10.pdf)
+
+```
+@InProceedings{vodolazsky:2021:derimo,
+author = {Vodolazsky, Daniil and Petrov, Hermann},
+title = {Compound Splitting and Analysis for Russian},
+year = {2021},
+note = {DeriMo 2021},
+url = {http://nabil.hathout.free.fr/DeriMo2021/pdf-files/DeriMo_2021_paper_10.pdf}
+}
+```
