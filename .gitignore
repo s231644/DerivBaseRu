@@ -209,3 +209,7 @@ ENV/
 .mypy_cache/
 
 .venv315/
+
+# large downloaded/scraped data (not tracked)
+data/wiktionary/*.bz2
+data/dahl/dahl.jsonl
