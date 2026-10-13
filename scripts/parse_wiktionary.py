@@ -264,9 +264,15 @@ def parse_page(title, text, page_id=None, revision_id=None, timestamp=None):
     for lang_node in root["children"]:
         lm = LANG_RE.search(lang_node["title"])
         lang = lm.group(1) if lm else clean(lang_node["title"])
-        for blk in lang_node["children"]:
-            if blk["level"] != 2:
-                continue
+        blocks = [b for b in lang_node["children"] if b["level"] == 2]
+        if not blocks:
+            # pages without == homonym == blocks: the language node itself
+            e = parse_entry(lang_node)
+            e["homonym"] = None
+            e["lang"] = lang
+            entries.append(e)
+            continue
+        for blk in blocks:
             e = parse_entry(blk)
             e["lang"] = lang
             entries.append(e)
