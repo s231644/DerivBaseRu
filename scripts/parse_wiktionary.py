@@ -58,7 +58,7 @@ def find_templates(text):
     out, i, n = [], 0, len(text)
     while i < n - 1:
         if text[i:i + 2] == "{{":
-            depth, j = 0, i
+            depth, j, closed = 0, i, False
             while j < n - 1:
                 two = text[j:j + 2]
                 if two == "{{":
@@ -66,9 +66,13 @@ def find_templates(text):
                 if two == "}}":
                     depth -= 1; j += 2
                     if depth == 0:
+                        closed = True
                         break
                     continue
                 j += 1
+            if not closed:
+                i += 1
+                continue
             parts = split_top_level(text[i + 2:j - 2])
             out.append((parts[0].strip(), parts[1:]))
             i = j
@@ -139,6 +143,8 @@ def bullets(section):
             buf = t.lstrip("#").strip()
             depth = buf.count("{{") - buf.count("}}")
         else:
+            if buf is not None:
+                out.append(buf)
             buf = None
     if buf is not None:
         out.append(buf)
