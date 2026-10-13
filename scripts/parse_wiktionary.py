@@ -185,6 +185,19 @@ def find_child(node, names):
     return None
 
 
+def detect_pos(name: str):
+    """Part of speech from a template name, e.g. 'сущ-ru' -> 'сущ'."""
+    first = (name or "").split()[0]
+    if not first:
+        return None
+    base = re.split("[-_]", first)[0]
+    if base in POS_PREFIXES:
+        return base
+    if first in POS_PREFIXES:
+        return first
+    return None
+
+
 def parse_entry(node):
     e = {"homonym": clean(node["title"])}
     block = full_text(node)
@@ -195,13 +208,14 @@ def parse_entry(node):
     if morph:
         mt = full_text(morph)
         for name, args in find_templates(mt):
-            first = name.split()[0] if name else ""
             if name.startswith("морфо"):
                 pos, _ = template_args(args)
                 e["morphology"] = [a for a in pos if a]
-            elif first in POS_PREFIXES:
+                continue
+            pos_token = detect_pos(name)
+            if pos_token:
                 pos, params = template_args(args)
-                e["pos"] = first
+                e["pos"] = pos_token
                 e["inflection"] = {"template": name, "positional": pos, "params": params}
     pron = find_child(node, SECTION_PRON)
     if pron:
