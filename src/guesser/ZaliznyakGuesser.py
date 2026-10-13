@@ -1,5 +1,5 @@
 import os
-import pymorphy2
+import pymorphy3
 import warnings
 
 from itertools import chain as chain
@@ -44,7 +44,7 @@ class ZaliznyakGuesser:
     def __init__(self, use_morph=True):
         self.use_morph = use_morph
         if self.use_morph:
-            self.morph = pymorphy2.MorphAnalyzer()
+            self.morph = pymorphy3.MorphAnalyzer()
         self.pos_all = ['noun', 'adj', 'verb', 'adv']
 
         inflection_rules = os.path.join(

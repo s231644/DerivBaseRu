@@ -207,3 +207,5 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+.venv315/
