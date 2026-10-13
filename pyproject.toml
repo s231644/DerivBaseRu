@@ -51,3 +51,9 @@ derivbase_ru = ["rules/**/*.json", "rules/**/*.csv", "guesser/data/*", "guesser/
 line-length = 100
 target-version = "py311"
 extend-exclude = ["demo", "demo_copies", "evaluation"]
+
+[tool.ruff.lint]
+select = ["E9", "F63", "F7", "F82"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

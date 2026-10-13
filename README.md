@@ -10,10 +10,10 @@ and includes about 700 types of affixational derivation in Russian.
 
 ### Prerequisites
 
-You should have python3 installed on your machine (we recommend Anaconda3 package) and modules listed in requirements.txt. If you do not have them, run in Terminal
+You should have python3 installed on your machine (we recommend Anaconda3 package) and Python 3.11+ (dependencies are declared in pyproject.toml). If you do not have them, run in Terminal
 
 ```
-pip install -r requirements.txt
+pip install -e .
 ```
 
 ### Installing and Usage

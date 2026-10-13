@@ -1,9 +1,0 @@
-# DerivBaseRu dependencies (target runtime: Python 3.15)
-pymorphy3
-pymorphy3-dicts-ru
-lark
-requests
-beautifulsoup4
-lxml
-tqdm
-pandas
