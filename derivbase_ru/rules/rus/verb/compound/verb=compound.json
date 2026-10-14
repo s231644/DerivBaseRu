@@ -39,34 +39,6 @@
         "before_merge": [],
         "after_merge": []
       }
-    },
-    {
-      "rule_id": "rule962(noun + [фицировать] -> verb)",
-      "fixed_affix": "фицировать",
-      "info": "COMPOUND",
-      "pos_b": "noun",
-      "pos_a": "verb",
-      "compound_rules": {
-        "head": [],
-        "modifiers": [{"pos_m": "*", "complex": []}],
-        "order": [0, 1],
-        "before_merge": [],
-        "after_merge": []
-      }
-    },
-    {
-      "rule_id": "rule962(adj + [фицировать] -> verb)",
-      "fixed_affix": "фицировать",
-      "info": "COMPOUND",
-      "pos_b": "adj",
-      "pos_a": "verb",
-      "compound_rules": {
-        "head": [],
-        "modifiers": [{"pos_m": "*", "complex": []}],
-        "order": [0, 1],
-        "before_merge": [],
-        "after_merge": []
-      }
     }
   ]
 }
