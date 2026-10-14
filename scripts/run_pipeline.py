@@ -342,6 +342,15 @@ def run(args) -> dict:
     wanted = set(a.strip() for a in args.pos_a.split(",") if a.strip())
     complexities = set(a.strip() for a in args.complexities.split(",") if a.strip())
     rules, skipped_complex = select_rules(der, wanted, complexities, args.force_complex)
+    if args.include_info:
+        tokens = tuple(x.strip().upper() for x in args.include_info.split(",") if x.strip())
+        rules = [r for r in rules
+                 if any(t in (getattr(r, "info", "") or "").upper() for t in tokens)]
+        print("include-info %s: правил %d" % (",".join(tokens), len(rules)), flush=True)
+    if args.include_rules:
+        good = tuple(x.strip() for x in args.include_rules.split(",") if x.strip())
+        rules = [r for r in rules if r.name.startswith(good)]
+        print("include-rules: правил %d" % len(rules), flush=True)
     if args.exclude_rules:
         bad = tuple(x.strip() for x in args.exclude_rules.split(",") if x.strip())
         rules = [r for r in rules if not r.name.startswith(bad)]
@@ -489,6 +498,10 @@ def main(argv=None):
                     help="comma-separated target POS to run rules for")
     ap.add_argument("--complexities", default="simple,complex,compound",
                     help="rule groups to use: simple,complex,compound")
+    ap.add_argument("--include-rules", default=None,
+                    help="comma-separated rule-name prefixes to keep (exact startswith)")
+    ap.add_argument("--include-info", default=None,
+                    help="keep only rules whose info contains any of these tokens")
     ap.add_argument("--exclude-rules", default=None,
                     help="comma-separated rule-name prefixes to skip")
     ap.add_argument("--exclude-file", default=None,
