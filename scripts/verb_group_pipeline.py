@@ -32,9 +32,13 @@ def main():
     ap.add_argument('--stats', required=True)
     ap.add_argument('--gen-dir', required=True)
     ap.add_argument('--workers', type=int, default=6)
+    ap.add_argument('--first', default='', help='comma-separated rule-id prefixes to process first')
     args=ap.parse_args()
     data=json.load(open(args.rules_file, encoding='utf-8'))['data']
     rules=[r['rule_id'] for r in data]
+    first=[s.strip() for s in (args.first or '').split(',') if s.strip()]
+    if first:
+        rules.sort(key=lambda r: 0 if any(r.startswith(f) for f in first) else 1)
     os.makedirs(args.gen_dir, exist_ok=True)
     W,H,T=load_sets()
     print('правил %d | wiktionary-глаголов %d, далевских заголовков %d, токенов %d' % (len(rules),len(W),len(H),len(T)), flush=True)

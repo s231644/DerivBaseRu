@@ -18,6 +18,7 @@
 | `adv_ymx.clean.jsonl` | наречия | исключения, финал |
 | `verb_pfx.jsonl` | глаголы | **prefix + verb → verb**, очищено по Вики/Далю |
 | `verb_compound.jsonl` | глаголы | **компаунды** (`[модификатор + интерфикс] + verb`), отобраны субагентом |
+| `verb_sfx.jsonl` | глаголы | **verb + суффикс → verb** (ну2/ану/ива/ся…), очищено по Вики/Далю |
 
 Дальше сюда добавятся (тем же форматом): `verb_verb.jsonl` (verb→verb, прочие способы),
 `verb_noun.jsonl` / `verb_adj.jsonl` / `verb_num.jsonl` (другие ЧР → verb) и т.д.
