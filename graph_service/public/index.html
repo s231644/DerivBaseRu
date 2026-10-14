@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DerivBaseRu — граф отношений между словами</title>
+<link rel="stylesheet" href="/styles.css?v=__V__">
+</head>
+<body>
+<header>
+  <h1>DerivBaseRu <span>· граф отношений между словами</span></h1>
+  <div class="controls">
+    <label>Датасет <select id="dataset"></select></label>
+    <input id="q" type="search" placeholder="поиск лексемы…" autocomplete="off" spellcheck="false">
+    <label>Глубина <select id="depth">
+      <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+    </select></label>
+    <span id="status" class="status"></span>
+  </div>
+</header>
+<main>
+  <aside id="sidebar">
+    <div id="results" class="results"></div>
+  </aside>
+  <section id="stage">
+    <svg id="graph"></svg>
+    <div id="info" class="info"></div>
+  </section>
+</main>
+<script src="/app.js?v=__V__"></script>
+</body>
+</html>
