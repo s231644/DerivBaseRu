@@ -86,7 +86,7 @@ def text_opener(path: str):
     return open(path, encoding="utf-8")
 
 
-def add_extra_words(paths, words_by_pos):
+def add_extra_words(paths, words_by_pos, excluded=frozenset()):
     """Chain derivations: add (word, pos) pairs from other datasets as
     extra source words. They are NOT added to `known`, so anything derived
     from them stays potential unless the dictionary attests it."""
@@ -103,6 +103,8 @@ def add_extra_words(paths, words_by_pos):
             word = rec.get("word")
             pos = rec.get("pos")
             if not word or pos not in words_by_pos:
+                continue
+            if word in excluded:
                 continue
             if word in words_by_pos[pos]:
                 continue
@@ -261,7 +263,7 @@ def run(args) -> dict:
 
     if args.extra_dataset:
         extra_paths = [s.strip() for s in args.extra_dataset.split(",") if s.strip()]
-        n_extra = add_extra_words(extra_paths, words_by_pos)
+        n_extra = add_extra_words(extra_paths, words_by_pos, excluded)
         print("extra source words: %d (from %s)" % (n_extra, ", ".join(extra_paths)),
               flush=True)
 
