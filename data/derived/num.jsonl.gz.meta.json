@@ -9,7 +9,7 @@
     "compound",
     "simple"
   ],
-  "generated_at": "2026-10-14T06:45:05Z",
+  "generated_at": "2026-10-14T06:48:04Z",
   "sources": [
     {
       "name": "parsed_ru.jsonl.gz",
@@ -19,7 +19,7 @@
   "counts": {
     "rules": 6,
     "source_words": 47058,
-    "edges": 46
+    "edges": 87
   },
   "per_rule": {
     "rule1032(num + надцать -> num)": 8,
@@ -27,11 +27,11 @@
     "rule1033(num + оj(е) -> num)": 2,
     "rule1033(num + ер(о) -> num)": 28,
     "rule1034([num] + num + GEN -> num)": 0,
-    "rule1034([num] + num -> num)": 6
+    "rule1034([num] + num -> num)": 47
   },
   "skipped_only_complex": [
     "rule1334*(num + GEN -> num)",
     "ruleINTERFIX(num)"
   ],
-  "seconds": 11.6
+  "seconds": 9.5
 }

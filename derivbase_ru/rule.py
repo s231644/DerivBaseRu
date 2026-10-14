@@ -249,6 +249,9 @@ class CompoundRule(WholeRule):
         # in Derivation class
         # a 2D list: 0 --- head, 1 --- first modifier, ...
         self.order = compound_rules.get('order')
+        # separator between compound components ('' fuses them, ' ' keeps
+        # them as separate words, e.g. twenty-five numerals).
+        self.separator = compound_rules.get('separator', '')
         self.before_merge_rule_ids = compound_rules.get('before_merge', [])
         self.after_merge_rule_ids = compound_rules.get('after_merge', [])
         self.before_merge_rules = [] 
@@ -275,7 +278,7 @@ class CompoundRule(WholeRule):
                 cur_results = new_results
             results.append(cur_results)
         permuted_results = [list(results[i]) for i in self.order]
-        results = set(map(lambda x: ''.join(x), product(*permuted_results)))
+        results = set(map(lambda x: self.separator.join(x), product(*permuted_results)))
         for simple_rule in self.after_merge_rules:
             new_results = set()
             for word in results:
@@ -318,7 +321,7 @@ class CompoundRule(WholeRule):
                 cur_results = new_results
             results.append(cur_results)
         permuted_results = [results[i] for i in self.order]
-        results = set(map(lambda x: ''.join(x), product(*permuted_results)))
+        results = set(map(lambda x: self.separator.join(x), product(*permuted_results)))
         for simple_rule in self.after_merge_rules:
             new_results = set()
             for word in results:
