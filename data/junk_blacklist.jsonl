@@ -1,0 +1,212 @@
+{"child": "бегающе", "parent": "бегающий", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "беруще", "parent": "берущий", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "важне", "parent": "важный", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вбой", "parent": "бить", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вбой", "parent": "бой", "rule": "rule1010(в + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вбой", "parent": "быть", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вверт", "parent": "верт", "rule": "rule1010(в + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вверт", "parent": "вертать", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вверт", "parent": "вертеть", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вворот", "parent": "ворот", "rule": "rule1010(в + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вворот", "parent": "воротить", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вдвиг", "parent": "двигать", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вдвиг", "parent": "двигнуть", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вершком", "parent": "?", "rule": "rule991(adv + ком -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "взаду", "parent": "задуть", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "взаду", "parent": "задуться", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "взамест", "parent": "замести", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "взамест", "parent": "заместить", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "видяще", "parent": "видящий", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вкат", "parent": "кат", "rule": "rule1010(в + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вкат", "parent": "катать", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вкат", "parent": "катить", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вкат", "parent": "катнуть", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вкат", "parent": "катывать", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вкрест", "parent": "крестить", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "влаза", "parent": "лазать", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вмен", "parent": "менивать", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вмен", "parent": "менять", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вмест", "parent": "мести", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вмест", "parent": "местись", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вмест", "parent": "месть", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вмет", "parent": "мести", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вмет", "parent": "местись", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вмет", "parent": "месть", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вмет", "parent": "мет", "rule": "rule1010(в + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вмет", "parent": "метать", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вмет", "parent": "метить", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вмет", "parent": "метнуть", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вобща", "parent": "общаться", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вогрубо", "parent": "огрубеть", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "водо", "parent": "до", "rule": "rule1010(во + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "водо", "parent": "одеть", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "водо", "parent": "одеться", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "возмя", "parent": "возить", "rule": "rule985(verb + мя -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "возять", "parent": "зять", "rule": "rule1010(во + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "воко", "parent": "ко", "rule": "rule1010(во + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "воко", "parent": "око", "rule": "rule1010(в + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "волочком", "parent": "?", "rule": "rule991(adv + ком -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вомиг", "parent": "миг", "rule": "rule1010(во + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "воно", "parent": "но", "rule": "rule1010(во + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "воро", "parent": "ро", "rule": "rule1010(во + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вотде", "parent": "отдеть", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вотолсто", "parent": "отолстеть", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "впло", "parent": "плоить", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вползка", "parent": "зек", "rule": "rule1028(в + [пол] + noun + GEN -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вполмаха", "parent": "махо", "rule": "rule1028(в + [пол] + noun + GEN -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вполы", "parent": "а", "rule": "rule1028(в + [пол] + noun + GEN -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "впят", "parent": "пятить", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "врод", "parent": "род", "rule": "rule1010(в + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "врод", "parent": "родить", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "врости", "parent": "ростить", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "всим", "parent": "сим", "rule": "rule1010(в + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вскосок", "parent": "скосок", "rule": "rule1010(в + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "всос", "parent": "сесть", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "всос", "parent": "сосать", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "всос", "parent": "соснуть", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "втоп", "parent": "топ", "rule": "rule1010(в + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "втоп", "parent": "топать", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "втоп", "parent": "топить", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "втоп", "parent": "топнуть", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "втычку", "parent": "тыкать", "rule": "rule1020(в + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "втычку", "parent": "тыкаться", "rule": "rule1020(в + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "втычку", "parent": "тыкнуть", "rule": "rule1020(в + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "втычку", "parent": "тыкнуться", "rule": "rule1020(в + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "выго", "parent": "иго", "rule": "rule1010(в + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "выдо", "parent": "идо", "rule": "rule1010(в + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вызвон", "parent": "извонять", "rule": "rule1020(в + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вырод", "parent": "ирод", "rule": "rule1010(в + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "вящо", "parent": "вящий", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "гзом", "parent": "гез", "rule": "rule982(noun + INSTR -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "гзом", "parent": "гёз", "rule": "rule982(noun + INSTR -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "говейно", "parent": "говейный", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "горяченьки", "parent": "горяченький", "rule": "rule979(adj + и -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "двом", "parent": "дев", "rule": "rule982(noun + INSTR -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "дужкой", "parent": "?", "rule": "rule991(adv + ком -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "едомо", "parent": "едомый", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "заедке", "parent": "едкий", "rule": "rule1002(за + adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "заживе", "parent": "живой", "rule": "rule1002(за + adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "избегше", "parent": "избегший", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "избранно", "parent": "бранно", "rule": "rule993(из + adv -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "исправа", "parent": "правый", "rule": "rule1003(из + adj + а -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "крыто", "parent": "крытый", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "леском", "parent": "?", "rule": "rule991(adv + ком -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "мешающе", "parent": "мешающий", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "молодёшеньки", "parent": "молодёшенький", "rule": "rule979(adj + и -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "набедно", "parent": "беднеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наборзо", "parent": "борзеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наброд", "parent": "брести", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наброд", "parent": "брод", "rule": "rule1010(на + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наброд", "parent": "бродить", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "навысь", "parent": "высь", "rule": "rule1010(на + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "нагрубо", "parent": "грубеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "нагрустно", "parent": "грустнеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "нагрязно", "parent": "грязнеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "нагусто", "parent": "густеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "надешево", "parent": "дешеветь", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "надорва", "parent": "дорвать", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "надорва", "parent": "дорваться", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "назелень", "parent": "зелень", "rule": "rule1010(на + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "накосо", "parent": "косеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "накрасно", "parent": "краснеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "накрасно", "parent": "краснеться", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "накриво", "parent": "криветь", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "накругло", "parent": "круглеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "накрупно", "parent": "крупнеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "накруто", "parent": "крутеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наледок", "parent": "ледок", "rule": "rule1010(на + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "налобок", "parent": "лобок", "rule": "rule1010(на + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "налуск", "parent": "лускать", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "намашку", "parent": "махать", "rule": "rule1020(на + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "намашку", "parent": "махаться", "rule": "rule1020(на + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "намашку", "parent": "махивать", "rule": "rule1020(на + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "намашку", "parent": "махнуть", "rule": "rule1020(на + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "намашку", "parent": "махнуться", "rule": "rule1020(на + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "намен", "parent": "менивать", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "намен", "parent": "менять", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "намест", "parent": "мести", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "намест", "parent": "местись", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "намест", "parent": "месть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наместку", "parent": "мести", "rule": "rule1020(на + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наместку", "parent": "местись", "rule": "rule1020(на + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наместку", "parent": "меститься", "rule": "rule1020(на + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наместку", "parent": "месть", "rule": "rule1020(на + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "намолодь", "parent": "молодь", "rule": "rule1010(на + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "нанемо", "parent": "неметь", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наобо", "parent": "обо", "rule": "rule1010(на + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "напестро", "parent": "пестреть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "напестро", "parent": "пестреться", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "напих", "parent": "пих", "rule": "rule1010(на + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "напих", "parent": "пихать", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "напих", "parent": "пихнуть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "напластовку", "parent": "пластовать", "rule": "rule1020(на + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "напластовку", "parent": "пластоваться", "rule": "rule1020(на + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наплюск", "parent": "плюскать", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наподряд", "parent": "подрядить", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "напоко", "parent": "покоить", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наполно", "parent": "полнеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "напотычку", "parent": "потыкать", "rule": "rule1020(на + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "напотычку", "parent": "потыкаться", "rule": "rule1020(на + verb + ку -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "направа", "parent": "права", "rule": "rule1010(на + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "напросто", "parent": "простеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "напросто", "parent": "простоять", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "нарости", "parent": "ростить", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "насветло", "parent": "светлеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "насветло", "parent": "светлеться", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наскудно", "parent": "скуднеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наслед", "parent": "след", "rule": "rule1010(на + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наслед", "parent": "следить", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наслед", "parent": "следовать", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наследок", "parent": "следок", "rule": "rule1010(на + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наслух", "parent": "слухать", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наспор", "parent": "спереть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наспор", "parent": "спирать", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "наспор", "parent": "спороть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "настрах", "parent": "страховать", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "насыро", "parent": "сыреть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "натемно", "parent": "темнеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "натемно", "parent": "темнеться", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "натепло", "parent": "теплеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "натоп", "parent": "топ", "rule": "rule1010(на + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "натоп", "parent": "топать", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "натоп", "parent": "топить", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "натоп", "parent": "топнуть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "натупо", "parent": "тупеть", "rule": "rule1020(на + verb + 0m2 -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "нахвала", "parent": "хвала", "rule": "rule1010(на + noun + ACC -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "нахрапком", "parent": "?", "rule": "rule991(adv + ком -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "низеньки", "parent": "низенький", "rule": "rule979(adj + и -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "низком", "parent": "?", "rule": "rule991(adv + ком -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "носково", "parent": "носковый", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "носяще", "parent": "носящий", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "передком", "parent": "?", "rule": "rule991(adv + ком -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "погански", "parent": "ганский", "rule": "rule995(по + adj + и -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "погонки", "parent": "гонкий", "rule": "rule995(по + adj + и -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "погонку", "parent": "гонкий", "rule": "rule996(по + adj + у -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "подаваему", "parent": "даваемый", "rule": "rule996(по + adj + у -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "поедаему", "parent": "едаемый", "rule": "rule996(по + adj + у -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "понебесной", "parent": "небесный", "rule": "rule998(по + adj + ой -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "попугаячьи", "parent": "попугаячий", "rule": "rule979(adj + и -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "попускаему", "parent": "пускаемый", "rule": "rule996(по + adj + у -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "посаживаему", "parent": "саживаемый", "rule": "rule996(по + adj + у -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "посельскому", "parent": "сельский", "rule": "rule994(по + adj + ому -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "поставляюще", "parent": "поставляющий", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "постенному", "parent": "стенной", "rule": "rule994(по + adj + ому -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "постенному", "parent": "стенный", "rule": "rule994(по + adj + ому -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "потешне", "parent": "потешный", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "припевающе", "parent": "припевающий", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "путешествующе", "parent": "путешествующий", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "раскольничьи", "parent": "раскольничий", "rule": "rule979(adj + и -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "реом", "parent": "ре", "rule": "rule982(noun + INSTR -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "росле", "parent": "рослый", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "рябеньки", "parent": "рябенький", "rule": "rule979(adj + и -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "снизку", "parent": "?", "rule": "rule991(adv + ком -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "сопасно", "parent": "опасно", "rule": "rule993(с + adv -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "сохачьи", "parent": "сохачий", "rule": "rule979(adj + и -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "тоненьки", "parent": "тоненький", "rule": "rule979(adj + и -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "узеньки", "parent": "узенький", "rule": "rule979(adj + и -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "ходенем", "parent": "ходя", "rule": "rule982(noun + INSTR -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "чающе", "parent": "чающий", "rule": "rule977(adj + о -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "чкой", "parent": "чека", "rule": "rule982(noun + INSTR -> adv)", "reason": "subagent: rejected weak edge"}
+{"child": "потуже", "parent": "туже", "rule": "rule993(по + adv -> adv)", "reason": "wiktionary: adj"}
+{"child": "столько", "parent": "только", "rule": "rule993(с + adv -> adv)", "reason": "wiktionary: num"}
+{"child": "следком", "parent": "", "rule": "rule991(adv + ком -> adv)", "reason": "wiktionary: noun"}

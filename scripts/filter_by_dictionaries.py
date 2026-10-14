@@ -173,6 +173,35 @@ def cmd_clean(args):
           % (args.input, kept, dropped_cap, dropped_lat), flush=True)
 
 
+def cmd_blacklist(args):
+    """Убирает рёбра, перечисленные в blacklist (артефакт для воспроизводимости)."""
+    bad = set()
+    with open(args.blacklist, encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if not line:
+                continue
+            e = json.loads(line)
+            bad.add((e.get("child"), e.get("parent", ""), e.get("rule")))
+    rows = []
+    with open(args.input, encoding="utf-8") as fi:
+        for line in fi:
+            line = line.strip()
+            if line:
+                rows.append(line)
+    kept = dropped = 0
+    with open(args.out, "w", encoding="utf-8") as fo:
+        for line in fi:
+            rec = json.loads(line)
+            parent = rec["parents"][0]["word"] if rec.get("parents") else ""
+            if (rec.get("word"), parent, rec.get("rule")) in bad:
+                dropped += 1
+                continue
+            fo.write(json.dumps(rec, ensure_ascii=False) + "\n")
+            kept += 1
+    print("%s: осталось %d (снято blacklist: %d)" % (args.input, kept, dropped), flush=True)
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -191,6 +220,11 @@ def main(argv=None):
     m.add_argument("--judged", action="append", required=True)
     m.add_argument("--final", required=True)
     m.set_defaults(func=cmd_merge)
+    b = sub.add_parser("blacklist")
+    b.add_argument("--input", required=True)
+    b.add_argument("--blacklist", required=True)
+    b.add_argument("--out", required=True)
+    b.set_defaults(func=cmd_blacklist)
     c = sub.add_parser("clean")
     c.add_argument("--input", required=True)
     c.add_argument("--out", required=True)
