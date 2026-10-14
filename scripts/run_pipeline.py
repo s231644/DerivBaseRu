@@ -2,18 +2,20 @@
 
 Pipeline (see docs/derivation_schema.md):
   1. read the dictionary (parsed ru.wiktionary JSONL) -> words grouped by POS;
-  2. for each rule (optionally filtered by target POS `pos_a`);
-  3. for each single-word source word whose POS equals the rule's `pos_b`
-     (multi-word entries containing spaces are skipped);
-     apply the rule and record every derived form.
-
+  2. for each rule (filtered by target POS pos_a and by complexity:
+     simple / complex / compound);
+  3. for each source word whose POS equals the rule pos_b
+     (multi-word entries containing spaces are skipped):
+       - simple/complex rules are applied to the word itself;
+       - compound rules are applied for every candidate modifier word of the
+         rule modifier POS (--modifier-limit bounds the candidates).
 Results are written as one JSONL record per derivation edge (schema §3),
 gzipped, with a sidecar meta.json header.
 
 Usage:
-  python scripts/run_pipeline.py --pos-a num        --out data/derived/num.jsonl.gz
-  python scripts/run_pipeline.py --pos-a adv        --out data/derived/adv.jsonl.gz
-  python scripts/run_pipeline.py --pos-a num,adv --limit 500
+  python scripts/run_pipeline.py --pos-a num
+  python scripts/run_pipeline.py --pos-a num --complexities simple,complex
+  python scripts/run_pipeline.py --pos-a adv --complexities compound
 """
 from __future__ import annotations
 
@@ -29,12 +31,15 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from derivbase_ru.cache import ResultCache
 from derivbase_ru.derivation import Derivation
+from derivbase_ru.rule import CompoundRule
 
 SCHEMA_VERSION = 1
+COMPLEXITIES = ("simple", "complex", "compound")
 
-# Temporarily omit the per-edge `flags` object from the output.
+# Temporarily omit the per-edge flags object from the output.
 # Set back to True to restore it.
 EMIT_FLAGS = False
+
 STRESS = "\u0301\u00b4"
 
 # Wiktionary POS template tags -> engine POS tags (Derivation.pos_all).
@@ -48,7 +53,7 @@ POS_MAP = {
     "числ": "num",
 }
 
-# rule.info -> schema `kind`
+# rule.info -> schema kind
 KIND_MAP = {
     "SFX": "sfx",
     "PFX": "pfx",
@@ -64,8 +69,12 @@ def has_stress(text: str) -> bool:
     return any(ch in text for ch in STRESS)
 
 
+def single_word(word: str) -> bool:
+    return bool(word) and not any(c.isspace() for c in word)
+
+
 def read_dictionary(path: str):
-    """Return (words_by_pos, known) from a parsed Wiktionary JSONL(.gz).
+    """Return (words_by_pos, known, n_pages) from a parsed Wiktionary JSONL(.gz).
 
     words_by_pos: {pos: {word: {"accented": str|None, "inflect_type": str|None}}}
     known:        set of (word, pos) attested in the dictionary
@@ -93,16 +102,12 @@ def read_dictionary(path: str):
                 if word in bucket:
                     continue
                 inflect = entry.get("inflection") or {}
-                positional = inflect.get("positional") or []
                 accented = None
-                for form in positional:
+                for form in inflect.get("positional") or []:
                     if form and has_stress(form):
                         accented = form
                         break
-                bucket[word] = {
-                    "accented": accented,
-                    "inflect_type": None,
-                }
+                bucket[word] = {"accented": accented, "inflect_type": None}
     return words_by_pos, known, n
 
 
@@ -113,8 +118,19 @@ def rule_kind(info: str) -> str:
     return (info or "").lower() or "sfx"
 
 
-def build_record(word_a, pos_a, word_b, pos_b, rule, meta_b, known, rare):
-    entry_b = meta_b or {}
+def parent(word: str, pos: str, role: str = "head", slot: int = 0) -> OrderedDict:
+    return OrderedDict([
+        ("id", "%s|%s" % (word, pos)),
+        ("word", word),
+        ("pos", pos),
+        ("role", role),
+        ("slot", slot),
+    ])
+
+
+def build_record(word_a, pos_a, parents, rule, meta_a, known, rare,
+                 include_flags=True, kind=None):
+    entry_a = meta_a or {}
     is_real = (word_a, pos_a) in known
     rec = OrderedDict([
         ("schema", SCHEMA_VERSION),
@@ -122,20 +138,14 @@ def build_record(word_a, pos_a, word_b, pos_b, rule, meta_b, known, rare):
         ("word", word_a),
         ("pos", pos_a),
         ("lang", "rus"),
-        ("accented", entry_b.get("accented") if is_real else None),
+        ("accented", entry_a.get("accented") if is_real else None),
         ("hom_index", 0),
         ("rule", rule.name),
-        ("kind", rule_kind(rule.info)),
-        ("parents", [OrderedDict([
-            ("id", "%s|%s" % (word_b, pos_b)),
-            ("word", word_b),
-            ("pos", pos_b),
-            ("role", "head"),
-            ("slot", 0),
-        ])]),
-        ("inflect_type", entry_b.get("inflect_type")),
+        ("kind", kind or rule_kind(rule.info)),
+        ("parents", parents),
+        ("inflect_type", entry_a.get("inflect_type")),
     ])
-    if EMIT_FLAGS:
+    if include_flags:
         rec["flags"] = OrderedDict([
             ("real", is_real),
             ("rare", bool(rare)),
@@ -144,6 +154,31 @@ def build_record(word_a, pos_a, word_b, pos_b, rule, meta_b, known, rare):
         ])
     rec["source"] = "derivbase"
     return rec
+
+
+def select_rules(der, wanted, complexities, force_complex):
+    """Pick rules for the target POS and complexities, merging duplicate ids."""
+    by_name = OrderedDict()
+    skipped_complex = []
+    for complexity in COMPLEXITIES:
+        if complexity not in complexities:
+            continue
+        for r in der.loaded_rules[complexity]:
+            if r.pos_a not in wanted:
+                continue
+            if getattr(r, "only_complex", False) and not force_complex:
+                if r.name not in skipped_complex:
+                    skipped_complex.append(r.name)
+                continue
+            base = by_name.get(r.name)
+            if base is None:
+                by_name[r.name] = r
+                continue
+            base.subrules = list(base.subrules) + list(r.subrules)
+            for s, i in r.rare:
+                base.rare_straight[s].add(i)
+                base.rare_inversed[i].add(s)
+    return list(by_name.values()), skipped_complex
 
 
 def run(args) -> dict:
@@ -157,29 +192,13 @@ def run(args) -> dict:
 
     der = Derivation(lang=args.lang, cache=ResultCache(args.cache) if args.cache else None)
     wanted = set(a.strip() for a in args.pos_a.split(",") if a.strip())
-    # The rule JSON files may list the same rule_id more than once (split
-    # subrules). Merge such entries by name so no subrule is lost.
-    by_name = OrderedDict()
-    skipped_complex = []
-    for r in der.loaded_rules["simple"] + der.loaded_rules["complex"]:
-        if r.pos_a not in wanted:
-            continue
-        # Rules flagged `only_complex` are parts of complex rules and must
-        # not be applied to a bare word on their own.
-        if getattr(r, "only_complex", False) and not args.force_complex:
-            skipped_complex.append(r.name)
-            continue
-        base = by_name.get(r.name)
-        if base is None:
-            by_name[r.name] = r
-            continue
-        base.subrules = list(base.subrules) + list(r.subrules)
-        for s, i in r.rare:
-            base.rare_straight[s].add(i)
-            base.rare_inversed[i].add(s)
-    rules = list(by_name.values())
-    print("rules with pos_a in %s: %d (skipped only_complex: %d)" % (
-        sorted(wanted), len(rules), len(skipped_complex)), flush=True)
+    complexities = set(a.strip() for a in args.complexities.split(",") if a.strip())
+    rules, skipped_complex = select_rules(der, wanted, complexities, args.force_complex)
+    flat_rules = [r for r in rules if not isinstance(r, CompoundRule)]
+    compound_rules = [r for r in rules if isinstance(r, CompoundRule)]
+    print("complexities=%s pos_a=%s rules=%d (flat=%d, compound=%d, only_complex skipped=%d)" % (
+        ",".join(sorted(complexities)), sorted(wanted), len(rules),
+        len(flat_rules), len(compound_rules), len(skipped_complex)), flush=True)
 
     os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)
     opener = gzip.open if args.out.endswith(".gz") else open
@@ -188,12 +207,9 @@ def run(args) -> dict:
     n_pairs = 0
     per_rule = OrderedDict()
     with opener(args.out, "wt", encoding="utf-8") as out:
-        for rule in rules:
-            # Multi-word entries (e.g. "восемьдесят восемь") are not
-            # single lexemes: skip any source word containing whitespace.
+        for rule in flat_rules:
             source_words = sorted(
-                w for w in words_by_pos.get(rule.pos_b, {})
-                if not any(c.isspace() for c in w)
+                w for w in words_by_pos.get(rule.pos_b, {}) if single_word(w)
             )
             if args.limit:
                 source_words = source_words[:args.limit]
@@ -212,16 +228,73 @@ def run(args) -> dict:
                         continue
                     rare = word_b in rule.rare_inversed.get(word_a, set())
                     rec = build_record(
-                        word_a, rule.pos_a, word_b, rule.pos_b,
+                        word_a, rule.pos_a, [parent(word_b, rule.pos_b)],
                         rule, words_by_pos[rule.pos_a].get(word_a), known, rare,
+                        include_flags=EMIT_FLAGS,
                     )
                     out.write(json.dumps(rec, ensure_ascii=False) + "\n")
                     n_records += 1
                     emitted += 1
                 n_pairs += 1
             per_rule[rule.name] = emitted
-            print("rule %-55s words=%-6d edges=%d" % (
-                rule.name[:55], len(source_words), emitted), flush=True)
+            print("rule %-50s words=%-6d edges=%d" % (
+                rule.name[:50], len(source_words), emitted), flush=True)
+            if der.cache is not None:
+                der.cache.save()
+
+        for rule in compound_rules:
+            if len(rule.poss_m) != 1:
+                print("rule %-50s SKIPPED (multi-modifier compound)" % rule.name[:50], flush=True)
+                per_rule[rule.name] = 0
+                continue
+            modifier_pos = rule.poss_m[0]
+            modifiers = sorted(
+                w for w in words_by_pos.get(modifier_pos, {}) if single_word(w)
+            )[:args.modifier_limit]
+            heads = sorted(
+                w for w in words_by_pos.get(rule.pos_b, {}) if single_word(w)
+            )
+            if args.limit:
+                heads = heads[:args.limit]
+            order = rule.order or [0, 1]
+            slot_head = order.index(0) if 0 in order else 0
+            slot_mod = order.index(1) if 1 in order else 1
+            emitted = 0
+            for head in heads:
+                for modifier in modifiers:
+                    if modifier == head:
+                        # a lexeme cannot be its own modifier
+                        continue
+                    # Called directly: Derivation.derive() does not forward
+                    # words_m/poss_m to CompoundRule.apply_with_tags, and its
+                    # kwargs handling duplicates them.
+                    res = rule.apply_with_tags(
+                        head,
+                        rule.pos_b,
+                        rule.pos_a,
+                        words_m=[modifier],
+                        poss_m=[modifier_pos],
+                        tags_m=[{}],
+                    )
+                    for word_a in sorted(res):
+                        if word_a in (head, modifier):
+                            continue
+                        if args.compound_real_only and (word_a, rule.pos_a) not in known:
+                            continue
+                        rec = build_record(
+                            word_a, rule.pos_a,
+                            [parent(head, rule.pos_b, "head", slot_head),
+                             parent(modifier, modifier_pos, "modifier", slot_mod)],
+                            rule, words_by_pos[rule.pos_a].get(word_a), known, False,
+                            include_flags=EMIT_FLAGS, kind="compound",
+                        )
+                        out.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                        n_records += 1
+                        emitted += 1
+                    n_pairs += 1
+            per_rule[rule.name] = emitted
+            print("rule %-50s heads=%-5d mods=%-5d edges=%d" % (
+                rule.name[:50], len(heads), len(modifiers), emitted), flush=True)
             if der.cache is not None:
                 der.cache.save()
 
@@ -229,6 +302,7 @@ def run(args) -> dict:
         ("schema", SCHEMA_VERSION),
         ("lang", args.lang),
         ("pos_a", sorted(wanted)),
+        ("complexities", sorted(complexities)),
         ("generated_at", time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())),
         ("sources", [OrderedDict([("name", os.path.basename(args.dict)),
                                   ("pages", n_pages)])]),
@@ -238,6 +312,7 @@ def run(args) -> dict:
             ("edges", n_records),
         ])),
         ("per_rule", per_rule),
+        ("skipped_only_complex", skipped_complex),
         ("seconds", round(time.time() - t0, 1)),
     ])
     meta_path = args.out + ".meta.json"
@@ -248,13 +323,20 @@ def run(args) -> dict:
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(description=__doc__)
+    ap = argparse.ArgumentParser(description=__doc__,
+                                 formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--dict", default="data/wiktionary/parsed_ru.jsonl.gz",
                     help="parsed Wiktionary dictionary (JSONL or JSONL.gz)")
     ap.add_argument("--out", default=None,
                     help="output JSONL(.gz); default data/derived/<pos_a>.jsonl.gz")
     ap.add_argument("--pos-a", default="num",
                     help="comma-separated target POS to run rules for")
+    ap.add_argument("--complexities", default="simple,complex,compound",
+                    help="rule groups to use: simple,complex,compound")
+    ap.add_argument("--compound-real-only", action="store_true",
+                    help="keep only compound results attested in the dictionary")
+    ap.add_argument("--modifier-limit", type=int, default=200,
+                    help="max candidate modifier words per compound rule")
     ap.add_argument("--lang", default="rus")
     ap.add_argument("--limit", type=int, default=0,
                     help="max source words per rule (0 = all)")
@@ -262,7 +344,7 @@ def main(argv=None):
     ap.add_argument("--force-complex", action="store_true",
                     help="also apply rules flagged only_complex on their own")
     ap.add_argument("--no-rare", dest="use_rare", action="store_false",
-                    help="do not use the rules' rare-form tables")
+                    help="do not use the rare-form tables")
     args = ap.parse_args(argv)
     if args.out is None:
         args.out = "data/derived/%s.jsonl.gz" % args.pos_a.replace(",", "_")
@@ -271,3 +353,5 @@ def main(argv=None):
 
 if __name__ == "__main__":
     main()
+
+

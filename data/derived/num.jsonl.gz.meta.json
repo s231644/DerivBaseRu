@@ -4,7 +4,12 @@
   "pos_a": [
     "num"
   ],
-  "generated_at": "2026-10-14T06:09:13Z",
+  "complexities": [
+    "complex",
+    "compound",
+    "simple"
+  ],
+  "generated_at": "2026-10-14T06:45:05Z",
   "sources": [
     {
       "name": "parsed_ru.jsonl.gz",
@@ -12,15 +17,21 @@
     }
   ],
   "counts": {
-    "rules": 4,
-    "source_words": 552,
-    "edges": 40
+    "rules": 6,
+    "source_words": 47058,
+    "edges": 46
   },
   "per_rule": {
     "rule1032(num + надцать -> num)": 8,
     "rule1032(num + дцать -> num)": 2,
     "rule1033(num + оj(е) -> num)": 2,
-    "rule1033(num + ер(о) -> num)": 28
+    "rule1033(num + ер(о) -> num)": 28,
+    "rule1034([num] + num + GEN -> num)": 0,
+    "rule1034([num] + num -> num)": 6
   },
-  "seconds": 11.4
+  "skipped_only_complex": [
+    "rule1334*(num + GEN -> num)",
+    "ruleINTERFIX(num)"
+  ],
+  "seconds": 11.6
 }
