@@ -42,7 +42,7 @@ def main():
         out=os.path.join(args.gen_dir, safe(rule)+'.jsonl')
         log=os.path.join(args.gen_dir, safe(rule)+'.log')
         with open(log,'w') as lg:
-            subprocess.run([PY,'scripts/run_pipeline.py','--pos-a','verb','--complexities','simple','--include-rules',rule,'--out',out], stdout=lg, stderr=subprocess.STDOUT)
+            subprocess.run([PY,'scripts/run_pipeline.py','--pos-a','verb','--complexities','simple','--guesser','--include-rules',rule,'--out',out], stdout=lg, stderr=subprocess.STDOUT)
         return rule,out
     fl=open(args.out,'w',encoding='utf-8'); dl=open(args.doubtful,'w',encoding='utf-8')
     stats={}
