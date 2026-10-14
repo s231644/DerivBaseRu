@@ -4,7 +4,7 @@
   "pos_a": [
     "num"
   ],
-  "generated_at": "2026-10-14T05:55:09Z",
+  "generated_at": "2026-10-14T05:57:45Z",
   "sources": [
     {
       "name": "parsed_ru.jsonl.gz",
@@ -12,17 +12,15 @@
     }
   ],
   "counts": {
-    "rules": 6,
-    "source_words": 828,
-    "edges": 86
+    "rules": 4,
+    "source_words": 552,
+    "edges": 40
   },
   "per_rule": {
     "rule1032(num + надцать -> num)": 8,
     "rule1032(num + дцать -> num)": 2,
     "rule1033(num + оj(е) -> num)": 2,
-    "rule1033(num + ер(о) -> num)": 28,
-    "rule1334*(num + GEN -> num)": 0,
-    "ruleINTERFIX(num)": 46
+    "rule1033(num + ер(о) -> num)": 28
   },
-  "seconds": 11.1
+  "seconds": 9.3
 }

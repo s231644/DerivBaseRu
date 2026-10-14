@@ -154,8 +154,14 @@ def run(args) -> dict:
     # The rule JSON files may list the same rule_id more than once (split
     # subrules). Merge such entries by name so no subrule is lost.
     by_name = OrderedDict()
+    skipped_complex = []
     for r in der.loaded_rules["simple"] + der.loaded_rules["complex"]:
         if r.pos_a not in wanted:
+            continue
+        # Rules flagged `only_complex` are parts of complex rules and must
+        # not be applied to a bare word on their own.
+        if getattr(r, "only_complex", False) and not args.force_complex:
+            skipped_complex.append(r.name)
             continue
         base = by_name.get(r.name)
         if base is None:
@@ -166,7 +172,8 @@ def run(args) -> dict:
             base.rare_straight[s].add(i)
             base.rare_inversed[i].add(s)
     rules = list(by_name.values())
-    print("rules with pos_a in %s: %d" % (sorted(wanted), len(rules)), flush=True)
+    print("rules with pos_a in %s: %d (skipped only_complex: %d)" % (
+        sorted(wanted), len(rules), len(skipped_complex)), flush=True)
 
     os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)
     opener = gzip.open if args.out.endswith(".gz") else open
@@ -246,6 +253,8 @@ def main(argv=None):
     ap.add_argument("--limit", type=int, default=0,
                     help="max source words per rule (0 = all)")
     ap.add_argument("--cache", default=None, help="result cache path")
+    ap.add_argument("--force-complex", action="store_true",
+                    help="also apply rules flagged only_complex on their own")
     ap.add_argument("--no-rare", dest="use_rare", action="store_false",
                     help="do not use the rules' rare-form tables")
     args = ap.parse_args(argv)
