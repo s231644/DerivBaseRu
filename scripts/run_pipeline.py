@@ -50,7 +50,7 @@ POS_MAP = {
     "прил": "adj",
     "прич": "adj",
     "гл": "verb",
-    "деепр": "verb",
+    # деепричастия (деепр) — не инфинитив, в корзину глаголов не берём
     "нар": "adv",
     "числ": "num",
 }
@@ -351,6 +351,11 @@ def run(args) -> dict:
         good = tuple(x.strip() for x in args.include_rules.split(",") if x.strip())
         rules = [r for r in rules if r.name.startswith(good)]
         print("include-rules: правил %d" % len(rules), flush=True)
+    if args.exclude_info:
+        tokens = tuple(x.strip().upper() for x in args.exclude_info.split(",") if x.strip())
+        rules = [r for r in rules
+                 if not any(t in (getattr(r, "info", "") or "").upper() for t in tokens)]
+        print("exclude-info %s: правил %d" % (",".join(tokens), len(rules)), flush=True)
     if args.exclude_rules:
         bad = tuple(x.strip() for x in args.exclude_rules.split(",") if x.strip())
         rules = [r for r in rules if not r.name.startswith(bad)]
@@ -500,6 +505,8 @@ def main(argv=None):
                     help="rule groups to use: simple,complex,compound")
     ap.add_argument("--include-rules", default=None,
                     help="comma-separated rule-name prefixes to keep (exact startswith)")
+    ap.add_argument("--exclude-info", default=None,
+                    help="drop rules whose info contains any of these tokens")
     ap.add_argument("--include-info", default=None,
                     help="keep only rules whose info contains any of these tokens")
     ap.add_argument("--exclude-rules", default=None,
