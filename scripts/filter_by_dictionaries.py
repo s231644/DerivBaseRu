@@ -192,7 +192,7 @@ def cmd_blacklist(args):
                 rows.append(line)
     kept = dropped = 0
     with open(args.out, "w", encoding="utf-8") as fo:
-        for line in fi:
+        for line in rows:
             rec = json.loads(line)
             parent = rec["parents"][0]["word"] if rec.get("parents") else ""
             if (norm(rec.get("word")), norm(parent), rec.get("rule")) in bad:
@@ -269,6 +269,62 @@ def cmd_yocheck(args):
         print("расхождений с написанием словаря нет", flush=True)
 
 
+def cmd_poscheck(args):
+    """Проверка части речи для записей, подтверждённых только Далей.
+
+    Слова, известные Викисловарю с другой частью речи, отбрасываются сразу;
+    остальные проверяются морфологически (pymorphy3, тег --tag).
+    """
+    import pymorphy3
+    morph = pymorphy3.MorphAnalyzer()
+    wiki_target, wiki_other = set(), {}
+    with gzip.open(args.wiktionary, "rt", encoding="utf-8") as fh:
+        for line in fh:
+            rec = json.loads(line)
+            word = norm(rec.get("title"))
+            if not word:
+                continue
+            for entry in rec.get("entries") or []:
+                pos = WIKTIONARY_POS.get(entry.get("pos"))
+                if not pos:
+                    continue
+                if pos == args.pos:
+                    wiki_target.add(word)
+                else:
+                    wiki_other.setdefault(word, set()).add(pos)
+    kept = dropped_pos = dropped_tag = 0
+    with open(args.input, encoding="utf-8") as fi, open(args.out, "w", encoding="utf-8") as fo:
+        for line in fi:
+            line = line.strip()
+            if not line:
+                continue
+            rec = json.loads(line)
+            word = norm(rec.get("word"))
+            verified = list(rec.get("verified_by") or [])
+            if word in wiki_target and "wiktionary" not in verified:
+                rec["verified_by"] = ["wiktionary"] + verified
+            if "wiktionary" in (rec.get("verified_by") or []) or word in wiki_target:
+                fo.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                kept += 1
+                continue
+            if rec.get("judged_by") == "subagent":
+                # запись уже проверена субагентом — оставляем как есть
+                fo.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                kept += 1
+                continue
+            if word in wiki_other:
+                dropped_pos += 1
+                continue
+            if any(args.tag in str(p.tag) for p in morph.parse(rec.get("word"))):
+                rec["pos_check"] = "pymorphy:" + args.tag
+                fo.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                kept += 1
+            else:
+                dropped_tag += 1
+    print("%s: осталось %d (отброшено: чужая ЧР %d, не %s %d)"
+          % (args.input, kept, dropped_pos, args.tag, dropped_tag), flush=True)
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -292,6 +348,13 @@ def main(argv=None):
     b.add_argument("--blacklist", required=True)
     b.add_argument("--out", required=True)
     b.set_defaults(func=cmd_blacklist)
+    q = sub.add_parser("poscheck")
+    q.add_argument("--input", required=True)
+    q.add_argument("--out", required=True)
+    q.add_argument("--pos", required=True, help="часть речи движка: adv, verb, ...")
+    q.add_argument("--tag", required=True, help="тег pymorphy3: ADVB, VERB, ...")
+    q.add_argument("--wiktionary", default="data/wiktionary/parsed_ru.jsonl.gz")
+    q.set_defaults(func=cmd_poscheck)
     y = sub.add_parser("yocheck")
     y.add_argument("--input", required=True)
     y.add_argument("--wiktionary", default="data/wiktionary/parsed_ru.jsonl.gz")
