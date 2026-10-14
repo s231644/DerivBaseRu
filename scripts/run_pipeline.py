@@ -31,6 +31,10 @@ from derivbase_ru.cache import ResultCache
 from derivbase_ru.derivation import Derivation
 
 SCHEMA_VERSION = 1
+
+# Temporarily omit the per-edge `flags` object from the output.
+# Set back to True to restore it.
+EMIT_FLAGS = False
 STRESS = "\u0301\u00b4"
 
 # Wiktionary POS template tags -> engine POS tags (Derivation.pos_all).
@@ -112,7 +116,7 @@ def rule_kind(info: str) -> str:
 def build_record(word_a, pos_a, word_b, pos_b, rule, meta_b, known, rare):
     entry_b = meta_b or {}
     is_real = (word_a, pos_a) in known
-    return OrderedDict([
+    rec = OrderedDict([
         ("schema", SCHEMA_VERSION),
         ("id", "%s|%s" % (word_a, pos_a)),
         ("word", word_a),
@@ -130,14 +134,16 @@ def build_record(word_a, pos_a, word_b, pos_b, rule, meta_b, known, rare):
             ("slot", 0),
         ])]),
         ("inflect_type", entry_b.get("inflect_type")),
-        ("flags", OrderedDict([
+    ])
+    if EMIT_FLAGS:
+        rec["flags"] = OrderedDict([
             ("real", is_real),
             ("rare", bool(rare)),
             ("reconstructed", False),
             ("potential", not is_real),
-        ])),
-        ("source", "derivbase"),
-    ])
+        ])
+    rec["source"] = "derivbase"
+    return rec
 
 
 def run(args) -> dict:

@@ -4,7 +4,7 @@
   "pos_a": [
     "num"
   ],
-  "generated_at": "2026-10-14T05:57:45Z",
+  "generated_at": "2026-10-14T06:09:13Z",
   "sources": [
     {
       "name": "parsed_ru.jsonl.gz",
@@ -22,5 +22,5 @@
     "rule1033(num + оj(е) -> num)": 2,
     "rule1033(num + ер(о) -> num)": 28
   },
-  "seconds": 9.3
+  "seconds": 11.4
 }
