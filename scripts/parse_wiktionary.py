@@ -27,6 +27,18 @@ LANG_RE = re.compile(r"\{\{-([a-zA-Z-]+)-\}\}")
 POS_PREFIXES = ("сущ", "прил", "гл", "нар", "мест", "числ", "предл", "союз",
                 "част", "межд", "предик", "вводн", "прич", "деепр", "предикатив")
 
+# ru.wiktionary marks part of speech with several template families: Russian
+# short names ({{сущ-ru}}), English names ({{prep ru}}, {{adv ru}}, {{interj ru}}),
+# full Russian words ({{наречие}}), surname/abbreviation systems ({{Фам ru|...}},
+# {{abbrev}}).  Map them all to the canonical Russian abbreviation.
+POS_ALIASES = {
+    "prep": "предл", "conj": "союз", "part": "част", "pron": "мест",
+    "num": "числ", "adj": "прил", "adv": "нар", "verb": "гл",
+    "intj": "межд", "interj": "межд", "postp": "послелог",
+    "Фам": "сущ", "наречие": "нар", "нареч": "нар",
+    "abbrev": "аббр", "аббр": "аббр",
+}
+
 SECTION_MORPH = ("Морфологические и синтаксические свойства",)
 SECTION_PRON = ("Произношение",)
 SECTION_SEM = ("Семантические свойства",)
@@ -186,15 +198,25 @@ def find_child(node, names):
 
 
 def detect_pos(name: str):
-    """Part of speech from a template name, e.g. 'сущ-ru' -> 'сущ'."""
+    """Part of speech from a template name, e.g. 'сущ-ru' -> 'сущ'.
+
+    Handles suffixed ({{сущ-ru}}), spaced ({{сущ ru m a 2a}}), English
+    ({{prep ru}}, {{adv ru}}), full-word ({{наречие}}) and special
+    ({{Фам ru|...}}, {{abbrev}}) template families.
+    """
     first = (name or "").split()[0]
     if not first:
         return None
-    base = re.split("[-_]", first)[0]
+    base = re.split("[-_]", first)[0].rstrip(".")
     if base in POS_PREFIXES:
         return base
-    if first in POS_PREFIXES:
-        return first
+    if base in POS_ALIASES:
+        return POS_ALIASES[base]
+    first_clean = first.rstrip(".")
+    if first_clean in POS_PREFIXES:
+        return first_clean
+    if first_clean in POS_ALIASES:
+        return POS_ALIASES[first_clean]
     return None
 
 

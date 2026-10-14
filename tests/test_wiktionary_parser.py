@@ -40,6 +40,33 @@ def test_pos_from_plain_template():
     assert e["pos"] == "сущ"
 
 
+def test_pos_from_english_and_special_templates():
+    assert pw.detect_pos("prep ru") == "предл"
+    assert pw.detect_pos("adv ru") == "нар"
+    assert pw.detect_pos("interj ru") == "межд"
+    assert pw.detect_pos("Фам ru m 2b") == "сущ"
+    assert pw.detect_pos("abbrev") == "аббр"
+    assert pw.detect_pos("аббр.") == "аббр"
+    assert pw.detect_pos("наречие") == "нар"
+
+
+PREP = """= {{-ru-}} =
+=== Морфологические и синтаксические свойства ===
+{{prep ru|за|п=творительным}}
+=== Произношение ===
+{{transcription-ru|за}}
+=== Семантические свойства ===
+==== Значение ====
+# [[позади]] чего-либо
+"""
+
+
+def test_prep_entry_gets_pos():
+    e = pw.parse_page("за", PREP)["entries"][0]
+    assert e["pos"] == "предл"
+    assert e["inflection"]["template"] == "prep ru"
+
+
 def test_detect_pos():
     assert pw.detect_pos("сущ-ru") == "сущ"
     assert pw.detect_pos("нар-ru") == "нар"
