@@ -35,6 +35,10 @@ const ROOT = __dirname;
 const DATA_DIR = path.resolve(ROOT, args.data || '../data/derived');
 const PUBLIC_DIR = path.resolve(ROOT, args.public || 'public');
 
+// TEMP: multi-word lexemes (ids containing a space, e.g. 'двадцать восемь')
+// are kept out of the graph for now. Set to false to bring them back.
+const SKIP_MULTIWORD = true;
+
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8',
   '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8',
   '.svg': 'image/svg+xml', '.ico': 'image/x-icon' };
@@ -95,6 +99,7 @@ function loadDataset(name) {
     let rec;
     try { rec = JSON.parse(t); } catch (e) { continue; }
     if (!rec || !rec.id) continue;
+    if (SKIP_MULTIWORD && /\s/.test(rec.id)) continue;
     const node = upsert(rec.id, rec.word, rec.pos);
     if (rec.accented) node.accented = rec.accented;
     const ps = Array.isArray(rec.parents) ? rec.parents : [];
