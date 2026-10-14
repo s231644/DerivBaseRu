@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import gzip
+import re
 import json
 import os
 import sys
@@ -74,6 +75,15 @@ KIND_MAP = {
 
 def has_stress(text: str) -> bool:
     return any(ch in text for ch in STRESS)
+
+
+def fixed_modifiers(name: str):
+    """Модификатор-префикс из имени правила: rule1026([полу] + adv -> adv) -> ['полу'].
+    Варианты через слэш перечисляются: [мимо/само] -> ['мимо', 'само']."""
+    match = re.search(r"\[([^\]]+)\]", name or "")
+    if not match:
+        return []
+    return [part.strip() for part in match.group(1).split("/") if part.strip()]
 
 
 def single_word(word: str) -> bool:
@@ -271,6 +281,9 @@ def run(args) -> dict:
     wanted = set(a.strip() for a in args.pos_a.split(",") if a.strip())
     complexities = set(a.strip() for a in args.complexities.split(",") if a.strip())
     rules, skipped_complex = select_rules(der, wanted, complexities, args.force_complex)
+    if args.exclude_rules:
+        bad = tuple(x.strip() for x in args.exclude_rules.split(",") if x.strip())
+        rules = [r for r in rules if not r.name.startswith(bad)]
     flat_rules = [r for r in rules if not isinstance(r, CompoundRule)]
     compound_rules = [r for r in rules if isinstance(r, CompoundRule)]
     print("complexities=%s pos_a=%s rules=%d (flat=%d, compound=%d, only_complex skipped=%d)" % (
@@ -327,9 +340,13 @@ def run(args) -> dict:
                 per_rule[rule.name] = 0
                 continue
             modifier_pos = rule.poss_m[0]
-            modifiers = sorted(
-                w for w in words_by_pos.get(modifier_pos, {}) if single_word(w)
-            )[:args.modifier_limit]
+            if modifier_pos == "*":
+                # фиксированный префикс из имени правила ([полу], [мимо/само], [пол])
+                modifiers = fixed_modifiers(rule.name)
+            else:
+                modifiers = sorted(
+                    w for w in words_by_pos.get(modifier_pos, {}) if single_word(w)
+                )[:args.modifier_limit]
             heads = sorted(
                 w for w in words_by_pos.get(rule.pos_b, {}) if single_word(w)
             )
@@ -412,6 +429,8 @@ def main(argv=None):
                     help="comma-separated target POS to run rules for")
     ap.add_argument("--complexities", default="simple,complex,compound",
                     help="rule groups to use: simple,complex,compound")
+    ap.add_argument("--exclude-rules", default=None,
+                    help="comma-separated rule-name prefixes to skip")
     ap.add_argument("--exclude-file", default=None,
                     help="file with source words to skip (default data/pseudo_lemmas.txt)")
     ap.add_argument("--exclude-words", default=None,

@@ -143,6 +143,36 @@ def cmd_merge(args):
           % (len(final), len(base), len(approved), len(rows) - len(base)), flush=True)
 
 
+def cmd_clean(args):
+    """Drop artefacts: capitalised Cyrillic entries and Latin-only words."""
+    kept, dropped_cap, dropped_lat = 0, 0, 0
+    with open(args.input, encoding="utf-8") as fi, \
+         open(args.out, "w", encoding="utf-8") as fo:
+        for line in fi:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                rec = json.loads(line)
+            except ValueError:
+                dropped_lat += 0  # битая строка: считаем отдельно ниже
+                dropped_bad = getattr(cmd_clean, "_bad", 0) + 1
+                cmd_clean._bad = dropped_bad
+                continue
+            word = rec.get("word", "")
+            parents = [p.get("word", "") for p in rec.get("parents") or []]
+            if word[:1].isupper() or any(p[:1].isupper() for p in parents):
+                dropped_cap += 1
+                continue
+            if re.search(r"[A-Za-z]", word):
+                dropped_lat += 1
+                continue
+            fo.write(json.dumps(rec, ensure_ascii=False) + "\n")
+            kept += 1
+    print("%s: осталось %d (отброшено заглавных %d, латиницы %d)"
+          % (args.input, kept, dropped_cap, dropped_lat), flush=True)
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -161,6 +191,10 @@ def main(argv=None):
     m.add_argument("--judged", action="append", required=True)
     m.add_argument("--final", required=True)
     m.set_defaults(func=cmd_merge)
+    c = sub.add_parser("clean")
+    c.add_argument("--input", required=True)
+    c.add_argument("--out", required=True)
+    c.set_defaults(func=cmd_clean)
     args = ap.parse_args(argv)
     sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     args.func(args)
