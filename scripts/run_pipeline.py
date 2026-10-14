@@ -53,6 +53,12 @@ POS_MAP = {
     "числ": "num",
 }
 
+# Lexemes tagged with another POS in Wiktionary but belonging to a
+# derivation series; added to the bucket explicitly.
+EXTRA_WORDS = {
+    "num": ("один",),
+}
+
 # rule.info -> schema kind
 KIND_MAP = {
     "SFX": "sfx",
@@ -108,6 +114,11 @@ def read_dictionary(path: str):
                         accented = form
                         break
                 bucket[word] = {"accented": accented, "inflect_type": None}
+    for pos, extra in EXTRA_WORDS.items():
+        for word in extra:
+            known.add((word, pos))
+            words_by_pos[pos].setdefault(
+                word, {"accented": None, "inflect_type": None})
     return words_by_pos, known, n
 
 
