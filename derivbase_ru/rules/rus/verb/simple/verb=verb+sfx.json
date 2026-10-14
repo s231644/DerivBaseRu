@@ -430,7 +430,7 @@
             "form": "inf",
             "inflect_type": "8г"
           },
-          "rules": "[(delptfx) & (replsfx, {('чь', 'г')}) & (try replsfx, {('же', 'жи')}) & (addsfx, {'аться'}) | (replsfx, {('чь', 'г')}) & (try replsfx, {('же', 'жи')}) & (addsfx, {'ать'})]"
+          "rules": "[(delptfx) & (replsfx, {('ечь', 'игаться')}) | (replsfx, {('ечь', 'игать')})]"
         },
         {
           "tags_b": {
