@@ -43,6 +43,9 @@ const SKIP_MULTIWORD = true;
 // not fit in memory); raise with --max-bytes.
 const MAX_BYTES = Number(args['max-bytes'] || 20 * 1024 * 1024);
 const ALL_DATASETS = '*';
+// Datasets without a precomputed components sidecar are loaded eagerly only
+// when small; bigger ones are listed as skipped instead of blocking the loop.
+const EAGER_MAX = Number(args['eager-max'] || 5 * 1024 * 1024);
 
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8',
   '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8',
@@ -99,6 +102,33 @@ function mergedNames() {
 }
 
 const cache = new Map();
+
+// Precomputed connected components: sidecar <dataset>.components.json produced by
+// scripts/build_components.py. Served as-is so the frontend never builds components.
+const compCache = new Map();
+
+function componentsPath(name) {
+  const base = path.join(DATA_DIR, name.replace(/\.jsonl(\.gz)?$/, ''));
+  const plain = base + '.components.json';
+  if (fs.existsSync(plain)) return plain;
+  const gz = plain + '.gz';
+  if (fs.existsSync(gz)) return gz;
+  return null;
+}
+
+function loadComponents(name) {
+  const file = componentsPath(name);
+  if (!file) return null;
+  const mtime = fs.statSync(file).mtimeMs;
+  const cached = compCache.get(name);
+  if (cached && cached.mtime === mtime) return cached.data;
+  let text;
+  try { text = readMaybeGz(file); } catch (e) { return null; }
+  let data;
+  try { data = JSON.parse(text); } catch (e) { return null; }
+  compCache.set(name, { mtime, data });
+  return data;
+}
 
 function loadAllDatasets() {
   const names = mergedNames();
@@ -307,19 +337,43 @@ const server = http.createServer((req, res) => {
   const p = url.pathname;
   try {
     if (p === '/api/datasets') {
-      const usable = usableDatasets();
-      const skipped = listDatasets().filter((n) => usable.indexOf(n) < 0)
-        .map((n) => ({ name: n, bytes: fileSize(n) }));
-      const all = loadAllDatasets();
-      const datasets = [{
-        name: ALL_DATASETS, label: 'все датасеты',
-        edges: all.edges.length, lexemes: all.lexemes.size, includes: all.includes,
-      }];
-      for (const n of usable) {
+      // Cheap listing: counts come from precomputed <name>.components.json sidecars,
+      // so we never load heavy datasets just to report their size.
+      const names = listDatasets();
+      const datasets = [];
+      const skipped = [];
+      const included = [];
+      let sumEdges = 0, sumNodes = 0;
+      for (const n of names) {
+        const comp = loadComponents(n);
+        if (comp) {
+          datasets.push({ name: n, label: n.replace(/\.jsonl(\.gz)?$/, ''), edges: comp.edges, lexemes: comp.nodes, components: comp.n_components, largest: comp.largest, source: 'components' });
+          included.push(n); sumEdges += comp.edges; sumNodes += comp.nodes;
+          continue;
+        }
+        if (fileSize(n) > EAGER_MAX) { skipped.push({ name: n, bytes: fileSize(n), reason: 'no components, over eager-max' }); continue; }
         const d = loadDataset(n);
-        if (d) datasets.push({ name: n, label: n.replace(/\.jsonl(\.gz)?$/, ''), edges: d.edges.length, lexemes: d.lexemes.size, lines: d.lines });
+        if (d) {
+          datasets.push({ name: n, label: n.replace(/\.jsonl(\.gz)?$/, ''), edges: d.edges.length, lexemes: d.lexemes.size, lines: d.lines, components: null, source: 'loaded' });
+          included.push(n); sumEdges += d.edges.length; sumNodes += d.lexemes.size;
+        } else { skipped.push({ name: n, bytes: fileSize(n), reason: 'unreadable' }); }
       }
+      datasets.unshift({ name: ALL_DATASETS, label: 'все датасеты', edges: sumEdges, lexemes: sumNodes, includes: included, source: 'components' });
       return sendJson(res, { dataDir: DATA_DIR, datasets, skipped });
+    }
+    if (p === '/api/components') {
+      const cname = url.searchParams.get('dataset') || ALL_DATASETS;
+      const comp = loadComponents(cname);
+      if (!comp) return sendJson(res, { error: 'components not precomputed', dataset: cname }, 404);
+      const fields = (url.searchParams.get('fields') || 'reps').split(',').map((s) => s.trim());
+      const out = { dataset: cname, nodes: comp.nodes, edges: comp.edges, n_components: comp.n_components, largest: comp.largest };
+      if (fields.indexOf('all') >= 0) { out.id2c = comp.id2c; out.sizes = comp.sizes; out.reps = comp.reps; }
+      else {
+        if (fields.indexOf('id2c') >= 0) out.id2c = comp.id2c;
+        if (fields.indexOf('sizes') >= 0) out.sizes = comp.sizes;
+        if (fields.indexOf('reps') >= 0) out.reps = comp.reps;
+      }
+      return sendJson(res, out);
     }
     if (p.startsWith('/api/')) {
       const name = url.searchParams.get('dataset') || ALL_DATASETS;
@@ -335,7 +389,13 @@ const server = http.createServer((req, res) => {
         const depth = Math.max(1, Math.min(4, Number(url.searchParams.get('depth') || 1)));
         const maxNodes = Math.max(10, Math.min(500, Number(url.searchParams.get('maxNodes') || 150)));
         const upToRoot = url.searchParams.get('roots') !== '0';
-        return sendJson(res, Object.assign({ dataset: ds.name }, subgraph(ds, id, depth, maxNodes, upToRoot)));
+        const comp = loadComponents(ds.name);
+        let compInfo = null;
+        if (comp && comp.id2c && Object.prototype.hasOwnProperty.call(comp.id2c, id)) {
+          const ci = comp.id2c[id];
+          compInfo = { index: ci, size: comp.sizes ? comp.sizes[String(ci)] : null };
+        }
+        return sendJson(res, Object.assign({ dataset: ds.name, component: compInfo }, subgraph(ds, id, depth, maxNodes, upToRoot)));
       }
       if (p === '/api/lexeme') {
         const id = url.searchParams.get('id');
