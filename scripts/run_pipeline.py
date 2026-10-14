@@ -80,6 +80,40 @@ def single_word(word: str) -> bool:
     return bool(word) and not any(c.isspace() for c in word)
 
 
+def text_opener(path: str):
+    if path.endswith(".gz"):
+        return gzip.open(path, "rt", encoding="utf-8")
+    return open(path, encoding="utf-8")
+
+
+def add_extra_words(paths, words_by_pos):
+    """Chain derivations: add (word, pos) pairs from other datasets as
+    extra source words. They are NOT added to `known`, so anything derived
+    from them stays potential unless the dictionary attests it."""
+    added = 0
+    for path in paths:
+        for line in text_opener(path):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                rec = json.loads(line)
+            except ValueError:
+                continue
+            word = rec.get("word")
+            pos = rec.get("pos")
+            if not word or pos not in words_by_pos:
+                continue
+            if word in words_by_pos[pos]:
+                continue
+            words_by_pos[pos][word] = {
+                "accented": rec.get("accented"),
+                "inflect_type": rec.get("inflect_type"),
+            }
+            added += 1
+    return added
+
+
 def read_dictionary(path: str):
     """Return (words_by_pos, known, n_pages) from a parsed Wiktionary JSONL(.gz).
 
@@ -201,6 +235,12 @@ def run(args) -> dict:
         n_pages,
         ", ".join("%s=%d" % (p, len(w)) for p, w in words_by_pos.items()),
     ), flush=True)
+
+    if args.extra_dataset:
+        extra_paths = [s.strip() for s in args.extra_dataset.split(",") if s.strip()]
+        n_extra = add_extra_words(extra_paths, words_by_pos)
+        print("extra source words: %d (from %s)" % (n_extra, ", ".join(extra_paths)),
+              flush=True)
 
     der = Derivation(lang=args.lang, cache=ResultCache(args.cache) if args.cache else None)
     wanted = set(a.strip() for a in args.pos_a.split(",") if a.strip())
@@ -347,6 +387,9 @@ def main(argv=None):
                     help="comma-separated target POS to run rules for")
     ap.add_argument("--complexities", default="simple,complex,compound",
                     help="rule groups to use: simple,complex,compound")
+    ap.add_argument("--extra-dataset", default=None,
+                    help="comma-separated JSONL datasets whose words are added as\n"
+                         "extra source words, chaining derivations")
     ap.add_argument("--real-only", action="store_true",
                     help="keep only edges attested in the dictionary (all rules)")
     ap.add_argument("--compound-real-only", action="store_true",
