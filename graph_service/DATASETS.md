@@ -17,10 +17,10 @@
 | `adv_g5.clean.jsonl` | наречия | группа 5 (compound), финал |
 | `adv_ymx.clean.jsonl` | наречия | исключения, финал |
 | `verb_pfx.jsonl` | глаголы | **prefix + verb → verb**, очищено по Вики/Далю |
+| `verb_compound.jsonl` | глаголы | **компаунды** (`[модификатор + интерфикс] + verb`), отобраны субагентом |
 
 Дальше сюда добавятся (тем же форматом): `verb_verb.jsonl` (verb→verb, прочие способы),
-`verb_compound.jsonl` (компаунды), `verb_noun.jsonl` / `verb_adj.jsonl` / `verb_num.jsonl`
-(другие ЧР → verb) и т.д.
+`verb_noun.jsonl` / `verb_adj.jsonl` / `verb_num.jsonl` (другие ЧР → verb) и т.д.
 
 ## Схема записи (одно ребро = одна строка JSONL)
 
