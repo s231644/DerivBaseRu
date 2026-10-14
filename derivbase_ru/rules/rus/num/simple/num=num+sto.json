@@ -1,0 +1,23 @@
+{
+  "data": [
+    {
+      "rule_id": "rule1036(num + сто -> num)",
+      "short_id": "-сто",
+      "info": "COMPOUND",
+      "pos_b": "num",
+      "pos_a": "num",
+      "cases": [],
+      "comment": "RusGram 1982, § 1034: dvesti/trista/.../devyatsot are compound numerals whose first component names the number of hundreds and whose supporting component is the stem of сто. Irregular forms are listed as rare pairs.",
+      "rare": [
+        "два;двести",
+        "три;триста",
+        "четыре;четыреста",
+        "пять;пятьсот",
+        "шесть;шестьсот",
+        "семь;семьсот",
+        "восемь;восемьсот",
+        "девять;девятьсот"
+      ]
+    }
+  ]
+}

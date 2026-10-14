@@ -68,6 +68,7 @@ KIND_MAP = {
     "POSTFIX": "postfix",
     "INTERFIX": "interfix",
     "CONV": "conversion",
+    "COMPOUND": "compound",
 }
 
 
