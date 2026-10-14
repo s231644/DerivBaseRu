@@ -140,9 +140,8 @@ function buildGraph(g) {
   applyView();
   var w = state.bounds.w, h = state.bounds.h;
   var byId = new Map();
-  state.nodes = (g.nodes || []).map(function (n, i) {
-    var a = (i / Math.max(1, g.nodes.length)) * Math.PI * 2;
-    var node = { id: n.id, word: n.word, pos: n.pos, x: w / 2 + Math.cos(a) * 110, y: h / 2 + Math.sin(a) * 110, isParent: false };
+  state.nodes = (g.nodes || []).map(function (n) {
+    var node = { id: n.id, word: n.word, pos: n.pos, x: w / 2, y: h / 2, isParent: false };
     byId.set(n.id, node);
     return node;
   });
@@ -156,7 +155,70 @@ function buildGraph(g) {
   state.alpha = 1;
   draw();
   renderLegend();
-  runSim();
+  layoutLayered();
+  update();
+}
+
+/* Layered layout: rank by BFS distance from the focus (ancestors left, descendants
+   right), then order nodes inside each rank with the barycenter heuristic to
+   reduce edge crossings (a planar-ish, deterministic layout). */
+function layoutLayered() {
+  var nodes = state.nodes, links = state.links, focus = state.focus;
+  var byId = new Map(); nodes.forEach(function (n) { byId.set(n.id, n); });
+  if (!byId.has(focus)) return;
+  var outAdj = {}, inAdj = {};
+  nodes.forEach(function (n) { outAdj[n.id] = []; inAdj[n.id] = []; });
+  links.forEach(function (l) { outAdj[l.source.id].push(l.target.id); inAdj[l.target.id].push(l.source.id); });
+  function bfs(start, adj) {
+    var dist = {}, q = [start]; dist[start] = 0;
+    while (q.length) {
+      var u = q.shift();
+      (adj[u] || []).forEach(function (v) { if (dist[v] === undefined) { dist[v] = dist[u] + 1; q.push(v); } });
+    }
+    return dist;
+  }
+  var down = bfs(focus, outAdj), up = bfs(focus, inAdj);
+  nodes.forEach(function (n) {
+    var d = down[n.id], u = up[n.id];
+    if (d === undefined && u === undefined) n.layer = 0;
+    else if (d !== undefined && u !== undefined) n.layer = (d <= u) ? d : -u;
+    else if (d !== undefined) n.layer = d;
+    else n.layer = -u;
+  });
+  var layers = {};
+  nodes.forEach(function (n) { (layers[n.layer] = layers[n.layer] || []).push(n); });
+  var keys = Object.keys(layers).map(Number).sort(function (a, b) { return a - b; });
+  var orderIndex = {};
+  keys.forEach(function (k) {
+    layers[k].sort(function (a, b) { return a.word.localeCompare(b.word, 'ru'); });
+    layers[k].forEach(function (n, i) { orderIndex[n.id] = i; });
+  });
+  function sweep(ks) {
+    ks.forEach(function (k) {
+      var arr = layers[k];
+      arr.forEach(function (n) {
+        var nb = outAdj[n.id].concat(inAdj[n.id]).filter(function (v) { return byId.has(v) && byId.get(v).layer !== n.layer; });
+        if (!nb.length) { n.bary = orderIndex[n.id]; return; }
+        var s = 0; nb.forEach(function (v) { s += (orderIndex[v] || 0); });
+        n.bary = s / nb.length;
+      });
+      arr.sort(function (a, b) { return (a.bary - b.bary) || a.word.localeCompare(b.word, 'ru'); });
+      arr.forEach(function (n, i) { orderIndex[n.id] = i; });
+    });
+  }
+  for (var it = 0; it < 6; it++) { sweep(keys.slice().reverse()); sweep(keys); }
+  var w = state.bounds.w, h = state.bounds.h, cx = w / 2, cy = h / 2;
+  var maxAbs = 1; keys.forEach(function (k) { maxAbs = Math.max(maxAbs, Math.abs(k)); });
+  var xGap = Math.min(170, (w - 120) / (2 * maxAbs + 1));
+  var maxCount = 1; keys.forEach(function (k) { maxCount = Math.max(maxCount, layers[k].length); });
+  var yGap = Math.min(46, (h - 60) / Math.max(1, maxCount));
+  keys.forEach(function (k) {
+    var arr = layers[k];
+    arr.forEach(function (n, i) {
+      n.x = cx + k * xGap;
+      n.y = cy + (i - (arr.length - 1) / 2) * yGap;
+    });
+  });
 }
 
 function draw() {

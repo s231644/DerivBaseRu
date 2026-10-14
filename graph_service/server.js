@@ -386,7 +386,7 @@ const server = http.createServer((req, res) => {
       if (p === '/api/graph') {
         const id = url.searchParams.get('id');
         if (!id || !ds.lexemes.has(id)) return sendJson(res, { error: 'lexeme not found', id }, 404);
-        const depth = Math.max(1, Math.min(4, Number(url.searchParams.get('depth') || 1)));
+        const depth = Math.max(1, Math.min(10, Number(url.searchParams.get('depth') || 1)));
         const maxNodes = Math.max(10, Math.min(500, Number(url.searchParams.get('maxNodes') || 150)));
         const upToRoot = url.searchParams.get('roots') !== '0';
         const comp = loadComponents(ds.name);
