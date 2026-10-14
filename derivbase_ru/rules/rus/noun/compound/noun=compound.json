@@ -56,6 +56,7 @@
 
     {
       "rule_id": "rule552([пол] + noun + GEN -> noun)",
+      "fixed_affix": "пол",
       "info": "COMPOUND,INFL",
       "pos_b": "noun",
       "pos_a": "noun",

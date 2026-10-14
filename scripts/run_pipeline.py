@@ -77,6 +77,34 @@ def has_stress(text: str) -> bool:
     return any(ch in text for ch in STRESS)
 
 
+POS_TOKENS = {"noun", "adj", "verb", "adv", "num", "part", "tgr", "*"}
+
+
+def fixed_affix(name: str):
+    """(affix, kind) для правила с фиксированным модификатором (pos_m="*").
+    Префикс берётся из имени правила и НЕ становится узлом графа.
+    rule1028(в + [пол] + noun + GEN -> adv) -> ("впол", "pfx")."""
+    match = re.search(r"\(([^)]*)\)", name or "")
+    if not match:
+        return None, None
+    body = match.group(1).split("->")[0]
+    before, after, seen_head = [], [], False
+    for part in [x.strip() for x in body.split("+")]:
+        if part.startswith("[") and part.endswith("]"):
+            (before if not seen_head else after).append(part[1:-1])
+            continue
+        if part in POS_TOKENS:
+            seen_head = True
+            continue
+        if part:
+            (before if not seen_head else after).append(part)
+    if before:
+        return "".join(before), "pfx"
+    if after:
+        return "".join(after), "sfx"
+    return None, None
+
+
 def fixed_modifiers(name: str):
     """Модификатор-префикс из имени правила: rule1026([полу] + adv -> adv) -> ['полу'].
     Варианты через слэш перечисляются: [мимо/само] -> ['мимо', 'само']."""
@@ -187,7 +215,7 @@ def parent(word: str, pos: str, role: str = "head", slot: int = 0) -> OrderedDic
 
 
 def build_record(word_a, pos_a, parents, rule, meta_a, known, rare,
-                 include_flags=True, kind=None):
+                 include_flags=True, kind=None, affix=None):
     entry_a = meta_a or {}
     is_real = (word_a, pos_a) in known
     rec = OrderedDict([
@@ -210,6 +238,8 @@ def build_record(word_a, pos_a, parents, rule, meta_a, known, rare,
             ("reconstructed", False),
             ("potential", not is_real),
         ])
+    if affix:
+        rec["affix"] = affix
     rec["source"] = "derivbase"
     return rec
 
@@ -377,12 +407,21 @@ def run(args) -> dict:
                             continue
                         if (args.compound_real_only or args.real_only) and (word_a, rule.pos_a) not in known:
                             continue
+                        if modifier_pos == "*":
+                            # Фиксированный префикс (полу-, впол-, мимо-): узел графа не создаётся,
+                            # связь идёт от лексемы-основы (полусидя <- сидя <- сидеть).
+                            affix, affix_kind = fixed_affix(rule.name)
+                            parents_ = [parent(head, rule.pos_b, "head", 0)]
+                            kind_ = affix_kind or "pfx"
+                        else:
+                            affix = None
+                            parents_ = [parent(head, rule.pos_b, "head", slot_head),
+                                        parent(modifier, modifier_pos, "modifier", slot_mod)]
+                            kind_ = "compound"
                         rec = build_record(
-                            word_a, rule.pos_a,
-                            [parent(head, rule.pos_b, "head", slot_head),
-                             parent(modifier, modifier_pos, "modifier", slot_mod)],
+                            word_a, rule.pos_a, parents_,
                             rule, words_by_pos[rule.pos_a].get(word_a), known, False,
-                            include_flags=EMIT_FLAGS, kind="compound",
+                            include_flags=EMIT_FLAGS, kind=kind_, affix=affix,
                         )
                         out.write(json.dumps(rec, ensure_ascii=False) + "\n")
                         n_records += 1

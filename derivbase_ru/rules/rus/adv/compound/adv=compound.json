@@ -15,6 +15,7 @@
     },
     {
       "rule_id": "rule1026([полу] + tgr -> adv)",
+      "fixed_affix": "полу",
       "info": "COMPOUND",
       "pos_b": "tgr",
       "pos_a": "adv",
@@ -28,6 +29,7 @@
     },
     {
       "rule_id": "rule1026([полу] + adv -> adv)",
+      "fixed_affix": "полу",
       "info": "COMPOUND",
       "pos_b": "adv",
       "pos_a": "adv",
@@ -41,6 +43,7 @@
     },
     {
       "rule_id": "rule1027([мимо/само] + verb + ом -> adv)",
+      "fixed_affix": "мимо/само",
       "info": "COMPOUND,SFX",
       "pos_b": "verb",
       "pos_a": "adv",
@@ -54,6 +57,7 @@
     },
     {
       "rule_id": "rule1028(в + [пол] + noun + GEN -> adv)",
+      "fixed_affix": "впол",
       "info": "PFX,COMPOUND,SFX",
       "pos_b": "noun",
       "pos_a": "adv",
@@ -67,6 +71,7 @@
     },
     {
       "rule_id": "rule1029(в + [пол/три] + adj + а -> adv)",
+      "fixed_affix": "впол/втри",
       "info": "PFX,COMPOUND,SFX",
       "pos_b": "adj",
       "pos_a": "adv",

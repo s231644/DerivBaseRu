@@ -2,6 +2,7 @@
   "data": [
     {
       "rule_id": "rule961([полу/само] + verb -> verb)",
+      "fixed_affix": "полу/само",
       "info": "COMPOUND",
       "pos_b": "verb",
       "pos_a": "verb",
@@ -41,6 +42,7 @@
     },
     {
       "rule_id": "rule962(noun + [фицировать] -> verb)",
+      "fixed_affix": "фицировать",
       "info": "COMPOUND",
       "pos_b": "noun",
       "pos_a": "verb",
@@ -54,6 +56,7 @@
     },
     {
       "rule_id": "rule962(adj + [фицировать] -> verb)",
+      "fixed_affix": "фицировать",
       "info": "COMPOUND",
       "pos_b": "adj",
       "pos_a": "verb",
