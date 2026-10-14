@@ -217,6 +217,7 @@ data/dahl/dahl.jsonl
 data/wiktionary/*.jsonl
 # Reference material (Русская грамматика 1980), kept local only
 data/rusgram/
-data/derived/*.jsonl
+# generated derivation datasets (kept local, not tracked)
+data/derived/
 
 .DS_Store

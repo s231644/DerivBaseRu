@@ -80,6 +80,14 @@ function loadDataset(name) {
   const cached = cache.get(name);
   if (cached && cached.mtime === mtime) return cached;
 
+  let text;
+  try {
+    text = readMaybeGz(file);
+  } catch (e) {
+    // The file may be written right now (truncated gzip) or corrupt.
+    return null;
+  }
+
   const lexemes = new Map();
   const edges = [];
   const children = new Map();
@@ -92,7 +100,7 @@ function loadDataset(name) {
     return node;
   };
 
-  for (const line of readMaybeGz(file).split('\n')) {
+  for (const line of text.split('\n')) {
     const t = line.trim();
     if (!t) continue;
     lines++;
@@ -227,13 +235,17 @@ const server = http.createServer((req, res) => {
   const p = url.pathname;
   try {
     if (p === '/api/datasets') {
-      const datasets = listDatasets().map((n) => { const d = loadDataset(n); return { name: n, edges: d.edges.length, lexemes: d.lexemes.size, lines: d.lines }; });
+      const datasets = [];
+      for (const n of listDatasets()) {
+        const d = loadDataset(n);
+        if (d) datasets.push({ name: n, edges: d.edges.length, lexemes: d.lexemes.size, lines: d.lines });
+      }
       return sendJson(res, { dataDir: DATA_DIR, datasets });
     }
     if (p.startsWith('/api/')) {
       const name = url.searchParams.get('dataset') || listDatasets()[0];
       const ds = name ? loadDataset(name) : null;
-      if (!ds) return sendJson(res, { error: 'dataset not found', dataset: name }, 404);
+      if (!ds) return sendJson(res, { error: 'dataset not readable (missing or still being written)', dataset: name }, 503);
       if (p === '/api/search') {
         const limit = Math.max(1, Math.min(500, Number(url.searchParams.get('limit') || 50)));
         return sendJson(res, { dataset: ds.name, total: ds.lexemes.size, results: search(ds, url.searchParams.get('q') || '', limit) });
