@@ -21,6 +21,18 @@ Opens on http://127.0.0.1:8791 (loopback only).
 Datasets are re-read when the file mtime changes; HTTP responses use `Cache-Control: no-store`
 and asset URLs carry a token derived from the assets' mtimes.
 
+## Datasets
+
+Every `*.jsonl[.gz]` in the data dir shows up in the picker. The first entry is
+`все датасеты` (`dataset=*`), which merges them into one graph and searches across all.
+
+- Datasets larger than `--max-bytes` (default 20 MB) are listed under `skipped` and
+  are not loaded; a 5M-edge dataset would not fit in memory.
+- When one dataset stem extends another with a dot (`adv.rare.jsonl` vs
+  `adv.rare.verified.jsonl`) only the most specific one feeds the merged view.
+  Override with `--include a.jsonl,b.jsonl`.
+- Multi-word lexemes are skipped while `SKIP_MULTIWORD` is true.
+
 ## UI
 
 Left panel: dataset picker + lexeme search (debounced). Click a result or a graph node to

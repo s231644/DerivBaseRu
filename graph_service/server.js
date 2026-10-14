@@ -39,6 +39,11 @@ const PUBLIC_DIR = path.resolve(ROOT, args.public || 'public');
 // are kept out of the graph for now. Set to false to bring them back.
 const SKIP_MULTIWORD = true;
 
+// Datasets bigger than this are listed but not loaded (a 5M-edge graph would
+// not fit in memory); raise with --max-bytes.
+const MAX_BYTES = Number(args['max-bytes'] || 20 * 1024 * 1024);
+const ALL_DATASETS = '*';
+
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8',
   '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8',
   '.svg': 'image/svg+xml', '.ico': 'image/x-icon' };
@@ -71,11 +76,78 @@ function datasetPath(name) {
   return null;
 }
 
+function fileSize(name) {
+  const f = datasetPath(name);
+  return f ? fs.statSync(f).size : 0;
+}
+
+function usableDatasets() {
+  return listDatasets().filter((n) => fileSize(n) <= MAX_BYTES);
+}
+
+// Datasets that feed the merged view. 'adv.rare.jsonl' is a subset of
+// 'adv.rare.verified.jsonl', so when one stem extends another with a dot only
+// the most specific one is kept. Override with --include a.jsonl,b.jsonl.
+function mergedNames() {
+  if (args.include) {
+    return String(args.include).split(',').map((s) => s.trim()).filter(Boolean);
+  }
+  const stems = usableDatasets().map((n) => ({ n, s: n.replace(/\.jsonl(\.gz)?$/, '') }));
+  return stems
+    .filter((a) => !stems.some((b) => b.n !== a.n && b.s.indexOf(a.s + '.') === 0))
+    .map((a) => a.n);
+}
+
 const cache = new Map();
 
+function loadAllDatasets() {
+  const names = mergedNames();
+  let mtime = 0;
+  for (const n of names) {
+    const f = datasetPath(n);
+    if (f) mtime = Math.max(mtime, fs.statSync(f).mtimeMs);
+  }
+  const cached = cache.get(ALL_DATASETS);
+  if (cached && cached.mtime === mtime) return cached;
+  const merged = {
+    name: ALL_DATASETS, file: null, mtime, lines: 0, includes: [],
+    lexemes: new Map(), edges: [], children: new Map(), parents: new Map(),
+  };
+  const seen = new Set();
+  for (const n of names) {
+    const d = loadDataset(n);
+    if (!d) continue;
+    merged.includes.push(n);
+    merged.lines += d.lines;
+    for (const [id, node] of d.lexemes) {
+      if (!merged.lexemes.has(id)) {
+        merged.lexemes.set(id, { id, word: node.word, pos: node.pos, accented: node.accented, out: 0, in: 0 });
+      }
+    }
+    for (const e of d.edges) {
+      const key = e.source + '\\u0000' + e.target + '\\u0000' + (e.rule || '');
+      if (seen.has(key)) continue;
+      seen.add(key);
+      merged.edges.push(e);
+      let ch = merged.children.get(e.source);
+      if (!ch) { ch = []; merged.children.set(e.source, ch); }
+      ch.push(e);
+      let pa = merged.parents.get(e.target);
+      if (!pa) { pa = []; merged.parents.set(e.target, pa); }
+      pa.push(e);
+      const s = merged.lexemes.get(e.source); if (s) s.out++;
+      const t = merged.lexemes.get(e.target); if (t) t.in++;
+    }
+  }
+  cache.set(ALL_DATASETS, merged);
+  return merged;
+}
+
 function loadDataset(name) {
+  if (name === ALL_DATASETS) return loadAllDatasets();
   const file = datasetPath(name);
   if (!file) return null;
+  if (fs.statSync(file).size > MAX_BYTES) return null;
   const mtime = fs.statSync(file).mtimeMs;
   const cached = cache.get(name);
   if (cached && cached.mtime === mtime) return cached;
@@ -235,15 +307,22 @@ const server = http.createServer((req, res) => {
   const p = url.pathname;
   try {
     if (p === '/api/datasets') {
-      const datasets = [];
-      for (const n of listDatasets()) {
+      const usable = usableDatasets();
+      const skipped = listDatasets().filter((n) => usable.indexOf(n) < 0)
+        .map((n) => ({ name: n, bytes: fileSize(n) }));
+      const all = loadAllDatasets();
+      const datasets = [{
+        name: ALL_DATASETS, label: 'все датасеты',
+        edges: all.edges.length, lexemes: all.lexemes.size, includes: all.includes,
+      }];
+      for (const n of usable) {
         const d = loadDataset(n);
-        if (d) datasets.push({ name: n, edges: d.edges.length, lexemes: d.lexemes.size, lines: d.lines });
+        if (d) datasets.push({ name: n, label: n.replace(/\.jsonl(\.gz)?$/, ''), edges: d.edges.length, lexemes: d.lexemes.size, lines: d.lines });
       }
-      return sendJson(res, { dataDir: DATA_DIR, datasets });
+      return sendJson(res, { dataDir: DATA_DIR, datasets, skipped });
     }
     if (p.startsWith('/api/')) {
-      const name = url.searchParams.get('dataset') || listDatasets()[0];
+      const name = url.searchParams.get('dataset') || ALL_DATASETS;
       const ds = name ? loadDataset(name) : null;
       if (!ds) return sendJson(res, { error: 'dataset not readable (missing or still being written)', dataset: name }, 503);
       if (p === '/api/search') {

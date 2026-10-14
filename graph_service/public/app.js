@@ -60,11 +60,15 @@ function initDatasets() {
     (d.datasets || []).forEach(function (ds) {
       var o = document.createElement('option');
       o.value = ds.name;
-      o.textContent = ds.name + ' (' + ds.edges + ' рёбер, ' + ds.lexemes + ' лексем)';
+      o.textContent = (ds.label || ds.name) + ' (' + ds.edges + ' рёбер, ' + ds.lexemes + ' лексем)';
       sel.appendChild(o);
     });
     state.dataset = sel.value || null;
+    var skipped = (d.skipped || []).map(function (s) {
+      return s.name + ' (' + Math.round(s.bytes / 1048576) + ' МБ)';
+    });
     if (!state.dataset) setStatus('нет .jsonl в каталоге данных');
+    else if (skipped.length) setStatus('не показаны (слишком большие): ' + skipped.join(', '));
     if (state.dataset) return search('');
   });
 }
