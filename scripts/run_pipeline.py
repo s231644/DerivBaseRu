@@ -236,6 +236,29 @@ def run(args) -> dict:
         ", ".join("%s=%d" % (p, len(w)) for p, w in words_by_pos.items()),
     ), flush=True)
 
+    excluded = set()
+    if args.exclude_words:
+        excluded |= {w.strip() for w in args.exclude_words.split(",") if w.strip()}
+    ex_path = args.exclude_file
+    if ex_path is None:
+        default_path = "data/pseudo_lemmas.txt"
+        ex_path = default_path if os.path.exists(default_path) else ""
+    if ex_path and os.path.exists(ex_path):
+        with open(ex_path, encoding="utf-8") as fh:
+            for line in fh:
+                line = line.split("#", 1)[0].strip()
+                if line:
+                    excluded.add(line)
+    if excluded:
+        dropped = 0
+        for pos_ in words_by_pos:
+            for w in list(words_by_pos[pos_]):
+                if w in excluded:
+                    del words_by_pos[pos_][w]
+                    dropped += 1
+        print("excluded pseudo-lemmas: %d words dropped from sources" % dropped,
+              flush=True)
+
     if args.extra_dataset:
         extra_paths = [s.strip() for s in args.extra_dataset.split(",") if s.strip()]
         n_extra = add_extra_words(extra_paths, words_by_pos)
@@ -387,6 +410,10 @@ def main(argv=None):
                     help="comma-separated target POS to run rules for")
     ap.add_argument("--complexities", default="simple,complex,compound",
                     help="rule groups to use: simple,complex,compound")
+    ap.add_argument("--exclude-file", default=None,
+                    help="file with source words to skip (default data/pseudo_lemmas.txt)")
+    ap.add_argument("--exclude-words", default=None,
+                    help="comma-separated source words to skip")
     ap.add_argument("--extra-dataset", default=None,
                     help="comma-separated JSONL datasets whose words are added as\n"
                          "extra source words, chaining derivations")
