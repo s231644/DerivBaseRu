@@ -3,7 +3,8 @@
 Pipeline (see docs/derivation_schema.md):
   1. read the dictionary (parsed ru.wiktionary JSONL) -> words grouped by POS;
   2. for each rule (optionally filtered by target POS `pos_a`);
-  3. for each source word whose POS equals the rule's `pos_b`;
+  3. for each single-word source word whose POS equals the rule's `pos_b`
+     (multi-word entries containing spaces are skipped);
      apply the rule and record every derived form.
 
 Results are written as one JSONL record per derivation edge (schema §3),
@@ -175,7 +176,12 @@ def run(args) -> dict:
     per_rule = OrderedDict()
     with opener(args.out, "wt", encoding="utf-8") as out:
         for rule in rules:
-            source_words = sorted(words_by_pos.get(rule.pos_b, {}))
+            # Multi-word entries (e.g. "восемьдесят восемь") are not
+            # single lexemes: skip any source word containing whitespace.
+            source_words = sorted(
+                w for w in words_by_pos.get(rule.pos_b, {})
+                if not any(c.isspace() for c in w)
+            )
             if args.limit:
                 source_words = source_words[:args.limit]
             emitted = 0
