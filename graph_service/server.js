@@ -152,7 +152,7 @@ function subgraph(ds, focusId, depth, maxNodes) {
   return {
     focus: focusId,
     nodes: [...nodes.values()],
-    links: usedEdges.map((e) => ({ source: e.source, target: e.target, rule: e.rule, kind: e.kind, label: ruleLabel(e.rule), pos: (ds.lexemes.get(e.target) || {}).pos || null })),
+    links: usedEdges.map((e) => ({ source: e.source, target: e.target, rule: e.rule, kind: e.kind, label: e.rule, short: ruleLabel(e.rule), pos: (ds.lexemes.get(e.target) || {}).pos || null })),
   };
 }
 
