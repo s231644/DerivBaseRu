@@ -44,18 +44,6 @@
       ]
     },
     {
-      "rule_id": "rule1033(num + оj(е) -> num)",
-      "short_id": "-оj(е)",
-      "info": "SFX",
-      "pos_b": "num",
-      "pos_a": "num",
-      "cases": [],
-      "rare": [
-        "два;двое",
-        "три;трое"
-      ]
-    },
-    {
       "rule_id": "rule1033(num + ер(о) -> num)",
       "short_id": "-ер(о)",
       "info": "SFX",
@@ -72,7 +60,6 @@
         "восемь;восьмеро"
       ]
     },
-
     {
       "rule_id": "rule1334*(num + GEN -> num)",
       "short_id": "GENnum",
@@ -83,25 +70,11 @@
       "cases": [],
       "rare": [
         "десять;десят",
+        "сто;сти",
         "сто;ста",
         "сто;сот"
       ]
     },
-
-    {
-      "rule_id": "rule1334*(num + GEN -> num)",
-      "short_id": "GENnum",
-      "info": "SFX",
-      "pos_b": "num",
-      "pos_a": "num",
-      "only_complex": "1",
-      "cases": [],
-      "rare": [
-        "сто;сот"
-      ]
-    },
-
-
     {
       "rule_id": "ruleINTERFIX(num)",
       "short_id": "INTERFIX",
