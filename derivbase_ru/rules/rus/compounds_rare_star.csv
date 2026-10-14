@@ -8,7 +8,6 @@ lemma;pos;form;with_rule_id;index
 три;num;три;rule1029(в + [пол/три] + adj + а -> adv);1
 половина;noun;полу;rule961([полу/само] + verb -> verb);1
 сам;pron;само;rule961([полу/само] + verb -> verb);1
--фицировать;suffixoid;фицировать;rule962(noun + [фицировать] -> verb);1
 выше;comporative;выше;adv;1
 ниже;comporative;ниже;adv;1
 всё;pron;все;adv;1
