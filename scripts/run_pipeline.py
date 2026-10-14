@@ -237,6 +237,8 @@ def run(args) -> dict:
                 for word_a in sorted(res):
                     if word_a == word_b:
                         continue
+                    if args.real_only and (word_a, rule.pos_a) not in known:
+                        continue
                     rare = word_b in rule.rare_inversed.get(word_a, set())
                     rec = build_record(
                         word_a, rule.pos_a, [parent(word_b, rule.pos_b)],
@@ -290,7 +292,7 @@ def run(args) -> dict:
                     for word_a in sorted(res):
                         if word_a in (head, modifier):
                             continue
-                        if args.compound_real_only and (word_a, rule.pos_a) not in known:
+                        if (args.compound_real_only or args.real_only) and (word_a, rule.pos_a) not in known:
                             continue
                         rec = build_record(
                             word_a, rule.pos_a,
@@ -344,6 +346,8 @@ def main(argv=None):
                     help="comma-separated target POS to run rules for")
     ap.add_argument("--complexities", default="simple,complex,compound",
                     help="rule groups to use: simple,complex,compound")
+    ap.add_argument("--real-only", action="store_true",
+                    help="keep only edges attested in the dictionary (all rules)")
     ap.add_argument("--compound-real-only", action="store_true",
                     help="keep only compound results attested in the dictionary")
     ap.add_argument("--modifier-limit", type=int, default=200,
