@@ -1,10 +1,16 @@
 'use strict';
 
 var svgNS = 'http://www.w3.org/2000/svg';
+var POS_COLORS = { noun: '#3fb950', adj: '#58a6ff', verb: '#d2a8ff', adv: '#d4a017', num: '#f0883e' };
+var POS_LABELS = { noun: 'сущ', adj: 'прил', verb: 'гл', adv: 'нар', num: 'числ' };
 var state = { dataset: null, depth: 1, nodes: [], links: [], focus: null, raf: null, alpha: 1, active: null };
 
 function el(id) { return document.getElementById(id); }
 var svg = el('graph');
+
+function posKey(pos) { return POS_COLORS[pos] ? pos : 'other'; }
+function posColor(pos) { return POS_COLORS[pos] || '#8b98a5'; }
+function posLabel(pos) { return POS_LABELS[pos] || (pos || ''); }
 
 function api(endpoint, params) {
   var u = new URL(endpoint, location.origin);
@@ -18,6 +24,7 @@ function api(endpoint, params) {
 }
 
 function setStatus(t) { el('status').textContent = t || ''; }
+function escapeHtml(s) { return String(s).replace(/[&<>]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c]; }); }
 
 function initDatasets() {
   return api('/api/datasets').then(function (d) {
@@ -30,7 +37,7 @@ function initDatasets() {
       sel.appendChild(o);
     });
     state.dataset = sel.value || null;
-    setStatus(d.datasets && d.datasets.length ? '' : 'нет .jsonl в каталоге данных');
+    if (!state.dataset) setStatus('нет .jsonl в каталоге данных');
     if (state.dataset) return search('');
   });
 }
@@ -65,7 +72,8 @@ function renderResults(results, total) {
     left.appendChild(w); left.appendChild(m);
     var pos = document.createElement('span');
     pos.className = 'pos';
-    pos.textContent = r.pos || '';
+    pos.textContent = posLabel(r.pos);
+    pos.style.borderColor = posColor(r.pos);
     row.appendChild(left); row.appendChild(pos);
     row.addEventListener('click', function () { loadGraph(r.id); });
     box.appendChild(row);
@@ -81,19 +89,17 @@ function loadGraph(id) {
   return api('/api/graph', { id: id, dataset: state.dataset, depth: el('depth').value }).then(function (g) {
     buildGraph(g);
     var f = g.nodes.filter(function (n) { return n.id === g.focus; })[0] || {};
-    el('info').innerHTML = '<b>' + escapeHtml(f.word || g.focus) + '</b> <span class="pos">' + (f.pos || '') + '</span><br>' +
-      'родители: ' + (f.in || 0) + ' · производные: ' + (f.out || 0) + '<br>узлов: ' + g.nodes.length + ' · связей: ' + g.links.length;
+    el('info').innerHTML = '<b>' + escapeHtml(f.word || g.focus) + '</b>',
+      '</b><br>родители: ' + (f.in || 0) + ' · производные: ' + (f.out || 0) + '<br>узлов: ' + g.nodes.length + ' · связей: ' + g.links.length;
   }).catch(function (e) { setStatus(String(e.message || e)); });
 }
-
-function escapeHtml(s) { return String(s).replace(/[&<>]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c]; }); }
 
 function buildGraph(g) {
   var w = svg.clientWidth || 800, h = svg.clientHeight || 600;
   var byId = new Map();
   state.nodes = (g.nodes || []).map(function (n, i) {
     var a = (i / Math.max(1, g.nodes.length)) * Math.PI * 2;
-    var node = { id: n.id, word: n.word, pos: n.pos, x: w / 2 + Math.cos(a) * 110, y: h / 2 + Math.sin(a) * 110, vx: 0, vy: 0, isParent: false };
+    var node = { id: n.id, word: n.word, pos: n.pos, x: w / 2 + Math.cos(a) * 110, y: h / 2 + Math.sin(a) * 110, isParent: false };
     byId.set(n.id, node);
     return node;
   });
@@ -102,46 +108,88 @@ function buildGraph(g) {
     var s = byId.get(l.source), t = byId.get(l.target);
     if (!s || !t) return null;
     s.isParent = true;
-    return { source: s, target: t, rule: l.rule, kind: l.kind };
+    return { source: s, target: t, rule: l.rule, kind: l.kind, label: l.label || '', pos: t.pos };
   }).filter(Boolean);
   state.alpha = 1;
   draw();
+  renderLegend();
   runSim();
+}
+
+function svgEl(name, attrs) {
+  var e = document.createElementNS(svgNS, name);
+  Object.keys(attrs || {}).forEach(function (k) { e.setAttribute(k, attrs[k]); });
+  return e;
 }
 
 function draw() {
   while (svg.firstChild) svg.removeChild(svg.firstChild);
+  var defs = svgEl('defs', {});
+  Object.keys(POS_COLORS).concat(['other']).forEach(function (pos) {
+    var marker = svgEl('marker', {
+      id: 'arrow-' + pos, viewBox: '0 0 10 10', refX: '9', refY: '5',
+      markerWidth: '6', markerHeight: '6', orient: 'auto-start-reverse',
+    });
+    marker.appendChild(svgEl('path', { d: 'M 0 0 L 10 5 L 0 10 z', fill: posColor(pos) }));
+    defs.appendChild(marker);
+  });
+  svg.appendChild(defs);
+
+  var gLinks = svgEl('g', { class: 'links' });
+  var gLabels = svgEl('g', { class: 'labels' });
+  var gNodes = svgEl('g', { class: 'nodes' });
   state.links.forEach(function (l) {
-    var line = document.createElementNS(svgNS, 'line');
-    line.setAttribute('class', 'link' + (l.kind === 'interfix' ? ' rare' : ''));
-    svg.appendChild(line);
+    var key = posKey(l.pos);
+    var line = svgEl('line', { class: 'link pos-' + key, 'marker-end': 'url(#arrow-' + key + ')' });
+    gLinks.appendChild(line);
     l.el = line;
+    var text = svgEl('text', { class: 'edge-label', 'text-anchor': 'middle' });
+    text.textContent = l.label;
+    gLabels.appendChild(text);
+    l.labelEl = text;
   });
   state.nodes.forEach(function (n) {
-    var g = document.createElementNS(svgNS, 'g');
-    g.setAttribute('class', 'node' + (n.id === state.focus ? ' focus' : '') + (n.isParent ? ' parent' : ''));
-    var c = document.createElementNS(svgNS, 'circle');
-    c.setAttribute('r', n.id === state.focus ? 10 : 7);
-    g.appendChild(c);
-    var t = document.createElementNS(svgNS, 'text');
-    t.setAttribute('dx', 11); t.setAttribute('dy', 4);
+    var g = svgEl('g', { class: 'node pos-' + posKey(n.pos) + (n.id === state.focus ? ' focus' : '') });
+    g.appendChild(svgEl('circle', { r: n.id === state.focus ? 10 : 7 }));
+    var t = svgEl('text', { dx: 11, dy: 4 });
     t.textContent = n.word;
     g.appendChild(t);
     g.addEventListener('click', function (ev) { ev.stopPropagation(); loadGraph(n.id); });
-    svg.appendChild(g);
+    gNodes.appendChild(g);
     n.el = g;
   });
+  svg.appendChild(gLinks);
+  svg.appendChild(gLabels);
+  svg.appendChild(gNodes);
+  svg.classList.toggle('hide-labels', !el('labels').checked);
   update();
+}
+
+function shorten(s, t, r) {
+  var dx = t.x - s.x, dy = t.y - s.y;
+  var d = Math.sqrt(dx * dx + dy * dy) || 1;
+  return { x: t.x - dx / d * r, y: t.y - dy / d * r };
 }
 
 function update() {
   state.links.forEach(function (l) {
+    var end = shorten(l.source, l.target, l.target.id === state.focus ? 12 : 9);
     l.el.setAttribute('x1', l.source.x.toFixed(1)); l.el.setAttribute('y1', l.source.y.toFixed(1));
-    l.el.setAttribute('x2', l.target.x.toFixed(1)); l.el.setAttribute('y2', l.target.y.toFixed(1));
+    l.el.setAttribute('x2', end.x.toFixed(1)); l.el.setAttribute('y2', end.y.toFixed(1));
+    l.labelEl.setAttribute('x', ((l.source.x + l.target.x) / 2).toFixed(1));
+    l.labelEl.setAttribute('y', ((l.source.y + l.target.y) / 2 - 3).toFixed(1));
   });
   state.nodes.forEach(function (n) {
     n.el.setAttribute('transform', 'translate(' + n.x.toFixed(1) + ',' + n.y.toFixed(1) + ')');
   });
+}
+
+function renderLegend() {
+  var pos = [];
+  state.nodes.forEach(function (n) { if (pos.indexOf(n.pos) < 0) pos.push(n.pos); });
+  el('legend').innerHTML = pos.map(function (p) {
+    return '<span><i style="background:' + posColor(p) + '"></i>' + escapeHtml(posLabel(p)) + '</span>';
+  }).join('');
 }
 
 function step() {
@@ -212,6 +260,9 @@ document.addEventListener('DOMContentLoaded', function () {
       var first = document.querySelector('.result');
       if (first) loadGraph(first.dataset.id);
     }
+  });
+  el('labels').addEventListener('change', function () {
+    svg.classList.toggle('hide-labels', !el('labels').checked);
   });
   el('dataset').addEventListener('change', function () { state.dataset = el('dataset').value; search(el('q').value); });
   el('depth').addEventListener('change', function () { if (state.active) loadGraph(state.active); });

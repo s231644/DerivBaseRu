@@ -116,6 +116,17 @@ function loadDataset(name) {
   return data;
 }
 
+// Compact edge label: the affix/relation part of the rule name.
+// 'rule1032(num + надцать -> num)' -> 'надцать'
+function ruleLabel(rule) {
+  const m = /\(([^)]*)\)/.exec(rule || '');
+  if (!m) return rule || '';
+  let left = m[1].split('->')[0] || '';
+  const plus = left.lastIndexOf('+');
+  if (plus >= 0) left = left.slice(plus + 1);
+  return left.trim();
+}
+
 function subgraph(ds, focusId, depth, maxNodes) {
   const nodes = new Map();
   const usedEdges = [];
@@ -141,7 +152,7 @@ function subgraph(ds, focusId, depth, maxNodes) {
   return {
     focus: focusId,
     nodes: [...nodes.values()],
-    links: usedEdges.map((e) => ({ source: e.source, target: e.target, rule: e.rule, kind: e.kind })),
+    links: usedEdges.map((e) => ({ source: e.source, target: e.target, rule: e.rule, kind: e.kind, label: ruleLabel(e.rule), pos: (ds.lexemes.get(e.target) || {}).pos || null })),
   };
 }
 
