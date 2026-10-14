@@ -127,27 +127,46 @@ function ruleLabel(rule) {
   return left.trim();
 }
 
-function subgraph(ds, focusId, depth, maxNodes) {
+function subgraph(ds, focusId, depth, maxNodes, upToRoot) {
   const nodes = new Map();
   const usedEdges = [];
-  const seenEdge = new Set();
+  const seenEdges = new Set();
   const add = (id) => { if (!nodes.has(id)) nodes.set(id, ds.lexemes.get(id) || { id, word: id.split('|')[0], pos: (id.split('|')[1] || '') }); };
+  const link = (e) => {
+    const key = e.source + '\u0000' + e.target + '\u0000' + (e.rule || '');
+    if (!seenEdges.has(key)) { seenEdges.add(key); usedEdges.push(e); }
+  };
   add(focusId);
+
+  // 1. neighbourhood in both directions, up to `depth` levels
   let frontier = [focusId];
   for (let d = 0; d < depth; d++) {
     const next = [];
     for (const id of frontier) {
-      for (const e of ds.parents.get(id) || []) pushEdge(e, id, next);
-      for (const e of ds.children.get(id) || []) pushEdge(e, id, next);
+      const around = (ds.parents.get(id) || []).concat(ds.children.get(id) || []);
+      for (const e of around) {
+        link(e);
+        const other = e.source === id ? e.target : e.source;
+        if (!nodes.has(other) && nodes.size < maxNodes) { add(other); next.push(other); }
+      }
     }
     frontier = next;
     if (nodes.size >= maxNodes) break;
   }
-  function pushEdge(e, id, next) {
-    const key = e.source + '\u0000' + e.target + '\u0000' + (e.rule || '');
-    if (!usedEdges.some((x) => x.key === key)) { usedEdges.push(Object.assign({ key }, e)); }
-    const other = e.source === id ? e.target : e.source;
-    if (!nodes.has(other) && nodes.size < maxNodes) { add(other); next.push(other); }
+
+  // 2. derivation trees are shallow: climb to the roots (unless roots=0)
+  //    so a multi-word numeral still reaches its base numeral.
+  if (upToRoot) {
+    let changed = true;
+    while (changed && nodes.size < maxNodes) {
+      changed = false;
+      for (const id of [...nodes.keys()]) {
+        for (const e of ds.parents.get(id) || []) {
+          link(e);
+          if (!nodes.has(e.source) && nodes.size < maxNodes) { add(e.source); changed = true; }
+        }
+      }
+    }
   }
   return {
     focus: focusId,
@@ -219,7 +238,8 @@ const server = http.createServer((req, res) => {
         if (!id || !ds.lexemes.has(id)) return sendJson(res, { error: 'lexeme not found', id }, 404);
         const depth = Math.max(1, Math.min(4, Number(url.searchParams.get('depth') || 1)));
         const maxNodes = Math.max(10, Math.min(500, Number(url.searchParams.get('maxNodes') || 150)));
-        return sendJson(res, Object.assign({ dataset: ds.name }, subgraph(ds, id, depth, maxNodes)));
+        const upToRoot = url.searchParams.get('roots') !== '0';
+        return sendJson(res, Object.assign({ dataset: ds.name }, subgraph(ds, id, depth, maxNodes, upToRoot)));
       }
       if (p === '/api/lexeme') {
         const id = url.searchParams.get('id');
