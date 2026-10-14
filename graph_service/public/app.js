@@ -155,7 +155,8 @@ function buildGraph(g) {
   state.alpha = 1;
   draw();
   renderLegend();
-  layoutLayered();
+  layoutRadial();
+  fitView();
   update();
 }
 
@@ -219,6 +220,79 @@ function layoutLayered() {
       n.y = cy + (i - (arr.length - 1) / 2) * yGap;
     });
   });
+}
+
+/* Radial layout: the focus (root) sits in the centre; every other node is placed
+   on the ring of its BFS distance from the root. Nodes inside a ring are ordered
+   by the barycentre of their neighbours on the inner ring (fewer crossings), and
+   ring radii grow so that vertices keep a generous angular distance. */
+function layoutRadial() {
+  var nodes = state.nodes, links = state.links, focus = state.focus;
+  var byId = new Map(); nodes.forEach(function (n) { byId.set(n.id, n); });
+  if (!byId.has(focus)) return;
+  var adj = {};
+  nodes.forEach(function (n) { adj[n.id] = []; });
+  links.forEach(function (l) { adj[l.source.id].push(l.target.id); adj[l.target.id].push(l.source.id); });
+  var dist = {}, q = [focus]; dist[focus] = 0;
+  while (q.length) {
+    var u = q.shift();
+    (adj[u] || []).forEach(function (v) { if (dist[v] === undefined) { dist[v] = dist[u] + 1; q.push(v); } });
+  }
+  nodes.forEach(function (n) { n.ring = (dist[n.id] === undefined) ? 0 : dist[n.id]; });
+  var rings = {};
+  nodes.forEach(function (n) { (rings[n.ring] = rings[n.ring] || []).push(n); });
+  var keys = Object.keys(rings).map(Number).sort(function (a, b) { return a - b; });
+  var orderIndex = {};
+  rings[0] = rings[0] || [];
+  rings[0].sort(function (a, b) { return (a.id === focus ? -1 : b.id === focus ? 1 : a.word.localeCompare(b.word, 'ru')); });
+  rings[0].forEach(function (n, i) { orderIndex[n.id] = i; });
+  keys.forEach(function (k) {
+    if (k === 0) return;
+    rings[k].forEach(function (n) {
+      var nb = (adj[n.id] || []).filter(function (v) { return dist[v] === k - 1 && orderIndex[v] !== undefined; });
+      if (!nb.length) { n.bary = Infinity; return; }
+      var s = 0; nb.forEach(function (v) { s += orderIndex[v]; });
+      n.bary = s / nb.length;
+    });
+    rings[k].sort(function (a, b) { return (a.bary - b.bary) || a.word.localeCompare(b.word, 'ru'); });
+    rings[k].forEach(function (n, i) { orderIndex[n.id] = i; });
+  });
+  var w = state.bounds.w, h = state.bounds.h, cx = w / 2, cy = h / 2;
+  var BASE = 150, STEP = 185, MIN_ARC = 58, R0_INNER = 80;
+  keys.forEach(function (k) {
+    var arr = rings[k], count = arr.length;
+    if (k === 0) {
+      if (count === 1) { arr[0].x = cx; arr[0].y = cy; return; }
+      arr.forEach(function (n, i) {
+        var a = (i / count) * Math.PI * 2 - Math.PI / 2;
+        n.x = cx + Math.cos(a) * R0_INNER; n.y = cy + Math.sin(a) * R0_INNER;
+      });
+      return;
+    }
+    var need = count <= 1 ? 0 : (count * MIN_ARC) / (2 * Math.PI);
+    var r = Math.max(BASE + (k - 1) * STEP, need, k * STEP * 0.7);
+    arr.forEach(function (n, i) {
+      var a = (i / Math.max(1, count)) * Math.PI * 2 - Math.PI / 2;
+      n.x = cx + Math.cos(a) * r; n.y = cy + Math.sin(a) * r;
+    });
+  });
+}
+
+/* Fit the current layout into the viewport with a margin. */
+function fitView() {
+  if (!state.nodes.length) return;
+  var minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  state.nodes.forEach(function (n) {
+    minX = Math.min(minX, n.x); maxX = Math.max(maxX, n.x);
+    minY = Math.min(minY, n.y); maxY = Math.max(maxY, n.y);
+  });
+  var pad = 80;
+  var bw = Math.max(120, maxX - minX + pad * 2), bh = Math.max(120, maxY - minY + pad * 2);
+  var b = state.bounds, scale = Math.max(bw / b.w, bh / b.h, 1);
+  var vw = bw, vh = bh;
+  if (vw / vh > b.w / b.h) { vw = vh * (b.w / b.h); } else { vh = vw / (b.w / b.h); }
+  state.view = { x: (minX + maxX) / 2 - vw / 2, y: (minY + maxY) / 2 - vh / 2, w: vw, h: vh };
+  applyView();
 }
 
 function draw() {
