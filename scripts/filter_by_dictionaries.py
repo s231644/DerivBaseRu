@@ -235,6 +235,40 @@ def cmd_canonical(args):
     print("%s: записей %d, исправлено написаний %d" % (args.input, kept, changed), flush=True)
 
 
+def cmd_yocheck(args):
+    """Диагностика ё: сколько записей и слов с ё, какие написания расходятся со словарём."""
+    canon = {}
+    with gzip.open(args.wiktionary, "rt", encoding="utf-8") as fh:
+        for line in fh:
+            rec = json.loads(line)
+            title = rec.get("title") or ""
+            if title:
+                canon.setdefault(norm(title), title)
+    rows = 0
+    with_yo = 0
+    mismatch = []
+    with open(args.input, encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if not line:
+                continue
+            rec = json.loads(line)
+            rows += 1
+            word = rec.get("word") or ""
+            if "ё" in word or any("ё" in (p.get("word") or "") for p in rec.get("parents") or []):
+                with_yo += 1
+            fixed = canon.get(norm(word))
+            if fixed and fixed != word and len(mismatch) < 30:
+                mismatch.append((word, fixed))
+    print("%s: записей %d, с ё %d" % (args.input, rows, with_yo), flush=True)
+    if mismatch:
+        print("написания, которые словарь даёт иначе:", flush=True)
+        for word, fixed in mismatch:
+            print("   %s -> %s" % (word, fixed), flush=True)
+    else:
+        print("расхождений с написанием словаря нет", flush=True)
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -258,6 +292,10 @@ def main(argv=None):
     b.add_argument("--blacklist", required=True)
     b.add_argument("--out", required=True)
     b.set_defaults(func=cmd_blacklist)
+    y = sub.add_parser("yocheck")
+    y.add_argument("--input", required=True)
+    y.add_argument("--wiktionary", default="data/wiktionary/parsed_ru.jsonl.gz")
+    y.set_defaults(func=cmd_yocheck)
     k = sub.add_parser("canonical")
     k.add_argument("--input", required=True)
     k.add_argument("--out", required=True)
