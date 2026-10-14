@@ -1,0 +1,76 @@
+# Данные для графового сервиса (DerivBaseRu graph viewer)
+
+Сервис `graph_service/server.js` читает **только готовые файлы отношений деривации**
+из каталога `--data` (по умолчанию `data/derived`) и строит по ним граф.
+Промежуточные стадии конвейера сервису **не нужны** — их в каталог класть не следует.
+
+## Что кладём в `--data` (финальные файлы)
+
+| файл | группа | что внутри |
+|---|---|---|
+| `num.jsonl.gz` | числительные | готовые рёбра (compound/суффикс) |
+| `adv.rare.verified.jsonl` | наречия | редкие, подтверждённые |
+| `adv_pfx.final.clean.jsonl` | наречия | префиксальные, финал |
+| `adv_sfx.clean.jsonl` | наречия | суффиксальные, финал |
+| `adv_g1.final.clean.jsonl` | наречия | группа 1, финал |
+| `adv_g2.final.clean.jsonl` | наречия | группа 2, финал |
+| `adv_g5.clean.jsonl` | наречия | группа 5 (compound), финал |
+| `adv_ymx.clean.jsonl` | наречия | исключения, финал |
+| `verb_pfx.jsonl` | глаголы | **prefix + verb → verb**, очищено по Вики/Далю |
+
+Дальше сюда добавятся (тем же форматом): `verb_verb.jsonl` (verb→verb, прочие способы),
+`verb_compound.jsonl` (компаунды), `verb_noun.jsonl` / `verb_adj.jsonl` / `verb_num.jsonl`
+(другие ЧР → verb) и т.д.
+
+## Схема записи (одно ребро = одна строка JSONL)
+
+```json
+{"schema":1,"id":"газифицировать|verb","word":"газифицировать","pos":"verb",
+ "lang":"rus","accented":null,"hom_index":0,
+ "rule":"rule962(noun + [фиц] -> verb)","kind":"sfx",
+ "parents":[{"id":"газ|noun","word":"газ","pos":"noun","role":"head","slot":0}],
+ "verified":true,"verified_by":["wiktionary"]}
+```
+
+Обязательные поля: `id`, `word`, `pos`, `parents[].id`. Опциональные: `accented`, `rule`,
+`kind` (`sfx` / `pfx` / `compound`), `verified`, `verified_by`. У компаунда — 2 родителя
+(`role` = `head` и `modifier`, `slot` 0/1).
+
+## Компоненты связности (предрасчёт)
+
+Чтобы сервис не строил компоненты на фронте, рядом с каждым файлом кладётся сайдкар
+`<name>.components.json`, созданный `scripts/build_components.py`:
+
+```
+.venv/bin/python scripts/build_components.py \
+    --input data/derived/verb_pfx.jsonl --input data/derived/adv.jsonl.gz \
+    --out-dir data/derived
+```
+
+Формат сайдкара: `{nodes, edges, n_components, largest, id2c, sizes, reps}`.
+Сервис подхватывает сайдкар автоматически и берёт счётчики из него,
+не загружая сам датасет (`/api/datasets` больше не блокирует цикл).
+
+## Чего в `--data` быть не должно (промежуточные)
+
+- `adv.jsonl.gz`, `adv_g1.jsonl`, `adv_g2.jsonl`, `adv.rare.jsonl`, `adv_*.final.jsonl` — сырые/промежуточные стадии;
+- `verb.jsonl.gz`, `verb_pfx.filtered.jsonl`, `verb_pfx.inf.jsonl`, `verb_compound_fsm.jsonl`, `verb_doubtful*.jsonl` —
+  промежуточные результаты глагольного конвейера (сырьё, сомнительные, FSM-анализ);
+- `*.tsv` — рабочие таблицы.
+
+Сервис листает **любой** `*.jsonl(.gz)` в каталоге, поэтому лишние файлы засоряют
+список датасетов (а большие — попадают в `skipped`). Держите в `--data` только финалы.
+
+## Discovery и лимиты сервиса
+
+- Подхватывает все `*.jsonl` и `*.jsonl.gz` в `--data`; счётчики — из сайдкара, иначе (если файл ≤ `--eager-max`,
+  по умолчанию 5 МБ) файл загружается; более крупные файлы без сайдкара попадают в `skipped`.
+- Запуск: `node server.js --port 8791 --data <dir> --max-bytes 80000000`.
+
+## Эндпоинты
+
+- `GET /api/datasets` — список датасетов со счётчиками (из сайдкаров), `includes` для `*`. 
+- `GET /api/components?dataset=<name>&fields=meta|id2c|sizes|reps|all` — предрасчитанные компоненты.
+- `GET /api/search?q=&dataset=&limit=` — поиск лексем.
+- `GET /api/graph?id=&dataset=&depth=&maxNodes=&roots=` — окрестность узла (+ `component`).
+- `GET /api/lexeme?id=&dataset=` — лексема и её рёбра.
