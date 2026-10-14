@@ -27,6 +27,7 @@ import os
 import sys
 import time
 from collections import OrderedDict
+from itertools import product
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -152,6 +153,36 @@ def add_extra_words(paths, words_by_pos, excluded=frozenset()):
             }
             added += 1
     return added
+
+
+def apply_compound_rule(rule, head: str, modifier: str, use_rare: bool):
+    """Собирает compound-слово, применяя цепочки подправил к каждой части.
+
+    Вызывается напрямую: Derivation.derive() не пробрасывает words_m/poss_m, а
+    CompoundRule.apply_with_tags дублирует kwargs — из-за этого не работали
+    rare-таблицы головы (rule986 у rule1027: мелькать -> мельком).
+    """
+    chains = list(getattr(rule, "simple_rules", []) or [])
+    parts = []
+    for index, word in enumerate([head, modifier]):
+        chain = chains[index] if index < len(chains) else []
+        current = {word}
+        for subrule in chain:
+            nxt = set()
+            for w in current:
+                nxt |= subrule.apply(w, use_rare=use_rare)
+            current = nxt
+        parts.append(current)
+    order = getattr(rule, "order", None) or list(range(len(parts)))
+    ordered = [parts[i] for i in order if i < len(parts)]
+    separator = getattr(rule, "separator", "") or ""
+    results = {separator.join(combo) for combo in product(*ordered)}
+    for subrule in getattr(rule, "after_merge_rules", []) or []:
+        nxt = set()
+        for w in results:
+            nxt |= subrule.apply(w, use_rare=use_rare)
+        results = nxt
+    return results
 
 
 def read_dictionary(path: str):
@@ -391,17 +422,7 @@ def run(args) -> dict:
                     if modifier == head:
                         # a lexeme cannot be its own modifier
                         continue
-                    # Called directly: Derivation.derive() does not forward
-                    # words_m/poss_m to CompoundRule.apply_with_tags, and its
-                    # kwargs handling duplicates them.
-                    res = rule.apply_with_tags(
-                        head,
-                        rule.pos_b,
-                        rule.pos_a,
-                        words_m=[modifier],
-                        poss_m=[modifier_pos],
-                        tags_m=[{}],
-                    )
+                    res = apply_compound_rule(rule, head, modifier, args.use_rare)
                     for word_a in sorted(res):
                         if word_a in (head, modifier):
                             continue
