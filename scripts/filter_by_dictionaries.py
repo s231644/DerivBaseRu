@@ -39,7 +39,8 @@ def norm(text: str) -> str:
     text = text.lower()
     for ch in ("\u0301", "\u0300", "\u00b4"):
         text = text.replace(ch, "")
-    return text
+    # ё и е считаем одной буквой: правила дают «е», словарь часто «ё»
+    return text.replace("ё", "е")
 
 
 def load_wiktionary(path: str):
@@ -182,7 +183,7 @@ def cmd_blacklist(args):
             if not line:
                 continue
             e = json.loads(line)
-            bad.add((e.get("child"), e.get("parent", ""), e.get("rule")))
+            bad.add((norm(e.get("child")), norm(e.get("parent", "")), e.get("rule")))
     rows = []
     with open(args.input, encoding="utf-8") as fi:
         for line in fi:
@@ -194,12 +195,44 @@ def cmd_blacklist(args):
         for line in fi:
             rec = json.loads(line)
             parent = rec["parents"][0]["word"] if rec.get("parents") else ""
-            if (rec.get("word"), parent, rec.get("rule")) in bad:
+            if (norm(rec.get("word")), norm(parent), rec.get("rule")) in bad:
                 dropped += 1
                 continue
             fo.write(json.dumps(rec, ensure_ascii=False) + "\n")
             kept += 1
     print("%s: осталось %d (снято blacklist: %d)" % (args.input, kept, dropped), flush=True)
+
+
+def cmd_canonical(args):
+    """Приводит написание к словарному (ё вместо е), если лексема есть в Викисловаре."""
+    canon = {}
+    with gzip.open(args.wiktionary, "rt", encoding="utf-8") as fh:
+        for line in fh:
+            rec = json.loads(line)
+            title = rec.get("title") or ""
+            if title:
+                canon.setdefault(norm(title), title)
+    kept = changed = 0
+    with open(args.input, encoding="utf-8") as fi, open(args.out, "w", encoding="utf-8") as fo:
+        for line in fi:
+            line = line.strip()
+            if not line:
+                continue
+            rec = json.loads(line)
+            word = rec.get("word")
+            fixed = canon.get(norm(word))
+            if fixed and fixed != word:
+                rec["word"] = fixed
+                rec["id"] = fixed + "|" + (rec.get("pos") or "")
+                changed += 1
+            for parent in rec.get("parents") or []:
+                pf = canon.get(norm(parent.get("word")))
+                if pf and pf != parent.get("word"):
+                    parent["word"] = pf
+                    parent["id"] = pf + "|" + (parent.get("pos") or "")
+            fo.write(json.dumps(rec, ensure_ascii=False) + "\n")
+            kept += 1
+    print("%s: записей %d, исправлено написаний %d" % (args.input, kept, changed), flush=True)
 
 
 def main(argv=None):
@@ -225,6 +258,11 @@ def main(argv=None):
     b.add_argument("--blacklist", required=True)
     b.add_argument("--out", required=True)
     b.set_defaults(func=cmd_blacklist)
+    k = sub.add_parser("canonical")
+    k.add_argument("--input", required=True)
+    k.add_argument("--out", required=True)
+    k.add_argument("--wiktionary", default="data/wiktionary/parsed_ru.jsonl.gz")
+    k.set_defaults(func=cmd_canonical)
     c = sub.add_parser("clean")
     c.add_argument("--input", required=True)
     c.add_argument("--out", required=True)
