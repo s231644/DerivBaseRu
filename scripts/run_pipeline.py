@@ -340,9 +340,15 @@ def run(args) -> dict:
 
     der = Derivation(
         lang=args.lang,
-        guesser=TagGuesserWrapper(lang="rus") if args.guesser else None,
+        guesser=TagGuesserWrapper(lang="rus", use_morph=False) if (args.guesser and not args.inflect_types) else None,
         cache=ResultCache(args.cache) if args.cache else None,
     )
+    inflect_types = None
+    if args.inflect_types:
+        with open(args.inflect_types, encoding="utf-8") as fh:
+            inflect_types = json.load(fh)
+        print("inflect-types: %d слов" % len(inflect_types), flush=True)
+
     wanted = set(a.strip() for a in args.pos_a.split(",") if a.strip())
     complexities = set(a.strip() for a in args.complexities.split(",") if a.strip())
     rules, skipped_complex = select_rules(der, wanted, complexities, args.force_complex)
@@ -384,6 +390,10 @@ def run(args) -> dict:
                 source_words = source_words[:args.limit]
             emitted = 0
             for word_b in source_words:
+                tags = None
+                if inflect_types is not None:
+                    tt = inflect_types.get(word_b)
+                    tags = {"form": ["inf"], "inflect_type": tt} if tt else None
                 res = der.derive(
                     word_b=word_b,
                     pos_b=rule.pos_b,
@@ -391,6 +401,7 @@ def run(args) -> dict:
                     rule_id=rule.name,
                     is_extended=True,
                     use_rare=args.use_rare,
+                    tags=tags,
                 )
                 for word_a in sorted(res):
                     if word_a == word_b:
@@ -534,6 +545,8 @@ def main(argv=None):
     ap.add_argument("--cache", default=None, help="result cache path")
     ap.add_argument("--guesser", action="store_true",
                     help="use the Zaliznyak guesser for inflect_type tags (tags_b filtering)")
+    ap.add_argument("--inflect-types", default=None,
+                    help="precomputed {word: [inflect_type]} map (built once) — faster than --guesser")
     ap.add_argument("--force-complex", action="store_true",
                     help="also apply rules flagged only_complex on their own")
     ap.add_argument("--no-rare", dest="use_rare", action="store_false",

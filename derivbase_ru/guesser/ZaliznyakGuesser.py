@@ -80,9 +80,10 @@ class ZaliznyakGuesser:
     def _find_possible_tags_verb(self, word: str, per1: str = None, per3: str = None, **kwargs):
         if per1 and per3:
             return self._find_tags_verb(word, per1, per3, **kwargs)
-        possible_variants = list()
         if not self.use_morph:
-             warnings.warn(f'Morph is not defined! {word}', UserWarning)
+            # rules-only mode: derive tags from rules_inflection.json (no pymorphy3)
+            return self._find_possible_tags(word, 'verb')
+        possible_variants = list()
         morph_word = self.morph.parse(word)
         for var in morph_word:
             if var.tag.POS in ['INFN']:

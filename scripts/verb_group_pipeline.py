@@ -33,6 +33,8 @@ def main():
     ap.add_argument('--gen-dir', required=True)
     ap.add_argument('--workers', type=int, default=6)
     ap.add_argument('--first', default='', help='comma-separated rule-id prefixes to process first')
+    ap.add_argument('--complexities', default='simple', help='simple / complex / compound')
+    ap.add_argument('--inflect-types', default=None, help='precomputed word->inflect_type map (used once, instead of --guesser)')
     args=ap.parse_args()
     data=json.load(open(args.rules_file, encoding='utf-8'))['data']
     rules=[r['rule_id'] for r in data]
@@ -46,7 +48,8 @@ def main():
         out=os.path.join(args.gen_dir, safe(rule)+'.jsonl')
         log=os.path.join(args.gen_dir, safe(rule)+'.log')
         with open(log,'w') as lg:
-            subprocess.run([PY,'scripts/run_pipeline.py','--pos-a','verb','--complexities','simple','--guesser','--include-rules',rule,'--out',out], stdout=lg, stderr=subprocess.STDOUT)
+            tags_arg = ['--inflect-types', args.inflect_types] if args.inflect_types else ['--guesser']
+            subprocess.run([PY,'scripts/run_pipeline.py','--pos-a','verb','--complexities',args.complexities]+tags_arg+['--include-rules',rule,'--out',out], stdout=lg, stderr=subprocess.STDOUT)
         return rule,out
     fl=open(args.out,'w',encoding='utf-8'); dl=open(args.doubtful,'w',encoding='utf-8')
     stats={}
@@ -54,7 +57,7 @@ def main():
         futs={ex.submit(gen,r):r for r in rules}
         for f in as_completed(futs):
             rule,out=f.result(); k=w=d=0
-            for line in open(out,encoding='utf-8'):
+            for line in open(out,encoding='utf-8',errors='ignore'):
                 line=line.strip()
                 if not line: continue
                 try: rec=json.loads(line)
