@@ -67,12 +67,16 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--input', action='append', required=True)
     ap.add_argument('--out-dir', default='data/derived')
+    ap.add_argument('--aggregate', action='store_true',
+                    help='пометить сайдкар aggregate: true (датасет-агрегат вроде unified.jsonl.gz; '
+                         'сервис не будет суммировать его счётчики со счётчиками частей)')
     args = ap.parse_args()
     os.makedirs(args.out_dir, exist_ok=True)
     for path in args.input:
         if not os.path.exists(path):
             print('skip (нет файла):', path); continue
         res = build(path)
+        if args.aggregate: res['aggregate'] = True
         base = os.path.basename(path)
         for suf in ('.jsonl.gz', '.jsonl'):
             if base.endswith(suf): base = base[:-len(suf)]; break

@@ -60,7 +60,8 @@ function initDatasets() {
     (d.datasets || []).forEach(function (ds) {
       var o = document.createElement('option');
       o.value = ds.name;
-      o.textContent = (ds.label || ds.name) + ' (' + ds.edges + ' рёбер, ' + ds.lexemes + ' лексем)';
+      o.textContent = (ds.label || ds.name) + ' (' + ds.edges + ' рёбер, ' + ds.lexemes + ' лексем' +
+        (ds.components != null ? ', компонент: ' + ds.components : '') + ')';
       sel.appendChild(o);
     });
     state.dataset = sel.value || null;
@@ -120,9 +121,11 @@ function loadGraph(id) {
   return api('/api/graph', { id: id, dataset: state.dataset, depth: el('depth').value }).then(function (g) {
     buildGraph(g);
     var f = g.nodes.filter(function (n) { return n.id === g.focus; })[0] || {};
+    var comp = g.component ? '<br>компонента связности: #' + (g.component.index + 1) +
+      ' · ' + g.component.size + ' узлов' : '';
     el('info').innerHTML = '<b>' + escapeHtml(f.word || g.focus) + '</b>' +
       '<br>родители: ' + (f.in || 0) + ' · производные: ' + (f.out || 0) +
-      '<br>узлов: ' + g.nodes.length + ' · связей: ' + g.links.length +
+      '<br>узлов: ' + g.nodes.length + ' · связей: ' + g.links.length + comp +
       '<br><span style="font-size:11px">колесо — масштаб, перетаскивание фона — панорама, вершин — перемещение</span>';
   }).catch(function (e) { setStatus(String(e.message || e)); });
 }

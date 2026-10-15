@@ -95,7 +95,16 @@ function mergedNames() {
   if (args.include) {
     return String(args.include).split(',').map((s) => s.trim()).filter(Boolean);
   }
-  const stems = usableDatasets().map((n) => ({ n, s: n.replace(/\.jsonl(\.gz)?$/, '') }));
+  const usable = usableDatasets();
+  // An aggregate dataset (unified.jsonl.gz, sidecar flagged aggregate:true by
+  // build_unified.py) already unions the finals and drops duplicate records,
+  // so the merged view IS that dataset. Intermediates that lie around in
+  // --data stay out of '*' too, and its stats match the sidecar exactly.
+  for (const n of usable) {
+    const c = loadComponents(n);
+    if (c && c.aggregate) return [n];
+  }
+  const stems = usable.map((n) => ({ n, s: n.replace(/\.jsonl(\.gz)?$/, '') }));
   return stems
     .filter((a) => !stems.some((b) => b.n !== a.n && b.s.indexOf(a.s + '.') === 0))
     .map((a) => a.n);
@@ -128,6 +137,18 @@ function loadComponents(name) {
   try { data = JSON.parse(text); } catch (e) { return null; }
   compCache.set(name, { mtime, data });
   return data;
+}
+
+// Components of the merged view: when '*' is served by the aggregate dataset
+// (see mergedNames), its sidecar describes exactly that graph.
+function componentsFor(name) {
+  const direct = loadComponents(name);
+  if (direct || name !== ALL_DATASETS) return direct;
+  for (const n of usableDatasets()) {
+    const c = loadComponents(n);
+    if (c && c.aggregate) return c;
+  }
+  return null;
 }
 
 function loadAllDatasets() {
@@ -344,10 +365,14 @@ const server = http.createServer((req, res) => {
       const skipped = [];
       const included = [];
       let sumEdges = 0, sumNodes = 0;
+      let aggregate = null, aggregateName = null;
       for (const n of names) {
         const comp = loadComponents(n);
         if (comp) {
           datasets.push({ name: n, label: n.replace(/\.jsonl(\.gz)?$/, ''), edges: comp.edges, lexemes: comp.nodes, components: comp.n_components, largest: comp.largest, source: 'components' });
+          // the aggregate (unified dataset) is shown as its own row; the '*'
+          // totals are taken from it instead of summing it with the parts
+          if (comp.aggregate) { if (!aggregate) { aggregate = comp; aggregateName = n; } continue; }
           included.push(n); sumEdges += comp.edges; sumNodes += comp.nodes;
           continue;
         }
@@ -358,12 +383,17 @@ const server = http.createServer((req, res) => {
           included.push(n); sumEdges += d.edges.length; sumNodes += d.lexemes.size;
         } else { skipped.push({ name: n, bytes: fileSize(n), reason: 'unreadable' }); }
       }
-      datasets.unshift({ name: ALL_DATASETS, label: 'все датасеты', edges: sumEdges, lexemes: sumNodes, includes: included, source: 'components' });
+      datasets.unshift({ name: ALL_DATASETS, label: 'все датасеты',
+        edges: aggregate ? aggregate.edges : sumEdges,
+        lexemes: aggregate ? aggregate.nodes : sumNodes,
+        components: aggregate ? aggregate.n_components : null,
+        largest: aggregate ? aggregate.largest : null,
+        includes: aggregate ? [aggregateName] : included, source: 'components' });
       return sendJson(res, { dataDir: DATA_DIR, datasets, skipped });
     }
     if (p === '/api/components') {
       const cname = url.searchParams.get('dataset') || ALL_DATASETS;
-      const comp = loadComponents(cname);
+      const comp = componentsFor(cname);
       if (!comp) return sendJson(res, { error: 'components not precomputed', dataset: cname }, 404);
       const fields = (url.searchParams.get('fields') || 'reps').split(',').map((s) => s.trim());
       const out = { dataset: cname, nodes: comp.nodes, edges: comp.edges, n_components: comp.n_components, largest: comp.largest };
@@ -389,7 +419,7 @@ const server = http.createServer((req, res) => {
         const depth = Math.max(1, Math.min(10, Number(url.searchParams.get('depth') || 1)));
         const maxNodes = Math.max(10, Math.min(500, Number(url.searchParams.get('maxNodes') || 150)));
         const upToRoot = url.searchParams.get('roots') !== '0';
-        const comp = loadComponents(ds.name);
+        const comp = componentsFor(ds.name);
         let compInfo = null;
         if (comp && comp.id2c && Object.prototype.hasOwnProperty.call(comp.id2c, id)) {
           const ci = comp.id2c[id];

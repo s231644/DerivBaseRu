@@ -16,9 +16,17 @@ from __future__ import annotations
 
 import argparse
 import collections
+import gzip
 import json
 import os
 import sys
+
+
+def open_text(path):
+    """Читаем и plain, и .gz (числительные лежат в num.jsonl.gz)."""
+    if path.endswith(".gz"):
+        return gzip.open(path, "rt", encoding="utf-8")
+    return open(path, encoding="utf-8")
 
 
 def read_graph(paths):
@@ -27,7 +35,7 @@ def read_graph(paths):
         if not os.path.exists(path):
             print("нет файла: %s" % path, file=sys.stderr)
             continue
-        for line in open(path, encoding="utf-8"):
+        for line in open_text(path):
             line = line.strip()
             if not line:
                 continue
@@ -70,12 +78,14 @@ def components(nodes, edges, skip=()):
     return comps
 
 
+# Дети всех рёбер. Ребро всегда соединяет узлы одной компоненты, поэтому
+# глобальный предрасчёт эквивалентен покомпонентному проходу по всем рёбрам,
+# но вместо O(компонент × рёбер) — O(рёбер).
+_CHILD_HAS_PARENT: set[str] = set()
+
+
 def roots_of(comp, edges, skip=()):
-    has_parent = set()
-    for e in edges:
-        if e in skip or e["parent"] not in comp:
-            continue
-        has_parent.add(e["child"])
+    has_parent = {e["child"] for e in edges if e not in skip} if skip else _CHILD_HAS_PARENT
     return sorted(x for x in comp if x not in has_parent)
 
 
@@ -128,6 +138,7 @@ def main(argv=None):
     args = ap.parse_args(argv)
     paths = [x.strip() for x in args.inputs.split(",") if x.strip()]
     nodes, edges = read_graph(paths)
+    _CHILD_HAS_PARENT.update(e["child"] for e in edges)
     comps = components(nodes, edges)
     multi = [c for c in comps if len(roots_of(c, edges)) >= 2]
     print("узлов %d, рёбер %d, компонент %d, с двумя и более корнями %d"
