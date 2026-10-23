@@ -1,0 +1,71 @@
+{
+  "dictionary": "data/wiktionary/parsed_ru.jsonl.gz",
+  "pages": 468829,
+  "rules": {
+    "rule961([adj + ITFX] + verb -> verb)": {
+      "modifiers": 116392,
+      "modifier_forms": 27131,
+      "candidates": 262,
+      "modifier_declension_types": {
+        "1": 19894,
+        "2": 187,
+        "3": 6323,
+        "4": 843,
+        "5": 24
+      },
+      "excluded_modifiers": {
+        "indeclinable": 22,
+        "no_declension_type": 108,
+        "no_genitive_stem": 27,
+        "no_known_lemma": 88598,
+        "proper_name": 180,
+        "unsupported_stem": 186
+      }
+    },
+    "rule961([noun + ITFX] + verb -> verb)": {
+      "modifiers": 199613,
+      "modifier_forms": 59375,
+      "candidates": 2335,
+      "modifier_declension_types": {
+        "1": 19173,
+        "2": 1897,
+        "3": 13159,
+        "4": 986,
+        "5": 2750,
+        "6": 902,
+        "7": 9378,
+        "8": 5081
+      },
+      "excluded_modifiers": {
+        "indeclinable": 780,
+        "no_declension_type": 438,
+        "no_genitive_stem": 321,
+        "no_known_lemma": 72578,
+        "proper_name": 72338,
+        "unsupported_stem": 13
+      }
+    }
+  },
+  "morphology_policy": "known common declinable lemma; per-parse declension tags; genitive stem or explicit rule exception; explicit interfix",
+  "declension_rules_sha256": "230df965efe350b0b724ab1918723fc7645a3166e316e0dd8e038074c874b26c",
+  "pymorphy3": "2.0.6",
+  "pymorphy3-dicts-ru": "2.4.417150.4580142",
+  "scope": "Wiktionary verbs; semantic review pending; Dahl not included",
+  "sha256": "7cefb0ae2e128b95fe71ea2050629e2cfa68a5beab7c1c1c61d40cb2014b8628",
+  "date": "2026-10-24",
+  "code_commit": "07c9c3e",
+  "command": ".venv/bin/python scripts/rebuild_verb_compounds.py",
+  "previous_relations": 10480,
+  "total_relations": 2597,
+  "unique_result_words": 2370,
+  "removed_relations": 7883,
+  "added_relations": 0,
+  "bare_stem_relations": 0,
+  "tests": "42 passed: tests/test_verb_compounds.py tests/test_derivation.py tests/test_rules_operators.py",
+  "limitations": [
+    "Structural declension classes from rules_inflection.json, constrained by pymorphy3 POS, gender and number; accent classes are not inferred.",
+    "Unknown lemmas and unsupported declension patterns are excluded.",
+    "Lowercase common homonyms of proper names are kept using only common-noun parses.",
+    "Semantic derivation remains pending."
+  ]
+}
