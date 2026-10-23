@@ -1,0 +1,34 @@
+{
+  "reviewer": "LLM: Codex current conversation",
+  "date": "2026-10-24",
+  "review_file": "data/verb_compound_semantic_review.jsonl",
+  "review_sha256": "512b845ee18e95000658690a97be58941c08f394557a098151949934ae3b55f1",
+  "input_sha256": "24eab2dc8d6cf3feefe883c525baf1c8384fa9c74be86cbbea6f26b03f93eee6",
+  "output_sha256": "c24fb1092ffc5a006f19fd26b3bd73e458bb569b2caf361b1c18ffc55426390a",
+  "input_relations": 580,
+  "verdicts": {
+    "accept": 58,
+    "reject": 454,
+    "uncertain": 68
+  },
+  "unique_words": {
+    "accept": 57,
+    "reject": 351,
+    "uncertain": 57
+  },
+  "scope": "LLM semantic assessment, not independent proof of immediate derivation",
+  "tests": "46 passed: semantic, reflexive, category and compound tests",
+  "context": "data/derived/verb_compound.semantic_context.jsonl",
+  "original": "data/derived/verb_compound.semantic_input.jsonl",
+  "pending": "data/derived/verb_compound.semantic_pending.jsonl",
+  "rejected": "data/derived/verb_compound.semantic_rejected.jsonl",
+  "table": "docs/verb_compound_semantic_review_2026.tsv",
+  "command": ".venv/bin/python scripts/apply_compound_semantic_review.py",
+  "rebuild_command": ".venv/bin/python scripts/rebuild_verb_compounds.py --semantic-review data/verb_compound_semantic_review.jsonl",
+  "limitations": [
+    "Review by the current Codex LLM only; no independent second LLM or human audit.",
+    "Accepted means semantically compatible, not proven unique immediate derivation; verified remains false.",
+    "The partitions count relations; the same result word may occur in more than one partition.",
+    "Missing historical senses, е/ё identity and competing nominal parents are reasons for uncertainty."
+  ]
+}

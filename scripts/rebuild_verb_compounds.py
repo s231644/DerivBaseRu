@@ -25,6 +25,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--dict', default='data/wiktionary/parsed_ru.jsonl.gz')
     parser.add_argument('--out', default='data/derived/verb_compound.jsonl')
+    parser.add_argument('--semantic-review', default=None,
+                        help='apply a complete LLM review of this exact generated snapshot')
     args = parser.parse_args()
     buckets, known, pages = read_dictionary(args.dict)
     excluded = {
@@ -113,6 +115,9 @@ def main():
         json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
     filter_dataset(output)
     filter_reflexive(output)
+    if args.semantic_review:
+        from apply_compound_semantic_review import apply_review
+        apply_review(output, args.semantic_review)
 
 
 if __name__ == '__main__':

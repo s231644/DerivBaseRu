@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-24",
+  "reviewer": "LLM: Codex current conversation",
+  "input_sha256": "24eab2dc8d6cf3feefe883c525baf1c8384fa9c74be86cbbea6f26b03f93eee6",
+  "input_relations": 580,
+  "input_unique_words": 432,
+  "context": "data/derived/verb_compound.semantic_context.jsonl",
+  "source_dictionary": "data/wiktionary/parsed_ru.jsonl.gz",
+  "protocol": [
+    "All 432 result words and 580 candidate relations reviewed in this conversation, considering alternative parents together.",
+    "Use actual dictionary senses of both parents; distinguish lexical coincidences, homonyms, international components and direct/indirect motivation.",
+    "accept means semantically compatible; it does not prove historical or unique immediate derivation.",
+    "uncertain cases are preserved separately; reject decisions concern relations, not existence of words.",
+    "No external model API or independent second reviewer was used."
+  ],
+  "review_sha256": "512b845ee18e95000658690a97be58941c08f394557a098151949934ae3b55f1",
+  "context_sha256": "3b6057b7344038149a87ee354216292f13d671d5a329f71b30136845058799fc",
+  "source_dictionary_sha256": "9b9d8694e8338a3eb4ef388f3144351568dd21436fd13ba94e1b1a56454aa56d"
+}
