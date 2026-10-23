@@ -1,0 +1,10 @@
+rule	generated	candidates	wiktionary_verb	dahl_head	dahl_token	doubtful_token_only
+rule836(verb + ну2(ть) -> verb)	75987	2824	2042	330	2154	670
+rule840(verb + ану(ть) -> verb)	44424	209	189	12	35	11
+rule842(verb + ива(ть)/ва(ть)/а3(ть) -> verb)	276843	21464	18077	8626	13998	1933
+rule846(verb + и2(ть) -> verb)	45	38	38	17	37	0
+rule847(verb + а4(ть) -> verb)	5	5	5	4	5	0
+rule848(verb + и3(ть) -> verb)	7	7	7	6	7	0
+rule849(verb + а5(ть) -> verb)	8	8	8	8	8	0
+rule850(verb + и4(ть) -> verb)	19	14	12	2	14	2
+rule930(verb + ся -> verb)	28982	16371	16019	107	4435	334

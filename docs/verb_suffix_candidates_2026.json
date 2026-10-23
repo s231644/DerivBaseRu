@@ -1,0 +1,132 @@
+{
+  "scope": "Candidates, not semantically verified relations; raw includes unattested results.",
+  "pages": 468829,
+  "source_verbs": 47460,
+  "sources_with_types": 46884,
+  "rules": {
+    "rule836(verb + ну2(ть) -> verb)": {
+      "generated": 75987,
+      "candidates": 2824,
+      "wiktionary_verb": 2042,
+      "dahl_token": 2154,
+      "doubtful_token_only": 670,
+      "dahl_head": 330
+    },
+    "rule840(verb + ану(ть) -> verb)": {
+      "generated": 44424,
+      "candidates": 209,
+      "wiktionary_verb": 189,
+      "dahl_token": 35,
+      "doubtful_token_only": 11,
+      "dahl_head": 12
+    },
+    "rule842(verb + ива(ть)/ва(ть)/а3(ть) -> verb)": {
+      "generated": 276843,
+      "candidates": 21464,
+      "dahl_head": 8626,
+      "dahl_token": 13998,
+      "wiktionary_verb": 18077,
+      "doubtful_token_only": 1933
+    },
+    "rule846(verb + и2(ть) -> verb)": {
+      "generated": 45,
+      "candidates": 38,
+      "wiktionary_verb": 38,
+      "dahl_token": 37,
+      "dahl_head": 17
+    },
+    "rule847(verb + а4(ть) -> verb)": {
+      "generated": 5,
+      "candidates": 5,
+      "wiktionary_verb": 5,
+      "dahl_head": 4,
+      "dahl_token": 5
+    },
+    "rule848(verb + и3(ть) -> verb)": {
+      "generated": 7,
+      "candidates": 7,
+      "wiktionary_verb": 7,
+      "dahl_head": 6,
+      "dahl_token": 7
+    },
+    "rule849(verb + а5(ть) -> verb)": {
+      "generated": 8,
+      "candidates": 8,
+      "wiktionary_verb": 8,
+      "dahl_head": 8,
+      "dahl_token": 8
+    },
+    "rule850(verb + и4(ть) -> verb)": {
+      "generated": 19,
+      "candidates": 14,
+      "wiktionary_verb": 12,
+      "dahl_token": 14,
+      "dahl_head": 2,
+      "doubtful_token_only": 2
+    },
+    "rule930(verb + ся -> verb)": {
+      "generated": 28982,
+      "candidates": 16371,
+      "wiktionary_verb": 16019,
+      "dahl_token": 4435,
+      "dahl_head": 107,
+      "doubtful_token_only": 334
+    }
+  },
+  "skipped_complex_only": [],
+  "totals": {
+    "generated": 426320,
+    "candidates": 40940,
+    "wiktionary_verb": 36397,
+    "dahl_token": 20693,
+    "doubtful_token_only": 2950,
+    "dahl_head": 9112
+  },
+  "inputs": {
+    "dictionary": {
+      "path": "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/wiktionary/parsed_ru.jsonl.gz",
+      "sha256": "9b9d8694e8338a3eb4ef388f3144351568dd21436fd13ba94e1b1a56454aa56d"
+    },
+    "dahl": {
+      "path": "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/dahl/dahl.jsonl.gz",
+      "sha256": "8b348e8028aec9f9e4e685d2b2d301ba277c9a8f8754dfb239bf69df07435be3"
+    },
+    "inflect_types": {
+      "path": "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/verb_inflect_types.json",
+      "sha256": "2f4cc9259da7e74deaea5095b1d3c808f3612c625de94b50f0b9cf2401c8f5f9"
+    },
+    "rules": {
+      "path": "/Users/a1234/.openclaw/workspace/DerivBaseRu/derivbase_ru/rules/rus/verb/simple/verb=verb+sfx.json",
+      "sha256": "03f3f6be9f8183b7b895b474770406803b064ba15b1dd5a65d4392660c0ed09b"
+    },
+    "pseudo_lemmas": {
+      "path": "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/pseudo_lemmas.txt",
+      "sha256": "8e3afaa4b1a7f8d22041814c3f5cfc0fd581a7879f699c2229c892a3d89adb6a"
+    }
+  },
+  "outputs": {
+    "candidates": {
+      "path": "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/derived/verb_sfx.jsonl",
+      "sha256": "45a41aa99be1d2100d832508bc433eb7b48d01bed31c543d14c6d7d0b0d14c71"
+    },
+    "raw": {
+      "path": "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/derived/verb_sfx.raw.jsonl.gz",
+      "sha256": "489b8165e7da7a4a7f4b01d51309e1ec96e0ea1a1a73719aa87eed1ff86498ab"
+    },
+    "doubtful": {
+      "path": "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/derived/verb_sfx.doubtful.jsonl",
+      "sha256": "953f1f6ebc594bb884be4de48df7b87c8afc635be86ba6f8fefb5fef44c0cbf1"
+    }
+  },
+  "date": "2026-10-24",
+  "code_commit": "1f3ad94",
+  "command": ".venv/bin/python scripts/rebuild_verb_suffixes.py",
+  "candidate_relations": 40940,
+  "unique_result_words": 30341,
+  "kinds": {
+    "sfx": 24569,
+    "postfix": 16371
+  },
+  "tests": "6 generation/acceptance tests passed; all raw records, candidate uniqueness, evidence partitions and hashes validated",
+  "note": "All nine rules from the requested JSON are included, including four rare-only rules and postfix -ся. No semantic acceptance or reflexive-pair filtering applied. Generated files are ignored by Git."
+}
