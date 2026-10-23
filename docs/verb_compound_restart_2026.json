@@ -1,0 +1,35 @@
+{
+  "dictionary": "data/wiktionary/parsed_ru.jsonl.gz",
+  "pages": 468829,
+  "rules": {
+    "rule961([adj + ITFX] + verb -> verb)": {
+      "modifiers": 116392,
+      "modifier_forms": 249028,
+      "candidates": 3852
+    },
+    "rule961([noun + ITFX] + verb -> verb)": {
+      "modifiers": 199613,
+      "modifier_forms": 714469,
+      "candidates": 42290
+    }
+  },
+  "scope": "Wiktionary verbs; semantic review pending; Dahl not included",
+  "sha256": "214a7169e0a66bf323a9943183fb9c217c0a8216689f7f3c8a96f51afb298512",
+  "date": "2026-10-24",
+  "command": ".venv/bin/python scripts/rebuild_verb_compounds.py",
+  "total_relations": 46142,
+  "unique_result_words": 15288,
+  "reset_removed": [
+    "verb_pfx.jsonl",
+    "verb_sfx.jsonl",
+    "verb_complex.jsonl",
+    "old verb_compound.jsonl",
+    "four verb component sidecars"
+  ],
+  "next_groups": [
+    "prefixes",
+    "suffixes",
+    "prefixes+suffixes"
+  ],
+  "note": "Generated datasets are ignored by Git. unified remains an old snapshot and must be rebuilt before use with the new datasets."
+}
