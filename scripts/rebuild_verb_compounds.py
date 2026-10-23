@@ -17,6 +17,7 @@ from run_pipeline import (
     read_dictionary, single_word,
 )
 from compound_morphology import INFLECTION_PATH, checked_modifier_forms
+from filter_verb_compounds import filter_dataset
 
 
 def main():
@@ -109,6 +110,7 @@ def main():
                 'sha256': hashlib.sha256(output.read_bytes()).hexdigest()}
     output.with_suffix('.manifest.json').write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
+    filter_dataset(output)
 
 
 if __name__ == '__main__':

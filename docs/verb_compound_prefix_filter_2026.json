@@ -1,0 +1,71 @@
+{
+  "grouping": "first three Unicode letters of result word; counts are relations",
+  "input_sha256": "7cefb0ae2e128b95fe71ea2050629e2cfa68a5beab7c1c1c61d40cb2014b8628",
+  "exclusions_sha256": "6afbee5a93d61ab14cdd393161b8c391f9021a946fa42dcc8aa7e177c9a27f69",
+  "before_relations": 2597,
+  "after_relations": 774,
+  "removed_relations": 1823,
+  "after_unique_words": 572,
+  "categories": [
+    {
+      "id": "prya_prefix_collision",
+      "modifier": "пря",
+      "pos": "noun",
+      "forms": [
+        "про",
+        "пре"
+      ],
+      "reason": "Ложная мотивация приставочных глаголов от существительного пря (спор).",
+      "removed_relations": 1609
+    },
+    {
+      "id": "samo_reclassified",
+      "modifier": "самый",
+      "pos": "adj",
+      "forms": [
+        "само"
+      ],
+      "reason": "Компонент само- отнесён к приставочным правилам проекта; эти разборы не являются сложением с прилагательным самый.",
+      "removed_relations": 128
+    },
+    {
+      "id": "razo_prefix_collision",
+      "modifier": "раз",
+      "pos": "noun",
+      "forms": [
+        "разо"
+      ],
+      "reason": "Ложная мотивация приставочных глаголов с разо- от существительного раз.",
+      "removed_relations": 36
+    },
+    {
+      "id": "rasprya_prefix_collision",
+      "modifier": "распря",
+      "pos": "noun",
+      "forms": [
+        "распре",
+        "распро"
+      ],
+      "reason": "Ложная мотивация глаголов с приставками рас-/рас+про- от существительного распря.",
+      "removed_relations": 21
+    },
+    {
+      "id": "kovy_invalid_stem",
+      "modifier": "ковы",
+      "pos": "noun",
+      "forms": [
+        "ко"
+      ],
+      "reason": "Ошибка выделения основы: родительный ков имеет нулевое окончание, а не окончание -ов; основа к- необоснованна.",
+      "removed_relations": 29
+    }
+  ],
+  "output_sha256": "cec8db543717a64481fd07594097bd07fa9386a1d92dfd44d8a69b59af760f32",
+  "date": "2026-10-24",
+  "command": ".venv/bin/python scripts/filter_verb_compounds.py",
+  "tests": "38 passed: tests/test_compound_category_filter.py tests/test_verb_compounds.py",
+  "statistics": "docs/verb_compound_prefix_stats_2026.tsv",
+  "full_statistics": "data/derived/verb_compound.prefix_stats.json",
+  "rejected_records": "data/derived/verb_compound.rejected.jsonl",
+  "note": "Remaining candidates still need semantic review. Exclusions match modifier, POS and exact form, not the three-letter word prefix."
+}
