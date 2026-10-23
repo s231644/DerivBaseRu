@@ -1,0 +1,306 @@
+{
+  "scope": "Candidates, not semantically verified relations; raw includes unattested results.",
+  "pages": 468829,
+  "source_verbs": 47460,
+  "sources_with_types": 46884,
+  "rules": {
+    "rule854(без + verb -> verb)": {
+      "generated": 93768,
+      "candidates": 48,
+      "dahl_token": 47,
+      "doubtful_token_only": 34,
+      "dahl_head": 2,
+      "wiktionary_verb": 13
+    },
+    "rule855(в + verb -> verb)": {
+      "generated": 93768,
+      "candidates": 972,
+      "dahl_head": 252,
+      "dahl_token": 733,
+      "wiktionary_verb": 654,
+      "doubtful_token_only": 227
+    },
+    "rule855(вз + verb -> verb)": {
+      "generated": 93768,
+      "candidates": 632,
+      "wiktionary_verb": 405,
+      "dahl_head": 188,
+      "dahl_token": 499,
+      "doubtful_token_only": 142
+    },
+    "rule856(воз + verb -> verb)": {
+      "generated": 93768,
+      "candidates": 300,
+      "wiktionary_verb": 213,
+      "dahl_head": 113,
+      "dahl_token": 233,
+      "doubtful_token_only": 43
+    },
+    "rule857(вы + verb -> verb)": {
+      "generated": 46884,
+      "candidates": 1561,
+      "dahl_head": 479,
+      "dahl_token": 1189,
+      "doubtful_token_only": 211,
+      "wiktionary_verb": 1156
+    },
+    "rule858(де + verb -> verb)": {
+      "generated": 93768,
+      "candidates": 189,
+      "wiktionary_verb": 179,
+      "dahl_token": 18,
+      "doubtful_token_only": 6,
+      "dahl_head": 8
+    },
+    "rule859(дис + verb -> verb)": {
+      "generated": 46884,
+      "candidates": 11,
+      "wiktionary_verb": 11,
+      "dahl_token": 1
+    },
+    "rule860(до + verb -> verb)": {
+      "generated": 46884,
+      "candidates": 1592,
+      "dahl_head": 523,
+      "dahl_token": 1235,
+      "doubtful_token_only": 363,
+      "wiktionary_verb": 919
+    },
+    "rule861(за + verb -> verb)": {
+      "generated": 46884,
+      "candidates": 3290,
+      "wiktionary_verb": 2499,
+      "dahl_head": 1024,
+      "dahl_token": 2281,
+      "doubtful_token_only": 391
+    },
+    "rule862(из + verb -> verb)": {
+      "generated": 93768,
+      "candidates": 1473,
+      "wiktionary_verb": 746,
+      "dahl_head": 584,
+      "dahl_token": 1230,
+      "doubtful_token_only": 343
+    },
+    "rule863(на + verb -> verb)": {
+      "generated": 46884,
+      "candidates": 2578,
+      "dahl_token": 2113,
+      "doubtful_token_only": 505,
+      "dahl_head": 960,
+      "wiktionary_verb": 1539
+    },
+    "rule864(над + verb -> verb)": {
+      "generated": 93768,
+      "candidates": 345,
+      "dahl_head": 124,
+      "dahl_token": 321,
+      "wiktionary_verb": 120,
+      "doubtful_token_only": 139
+    },
+    "rule865(недо + verb -> verb)": {
+      "generated": 46884,
+      "candidates": 280,
+      "wiktionary_verb": 248,
+      "dahl_token": 92,
+      "doubtful_token_only": 26,
+      "dahl_head": 23
+    },
+    "rule866(низ + verb -> verb)": {
+      "generated": 93768,
+      "candidates": 32,
+      "dahl_token": 19,
+      "doubtful_token_only": 8,
+      "wiktionary_verb": 24,
+      "dahl_head": 1
+    },
+    "rule867(о + verb -> verb)": {
+      "generated": 46884,
+      "candidates": 1523,
+      "wiktionary_verb": 996,
+      "dahl_head": 445,
+      "dahl_token": 1194,
+      "doubtful_token_only": 286
+    },
+    "rule868(об + verb -> verb)": {
+      "generated": 93768,
+      "candidates": 1154,
+      "wiktionary_verb": 827,
+      "dahl_head": 347,
+      "dahl_token": 834,
+      "doubtful_token_only": 174
+    },
+    "rule869(от + verb -> verb)": {
+      "generated": 93768,
+      "candidates": 1778,
+      "dahl_head": 608,
+      "dahl_token": 1228,
+      "doubtful_token_only": 216,
+      "wiktionary_verb": 1305
+    },
+    "rule870(пере + verb -> verb)": {
+      "generated": 46884,
+      "candidates": 2303,
+      "wiktionary_verb": 1718,
+      "dahl_token": 1472,
+      "doubtful_token_only": 277,
+      "dahl_head": 700
+    },
+    "rule871(по + verb -> verb)": {
+      "generated": 46884,
+      "candidates": 4304,
+      "wiktionary_verb": 2839,
+      "dahl_token": 2990,
+      "doubtful_token_only": 743,
+      "dahl_head": 1254
+    },
+    "rule872(под + verb -> verb)": {
+      "generated": 93768,
+      "candidates": 1390,
+      "dahl_token": 889,
+      "doubtful_token_only": 213,
+      "wiktionary_verb": 1069,
+      "dahl_head": 361
+    },
+    "rule873(пре + verb -> verb)": {
+      "generated": 46884,
+      "candidates": 186,
+      "wiktionary_verb": 131,
+      "dahl_head": 56,
+      "dahl_token": 133,
+      "doubtful_token_only": 29
+    },
+    "rule874(пред + verb -> verb)": {
+      "generated": 93768,
+      "candidates": 247,
+      "dahl_token": 164,
+      "doubtful_token_only": 45,
+      "wiktionary_verb": 162,
+      "dahl_head": 76
+    },
+    "rule875(при + verb -> verb)": {
+      "generated": 46884,
+      "candidates": 1565,
+      "wiktionary_verb": 1120,
+      "dahl_token": 1142,
+      "doubtful_token_only": 253,
+      "dahl_head": 475
+    },
+    "rule876(про + verb -> verb)": {
+      "generated": 46884,
+      "candidates": 1804,
+      "wiktionary_verb": 1443,
+      "dahl_head": 596,
+      "dahl_token": 1206,
+      "doubtful_token_only": 180
+    },
+    "rule877(раз + verb -> verb)": {
+      "generated": 93768,
+      "candidates": 1826,
+      "wiktionary_verb": 1471,
+      "dahl_token": 1213,
+      "doubtful_token_only": 196,
+      "dahl_head": 474
+    },
+    "rule878(ре + verb -> verb)": {
+      "generated": 46884,
+      "candidates": 126,
+      "wiktionary_verb": 115,
+      "dahl_token": 21,
+      "doubtful_token_only": 9,
+      "dahl_head": 7
+    },
+    "rule879(с + verb -> verb)": {
+      "generated": 93768,
+      "candidates": 2100,
+      "wiktionary_verb": 1616,
+      "dahl_head": 599,
+      "dahl_token": 1430,
+      "doubtful_token_only": 272
+    },
+    "rule880(со2 + verb -> verb)": {
+      "generated": 46884,
+      "candidates": 370,
+      "wiktionary_verb": 240,
+      "dahl_token": 271,
+      "dahl_head": 108,
+      "doubtful_token_only": 75
+    },
+    "rule881(у + verb -> verb)": {
+      "generated": 46884,
+      "candidates": 1162,
+      "dahl_token": 865,
+      "doubtful_token_only": 166,
+      "wiktionary_verb": 875,
+      "dahl_head": 326
+    },
+    "rule961(полу + verb -> verb)": {
+      "generated": 47460,
+      "candidates": 86,
+      "wiktionary_verb": 82,
+      "dahl_token": 4,
+      "doubtful_token_only": 4
+    },
+    "rule961(само + verb -> verb)": {
+      "generated": 47460,
+      "candidates": 131,
+      "wiktionary_verb": 128,
+      "dahl_token": 5,
+      "doubtful_token_only": 3
+    }
+  },
+  "skipped_complex_only": [
+    "rule882(обез + verb -> verb)"
+  ],
+  "totals": {
+    "generated": 2110932,
+    "candidates": 35358,
+    "dahl_token": 25072,
+    "doubtful_token_only": 5579,
+    "dahl_head": 10713,
+    "wiktionary_verb": 24863
+  },
+  "inputs": {
+    "dictionary": {
+      "path": "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/wiktionary/parsed_ru.jsonl.gz",
+      "sha256": "9b9d8694e8338a3eb4ef388f3144351568dd21436fd13ba94e1b1a56454aa56d"
+    },
+    "dahl": {
+      "path": "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/dahl/dahl.jsonl.gz",
+      "sha256": "8b348e8028aec9f9e4e685d2b2d301ba277c9a8f8754dfb239bf69df07435be3"
+    },
+    "inflect_types": {
+      "path": "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/verb_inflect_types.json",
+      "sha256": "2f4cc9259da7e74deaea5095b1d3c808f3612c625de94b50f0b9cf2401c8f5f9"
+    },
+    "rules": {
+      "path": "/Users/a1234/.openclaw/workspace/DerivBaseRu/derivbase_ru/rules/rus/verb/simple/verb=verb+pfx.json",
+      "sha256": "1cf7c469530d8ce1f0935c9dacddfd1042fdf1cc35b948a93b0944ce477226c6"
+    },
+    "pseudo_lemmas": {
+      "path": "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/pseudo_lemmas.txt",
+      "sha256": "8e3afaa4b1a7f8d22041814c3f5cfc0fd581a7879f699c2229c892a3d89adb6a"
+    }
+  },
+  "outputs": {
+    "candidates": {
+      "path": "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/derived/verb_pfx.jsonl",
+      "sha256": "6afe73ab9a3a9b3f367033a33dd433f45e79555001806405dfab01fc3ffbf874"
+    },
+    "raw": {
+      "path": "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/derived/verb_pfx.raw.jsonl.gz",
+      "sha256": "3d94ecc12c395be39b4885ae3ba77bcad5cd78a4613994667a3e001b193e4565"
+    },
+    "doubtful": {
+      "path": "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/derived/verb_pfx.doubtful.jsonl",
+      "sha256": "98fb7e3a8e253a7e96d93e06253d144fbc5daddd173938d60e51d2295a3b385f"
+    }
+  },
+  "date": "2026-10-24",
+  "code_commit": "16281dc",
+  "command": ".venv/bin/python scripts/rebuild_verb_prefixes.py",
+  "candidate_relations": 35358,
+  "unique_result_words": 34487,
+  "tests": "3 prefix candidate tests passed; output schemas, uniqueness, evidence partitions, all raw records and hashes validated",
+  "note": "Generated data files are local and ignored by Git. These are candidates only; no semantic or reflexive-pair filtering has been applied."
+}
