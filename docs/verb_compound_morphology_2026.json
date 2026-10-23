@@ -1,0 +1,45 @@
+{
+  "dictionary": "data/wiktionary/parsed_ru.jsonl.gz",
+  "pages": 468829,
+  "rules": {
+    "rule961([adj + ITFX] + verb -> verb)": {
+      "modifiers": 116392,
+      "modifier_forms": 54514,
+      "candidates": 285,
+      "excluded_modifiers": {
+        "indeclinable": 22,
+        "no_genitive_stem": 132,
+        "no_known_lemma": 88662,
+        "unsupported_stem": 169
+      }
+    },
+    "rule961([noun + ITFX] + verb -> verb)": {
+      "modifiers": 199613,
+      "modifier_forms": 175623,
+      "candidates": 10195,
+      "excluded_modifiers": {
+        "indeclinable": 2080,
+        "no_genitive_stem": 655,
+        "no_known_lemma": 130331,
+        "unsupported_stem": 1
+      }
+    }
+  },
+  "morphology_policy": "known declinable lemma; genitive stem or explicit rule exception",
+  "pymorphy3": "2.0.6",
+  "pymorphy3-dicts-ru": "2.4.417150.4580142",
+  "scope": "Wiktionary verbs; semantic review pending; Dahl not included",
+  "sha256": "462e56fffe4e4468d6dce1a580cb4be94ae93f1bc5b86cb20b0a555350d41ff7",
+  "date": "2026-10-24",
+  "code_commit": "83aabf7",
+  "command": ".venv/bin/python scripts/rebuild_verb_compounds.py",
+  "previous_relations": 46142,
+  "total_relations": 10480,
+  "unique_result_words": 6087,
+  "tests": "14 compound tests and 6 engine tests passed",
+  "limitations": [
+    "Genitive-stem matching is conservative; unknown lemmas excluded.",
+    "Interfix choice still comes from JSON rules; semantic relations require review.",
+    "Explicit rule exceptions are marked and bypass stem matching, but not declinability."
+  ]
+}
