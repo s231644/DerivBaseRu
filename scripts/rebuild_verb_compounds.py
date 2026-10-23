@@ -11,12 +11,12 @@ from pathlib import Path
 from importlib.metadata import version
 
 import pymorphy3
-from compound_morphology import checked_modifier_forms
 
 from run_pipeline import (
     Derivation, apply_compound_rule, build_record, parent,
     read_dictionary, single_word,
 )
+from compound_morphology import INFLECTION_PATH, checked_modifier_forms
 
 
 def main():
@@ -54,11 +54,14 @@ def main():
             forms = defaultdict(set)
             proofs = {}
             rejected = Counter()
+            types = Counter()
             for modifier in sorted(sources[pos]):
                 current, reason = checked_modifier_forms(
                     modifier, pos, rule.simple_rules[1], morph)
                 if reason:
                     rejected[reason] += 1
+                types.update({t for evidence in current.values()
+                              for e in evidence for t in e['inflect_type']})
                 for form, evidence in current.items():
                     if form:
                         forms[form].add(modifier)
@@ -93,11 +96,13 @@ def main():
                         count += 1
             stats[rule.name] = {'modifiers': len(sources[pos]),
                                 'modifier_forms': len(forms), 'candidates': count,
+                                'modifier_declension_types': dict(sorted(types.items())),
                                 'excluded_modifiers': dict(sorted(rejected.items()))}
             print(rule.name, stats[rule.name], flush=True)
     temporary.replace(output)
     manifest = {'dictionary': args.dict, 'pages': pages, 'rules': stats,
-                'morphology_policy': 'known declinable lemma; genitive stem or explicit rule exception',
+                'morphology_policy': 'known common declinable lemma; per-parse declension tags; genitive stem or explicit rule exception; explicit interfix',
+                'declension_rules_sha256': hashlib.sha256(INFLECTION_PATH.read_bytes()).hexdigest(),
                 'pymorphy3': version('pymorphy3'),
                 'pymorphy3-dicts-ru': version('pymorphy3-dicts-ru'),
                 'scope': 'Wiktionary verbs; semantic review pending; Dahl not included',
