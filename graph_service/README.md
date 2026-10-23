@@ -49,9 +49,17 @@ info panel. Rebuild sidecars after regenerating the data (see `DATASETS.md`).
 
 ## UI
 
-Left panel: dataset picker + lexeme search (debounced). Click a result or a graph node to
-build that lexeme's neighbourhood; drag nodes to rearrange; depth selector 1–3.
-Parent (producing) words are blue, the focused lexeme is gold.
+The light interface has search and dataset statistics on the left, the graph in
+the centre, and details about the selected word on the right. The layout adapts
+to narrow screens. Search is debounced; `/` focuses search and Enter opens the
+first result. Example words are clickable. Select depth 1–10 or toggle edge labels
+in the graph toolbar. Prefix labels are compact; hover over an edge for its full rule.
+
+Click a result or graph node to explore its neighbourhood. Graph nodes also work
+with Enter/Space. Drag the background to pan or a vertex to reposition it, including
+with touch. The wheel and zoom controls change scale; the fit button includes word
+labels in the view. Part of speech determines node colour; an orange outline marks
+the focus. The inspector shows producing bases, derivatives and component statistics.
 
 ## Keep alive (launchd)
 

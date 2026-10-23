@@ -3,45 +3,54 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DerivBaseRu — граф отношений между словами</title>
+<meta name="theme-color" content="#f7f8fa">
+<title>DerivBaseRu — атлас словообразования</title>
 <link rel="stylesheet" href="/styles.css?v=__V__">
 </head>
 <body>
-<header>
-  <h1>DerivBaseRu <span>· граф отношений между словами</span></h1>
-  <div class="controls">
-    <label>Датасет <select id="dataset"></select></label>
-    <input id="q" type="search" placeholder="поиск лексемы…" autocomplete="off" spellcheck="false">
-    <label>Глубина <select id="depth">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3" selected>3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-    </select></label>
-    <label><input type="checkbox" id="labels" checked> подписи рёбер</label>
-    <span class="zoom">
-      <button id="zoomIn" type="button" title="приблизить">+</button>
-      <button id="zoomOut" type="button" title="отдалить">−</button>
-      <button id="zoomReset" type="button" title="сбросить вид">сброс</button>
-    </span>
-    <span id="status" class="status"></span>
-  </div>
+<header class="topbar">
+  <a class="brand" href="/" aria-label="DerivBaseRu — на главную">
+    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M8 8 24 16 8 25"/><circle cx="8" cy="8" r="3"/><circle cx="24" cy="16" r="3"/><circle cx="8" cy="25" r="3"/></svg></span>
+    <span>DerivBase<span class="brand-ru">Ru</span><small>АТЛАС СЛОВООБРАЗОВАНИЯ</small></span>
+  </a>
+  <div class="topbar-note">Слова и связи между ними</div>
+  <span class="language-badge"><span aria-hidden="true">●</span> Русский язык</span>
 </header>
 <main>
-  <aside id="sidebar">
-    <div id="results" class="results"></div>
+  <aside id="sidebar" aria-label="Поиск и набор данных">
+    <div class="sidebar-controls">
+      <label class="eyebrow" for="q">НАЙТИ СЛОВО</label>
+      <div class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="q" type="search" placeholder="Например, писать" autocomplete="off" spellcheck="false"><kbd aria-hidden="true">/</kbd></div>
+      <div class="examples">Попробуйте <button type="button" data-example="писать">писать</button><button type="button" data-example="сидеть">сидеть</button><button type="button" data-example="делать">делать</button></div>
+      <label class="eyebrow dataset-label" for="dataset">НАБОР ДАННЫХ</label>
+      <select id="dataset" aria-label="Набор данных"><option>Загрузка…</option></select>
+      <div class="dataset-stats"><div><strong id="datasetWords">—</strong><span>лексем</span></div><div><strong id="datasetEdges">—</strong><span>связей</span></div></div>
+    </div>
+    <div class="results-heading"><span>Результаты поиска</span><span id="resultCount" class="count">0</span></div>
+    <div id="results" class="results" aria-live="polite"></div>
+    <div class="sidebar-footer"><span class="status-dot" aria-hidden="true"></span><span id="status" role="status">Подключение к данным…</span></div>
   </aside>
-  <section id="stage">
-    <svg id="graph"></svg>
-    <div id="legend" class="legend"></div>
-    <div id="info" class="info"></div>
+  <section class="workspace" aria-label="Исследование связей">
+    <div class="workspace-heading"><div><span class="eyebrow">КАРТА СВЯЗЕЙ</span><h1 id="focusWord">Выберите слово</h1></div><span id="graphSummary" class="graph-summary">Исследуйте словообразование</span></div>
+    <div class="graph-toolbar">
+      <label for="depth">Глубина <select id="depth"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select></label>
+      <span class="toolbar-divider" aria-hidden="true"></span>
+      <label class="checkbox-label"><input type="checkbox" id="labels" checked>Подписи связей</label>
+      <span class="toolbar-hint">Основа <span aria-hidden="true">→</span> производное слово</span>
+    </div>
+    <section id="stage" aria-label="Интерактивный граф">
+      <svg id="graph" aria-label="Граф словообразовательных связей"></svg>
+      <div id="emptyState" class="empty-state"><span class="empty-symbol" aria-hidden="true">а → б</span><h2>У каждого слова есть связи</h2><p>Найдите слово слева, чтобы увидеть<br>его основы и производные.</p></div>
+      <div id="legend" class="legend" aria-label="Части речи"></div>
+      <div class="zoom" aria-label="Масштаб графа"><button id="zoomIn" type="button" title="Приблизить" aria-label="Приблизить">+</button><button id="zoomOut" type="button" title="Отдалить" aria-label="Отдалить">−</button><span></span><button id="zoomReset" type="button" title="Показать весь граф" aria-label="Показать весь граф">⤢</button></div>
+      <div class="canvas-hint">Колесо — масштаб · перетащите фон или вершину</div>
+    </section>
   </section>
+  <aside class="inspector" aria-label="Сведения о выбранном слове">
+    <div class="inspector-heading"><span class="eyebrow">ВЫБРАННОЕ СЛОВО</span><span class="inspector-icon" aria-hidden="true">↗</span></div>
+    <div id="info" class="info"><div class="inspector-placeholder">От слова — к его истории</div><p>Выберите слово в поиске или нажмите на вершину графа.</p></div>
+    <div class="reading-guide"><span class="eyebrow">КАК ЧИТАТЬ ГРАФ</span><div class="guide-line"><i></i><span>→</span><i class="guide-derived"></i></div><p>Стрелка направлена от производящей основы к производному слову.</p><p>Оранжевый контур отмечает выбранное слово. Цвет вершины обозначает часть речи.</p></div>
+  </aside>
 </main>
 <script src="/app.js?v=__V__"></script>
 </body>

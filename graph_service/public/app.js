@@ -1,8 +1,11 @@
 'use strict';
 
 var svgNS = 'http://www.w3.org/2000/svg';
-var POS_COLORS = { noun: '#3fb950', adj: '#58a6ff', verb: '#d2a8ff', adv: '#d4a017', num: '#f0883e' };
+var POS_COLORS = { noun: '#348674', adj: '#4b80b1', verb: '#8b70af', adv: '#aa861e', num: '#bf7242' };
 var POS_LABELS = { noun: 'сущ', adj: 'прил', verb: 'гл', adv: 'нар', num: 'числ' };
+var POS_FULL = { noun: 'Существительное', adj: 'Прилагательное', verb: 'Глагол', adv: 'Наречие', num: 'Числительное' };
+var DATASET_LABELS = { '*': 'Все наборы данных', 'unified.jsonl': 'Общий граф', 'verb_pfx.jsonl': 'Глаголы · приставочные', 'verb_compound.jsonl': 'Глаголы · сложения', 'verb_sfx.jsonl': 'Глаголы · суффиксальные', 'verb_complex.jsonl': 'Глаголы · приставка + суффикс', 'num.jsonl': 'Числительные', 'adv.rare.verified.jsonl': 'Наречия · исключения', 'adv_pfx.final.clean.jsonl': 'Наречия · приставочные', 'adv_sfx.clean.jsonl': 'Наречия · суффиксальные', 'adv_g1.final.clean.jsonl': 'Наречия · группа 1', 'adv_g2.final.clean.jsonl': 'Наречия · группа 2', 'adv_g5.clean.jsonl': 'Наречия · сложения', 'adv_ymx.clean.jsonl': 'Наречия · усилительные' };
+var datasetInfo = {}, searchVersion = 0, graphVersion = 0;
 var state = { dataset: null, depth: 1, nodes: [], links: [], focus: null, raf: null, alpha: 1, active: null, bounds: { w: 800, h: 600 }, view: { x: 0, y: 0, w: 800, h: 600 } };
 
 function el(id) { return document.getElementById(id); }
@@ -11,6 +14,13 @@ var svg = el('graph');
 function posKey(pos) { return POS_COLORS[pos] ? pos : 'other'; }
 function posColor(pos) { return POS_COLORS[pos] || '#8b98a5'; }
 function posLabel(pos) { return POS_LABELS[pos] || (pos || ''); }
+function linkLabel(link) {
+  if (link.kind === 'compound') return 'сложение';
+  var match = (link.rule || '').match(/\((.*?)\s*->/);
+  if (link.kind === 'pfx' && match) return match[1].split('+')[0].trim().replace(/\d+$/, '') + '-';
+  if (link.short && !/^(verb|noun|adj|adv|num)$/.test(link.short)) return link.short;
+  return match ? match[1].trim() : (link.label || 'связь');
+}
 function escapeHtml(s) { return String(s).replace(/[&<>]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c]; }); }
 
 function api(endpoint, params) {
@@ -25,6 +35,12 @@ function api(endpoint, params) {
 }
 
 function setStatus(t) { el('status').textContent = t || ''; }
+function number(n) { return Number(n || 0).toLocaleString('ru-RU'); }
+function updateDatasetInfo() {
+  var info = datasetInfo[state.dataset] || {};
+  el('datasetWords').textContent = number(info.lexemes);
+  el('datasetEdges').textContent = number(info.edges);
+}
 
 /* ---------- view transform (zoom / pan) ---------- */
 function applyView() {
@@ -60,18 +76,24 @@ function initDatasets() {
     (d.datasets || []).forEach(function (ds) {
       var o = document.createElement('option');
       o.value = ds.name;
-      o.textContent = (ds.label || ds.name) + ' (' + ds.edges + ' рёбер, ' + ds.lexemes + ' лексем' +
-        (ds.components != null ? ', компонент: ' + ds.components : '') + ')';
+      o.textContent = DATASET_LABELS[ds.name] || ds.label || ds.name;
+      datasetInfo[ds.name] = ds;
       sel.appendChild(o);
     });
     state.dataset = sel.value || null;
+    updateDatasetInfo();
     var skipped = (d.skipped || []).map(function (s) {
       return s.name + ' (' + Math.round(s.bytes / 1048576) + ' МБ)';
     });
     if (!state.dataset) setStatus('нет .jsonl в каталоге данных');
     else if (skipped.length) setStatus('не показаны (слишком большие): ' + skipped.join(', '));
-    if (state.dataset) return search('');
-  });
+    if (state.dataset) {
+      el('q').value = 'писать';
+      return search('писать').then(function (results) {
+        if (results.length) return loadGraph(results[0].id);
+      });
+    }
+  }).catch(function (e) { setStatus('Не удалось загрузить данные: ' + e.message); });
 }
 
 var searchTimer = null;
@@ -81,17 +103,26 @@ function scheduleSearch() {
 }
 
 function search(q) {
+  var version = ++searchVersion;
   return api('/api/search', { q: q, dataset: state.dataset, limit: 60 }).then(function (d) {
+    if (version !== searchVersion) return [];
     renderResults(d.results || [], d.total);
-  }).catch(function (e) { setStatus(String(e.message || e)); });
+    return d.results || [];
+  }).catch(function (e) { if (version === searchVersion) setStatus(String(e.message || e)); return []; });
 }
 
 function renderResults(results, total) {
   var box = el('results');
   box.innerHTML = '';
-  if (!results.length) { box.textContent = 'ничего не найдено'; return; }
+  el('resultCount').textContent = number(results.length) + (results.length === 60 ? '+' : '');
+  if (!results.length) {
+    box.innerHTML = '<div class="search-empty"><strong>Слово не найдено</strong>Попробуйте другую форму или выберите другой набор данных.</div>';
+    setStatus('Нет результатов в выбранном наборе');
+    return;
+  }
   results.forEach(function (r) {
-    var row = document.createElement('div');
+    var row = document.createElement('button');
+    row.type = 'button';
     row.className = 'result' + (r.id === state.active ? ' active' : '');
     row.dataset.id = r.id;
     var left = document.createElement('div');
@@ -100,7 +131,7 @@ function renderResults(results, total) {
     w.textContent = r.word;
     var m = document.createElement('div');
     m.className = 'meta';
-    m.textContent = (r.accented || '') + ' · ↓' + r.parents + ' ↑' + r.children;
+    m.textContent = 'Основ: ' + r.parents + ' · производных: ' + r.children;
     left.appendChild(w); left.appendChild(m);
     var pos = document.createElement('span');
     pos.className = 'pos';
@@ -110,24 +141,36 @@ function renderResults(results, total) {
     row.addEventListener('click', function () { loadGraph(r.id); });
     box.appendChild(row);
   });
-  setStatus((total || 0) + ' лексем · показано ' + results.length);
+  setStatus('Найдено ' + number(results.length) + (results.length === 60 ? ' или больше' : ''));
 }
 
 function loadGraph(id) {
+  var version = ++graphVersion;
+  el('stage').setAttribute('aria-busy', 'true');
   state.active = id;
   Array.prototype.forEach.call(document.querySelectorAll('.result'), function (r) {
     r.classList.toggle('active', r.dataset.id === id);
   });
   return api('/api/graph', { id: id, dataset: state.dataset, depth: el('depth').value }).then(function (g) {
+    if (version !== graphVersion) return;
+    el('emptyState').hidden = true;
     buildGraph(g);
     var f = g.nodes.filter(function (n) { return n.id === g.focus; })[0] || {};
-    var comp = g.component ? '<br>компонента связности: #' + (g.component.index + 1) +
-      ' · ' + g.component.size + ' узлов' : '';
-    el('info').innerHTML = '<b>' + escapeHtml(f.word || g.focus) + '</b>' +
-      '<br>родители: ' + (f.in || 0) + ' · производные: ' + (f.out || 0) +
-      '<br>узлов: ' + g.nodes.length + ' · связей: ' + g.links.length + comp +
-      '<br><span style="font-size:11px">колесо — масштаб, перетаскивание фона — панорама, вершин — перемещение</span>';
-  }).catch(function (e) { setStatus(String(e.message || e)); });
+    el('focusWord').textContent = f.word || g.focus;
+    el('graphSummary').textContent = number(g.nodes.length) + ' вершин · ' + number(g.links.length) + ' связей';
+    svg.setAttribute('aria-label', 'Связи слова ' + (f.word || g.focus));
+    var comp = g.component ? '<div class="component-card"><strong>Компонента № ' +
+      (g.component.index + 1) + '</strong>' + number(g.component.size) + ' связанных вершин</div>' : '';
+    el('info').innerHTML = '<h2>' + escapeHtml(f.word || g.focus) + '</h2>' +
+      '<span class="word-pos">' + escapeHtml(POS_FULL[f.pos] || f.pos || '') + '</span>' +
+      '<div class="word-metrics"><div><strong>' + number(f.in) + '</strong><span>производящих основ</span></div>' +
+      '<div><strong>' + number(f.out) + '</strong><span>производных слов</span></div></div>' +
+      '<span class="eyebrow">В ЭТОМ ГРАФЕ</span>' +
+      '<div class="detail-row"><span>Вершины</span><strong>' + number(g.nodes.length) + '</strong></div>' +
+      '<div class="detail-row"><span>Связи</span><strong>' + number(g.links.length) + '</strong></div>' +
+      '<div class="detail-row"><span>Глубина</span><strong>' + el('depth').value + '</strong></div>' + comp;
+  }).catch(function (e) { if (version === graphVersion) setStatus(String(e.message || e)); })
+    .finally(function () { if (version === graphVersion) el('stage').setAttribute('aria-busy', 'false'); });
 }
 
 /* ---------- graph ---------- */
@@ -153,7 +196,7 @@ function buildGraph(g) {
     var s = byId.get(l.source), t = byId.get(l.target);
     if (!s || !t) return null;
     s.isParent = true;
-    return { source: s, target: t, rule: l.rule, kind: l.kind, label: l.label || l.rule || '', pos: t.pos };
+    return { source: s, target: t, rule: l.rule, kind: l.kind, label: linkLabel(l), pos: t.pos };
   }).filter(Boolean);
   state.alpha = 1;
   draw();
@@ -289,11 +332,13 @@ function fitView() {
     minX = Math.min(minX, n.x); maxX = Math.max(maxX, n.x);
     minY = Math.min(minY, n.y); maxY = Math.max(maxY, n.y);
   });
-  var pad = 80;
-  var bw = Math.max(120, maxX - minX + pad * 2), bh = Math.max(120, maxY - minY + pad * 2);
-  var b = state.bounds, scale = Math.max(bw / b.w, bh / b.h, 1);
+  var pad = 90;
+  // Include word labels, not just circle centres, in the fitted viewport.
+  state.nodes.forEach(function (n) { maxX = Math.max(maxX, n.x + n.word.length * 8 + 16); });
+  var bw = Math.max(300, maxX - minX + pad * 2), bh = Math.max(240, maxY - minY + pad * 2);
+  var b = state.bounds;
   var vw = bw, vh = bh;
-  if (vw / vh > b.w / b.h) { vw = vh * (b.w / b.h); } else { vh = vw / (b.w / b.h); }
+  if (vw / vh > b.w / b.h) { vh = vw * (b.h / b.w); } else { vw = vh * (b.w / b.h); }
   state.view = { x: (minX + maxX) / 2 - vw / 2, y: (minY + maxY) / 2 - vh / 2, w: vw, h: vh };
   applyView();
 }
@@ -317,6 +362,9 @@ function draw() {
   state.links.forEach(function (l) {
     var key = posKey(l.pos);
     var line = svgEl('line', { class: 'link pos-' + key, 'marker-end': 'url(#arrow-' + key + ')' });
+    var title = svgEl('title');
+    title.textContent = l.rule || l.label;
+    line.appendChild(title);
     gLinks.appendChild(line);
     l.el = line;
     var text = svgEl('text', { class: 'edge-label', 'text-anchor': 'middle' });
@@ -325,12 +373,16 @@ function draw() {
     l.labelEl = text;
   });
   state.nodes.forEach(function (n) {
-    var g = svgEl('g', { class: 'node pos-' + posKey(n.pos) + (n.id === state.focus ? ' focus' : '') });
+    var g = svgEl('g', { class: 'node pos-' + posKey(n.pos) + (n.id === state.focus ? ' focus' : ''),
+      tabindex: '0', role: 'button', 'aria-label': 'Показать связи: ' + n.word });
     g.appendChild(svgEl('circle', { r: n.id === state.focus ? 10 : 7 }));
     var t = svgEl('text', { dx: 11, dy: 4 });
     t.textContent = n.word;
     g.appendChild(t);
     g.addEventListener('click', function (ev) { ev.stopPropagation(); if (!state.moved) loadGraph(n.id); });
+    g.addEventListener('keydown', function (ev) {
+      if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); loadGraph(n.id); }
+    });
     gNodes.appendChild(g);
     n.el = g;
   });
@@ -417,7 +469,8 @@ function runSim() {
 function enableInteraction() {
   var drag = null, pan = null;
 
-  svg.addEventListener('mousedown', function (e) {
+  svg.addEventListener('pointerdown', function (e) {
+    if (e.button !== 0) return;
     var g = e.target.closest ? e.target.closest('.node') : null;
     state.moved = false;
     if (g) {
@@ -433,7 +486,7 @@ function enableInteraction() {
     e.preventDefault();
   });
 
-  svg.addEventListener('mousemove', function (e) {
+  svg.addEventListener('pointermove', function (e) {
     if (drag) {
       var p = toGraph(e.clientX, e.clientY);
       drag.node.x = p.x - drag.ox; drag.node.y = p.y - drag.oy;
@@ -449,10 +502,12 @@ function enableInteraction() {
     }
   });
 
-  window.addEventListener('mouseup', function () {
+  function endDrag() {
     if (drag) { drag = null; svg.style.cursor = 'grab'; }
     if (pan) { pan = null; svg.style.cursor = 'grab'; }
-  });
+  }
+  window.addEventListener('pointerup', endDrag);
+  window.addEventListener('pointercancel', endDrag);
 
   svg.addEventListener('wheel', function (e) {
     e.preventDefault();
@@ -465,7 +520,7 @@ function enableInteraction() {
 
   el('zoomIn').addEventListener('click', function () { var r = svg.getBoundingClientRect(); zoomAt(r.left + r.width / 2, r.top + r.height / 2, 0.8); });
   el('zoomOut').addEventListener('click', function () { var r = svg.getBoundingClientRect(); zoomAt(r.left + r.width / 2, r.top + r.height / 2, 1.25); });
-  el('zoomReset').addEventListener('click', resetView);
+  el('zoomReset').addEventListener('click', fitView);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -479,8 +534,45 @@ document.addEventListener('DOMContentLoaded', function () {
   el('labels').addEventListener('change', function () {
     svg.classList.toggle('hide-labels', !el('labels').checked);
   });
-  el('dataset').addEventListener('change', function () { state.dataset = el('dataset').value; search(el('q').value); });
+  el('dataset').addEventListener('change', function () {
+    state.dataset = el('dataset').value;
+    updateDatasetInfo();
+    ++graphVersion;
+    state.active = null;
+    state.nodes = []; state.links = [];
+    svg.replaceChildren();
+    el('legend').replaceChildren();
+    el('stage').setAttribute('aria-busy', 'false');
+    el('emptyState').hidden = false;
+    el('focusWord').textContent = 'Выберите слово';
+    el('graphSummary').textContent = 'Исследуйте словообразование';
+    el('info').innerHTML = '<div class="inspector-placeholder">Выберите слово</div><p>Найдите лексему в этом наборе данных.</p>';
+    search(el('q').value);
+  });
   el('depth').addEventListener('change', function () { if (state.active) loadGraph(state.active); });
+  document.querySelectorAll('[data-example]').forEach(function (button) {
+    button.addEventListener('click', function () {
+      el('q').value = button.dataset.example;
+      clearTimeout(searchTimer);
+      search(el('q').value).then(function (results) { if (results.length) loadGraph(results[0].id); });
+    });
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === '/' && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) {
+      event.preventDefault(); el('q').focus();
+    }
+    if (event.key === 'Escape' && document.activeElement === el('q')) {
+      el('q').value = ''; scheduleSearch();
+    }
+  });
+  var resizeTimer;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      state.bounds = { w: svg.clientWidth || 800, h: svg.clientHeight || 600 };
+      if (state.nodes.length) fitView();
+    }, 100);
+  });
   enableInteraction();
   initDatasets();
 });
