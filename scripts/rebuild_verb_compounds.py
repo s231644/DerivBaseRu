@@ -4,10 +4,14 @@ Index every modifier's interfix forms, split attested verbs, then validate each
 pair with the engine. Dictionary attestation does not verify derivation.
 """
 import argparse
-from collections import defaultdict
+from collections import Counter, defaultdict
 import hashlib
 import json
 from pathlib import Path
+from importlib.metadata import version
+
+import pymorphy3
+from compound_morphology import checked_modifier_forms
 
 from run_pipeline import (
     Derivation, apply_compound_rule, build_record, parent,
@@ -31,6 +35,7 @@ def main():
     }
     rules = [r for r in Derivation(lang='rus').loaded_rules['compound']
              if r.pos_a == 'verb']
+    morph = pymorphy3.MorphAnalyzer()
     output = Path(args.out)
     output.parent.mkdir(parents=True, exist_ok=True)
     temporary = output.with_suffix('.jsonl.tmp')
@@ -47,14 +52,17 @@ def main():
                 raise ValueError('Unsupported compound structure: ' + rule.name)
             pos = rule.poss_m[0]
             forms = defaultdict(set)
+            proofs = {}
+            rejected = Counter()
             for modifier in sorted(sources[pos]):
-                current = {modifier}
-                for subrule in rule.simple_rules[1]:
-                    current = {v for w in current
-                               for v in subrule.apply(w, use_rare=True)}
-                for form in current:
+                current, reason = checked_modifier_forms(
+                    modifier, pos, rule.simple_rules[1], morph)
+                if reason:
+                    rejected[reason] += 1
+                for form, evidence in current.items():
                     if form:
                         forms[form].add(modifier)
+                        proofs[(form, modifier)] = evidence
             count = 0
             for word in sorted(buckets['verb']):
                 if not single_word(word) or word in excluded:
@@ -66,11 +74,15 @@ def main():
                     for modifier in sorted(forms.get(form, ())):
                         if modifier == head:
                             continue
-                        if word not in apply_compound_rule(rule, head, modifier, True):
+                        inputs = {modifier} | {
+                            e['stem'] for e in proofs[(form, modifier)]}
+                        if not any(word in apply_compound_rule(rule, head, source, True)
+                                   for source in inputs):
                             raise AssertionError((word, head, modifier))
                         parents = [parent(head, 'verb', 'head', 1),
                                    parent(modifier, pos, 'modifier', 0)]
                         parents[1]['form'] = form
+                        parents[1]['morphology_evidence'] = proofs[(form, modifier)]
                         record = build_record(word, 'verb', parents, rule,
                                               buckets['verb'][word], known, False,
                                               include_flags=False, kind='compound')
@@ -80,10 +92,14 @@ def main():
                         stream.write(json.dumps(record, ensure_ascii=False) + '\n')
                         count += 1
             stats[rule.name] = {'modifiers': len(sources[pos]),
-                                'modifier_forms': len(forms), 'candidates': count}
+                                'modifier_forms': len(forms), 'candidates': count,
+                                'excluded_modifiers': dict(sorted(rejected.items()))}
             print(rule.name, stats[rule.name], flush=True)
     temporary.replace(output)
     manifest = {'dictionary': args.dict, 'pages': pages, 'rules': stats,
+                'morphology_policy': 'known declinable lemma; genitive stem or explicit rule exception',
+                'pymorphy3': version('pymorphy3'),
+                'pymorphy3-dicts-ru': version('pymorphy3-dicts-ru'),
                 'scope': 'Wiktionary verbs; semantic review pending; Dahl not included',
                 'sha256': hashlib.sha256(output.read_bytes()).hexdigest()}
     output.with_suffix('.manifest.json').write_text(
