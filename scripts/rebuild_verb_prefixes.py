@@ -23,13 +23,13 @@ def lexical_evidence(word, wiki, heads, tokens):
                                      ('dahl_token', tokens)] if word in words]
 
 
-def prefix_rules(engine, path=RULES):
+def verb_rules(engine, path, allowed_info):
     names = [r['rule_id'] for r in json.loads(Path(path).read_text())['data']]
     rules, skipped = [], []
     for name in names:
         rule = engine.rules_dict[name]
-        if rule.pos_b != 'verb' or rule.pos_a != 'verb' or rule.info != 'PFX':
-            raise ValueError('Non-prefix verb rule: ' + name)
+        if rule.pos_b != 'verb' or rule.pos_a != 'verb' or rule.info not in allowed_info:
+            raise ValueError('Unexpected verb rule: ' + name)
         if rule.only_complex:
             skipped.append(name)
         else:
@@ -37,12 +37,16 @@ def prefix_rules(engine, path=RULES):
     return sorted(rules, key=lambda r: r.name), skipped
 
 
+def prefix_rules(engine, path=RULES):
+    return verb_rules(engine, path, {'PFX'})
+
+
 def generate(rule, word, types):
     # An absent type must not become the engine's unrestricted wildcard.
     return rule.apply(word, use_rare=True, form=['inf'], inflect_type=types or [])
 
 
-def run(dictionary, dahl, inflect_types, output):
+def run(dictionary, dahl, inflect_types, output, rules_path=RULES, allowed_info=('PFX',)):
     buckets, known, pages = read_dictionary(str(dictionary))
     types = json.loads(Path(inflect_types).read_text())
     excluded = {line.split('#', 1)[0].strip()
@@ -56,7 +60,7 @@ def run(dictionary, dahl, inflect_types, output):
             if entry.get('word'):
                 heads.add(normalize(entry['word']))
             tokens.update(re.findall('[а-яё-]{2,}', normalize(entry.get('text') or '')))
-    rules, skipped = prefix_rules(Derivation(lang='rus'))
+    rules, skipped = verb_rules(Derivation(lang='rus'), rules_path, allowed_info)
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
     paths = {'candidates': output,
@@ -78,7 +82,8 @@ def run(dictionary, dahl, inflect_types, output):
                     base['inflect_type'] = types.get(word, [])
                     record = build_record(result, 'verb', [base], rule,
                                           buckets['verb'].get(result), known, False,
-                                          include_flags=False, kind='pfx')
+                                          include_flags=False,
+                                          kind={'PFX': 'pfx', 'SFX': 'sfx', 'PTFX': 'postfix'}[rule.info])
                     evidence = lexical_evidence(result, wiki, heads, tokens)
                     record.update(verified=False, review_status='pending',
                                   lexeme_verified='wiktionary_verb' in evidence,
@@ -103,7 +108,7 @@ def run(dictionary, dahl, inflect_types, output):
     for counts in stats.values():
         totals.update(counts)
     inputs = {'dictionary': Path(dictionary), 'dahl': Path(dahl),
-              'inflect_types': Path(inflect_types), 'rules': RULES,
+              'inflect_types': Path(inflect_types), 'rules': Path(rules_path),
               'pseudo_lemmas': ROOT / 'data/pseudo_lemmas.txt'}
     manifest = {'scope': 'Candidates, not semantically verified relations; raw includes unattested results.',
                 'pages': pages, 'source_verbs': len(sources),
