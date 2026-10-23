@@ -1,4 +1,5 @@
 word	modifier	form	head	decision_by	basis
+бедокурить	беда	бедо	курить	user	explicit_remaining_uncertain
 благоволить	благой	благо	волить	user	explicit_component
 благоволить	благо	благо	волить	user	explicit_component
 благоговеть	благой	благо	говеть	user	explicit_component
@@ -30,6 +31,7 @@ word	modifier	form	head	decision_by	basis
 видоизменять	вид	видо	изменять	LLM: Codex current conversation	llm_semantic_review
 добрососедствовать	добрый	добро	соседствовать	user	explicit_component
 добрососедствовать	добро	добро	соседствовать	user	explicit_component
+дуроломить	дурь	дуро	ломить	user	explicit_remaining_uncertain
 единовластвовать	единый	едино	властвовать	LLM: Codex current conversation	llm_semantic_review
 единообразить	единый	едино	образить	user	shared_accepted_component
 живописать	живой	живо	писать	user	shared_accepted_component
@@ -53,7 +55,9 @@ word	modifier	form	head	decision_by	basis
 зубоскалить	зуб	зубо	скалить	LLM: Codex current conversation	llm_semantic_review
 импортозаместить	импорт	импорто	заместить	LLM: Codex current conversation	llm_semantic_review
 импортозамещать	импорт	импорто	замещать	LLM: Codex current conversation	llm_semantic_review
+кашеварить	каша	каше	варить	user	explicit_remaining_uncertain
 кнопкодавить	кнопка	кнопко	давить	LLM: Codex current conversation	llm_semantic_review
+коловращать	кол	коло	вращать	user	explicit_remaining_uncertain
 коновалить	конь	коно	валить	user	shared_accepted_component
 коноводить	конь	коно	водить	user	explicit_component
 кособочить	косой	косо	бочить	LLM: Codex current conversation	llm_semantic_review
@@ -82,12 +86,15 @@ word	modifier	form	head	decision_by	basis
 миропомазывать	миро	миро	помазывать	LLM: Codex current conversation	llm_semantic_review
 миротворить	мир	миро	творить	LLM: Codex current conversation	llm_semantic_review
 мироточить	миро	миро	точить	LLM: Codex current conversation	llm_semantic_review
+остроумничать	острый	остро	умничать	user	explicit_remaining_uncertain
+пароварить	пар	паро	варить	user	explicit_remaining_uncertain
 пешешествовать	пеший	пеше	шествовать	LLM: Codex current conversation	llm_semantic_review
 плодоносить	плод	плодо	носить	LLM: Codex current conversation	llm_semantic_review
 праздномыслить	праздный	праздно	мыслить	LLM: Codex current conversation	llm_semantic_review
 праздношататься	праздный	праздно	шататься	LLM: Codex current conversation	llm_semantic_review
 пустозвонить	пустой	пусто	звонить	LLM: Codex current conversation	llm_semantic_review
 пустолаять	пустой	пусто	лаять	LLM: Codex current conversation	llm_semantic_review
+пустынножительствовать	пустынный	пустынно	жительствовать	user	explicit_remaining_uncertain
 путеводить	путь	путе	водить	LLM: Codex current conversation	llm_semantic_review
 разногласить	разный	разно	гласить	user	shared_accepted_component
 разноголосить	разный	разно	голосить	user	shared_accepted_component
@@ -100,13 +107,16 @@ word	modifier	form	head	decision_by	basis
 сенокосить	сено	сено	косить	LLM: Codex current conversation	llm_semantic_review
 скоробогатеть	скорый	скоро	богатеть	LLM: Codex current conversation	llm_semantic_review
 слезоточить	слеза	слезо	точить	LLM: Codex current conversation	llm_semantic_review
+словоблудить	слово	слово	блудить	user	explicit_remaining_uncertain
 сновидеть	сон	сно	видеть	LLM: Codex current conversation	llm_semantic_review
 теплоизолировать	тепло	тепло	изолировать	LLM: Codex current conversation	llm_semantic_review
 трудоустраивать	труд	трудо	устраивать	LLM: Codex current conversation	llm_semantic_review
 трудоустроить	труд	трудо	устроить	LLM: Codex current conversation	llm_semantic_review
+тупоумничать	тупой	тупо	умничать	user	explicit_remaining_uncertain
 умозаключать	ум	умо	заключать	LLM: Codex current conversation	llm_semantic_review
 умозаключить	ум	умо	заключить	LLM: Codex current conversation	llm_semantic_review
 умозреть	ум	умо	зреть	LLM: Codex current conversation	llm_semantic_review
+фалломорфировать	фалл	фалло	морфировать	user	explicit_remaining_uncertain
 хороводить	хор	хоро	водить	user	explicit_component
 хромоалитировать	хром	хромо	алитировать	LLM: Codex current conversation	llm_semantic_review
 чародействовать	чара	чаро	действовать	user	shared_accepted_component

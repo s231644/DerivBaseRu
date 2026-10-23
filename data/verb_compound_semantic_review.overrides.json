@@ -2,7 +2,7 @@
   "date": "2026-10-24",
   "reviewer": "user",
   "input_sha256": "24eab2dc8d6cf3feefe883c525baf1c8384fa9c74be86cbbea6f26b03f93eee6",
-  "policy": "Explicitly requested components, then one pass over the remaining uncertain relations sharing head or modifier with the initial accepted set plus explicitly selected relations. Rejected relations are not reconsidered.",
+  "policy": "Explicitly requested components, then one pass over the remaining uncertain relations sharing head or modifier with the initial accepted set plus explicitly selected relations. Rejected relations are not reconsidered. Subsequently the user explicitly accepted all 10 remaining uncertain relations.",
   "overrides": [
     {
       "relation_key": "[\"благоволить\",\"rule961([adj + ITFX] + verb -> verb)\",0,[[\"head\",\"волить\",\"verb\",\"\",0],[\"modifier\",\"благой\",\"adj\",\"благо\",0]]]",
@@ -361,6 +361,66 @@
       "verdict": "accept",
       "basis": "shared_accepted_component",
       "reason": "Принято по предложенному пользователем признаку: модификатор чрево уже присутствует в принятом наборе после явного выбора компонентов; это рабочее решение, не независимое доказательство мотивации."
+    },
+    {
+      "relation_key": "[\"остроумничать\",\"rule961([adj + ITFX] + verb -> verb)\",0,[[\"head\",\"умничать\",\"verb\",\"\",0],[\"modifier\",\"острый\",\"adj\",\"остро\",0]]]",
+      "verdict": "accept",
+      "basis": "explicit_remaining_uncertain",
+      "reason": "Пользователь явно распорядился считать оставшиеся 10 спорных разборов правильными и включить их в основной набор."
+    },
+    {
+      "relation_key": "[\"пустынножительствовать\",\"rule961([adj + ITFX] + verb -> verb)\",0,[[\"head\",\"жительствовать\",\"verb\",\"\",0],[\"modifier\",\"пустынный\",\"adj\",\"пустынно\",0]]]",
+      "verdict": "accept",
+      "basis": "explicit_remaining_uncertain",
+      "reason": "Пользователь явно распорядился считать оставшиеся 10 спорных разборов правильными и включить их в основной набор."
+    },
+    {
+      "relation_key": "[\"тупоумничать\",\"rule961([adj + ITFX] + verb -> verb)\",0,[[\"head\",\"умничать\",\"verb\",\"\",0],[\"modifier\",\"тупой\",\"adj\",\"тупо\",0]]]",
+      "verdict": "accept",
+      "basis": "explicit_remaining_uncertain",
+      "reason": "Пользователь явно распорядился считать оставшиеся 10 спорных разборов правильными и включить их в основной набор."
+    },
+    {
+      "relation_key": "[\"бедокурить\",\"rule961([noun + ITFX] + verb -> verb)\",0,[[\"head\",\"курить\",\"verb\",\"\",0],[\"modifier\",\"беда\",\"noun\",\"бедо\",0]]]",
+      "verdict": "accept",
+      "basis": "explicit_remaining_uncertain",
+      "reason": "Пользователь явно распорядился считать оставшиеся 10 спорных разборов правильными и включить их в основной набор."
+    },
+    {
+      "relation_key": "[\"дуроломить\",\"rule961([noun + ITFX] + verb -> verb)\",0,[[\"head\",\"ломить\",\"verb\",\"\",0],[\"modifier\",\"дурь\",\"noun\",\"дуро\",0]]]",
+      "verdict": "accept",
+      "basis": "explicit_remaining_uncertain",
+      "reason": "Пользователь явно распорядился считать оставшиеся 10 спорных разборов правильными и включить их в основной набор."
+    },
+    {
+      "relation_key": "[\"кашеварить\",\"rule961([noun + ITFX] + verb -> verb)\",0,[[\"head\",\"варить\",\"verb\",\"\",0],[\"modifier\",\"каша\",\"noun\",\"каше\",0]]]",
+      "verdict": "accept",
+      "basis": "explicit_remaining_uncertain",
+      "reason": "Пользователь явно распорядился считать оставшиеся 10 спорных разборов правильными и включить их в основной набор."
+    },
+    {
+      "relation_key": "[\"коловращать\",\"rule961([noun + ITFX] + verb -> verb)\",0,[[\"head\",\"вращать\",\"verb\",\"\",0],[\"modifier\",\"кол\",\"noun\",\"коло\",0]]]",
+      "verdict": "accept",
+      "basis": "explicit_remaining_uncertain",
+      "reason": "Пользователь явно распорядился считать оставшиеся 10 спорных разборов правильными и включить их в основной набор."
+    },
+    {
+      "relation_key": "[\"пароварить\",\"rule961([noun + ITFX] + verb -> verb)\",0,[[\"head\",\"варить\",\"verb\",\"\",0],[\"modifier\",\"пар\",\"noun\",\"паро\",0]]]",
+      "verdict": "accept",
+      "basis": "explicit_remaining_uncertain",
+      "reason": "Пользователь явно распорядился считать оставшиеся 10 спорных разборов правильными и включить их в основной набор."
+    },
+    {
+      "relation_key": "[\"словоблудить\",\"rule961([noun + ITFX] + verb -> verb)\",0,[[\"head\",\"блудить\",\"verb\",\"\",0],[\"modifier\",\"слово\",\"noun\",\"слово\",0]]]",
+      "verdict": "accept",
+      "basis": "explicit_remaining_uncertain",
+      "reason": "Пользователь явно распорядился считать оставшиеся 10 спорных разборов правильными и включить их в основной набор."
+    },
+    {
+      "relation_key": "[\"фалломорфировать\",\"rule961([noun + ITFX] + verb -> verb)\",0,[[\"head\",\"морфировать\",\"verb\",\"\",0],[\"modifier\",\"фалл\",\"noun\",\"фалло\",0]]]",
+      "verdict": "accept",
+      "basis": "explicit_remaining_uncertain",
+      "reason": "Пользователь явно распорядился считать оставшиеся 10 спорных разборов правильными и включить их в основной набор."
     }
   ]
 }

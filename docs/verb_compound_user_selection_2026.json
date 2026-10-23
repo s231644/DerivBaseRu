@@ -4,26 +4,27 @@
   "review_file": "data/verb_compound_semantic_review.jsonl",
   "review_sha256": "512b845ee18e95000658690a97be58941c08f394557a098151949934ae3b55f1",
   "input_sha256": "24eab2dc8d6cf3feefe883c525baf1c8384fa9c74be86cbbea6f26b03f93eee6",
-  "output_sha256": "e81306819b51e0ef9607ea7e1587478caa5d58e2f7d7d3f5a498211269ff0524",
+  "output_sha256": "7cae099fba6bd037ea2812bebab4904791478b4bad24b28855c029c9a82cb05e",
   "input_relations": 580,
   "verdicts": {
-    "accept": 116,
+    "accept": 126,
     "reject": 454,
-    "uncertain": 10
+    "uncertain": 0
   },
   "unique_words": {
-    "accept": 95,
+    "accept": 105,
     "reject": 351,
-    "uncertain": 10
+    "uncertain": 0
   },
   "scope": "LLM assessment with explicit user decisions; verified remains false",
-  "user_overrides": 58,
+  "user_overrides": 68,
   "override_bases": {
     "explicit_component": 42,
     "shared_accepted_component": 15,
-    "explicit_correction": 1
+    "explicit_correction": 1,
+    "explicit_remaining_uncertain": 10
   },
-  "overrides_sha256": "0557a7e7f8674d506284f579b59520720272c6efe36c1b36820e0552d038e51d",
+  "overrides_sha256": "92085a9b62b9e91c350107e13d7aa1467cdc5f20aabd6489cc5cb30781a7933b",
   "tests": "48 passed: semantic, reflexive, category and compound tests",
   "command": ".venv/bin/python scripts/apply_compound_semantic_review.py --snapshot data/derived/verb_compound.semantic_input.jsonl",
   "overrides": "data/verb_compound_semantic_review.overrides.json",
@@ -41,17 +42,7 @@
       "head": "носить"
     }
   ],
-  "pending_words": [
-    "бедокурить",
-    "дуроломить",
-    "кашеварить",
-    "коловращать",
-    "остроумничать",
-    "пароварить",
-    "пустынножительствовать",
-    "словоблудить",
-    "тупоумничать",
-    "фалломорфировать"
-  ],
-  "selection_policy": "Explicit requested components, then one pass on remaining uncertain relations sharing a head or modifier with the accepted plus explicitly selected relations. No rejected relations were promoted."
+  "pending_words": [],
+  "selection_policy": "Previous component selections and parent corrections retained; all 10 remaining uncertain relations explicitly accepted by the user. Rejected relations are unchanged.",
+  "validation": "126 unique relations, 105 words, 0 pending; 454 rejected unchanged; both honey parents retain мёд IDs."
 }
