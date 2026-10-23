@@ -59,7 +59,11 @@ Click a result or graph node to explore its neighbourhood. Graph nodes also work
 with Enter/Space. Drag the background to pan or a vertex to reposition it, including
 with touch. The wheel and zoom controls change scale; the fit button includes word
 labels in the view. Part of speech determines node colour; an orange outline marks
-the focus. The inspector shows producing bases, derivatives and component statistics.
+the focus. Arrow lines and heads share a colour based on relation kind (prefix,
+suffix, postfix, compound, prefix+suffix, complex, interfix or conversion), with a
+neutral fallback for unknown kinds. The legend separates node POS colours from
+relation colours and shows only categories present in the current graph.
+The inspector shows producing bases, derivatives and component statistics.
 
 ## Keep alive (launchd)
 

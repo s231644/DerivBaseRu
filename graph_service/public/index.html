@@ -41,7 +41,7 @@
     <section id="stage" aria-label="Интерактивный граф">
       <svg id="graph" aria-label="Граф словообразовательных связей"></svg>
       <div id="emptyState" class="empty-state"><span class="empty-symbol" aria-hidden="true">а → б</span><h2>У каждого слова есть связи</h2><p>Найдите слово слева, чтобы увидеть<br>его основы и производные.</p></div>
-      <div id="legend" class="legend" aria-label="Части речи"></div>
+      <div id="legend" class="legend" aria-label="Части речи и типы отношений"></div>
       <div class="zoom" aria-label="Масштаб графа"><button id="zoomIn" type="button" title="Приблизить" aria-label="Приблизить">+</button><button id="zoomOut" type="button" title="Отдалить" aria-label="Отдалить">−</button><span></span><button id="zoomReset" type="button" title="Показать весь граф" aria-label="Показать весь граф">⤢</button></div>
       <div class="canvas-hint">Колесо — масштаб · перетащите фон или вершину</div>
     </section>
@@ -49,7 +49,7 @@
   <aside class="inspector" aria-label="Сведения о выбранном слове">
     <div class="inspector-heading"><span class="eyebrow">ВЫБРАННОЕ СЛОВО</span><span class="inspector-icon" aria-hidden="true">↗</span></div>
     <div id="info" class="info"><div class="inspector-placeholder">От слова — к его истории</div><p>Выберите слово в поиске или нажмите на вершину графа.</p></div>
-    <div class="reading-guide"><span class="eyebrow">КАК ЧИТАТЬ ГРАФ</span><div class="guide-line"><i></i><span>→</span><i class="guide-derived"></i></div><p>Стрелка направлена от производящей основы к производному слову.</p><p>Оранжевый контур отмечает выбранное слово. Цвет вершины обозначает часть речи.</p></div>
+    <div class="reading-guide"><span class="eyebrow">КАК ЧИТАТЬ ГРАФ</span><div class="guide-line"><i></i><span>→</span><i class="guide-derived"></i></div><p>Стрелка направлена от производящей основы к производному слову.</p><p>Оранжевый контур отмечает выбранное слово. Цвет вершины обозначает часть речи, а цвет стрелки — тип словообразовательного отношения.</p></div>
   </aside>
 </main>
 <script src="/app.js?v=__V__"></script>

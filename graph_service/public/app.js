@@ -3,6 +3,13 @@
 var svgNS = 'http://www.w3.org/2000/svg';
 var POS_COLORS = { noun: '#348674', adj: '#4b80b1', verb: '#8b70af', adv: '#aa861e', num: '#bf7242' };
 var POS_LABELS = { noun: 'сущ', adj: 'прил', verb: 'гл', adv: 'нар', num: 'числ' };
+var RELATION_COLORS = { pfx: '#477eb8', sfx: '#3a9272', postfix: '#2495a4', compound: '#cb8045', pfx_sfx: '#a06bb1', complex: '#7866b3', interfix: '#aa861e', conversion: '#b2708d', other: '#8793a3' };
+var RELATION_LABELS = { pfx: 'Приставка', sfx: 'Суффикс', postfix: 'Постфикс', compound: 'Сложение', pfx_sfx: 'Приставка + суффикс', complex: 'Комплексное', interfix: 'Интерфикс', conversion: 'Конверсия', other: 'Другой тип' };
+function relationKey(kind) {
+  var key = String(kind || 'other').toLowerCase();
+  key = ({ prefix: 'pfx', suffix: 'sfx', ptfx: 'postfix', pfxsfx: 'pfx_sfx', confix: 'pfx_sfx', conv: 'conversion' })[key] || key;
+  return Object.prototype.hasOwnProperty.call(RELATION_COLORS, key) ? key : 'other';
+}
 var POS_FULL = { noun: 'Существительное', adj: 'Прилагательное', verb: 'Глагол', adv: 'Наречие', num: 'Числительное' };
 var DATASET_LABELS = { '*': 'Все наборы данных', 'unified.jsonl': 'Общий граф', 'verb_pfx.jsonl': 'Глаголы · приставочные', 'verb_compound.jsonl': 'Глаголы · сложения', 'verb_sfx.jsonl': 'Глаголы · суффиксальные', 'verb_complex.jsonl': 'Глаголы · приставка + суффикс', 'num.jsonl': 'Числительные', 'adv.rare.verified.jsonl': 'Наречия · исключения', 'adv_pfx.final.clean.jsonl': 'Наречия · приставочные', 'adv_sfx.clean.jsonl': 'Наречия · суффиксальные', 'adv_g1.final.clean.jsonl': 'Наречия · группа 1', 'adv_g2.final.clean.jsonl': 'Наречия · группа 2', 'adv_g5.clean.jsonl': 'Наречия · сложения', 'adv_ymx.clean.jsonl': 'Наречия · усилительные' };
 var datasetInfo = {}, searchVersion = 0, graphVersion = 0;
@@ -346,12 +353,12 @@ function fitView() {
 function draw() {
   while (svg.firstChild) svg.removeChild(svg.firstChild);
   var defs = svgEl('defs', {});
-  Object.keys(POS_COLORS).concat(['other']).forEach(function (pos) {
+  Object.keys(RELATION_COLORS).forEach(function (kind) {
     var marker = svgEl('marker', {
-      id: 'arrow-' + pos, viewBox: '0 0 10 10', refX: '9', refY: '5',
+      id: 'arrow-' + kind, viewBox: '0 0 10 10', refX: '9', refY: '5',
       markerWidth: '6', markerHeight: '6', orient: 'auto-start-reverse',
     });
-    marker.appendChild(svgEl('path', { d: 'M 0 0 L 10 5 L 0 10 z', fill: posColor(pos) }));
+    marker.appendChild(svgEl('path', { d: 'M 0 0 L 10 5 L 0 10 z', fill: RELATION_COLORS[kind] }));
     defs.appendChild(marker);
   });
   svg.appendChild(defs);
@@ -360,10 +367,11 @@ function draw() {
   var gLabels = svgEl('g', { class: 'labels' });
   var gNodes = svgEl('g', { class: 'nodes' });
   state.links.forEach(function (l) {
-    var key = posKey(l.pos);
-    var line = svgEl('line', { class: 'link pos-' + key, 'marker-end': 'url(#arrow-' + key + ')' });
+    var key = relationKey(l.kind);
+    var line = svgEl('line', { class: 'link relation-' + key, 'marker-end': 'url(#arrow-' + key + ')' });
+    line.style.setProperty('--relation-color', RELATION_COLORS[key]);
     var title = svgEl('title');
-    title.textContent = l.rule || l.label;
+    title.textContent = RELATION_LABELS[key] + ': ' + (l.rule || l.label);
     line.appendChild(title);
     gLinks.appendChild(line);
     l.el = line;
@@ -419,9 +427,15 @@ function update() {
 function renderLegend() {
   var pos = [];
   state.nodes.forEach(function (n) { if (pos.indexOf(n.pos) < 0) pos.push(n.pos); });
-  el('legend').innerHTML = pos.map(function (p) {
+  var nodes = pos.map(function (p) {
     return '<span><i style="background:' + posColor(p) + '"></i>' + escapeHtml(posLabel(p)) + '</span>';
   }).join('');
+  var present = new Set(state.links.map(function (link) { return relationKey(link.kind); }));
+  var links = Object.keys(RELATION_COLORS).filter(function (key) { return present.has(key); }).map(function (key) {
+    return '<span><i class="relation-key" style="color:' + RELATION_COLORS[key] + '"></i>' + RELATION_LABELS[key] + '</span>';
+  }).join('');
+  el('legend').innerHTML = '<div class="legend-group"><b>Вершины</b>' + nodes + '</div>' +
+    (links ? '<div class="legend-group"><b>Связи</b>' + links + '</div>' : '');
 }
 
 function step() {
