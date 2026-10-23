@@ -32,7 +32,7 @@ class DSU:
         if ra != rb:
             self.p[rb] = ra
 
-def build(path):
+def build(path, exclude_compound_modifiers=False):
     dsu = DSU(); words = {}; edges = 0
     for line in opener(path):
         line = line.strip()
@@ -44,6 +44,8 @@ def build(path):
         words.setdefault(i, rec.get('word') or i.split('|')[0])
         dsu.add(i)
         for p in (rec.get('parents') or []):
+            if exclude_compound_modifiers and rec.get('kind') == 'compound' and p.get('role') == 'modifier':
+                continue
             pid = p.get('id')
             if not pid: continue
             words.setdefault(pid, p.get('word') or pid.split('|')[0])
@@ -67,6 +69,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--input', action='append', required=True)
     ap.add_argument('--out-dir', default='data/derived')
+    ap.add_argument('--exclude-compound-modifiers', action='store_true',
+                    help='omit compound modifier edges for the visualization')
     ap.add_argument('--aggregate', action='store_true',
                     help='пометить сайдкар aggregate: true (датасет-агрегат вроде unified.jsonl.gz; '
                          'сервис не будет суммировать его счётчики со счётчиками частей)')
@@ -75,7 +79,9 @@ def main():
     for path in args.input:
         if not os.path.exists(path):
             print('skip (нет файла):', path); continue
-        res = build(path)
+        res = build(path, args.exclude_compound_modifiers)
+        if args.exclude_compound_modifiers:
+            res['visualization_policy'] = 'compound_head_only'
         if args.aggregate: res['aggregate'] = True
         base = os.path.basename(path)
         for suf in ('.jsonl.gz', '.jsonl'):

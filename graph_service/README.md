@@ -85,3 +85,9 @@ Logs: `graph_service/logs/out.log` and `graph_service/logs/err.log`.
 
 Restart: `launchctl kickstart -k gui/$(id -u)/ai.openclaw.derivbase-graphview`
 Stop:    `launchctl bootout gui/$(id -u)/ai.openclaw.derivbase-graphview`
+
+Compound relations display only their head links. Modifier links are excluded
+from traversal and component statistics, so their word families do not bridge
+otherwise separate graphs. Original JSONL derivations retain all parents.
+Component sidecars for the viewer must be built with
+`--exclude-compound-modifiers` (included in `prepare_graph_viewer.py`).

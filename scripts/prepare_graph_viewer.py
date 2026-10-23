@@ -33,12 +33,13 @@ def prepare():
     subprocess.run([sys.executable, str(ROOT / 'scripts/build_unified.py'),
                     *inputs, '--out', str(destination / 'unified.jsonl.gz')], check=True)
     subprocess.run([sys.executable, str(ROOT / 'scripts/build_components.py'),
-                    *inputs, '--out-dir', str(destination)], check=True)
+                    *inputs, '--exclude-compound-modifiers', '--out-dir', str(destination)], check=True)
     subprocess.run([sys.executable, str(ROOT / 'scripts/build_components.py'),
                     '--input', str(destination / 'unified.jsonl.gz'),
-                    '--aggregate', '--out-dir', str(destination)], check=True)
+                    '--aggregate', '--exclude-compound-modifiers', '--out-dir', str(destination)], check=True)
     (destination / 'viewer_manifest.json').write_text(json.dumps({
         'inputs': [inputs[i] for i in range(1, len(inputs), 2)],
+        'visualization_policy': 'compound_head_only',
         'aggregate': str(destination / 'unified.jsonl.gz'),
         'command': 'node graph_service/server.js --port 8791 --data ../data/derived/viewer --max-bytes 67108864',
     }, ensure_ascii=False, indent=2) + '\n')

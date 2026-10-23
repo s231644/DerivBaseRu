@@ -135,6 +135,8 @@ function loadComponents(name) {
   try { text = readMaybeGz(file); } catch (e) { return null; }
   let data;
   try { data = JSON.parse(text); } catch (e) { return null; }
+  // Old sidecars include modifier bridges and cannot describe the visible graph.
+  if (data.visualization_policy !== 'compound_head_only') return null;
   compCache.set(name, { mtime, data });
   return data;
 }
@@ -236,6 +238,7 @@ function loadDataset(name) {
     const ps = Array.isArray(rec.parents) ? rec.parents : [];
     for (const p of ps) {
       if (!p || !p.id) continue;
+      if (rec.kind === 'compound' && p.role === 'modifier') continue;
       upsert(p.id, p.word, p.pos);
       const edge = { source: p.id, target: rec.id, rule: rec.rule, kind: rec.kind, role: p.role || 'head', slot: p.slot || 0 };
       edges.push(edge);
