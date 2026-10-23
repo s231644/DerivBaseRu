@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-24",
+  "accepted_dahl_token_relations": 5579,
+  "prefix_relations": 35358,
+  "acceptance": "explicit user decision; lexical evidence is retained unchanged",
+  "generator_command": ".venv/bin/python scripts/rebuild_verb_prefixes.py --accept-dahl-token",
+  "acceptance_command": ".venv/bin/python scripts/accept_prefix_dahl.py",
+  "candidate_sha256": "3c92f5fc848ee37e6a49e38ca0bce58f095e04a9ff10b474cbc5984ad6d2dd5e",
+  "doubtful_sha256": "0829aad3381e236b904e30170ae57cf44d98acb91583bddeb6c97a1c1783a3c7",
+  "viewer_url": "http://127.0.0.1:8792",
+  "viewer_command": "node graph_service/server.js --port 8792 --data ../data/derived/viewer --max-bytes 67108864",
+  "viewer_prepare_command": ".venv/bin/python scripts/prepare_graph_viewer.py",
+  "viewer_inputs": [
+    "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/derived/num.jsonl.gz",
+    "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/derived/verb_compound.jsonl",
+    "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/derived/verb_pfx.jsonl",
+    "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/derived/adv.rare.verified.jsonl",
+    "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/derived/adv_pfx.final.clean.jsonl",
+    "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/derived/adv_sfx.clean.jsonl",
+    "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/derived/adv_g1.final.clean.jsonl",
+    "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/derived/adv_g2.final.clean.jsonl",
+    "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/derived/adv_g5.clean.jsonl",
+    "/Users/a1234/.openclaw/workspace/DerivBaseRu/data/derived/adv_ymx.clean.jsonl"
+  ],
+  "viewer_graph": {
+    "nodes": 55698,
+    "arcs": 45303,
+    "components": 11658
+  },
+  "validation": [
+    "4 prefix generation/acceptance tests passed",
+    "All 5579 doubtful rows have user_accept and unchanged dahl_token evidence",
+    "HTTP /api/datasets includes current prefix dataset with 35358 edges, no raw/rejected/doubtful files",
+    "HTTP /api/graph confirms сидеть -> полусидеть"
+  ],
+  "note": "Port 8791 was occupied; a separate viewer instance runs on 8792. The viewer uses a fresh curated aggregate, not the old root unified snapshot."
+}

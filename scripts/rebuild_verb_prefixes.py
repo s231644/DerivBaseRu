@@ -124,5 +124,10 @@ if __name__ == '__main__':
     parser.add_argument('--dahl', default=str(ROOT / 'data/dahl/dahl.jsonl.gz'))
     parser.add_argument('--inflect-types', default=str(ROOT / 'data/verb_inflect_types.json'))
     parser.add_argument('--out', default=str(ROOT / 'data/derived/verb_pfx.jsonl'))
+    parser.add_argument('--accept-dahl-token', action='store_true',
+                        help='apply the user-authorized acceptance policy for Dahl-token candidates')
     args = parser.parse_args()
     run(args.dict, args.dahl, args.inflect_types, args.out)
+    if args.accept_dahl_token:
+        from accept_prefix_dahl import accept_dahl
+        accept_dahl(args.out)
