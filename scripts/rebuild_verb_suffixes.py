@@ -15,3 +15,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
     run(args.dict, args.dahl, args.inflect_types, args.out,
         rules_path=RULES, allowed_info={'SFX', 'PTFX'})
+    from review_verb_suffixes import review
+    review(args.out, args.dict)
