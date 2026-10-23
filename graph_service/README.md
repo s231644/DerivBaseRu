@@ -55,7 +55,21 @@ Parent (producing) words are blue, the focused lexeme is gold.
 
 ## Keep alive (launchd)
 
-    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/ai.openclaw.derivbase-graphview.plist
+From the repository root, prepare the curated datasets and install the user service:
+
+    .venv/bin/python scripts/prepare_graph_viewer.py
+    .venv/bin/python scripts/install_graph_viewer_service.py --install
+
+The permanent viewer runs at http://127.0.0.1:8792 using `data/derived/viewer`.
+It runs independently of terminal/chat sessions, starts at login, and restarts
+automatically after process exit. macOS must be awake and the user logged in.
+The installer updates the existing agent (no second competing instance), saves
+the previous plist as `.plist.previous`, and uses absolute Node and repository paths.
+Without `--install` it prints the proposed plist. Use `--port` to change the port.
+
+Status: `launchctl print gui/$(id -u)/ai.openclaw.derivbase-graphview`
+
+Logs: `graph_service/logs/out.log` and `graph_service/logs/err.log`.
 
 Restart: `launchctl kickstart -k gui/$(id -u)/ai.openclaw.derivbase-graphview`
 Stop:    `launchctl bootout gui/$(id -u)/ai.openclaw.derivbase-graphview`
