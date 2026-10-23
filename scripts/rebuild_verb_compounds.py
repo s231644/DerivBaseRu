@@ -18,6 +18,7 @@ from run_pipeline import (
 )
 from compound_morphology import INFLECTION_PATH, checked_modifier_forms
 from filter_verb_compounds import filter_dataset
+from filter_reflexive_compounds import filter_reflexive
 
 
 def main():
@@ -111,6 +112,7 @@ def main():
     output.with_suffix('.manifest.json').write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
     filter_dataset(output)
+    filter_reflexive(output)
 
 
 if __name__ == '__main__':
