@@ -1,0 +1,117 @@
+word	modifier	form	head	decision_by	basis
+благоволить	благой	благо	волить	user	explicit_component
+благоволить	благо	благо	волить	user	explicit_component
+благоговеть	благой	благо	говеть	user	explicit_component
+благоговеть	благо	благо	говеть	user	explicit_component
+благодарить	благой	благо	дарить	user	explicit_component
+благодарить	благо	благо	дарить	user	explicit_component
+благодарствовать	благой	благо	дарствовать	user	explicit_component
+благодарствовать	благо	благо	дарствовать	user	explicit_component
+благопоспешать	благой	благо	поспешать	user	explicit_component
+благопоспешать	благо	благо	поспешать	user	explicit_component
+благопоспешествовать	благой	благо	поспешествовать	user	explicit_component
+благопоспешествовать	благо	благо	поспешествовать	user	explicit_component
+благоприобретать	благой	благо	приобретать	LLM: Codex current conversation	llm_semantic_review
+благоприобретать	благо	благо	приобретать	user	explicit_component
+благоприятствовать	благой	благо	приятствовать	user	explicit_component
+благоприятствовать	благо	благо	приятствовать	user	explicit_component
+благотворить	благой	благо	творить	user	explicit_component
+благотворить	благо	благо	творить	LLM: Codex current conversation	llm_semantic_review
+благоустраивать	благой	благо	устраивать	LLM: Codex current conversation	llm_semantic_review
+благоустраивать	благо	благо	устраивать	user	explicit_component
+благоустроить	благой	благо	устроить	LLM: Codex current conversation	llm_semantic_review
+благоустроить	благо	благо	устроить	user	explicit_component
+боготворить	бог	бого	творить	user	shared_accepted_component
+большемерить	больший	больше	мерить	user	explicit_component
+большемерить	большой	больше	мерить	user	explicit_component
+бракосочетаться	брак	брако	сочетаться	LLM: Codex current conversation	llm_semantic_review
+верховодить	верх	верхо	водить	user	explicit_component
+видоизменить	вид	видо	изменить	LLM: Codex current conversation	llm_semantic_review
+видоизменять	вид	видо	изменять	LLM: Codex current conversation	llm_semantic_review
+добрососедствовать	добрый	добро	соседствовать	user	explicit_component
+добрососедствовать	добро	добро	соседствовать	user	explicit_component
+единовластвовать	единый	едино	властвовать	LLM: Codex current conversation	llm_semantic_review
+единообразить	единый	едино	образить	user	shared_accepted_component
+живописать	живой	живо	писать	user	shared_accepted_component
+животворить	живой	живо	творить	LLM: Codex current conversation	llm_semantic_review
+жизнеобеспечить	жизнь	жизне	обеспечить	LLM: Codex current conversation	llm_semantic_review
+звукоизолировать	звук	звуко	изолировать	LLM: Codex current conversation	llm_semantic_review
+злодействовать	злой	зло	действовать	user	explicit_component
+злодействовать	зло	зло	действовать	user	explicit_component
+злоехидничать	злой	зло	ехидничать	LLM: Codex current conversation	llm_semantic_review
+злоехидничать	зло	зло	ехидничать	user	explicit_component
+злопыхать	злой	зло	пыхать	LLM: Codex current conversation	llm_semantic_review
+злопыхать	зло	зло	пыхать	LLM: Codex current conversation	llm_semantic_review
+злоумышлять	злой	зло	умышлять	user	explicit_component
+злоумышлять	зло	зло	умышлять	LLM: Codex current conversation	llm_semantic_review
+злоупотребить	злой	зло	употребить	user	explicit_component
+злоупотребить	зло	зло	употребить	LLM: Codex current conversation	llm_semantic_review
+злоупотреблять	злой	зло	употреблять	user	explicit_component
+злоупотреблять	зло	зло	употреблять	LLM: Codex current conversation	llm_semantic_review
+злоязычничать	злой	зло	язычничать	LLM: Codex current conversation	llm_semantic_review
+злоязычничать	зло	зло	язычничать	user	explicit_component
+зубоскалить	зуб	зубо	скалить	LLM: Codex current conversation	llm_semantic_review
+импортозаместить	импорт	импорто	заместить	LLM: Codex current conversation	llm_semantic_review
+импортозамещать	импорт	импорто	замещать	LLM: Codex current conversation	llm_semantic_review
+кнопкодавить	кнопка	кнопко	давить	LLM: Codex current conversation	llm_semantic_review
+коновалить	конь	коно	валить	user	shared_accepted_component
+коноводить	конь	коно	водить	user	explicit_component
+кособочить	косой	косо	бочить	LLM: Codex current conversation	llm_semantic_review
+косолапить	косой	косо	лапить	user	shared_accepted_component
+кровожадничать	кровь	крово	жадничать	user	shared_accepted_component
+кровожаждать	кровь	крово	жаждать	LLM: Codex current conversation	llm_semantic_review
+кровоснабжать	кровь	крово	снабжать	LLM: Codex current conversation	llm_semantic_review
+кровоточить	кровь	крово	точить	LLM: Codex current conversation	llm_semantic_review
+кровохаркать	кровь	крово	харкать	LLM: Codex current conversation	llm_semantic_review
+кукловодить	кукла	кукло	водить	user	explicit_component
+лжепророчествовать	ложь	лже	пророчествовать	user	explicit_component
+лжесвидетельствовать	ложь	лже	свидетельствовать	user	explicit_component
+лжетолковать	ложь	лже	толковать	LLM: Codex current conversation	llm_semantic_review
+лжеучительствовать	ложь	лже	учительствовать	user	explicit_component
+лиходействовать	лихой	лихо	действовать	user	explicit_component
+лиходействовать	лихо	лихо	действовать	user	explicit_component
+лицедействовать	лицо	лице	действовать	user	explicit_component
+лицезреть	лицо	лице	зреть	user	explicit_component
+лицеприятствовать	лицо	лице	приятствовать	user	explicit_component
+лучеиспускать	луч	луче	испускать	LLM: Codex current conversation	llm_semantic_review
+маломерить	малый	мало	мерить	user	explicit_component
+медоносить	мёд	медо	носить	user	shared_accepted_component
+медоточить	мёд	медо	точить	user	explicit_correction
+мироволить	мир	миро	волить	user	shared_accepted_component
+миропомазать	миро	миро	помазать	LLM: Codex current conversation	llm_semantic_review
+миропомазывать	миро	миро	помазывать	LLM: Codex current conversation	llm_semantic_review
+миротворить	мир	миро	творить	LLM: Codex current conversation	llm_semantic_review
+мироточить	миро	миро	точить	LLM: Codex current conversation	llm_semantic_review
+пешешествовать	пеший	пеше	шествовать	LLM: Codex current conversation	llm_semantic_review
+плодоносить	плод	плодо	носить	LLM: Codex current conversation	llm_semantic_review
+праздномыслить	праздный	праздно	мыслить	LLM: Codex current conversation	llm_semantic_review
+праздношататься	праздный	праздно	шататься	LLM: Codex current conversation	llm_semantic_review
+пустозвонить	пустой	пусто	звонить	LLM: Codex current conversation	llm_semantic_review
+пустолаять	пустой	пусто	лаять	LLM: Codex current conversation	llm_semantic_review
+путеводить	путь	путе	водить	LLM: Codex current conversation	llm_semantic_review
+разногласить	разный	разно	гласить	user	shared_accepted_component
+разноголосить	разный	разно	голосить	user	shared_accepted_component
+разномыслить	разный	разно	мыслить	LLM: Codex current conversation	llm_semantic_review
+руководить	рука	руко	водить	LLM: Codex current conversation	llm_semantic_review
+рукоплескать	рука	руко	плескать	user	shared_accepted_component
+рукополагать	рука	руко	полагать	LLM: Codex current conversation	llm_semantic_review
+рукоположить	рука	руко	положить	LLM: Codex current conversation	llm_semantic_review
+священнодействовать	священный	священно	действовать	user	shared_accepted_component
+сенокосить	сено	сено	косить	LLM: Codex current conversation	llm_semantic_review
+скоробогатеть	скорый	скоро	богатеть	LLM: Codex current conversation	llm_semantic_review
+слезоточить	слеза	слезо	точить	LLM: Codex current conversation	llm_semantic_review
+сновидеть	сон	сно	видеть	LLM: Codex current conversation	llm_semantic_review
+теплоизолировать	тепло	тепло	изолировать	LLM: Codex current conversation	llm_semantic_review
+трудоустраивать	труд	трудо	устраивать	LLM: Codex current conversation	llm_semantic_review
+трудоустроить	труд	трудо	устроить	LLM: Codex current conversation	llm_semantic_review
+умозаключать	ум	умо	заключать	LLM: Codex current conversation	llm_semantic_review
+умозаключить	ум	умо	заключить	LLM: Codex current conversation	llm_semantic_review
+умозреть	ум	умо	зреть	LLM: Codex current conversation	llm_semantic_review
+хороводить	хор	хоро	водить	user	explicit_component
+хромоалитировать	хром	хромо	алитировать	LLM: Codex current conversation	llm_semantic_review
+чародействовать	чара	чаро	действовать	user	shared_accepted_component
+чревовещать	чрево	чрево	вещать	LLM: Codex current conversation	llm_semantic_review
+чревоугодничать	чрево	чрево	угодничать	user	shared_accepted_component
+чудодействовать	чудо	чудо	действовать	LLM: Codex current conversation	llm_semantic_review
+чудотворить	чудо	чудо	творить	LLM: Codex current conversation	llm_semantic_review
+ясновидеть	ясный	ясно	видеть	user	shared_accepted_component

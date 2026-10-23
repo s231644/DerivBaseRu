@@ -62,3 +62,45 @@ def test_incomplete_or_stale_review_cannot_change_dataset(tmp_path, failure):
     with pytest.raises(ValueError):
         apply_review(dataset, review)
     assert dataset.read_bytes() == before
+
+
+def test_user_overrides_and_parent_correction_keep_original_review(tmp_path):
+    dataset, review, rows, decisions = fixture(tmp_path)
+    rows[2]['parents'][1].update(word='мед', id='мед|noun',
+                              morphology_evidence=[{'lemma': 'мёд', 'genitive': 'мёда'}])
+    decisions[2]['relation_key'] = relation_key(rows[2])
+    snapshot = tmp_path / 'original.jsonl'
+    snapshot.write_text(''.join(json.dumps(r) + '\n' for r in rows))
+    metadata = json.loads(review.with_suffix('.meta.json').read_text())
+    metadata['input_sha256'] = hashlib.sha256(snapshot.read_bytes()).hexdigest()
+    review.with_suffix('.meta.json').write_text(json.dumps(metadata))
+    review.write_text(''.join(json.dumps(r) + '\n' for r in decisions))
+    original_review = review.read_bytes()
+    review.with_suffix('.overrides.json').write_text(json.dumps({
+        'input_sha256': metadata['input_sha256'], 'overrides': [{
+            'relation_key': decisions[2]['relation_key'], 'verdict': 'accept',
+            'basis': 'explicit_correction', 'reason': 'User requested honey',
+            'modifier_correction': {'from': 'мед', 'to': 'мёд', 'pos': 'noun'}}]}))
+    report = apply_review(dataset, review, snapshot)
+    assert report['verdicts'] == {'accept': 2, 'reject': 1, 'uncertain': 0}
+    corrected = json.loads(dataset.read_text().splitlines()[1])
+    assert corrected['parents'][1]['word'] == 'мёд'
+    assert corrected['parents'][1]['id'] == 'мёд|noun'
+    assert corrected['review_status'] == 'user_accept'
+    assert corrected['semantic_review']['previous_llm_verdict'] == 'uncertain'
+    assert corrected['verified'] is False
+    assert review.read_bytes() == original_review
+    assert dataset.with_suffix('.semantic_input.jsonl').read_bytes() == snapshot.read_bytes()
+
+
+def test_user_override_cannot_silently_accept_rejected_relation(tmp_path):
+    dataset, review, _, decisions = fixture(tmp_path)
+    metadata = json.loads(review.with_suffix('.meta.json').read_text())
+    review.with_suffix('.overrides.json').write_text(json.dumps({
+        'input_sha256': metadata['input_sha256'], 'overrides': [{
+            'relation_key': decisions[1]['relation_key'], 'verdict': 'accept',
+            'basis': 'shared_component', 'reason': 'Invalid scope expansion'}]}))
+    before = dataset.read_bytes()
+    with pytest.raises(ValueError):
+        apply_review(dataset, review)
+    assert dataset.read_bytes() == before
