@@ -1,0 +1,3944 @@
+{
+  "basis": "explicit_user_instruction_copy_nonreflexive_types",
+  "reviewed": 322,
+  "statuses": {
+    "copied": 259,
+    "missing_base": 39,
+    "unchanged": 24
+  },
+  "resolved_to_single": 258,
+  "multitype_before": 401,
+  "multitype_after": 143,
+  "before_sha256": "3f08f33b53a749e83442efa043c2dd506484e4124dd45f11bd993a508762a5ef",
+  "after_sha256": "ea687417242270979093bda31176d7cfc534a4ab53302067c8f52456b2f4f54d",
+  "rows": [
+    {
+      "word": "бомжеваться",
+      "base": "бомжевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вбиться",
+      "base": "вбить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "ввертеться",
+      "base": "ввертеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "ввиться",
+      "base": "ввить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вздеться",
+      "base": "вздеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "взлаяться",
+      "base": "взлаять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "взлелеяться",
+      "base": "взлелеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вмазаться",
+      "base": "вмазать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вогнаться",
+      "base": "вогнать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "воздеться",
+      "base": "воздеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "возжаться",
+      "base": "возжать",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1",
+        "14м"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "воззреться",
+      "base": "воззреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "возлиться",
+      "base": "возлить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вознадеяться",
+      "base": "вознадеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "воспеться",
+      "base": "воспеть",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "12петь"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "восприняться",
+      "base": "воспринять",
+      "before": [
+        "1",
+        "14им"
+      ],
+      "after": [
+        "14им"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вострепетаться",
+      "base": "вострепетать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "врезаться",
+      "base": "врезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "всеяться",
+      "base": "всеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вспахаться",
+      "base": "вспахать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "всплакаться",
+      "base": "всплакать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вспокаяться",
+      "base": "вспокаять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "встаться",
+      "base": "встать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "встрепаться",
+      "base": "встрепать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "втоптаться",
+      "base": "втоптать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вывертеться",
+      "base": "вывертеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вывиться",
+      "base": "вывить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вывязаться",
+      "base": "вывязать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "выгнаться",
+      "base": "выгнать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "выклеваться",
+      "base": "выклевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "выкорчеваться",
+      "base": "выкорчевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вымалеваться",
+      "base": "вымалевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вымчаться",
+      "base": "вымчать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вымяться",
+      "base": "вымять",
+      "before": [
+        "1",
+        "14н"
+      ],
+      "after": [
+        "14н"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "выпереться",
+      "base": "выпереть",
+      "before": [
+        "1",
+        "9"
+      ],
+      "after": [
+        "9"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "выпеться",
+      "base": "выпеть",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "12петь"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "выпиться",
+      "base": "выпить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "выполоскаться",
+      "base": "выполоскать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вырезаться",
+      "base": "вырезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "высвистаться",
+      "base": "высвистать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "высвистеться",
+      "base": "высвистеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "высеяться",
+      "base": "высеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "выслаться",
+      "base": "выслать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "высмотреться",
+      "base": "высмотреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "выстлаться",
+      "base": "выстлать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "высыпаться",
+      "base": "высыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "вытесаться",
+      "base": "вытесать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вытискаться",
+      "base": "вытискать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вытоптаться",
+      "base": "вытоптать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вытрепаться",
+      "base": "вытрепать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "вытыкаться",
+      "base": "вытыкать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "гужеваться",
+      "base": "гужевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "докликаться",
+      "base": "докликать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "досыпаться",
+      "base": "досыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "дохлопотаться",
+      "base": "дохлопотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "засыпаться",
+      "base": "засыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "извязаться",
+      "base": "извязать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "изглядеться",
+      "base": "изглядеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "изгнаться",
+      "base": "изгнать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "издаться",
+      "base": "издать",
+      "before": [
+        "1",
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "излаяться",
+      "base": "излаять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "излизаться",
+      "base": "излизать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "изрубцеваться",
+      "base": "изрубцевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "исклеваться",
+      "base": "исклевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "испиться",
+      "base": "испить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "исплакаться",
+      "base": "исплакать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "истесаться",
+      "base": "истесать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "истискаться",
+      "base": "истискать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "исчесаться",
+      "base": "исчесать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "менжеваться",
+      "base": "менжевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "меньжеваться",
+      "base": "меньжевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "1",
+        "2"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "миропомазаться",
+      "base": "миропомазать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "моржеваться",
+      "base": "моржевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "набаяться",
+      "base": "набаять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "наблатыкаться",
+      "base": "наблатыкать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "набормотаться",
+      "base": "набормотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "набояться",
+      "base": "набоять",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "навертеться",
+      "base": "навертеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "навеяться",
+      "base": "навеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "навидеться",
+      "base": "навидеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "надбиться",
+      "base": "надбить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "надписаться",
+      "base": "надписать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "надубиться",
+      "base": "надубить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "нажаться",
+      "base": "нажать",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "14м"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "наискаться",
+      "base": "наискать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "наказаться",
+      "base": "наказать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "налаяться",
+      "base": "налаять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "намалеваться",
+      "base": "намалевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "намолоться",
+      "base": "намолоть",
+      "before": [
+        "10ел",
+        "10ол"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "намяться",
+      "base": "намять",
+      "before": [
+        "1",
+        "14н"
+      ],
+      "after": [
+        "14н"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "нанизаться",
+      "base": "нанизать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "напереться",
+      "base": "напереть",
+      "before": [
+        "1",
+        "9"
+      ],
+      "after": [
+        "9"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "написаться",
+      "base": "написать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "напотчеваться",
+      "base": "напотчевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "напрятаться",
+      "base": "напрятать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "нарезаться",
+      "base": "нарезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "насеяться",
+      "base": "насеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "наслаться",
+      "base": "наслать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "насолиться",
+      "base": "насолить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "насуслиться",
+      "base": "насуслить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "насушиться",
+      "base": "насушить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "насыпаться",
+      "base": "насыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "ниспослаться",
+      "base": "ниспослать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "обаяться",
+      "base": "обаять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "обвеяться",
+      "base": "обвеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "обдержаться",
+      "base": "обдержать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "обездолиться",
+      "base": "обездолить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "обжеваться",
+      "base": "обжевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "обклеваться",
+      "base": "обклевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "облаяться",
+      "base": "облаять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "обмежеваться",
+      "base": "обмежевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "обмолоться",
+      "base": "обмолоть",
+      "before": [
+        "10ел",
+        "10ол"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "обнадеяться",
+      "base": "обнадеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "обозреться",
+      "base": "обозреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "обпиться",
+      "base": "обпить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "обплеваться",
+      "base": "обплевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "1",
+        "2"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "обрезаться",
+      "base": "обрезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "обсмотреться",
+      "base": "обсмотреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "обсыпаться",
+      "base": "обсыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "обтоптаться",
+      "base": "обтоптать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "овеяться",
+      "base": "овеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "одержаться",
+      "base": "одержать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "озреться",
+      "base": "озреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "окольцеваться",
+      "base": "окольцевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "оплеваться",
+      "base": "оплевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "оплескаться",
+      "base": "оплескать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "ополоскаться",
+      "base": "ополоскать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "освежеваться",
+      "base": "освежевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "осклизаться",
+      "base": "осклизать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "осмеяться",
+      "base": "осмеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "осыпаться",
+      "base": "осыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "отбояться",
+      "base": "отбоять",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "отвиться",
+      "base": "отвить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отжеваться",
+      "base": "отжевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отмазаться",
+      "base": "отмазать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отогнаться",
+      "base": "отогнать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отопиться",
+      "base": "отопить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отоптаться",
+      "base": "отоптать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "оторцеваться",
+      "base": "оторцевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отослаться",
+      "base": "отослать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отпеться",
+      "base": "отпеть",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "12петь"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отплескаться",
+      "base": "отплескать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отрепаться",
+      "base": "отрепать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отсвистеться",
+      "base": "отсвистеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отсмотреться",
+      "base": "отсмотреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отсняться",
+      "base": "отснять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отсыпаться",
+      "base": "отсыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "оттоптаться",
+      "base": "оттоптать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отупиться",
+      "base": "отупить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отхлопотаться",
+      "base": "отхлопотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отхлыстаться",
+      "base": "отхлыстать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "отциклеваться",
+      "base": "отциклевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "охлестаться",
+      "base": "охлестать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "переиздаться",
+      "base": "переиздать",
+      "before": [
+        "1",
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "перерезаться",
+      "base": "перерезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "пересыпаться",
+      "base": "пересыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "повеяться",
+      "base": "повеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "повидеться",
+      "base": "повидеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "повиться",
+      "base": "повить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "повыбиться",
+      "base": "повыбить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "повысыпаться",
+      "base": "повысыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "подвеяться",
+      "base": "подвеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "поддержаться",
+      "base": "поддержать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "поддеться",
+      "base": "поддеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "подеяться",
+      "base": "подеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "поджаться",
+      "base": "поджать",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "14м",
+        "14н"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "подзадержаться",
+      "base": "подзадержать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "подзалежаться",
+      "base": "подзалежать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "подкликаться",
+      "base": "подкликать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "подмяться",
+      "base": "подмять",
+      "before": [
+        "1",
+        "14н"
+      ],
+      "after": [
+        "14н"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "поднабиться",
+      "base": "поднабить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11",
+        "4"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "поднаняться",
+      "base": "поднанять",
+      "before": [
+        "1",
+        "14йм"
+      ],
+      "after": [
+        "14йм"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "подобиться",
+      "base": "подобить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11",
+        "4"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "подогнаться",
+      "base": "подогнать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "подослаться",
+      "base": "подослать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "подостлаться",
+      "base": "подостлать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "подсеяться",
+      "base": "подсеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "подсказаться",
+      "base": "подсказать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "подсыпаться",
+      "base": "подсыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "подчесаться",
+      "base": "подчесать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "подыздержаться",
+      "base": "подыздержать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "позабиться",
+      "base": "позабить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "позадержаться",
+      "base": "позадержать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "позамяться",
+      "base": "позамять",
+      "before": [
+        "1",
+        "14н"
+      ],
+      "after": [
+        "14н"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "позапереться",
+      "base": "позапереть",
+      "before": [
+        "1",
+        "9"
+      ],
+      "after": [
+        "9"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "позасидеться",
+      "base": "позасидеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "поискаться",
+      "base": "поискать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "поклеваться",
+      "base": "поклевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "помолоться",
+      "base": "помолоть",
+      "before": [
+        "10ел",
+        "10ол"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "понабиться",
+      "base": "понабить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "понаслышаться",
+      "base": "понаслышать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "понасупиться",
+      "base": "понасупить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11",
+        "4"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "понасыпаться",
+      "base": "понасыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "понатереться",
+      "base": "понатереть",
+      "before": [
+        "1",
+        "9"
+      ],
+      "after": [
+        "1",
+        "9"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "понатерпеться",
+      "base": "понатерпеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "понатыкаться",
+      "base": "понатыкать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "пообидеться",
+      "base": "пообидеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "пообтереться",
+      "base": "пообтереть",
+      "before": [
+        "1",
+        "9"
+      ],
+      "after": [
+        "9"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "пооглядеться",
+      "base": "пооглядеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "поодеться",
+      "base": "поодеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "поперепиться",
+      "base": "поперепить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11",
+        "4"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "пописаться",
+      "base": "пописать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "попиться",
+      "base": "попить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "пополоскаться",
+      "base": "пополоскать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "попотчеваться",
+      "base": "попотчевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "попривязаться",
+      "base": "попривязать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "поприглядеться",
+      "base": "поприглядеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "попридержаться",
+      "base": "попридержать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "поприжаться",
+      "base": "поприжать",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "14м"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "поприодеться",
+      "base": "поприодеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "поприсмотреться",
+      "base": "поприсмотреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "поразбежаться",
+      "base": "поразбежать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "пораспродаться",
+      "base": "пораспродать",
+      "before": [
+        "1",
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "порассеяться",
+      "base": "порассеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "посбиться",
+      "base": "посбить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "посдержаться",
+      "base": "посдержать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "посеяться",
+      "base": "посеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "посолиться",
+      "base": "посолить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "посыпаться",
+      "base": "посыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "потискаться",
+      "base": "потискать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "потрепетаться",
+      "base": "потрепетать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "поуняться",
+      "base": "поунять",
+      "before": [
+        "1",
+        "14йм"
+      ],
+      "after": [
+        "14йм"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "похлестаться",
+      "base": "похлестать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "пощекотаться",
+      "base": "пощекотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "преподаться",
+      "base": "преподать",
+      "before": [
+        "1",
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "привертеться",
+      "base": "привертеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "пригнаться",
+      "base": "пригнать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "придаться",
+      "base": "придать",
+      "before": [
+        "1",
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "придержаться",
+      "base": "придержать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "призадержаться",
+      "base": "призадержать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "призаняться",
+      "base": "призанять",
+      "before": [
+        "1",
+        "14йм"
+      ],
+      "after": [
+        "14йм"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "приказаться",
+      "base": "приказать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "примаяться",
+      "base": "примаять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "примолоться",
+      "base": "примолоть",
+      "before": [
+        "10ел",
+        "10ол"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "припахаться",
+      "base": "припахать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "припеться",
+      "base": "припеть",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "12петь"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "припиться",
+      "base": "припить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "припрятаться",
+      "base": "припрятать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "прислаться",
+      "base": "прислать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "приспеться",
+      "base": "приспеть",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "1"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "присушиться",
+      "base": "присушить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "притесаться",
+      "base": "притесать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "приудержаться",
+      "base": "приудержать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "причуяться",
+      "base": "причуять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "проблеваться",
+      "base": "проблевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "1",
+        "2"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "пробормотаться",
+      "base": "пробормотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "проглядеться",
+      "base": "проглядеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "проклеваться",
+      "base": "проклевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "промазаться",
+      "base": "промазать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "промолоться",
+      "base": "промолоть",
+      "before": [
+        "10ел",
+        "10ол"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "пронизаться",
+      "base": "пронизать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "пропахаться",
+      "base": "пропахать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "пропеться",
+      "base": "пропеть",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "12петь"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "проплеваться",
+      "base": "проплевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "проплясаться",
+      "base": "проплясать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "прорезаться",
+      "base": "прорезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "просвистаться",
+      "base": "просвистать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "просвистеться",
+      "base": "просвистеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "прослышаться",
+      "base": "прослышать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "просмеяться",
+      "base": "просмеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "просмотреться",
+      "base": "просмотреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "простлаться",
+      "base": "простлать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "простучаться",
+      "base": "простучать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "просыпаться",
+      "base": "просыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "протесняться",
+      "base": "протеснять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "after": [
+        "1",
+        "14ним"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "прочесаться",
+      "base": "прочесать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "прошептаться",
+      "base": "прошептать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "проштемпелеваться",
+      "base": "проштемпелевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "развальцеваться",
+      "base": "развальцевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "разглядеться",
+      "base": "разглядеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "размаслаться",
+      "base": "размаслать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "разослаться",
+      "base": "разослать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "разрезаться",
+      "base": "разрезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "расклеваться",
+      "base": "расклевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "расколебаться",
+      "base": "расколебать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "распахаться",
+      "base": "распахать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "распереться",
+      "base": "распереть",
+      "before": [
+        "1",
+        "9"
+      ],
+      "after": [
+        "9"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "распиться",
+      "base": "распить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "распродаться",
+      "base": "распродать",
+      "before": [
+        "1",
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "распростаться",
+      "base": "распростать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "рассказаться",
+      "base": "рассказать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "расслышаться",
+      "base": "расслышать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "рассолиться",
+      "base": "рассолить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "расстучаться",
+      "base": "расстучать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "рассыпаться",
+      "base": "рассыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "растанцеваться",
+      "base": "растанцевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "растушеваться",
+      "base": "растушевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "расхаяться",
+      "base": "расхаять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "расшептаться",
+      "base": "расшептать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "свертеться",
+      "base": "свертеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "свеяться",
+      "base": "свеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "сдеяться",
+      "base": "сдеять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "склеваться",
+      "base": "склевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "слизаться",
+      "base": "слизать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "снизаться",
+      "base": "снизать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "снискаться",
+      "base": "снискать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "совиться",
+      "base": "совить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "согнаться",
+      "base": "согнать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "сомчаться",
+      "base": "сомчать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "сплясаться",
+      "base": "сплясать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "спокаяться",
+      "base": "спокаять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "спонадобиться",
+      "base": "спонадобить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "after": [
+        "11",
+        "4"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "срезаться",
+      "base": "срезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "ссыпаться",
+      "base": "ссыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "станцеваться",
+      "base": "станцевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "стесаться",
+      "base": "стесать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "увертеться",
+      "base": "увертеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "уврачеваться",
+      "base": "уврачевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "углядеться",
+      "base": "углядеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "узреться",
+      "base": "узреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "указаться",
+      "base": "указать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "улицезреться",
+      "base": "улицезреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "унизаться",
+      "base": "унизать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "упахаться",
+      "base": "упахать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "упережаться",
+      "base": "упережать",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "услышаться",
+      "base": "услышать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "усмотреться",
+      "base": "усмотреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "усыпаться",
+      "base": "усыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "word": "ухлопотаться",
+      "base": "ухлопотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "status": "missing_base"
+    },
+    {
+      "word": "учуяться",
+      "base": "учуять",
+      "before": [
+        "1",
+        "6"
+      ],
+      "after": [
+        "6"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "цвестись",
+      "base": "цвести",
+      "before": [
+        "7д",
+        "7с"
+      ],
+      "after": [
+        "7т"
+      ],
+      "status": "copied"
+    },
+    {
+      "word": "шлицеваться",
+      "base": "шлицевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "after": [
+        "2"
+      ],
+      "status": "copied"
+    }
+  ]
+}
