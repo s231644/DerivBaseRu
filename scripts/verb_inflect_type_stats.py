@@ -96,7 +96,7 @@ def main():
         writer = csv.writer(stream, delimiter='\t', lineterminator='\n')
         writer.writerow(['word', 'type_count', 'inflect_types', 'parent_in_remaining_candidates'])
         for word, types, in_remaining in rows:
-            writer.writerow([word, len(types), ', '.join(types), int(in_remaining) if args.remaining else ''])
+            writer.writerow([word, len(types), ', '.join(types), int(in_remaining) if args.remaining else '-'])
     print(json.dumps({key: summary[key] for key in ('all', 'automatic', 'csv_overrides')},
                      ensure_ascii=False, indent=2))
     if args.remaining:
