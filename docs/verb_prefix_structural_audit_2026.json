@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "decision": "review_only",
+  "thresholds": {
+    "sparse_max": 1,
+    "productive_min": 5,
+    "strong_min": 3,
+    "target_source_ratio": 0.5
+  },
+  "input_rows": 35358,
+  "skipped_rows": 0,
+  "normalized_edges": 27267,
+  "flagged_edges": 3142,
+  "priorities": {
+    "high": 7,
+    "low": 3065,
+    "medium": 70
+  },
+  "reasons": {
+    "productive_target": 77,
+    "sparse_source": 3072
+  },
+  "input": "data/derived/verb_pfx.jsonl",
+  "input_sha256": "3c92f5fc848ee37e6a49e38ca0bce58f095e04a9ff10b474cbc5984ad6d2dd5e",
+  "output": "data/derived/verb_pfx.structural_review.jsonl",
+  "report": "docs/verb_prefix_structural_review_2026.tsv",
+  "report_scope": "high_and_medium_priority_only"
+}
