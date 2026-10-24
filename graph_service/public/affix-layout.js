@@ -174,6 +174,64 @@
       });
       if (maxChange < 0.001) break;
     }
+    // Opposite sides of a commutative diamond are hard constraints. Merge
+    // compatible diamonds into rigid components, keeping inconsistent extra
+    // analyses as soft constraints rather than bending the parallelogram.
+    var rigid = new Map(), offsets = new Map();
+    nodes.forEach(function (n) { rigid.set(n.id, [n]); offsets.set(n.id, { x: 0, y: 0 }); });
+    function signature(e) { return e.vector.affixes.join('+'); }
+    function join(e) {
+      var a = rigid.get(e.source.id), b = rigid.get(e.target.id);
+      var u = offsets.get(e.source.id), v = offsets.get(e.target.id);
+      if (a === b) return;
+      var dx = u.x + e.vector.x - v.x, dy = u.y + e.vector.y - v.y;
+      b.forEach(function (n) {
+        var o = offsets.get(n.id); o.x += dx; o.y += dy;
+        rigid.set(n.id, a); a.push(n);
+      });
+    }
+    nodes.forEach(function (n) {
+      var paths = new Map();
+      outgoing.get(n.id).forEach(function (first) {
+        outgoing.get(first.target.id).forEach(function (second) {
+          if (new Set([n.id, first.target.id, second.target.id]).size !== 3) return;
+          var key = second.target.id + ':' + signature(second) + ':' + signature(first);
+          var opposite = paths.get(key);
+          if (opposite && opposite[0].target !== first.target && signature(first) !== signature(second)) {
+            // Check all four constraints before merging; incompatible cycles
+            // must never silently distort an already accepted rigid component.
+            var candidates = [opposite[0], opposite[1], first, second];
+            var local = new Map(), valid = true;
+            function collect(node, x, y) {
+              var group = rigid.get(node.id), o = offsets.get(node.id);
+              var origin = { x: x - o.x, y: y - o.y };
+              if (local.has(group)) {
+                var prior = local.get(group);
+                if (Math.hypot(prior.x - origin.x, prior.y - origin.y) > 0.01) valid = false;
+              } else local.set(group, origin);
+            }
+            collect(n, 0, 0);
+            collect(first.target, first.vector.x, first.vector.y);
+            collect(opposite[0].target, opposite[0].vector.x, opposite[0].vector.y);
+            collect(second.target, first.vector.x + second.vector.x, first.vector.y + second.vector.y);
+            if (valid) candidates.forEach(join);
+          }
+          paths.set(second.target.id + ':' + signature(first) + ':' + signature(second), [first, second]);
+        });
+      });
+    });
+    var groups = Array.from(new Set(nodes.map(function (n) { return rigid.get(n.id); })));
+    groups.forEach(function (group) {
+      var anchor = group.find(function (n) { return n.layoutRoot; });
+      var x = 0, y = 0;
+      (anchor ? [anchor] : group).forEach(function (n) {
+        var o = offsets.get(n.id); x += n.semanticX - o.x; y += n.semanticY - o.y;
+      });
+      if (!anchor) { x /= group.length; y /= group.length; }
+      x = Math.max(x, -Math.min.apply(null, group.map(function (n) { return offsets.get(n.id).x; })));
+      y = Math.max(y, -Math.min.apply(null, group.map(function (n) { return offsets.get(n.id).y; })));
+      group.forEach(function (n) { var o = offsets.get(n.id); n.semanticX = x + o.x; n.semanticY = y + o.y; });
+    });
     // Keep semantic coordinates; spread rendered nodes/labels into nearby slots.
     // Grid-indexed label rectangles make this practical at the 500-node API cap.
     var cells = new Map(), minX = Math.min.apply(null, roots.map(function (n) { return n.semanticX; }).concat([0]));
@@ -187,9 +245,14 @@
     function overlaps(b) {
       return keys(b).some(function (k) { return (cells.get(k) || []).some(function (o) { return b.x < o.x + o.w && b.x + b.w > o.x && b.y < o.y + o.h && b.y + b.h > o.y; }); });
     }
-    nodes.slice().sort(function (a, b) { return Number(b.layoutRoot) - Number(a.layoutRoot) || a.semanticY - b.semanticY || a.semanticX - b.semanticX || cmp(a.id, b.id); }).forEach(function (n) {
-      n.x = n.semanticX; n.y = n.semanticY;
-      var chosen = box(n, n.x, n.y), found = !overlaps(chosen);
+    groups.sort(function (a, b) {
+      function root(g) { return g.some(function (n) { return n.layoutRoot; }); }
+      return Number(root(b)) - Number(root(a)) || a[0].semanticY - b[0].semanticY || a[0].semanticX - b[0].semanticX || cmp(a[0].id, b[0].id);
+    }).forEach(function (group) {
+      function fits(dx, dy) {
+        return group.every(function (n) { return n.semanticX + dx >= minX && n.semanticY + dy >= 0 && !overlaps(box(n, n.semanticX + dx, n.semanticY + dy)); });
+      }
+      var shift = [0, 0], found = fits(0, 0);
       for (var radius = 1; !found && radius < 80; radius++) {
         var slots = [];
         for (var dx = -radius; dx <= radius; dx++) for (var dy = -radius; dy <= radius; dy++) {
@@ -197,13 +260,14 @@
         }
         slots.sort(function (a, b) { return a[0] * a[0] + a[1] * a[1] - b[0] * b[0] - b[1] * b[1] || a[1] - b[1] || a[0] - b[0]; });
         for (var i = 0; i < slots.length; i++) {
-          var x = n.semanticX + slots[i][0], y = n.semanticY + slots[i][1];
-          if (x < minX || y < 0) continue;
-          var candidate = box(n, x, y);
-          if (!overlaps(candidate)) { n.x = x; n.y = y; chosen = candidate; found = true; break; }
+          if (fits(slots[i][0], slots[i][1])) { shift = slots[i]; found = true; break; }
         }
       }
-      keys(chosen).forEach(function (k) { if (!cells.has(k)) cells.set(k, []); cells.get(k).push(chosen); });
+      group.forEach(function (n) {
+        n.x = n.semanticX + shift[0]; n.y = n.semanticY + shift[1];
+        var chosen = box(n, n.x, n.y);
+        keys(chosen).forEach(function (k) { if (!cells.has(k)) cells.set(k, []); cells.get(k).push(chosen); });
+      });
     });
     var residual = 0;
     edges.forEach(function (e) {

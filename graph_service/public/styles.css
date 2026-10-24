@@ -707,9 +707,11 @@ input[type=checkbox] {
   stroke:var(--relation-color, #8793a3);
   stroke-width:1.5;
   fill:none;
-  opacity:.8;
+  opacity:.12;
+  pointer-events:none;
 }
 .edge-label {
+  opacity:.12;
   fill:#8793a3;
   font-size:9px;
   paint-order:stroke;
@@ -935,10 +937,15 @@ svg.hide-labels .labels {
 .position-leader { stroke:#aebbc8; stroke-dasharray:3 4; stroke-width:1; opacity:.65; pointer-events:none; }
 .semantic-point { fill:#9caaba; opacity:.65; pointer-events:none; }
 
-.link.layout-conflict { stroke-dasharray:7 4; opacity:.55; }
+.link.layout-conflict { stroke-dasharray:7 4; }
 .affix-vectors { margin-top:18px; font-size:11px; color:var(--muted); }
 .affix-vectors summary { cursor:pointer; line-height:1.6; }
 .affix-vector-row { display:grid; grid-template-columns:minmax(0,1fr) 40px auto; align-items:center; gap:5px; min-height:30px; }
 .affix-vector-row span { overflow-wrap:anywhere; }
 .affix-vector-row svg { width:40px; height:28px; }
 .affix-vector-row code { font-size:10px; white-space:nowrap; }
+
+.edge-hit { stroke:transparent; stroke-width:16; fill:none; pointer-events:stroke; vector-effect:non-scaling-stroke; }
+.link.highlighted { opacity:1; stroke-width:2.5; }
+.edge-label.highlighted { opacity:1; fill:var(--ink, #344256); }
+.node text { pointer-events:auto; cursor:pointer; }

@@ -91,3 +91,27 @@ test('inconsistent derivations are marked and semantic coordinates stay in the r
   assert.ok(edges.some(e => e.layoutConflict));
   assert.ok(nodes.every(n => n.semanticX >= 0 && n.semanticY >= 0));
 });
+
+test('лечь/ложить/полечь/положить remain a rendered parallelogram despite noise and collisions', () => {
+  const words = ['лечь', 'ложить', 'полечь', 'положить', 'помеха'];
+  const nodes = words.map(node);
+  const prefix = 'rule871(по + verb -> verb)', suffix = 'rule846(verb + и2(ть) -> verb)';
+  const edges = [
+    ['лечь', 'полечь', prefix, 'pfx'], ['ложить', 'положить', prefix, 'pfx'],
+    ['лечь', 'ложить', suffix, 'sfx'], ['полечь', 'положить', suffix, 'sfx'],
+    ['полечь', 'ложить', prefix, 'pfx'], // contradictory extra analysis
+    ['лечь', 'помеха', suffix, 'sfx'], // colliding label
+  ].map(([source, target, rule, kind]) => ({ source, target, rule, kind }));
+  L.layout(nodes, edges, catalogue);
+  const [a, b, c, d] = nodes;
+  const p = L.edgeVector(edges[0], catalogue), s = L.edgeVector(edges[2], catalogue);
+  for (const [x, y] of [['x', 'y'], ['semanticX', 'semanticY']]) {
+    close(c[x] - a[x], p.x); close(c[y] - a[y], p.y);
+    close(b[x] - a[x], s.x); close(b[y] - a[y], s.y);
+    close(a[x] + d[x], b[x] + c[x]); close(a[y] + d[y], b[y] + c[y]);
+  }
+  assert.ok(edges[4].layoutConflict);
+  const reversed = words.map(node).reverse();
+  L.layout(reversed, [...edges].reverse(), catalogue);
+  for (const n of reversed) { const o = nodes.find(o => o.id === n.id); close(n.x, o.x); close(n.y, o.y); }
+});

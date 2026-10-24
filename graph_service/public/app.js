@@ -248,6 +248,14 @@ function drawAffixAxes() {
   svg.appendChild(group);
 }
 
+function highlightLinks(predicate) {
+  state.links.forEach(function (link) {
+    var active = !!predicate && predicate(link);
+    link.el.classList.toggle('highlighted', active);
+    link.labelEl.classList.toggle('highlighted', active);
+  });
+}
+
 function draw() {
   while (svg.firstChild) svg.removeChild(svg.firstChild);
   var defs = svgEl('defs', {});
@@ -275,7 +283,15 @@ function draw() {
       (l.layoutConflict ? '\nРазные разборы расходятся: отклонение от вектора ' + l.layoutResidual.toFixed(1) : '') +
       (l.affixVector.ambiguous ? '\nВариант аффикса неоднозначен; использовано направление правила.' : '');
     line.appendChild(title);
-    gLinks.appendChild(line);
+    var group = svgEl('g', { class: 'edge', tabindex: '0', role: 'img', 'aria-label': title.textContent });
+    var hit = svgEl('line', { class: 'edge-hit' });
+    group.appendChild(title); group.appendChild(line); group.appendChild(hit);
+    group.addEventListener('pointerenter', function () { highlightLinks(function (edge) { return edge === l; }); });
+    group.addEventListener('pointerleave', function () { highlightLinks(null); });
+    group.addEventListener('focus', function () { highlightLinks(function (edge) { return edge === l; }); });
+    group.addEventListener('blur', function () { highlightLinks(null); });
+    gLinks.appendChild(group);
+    l.hitEl = hit;
     l.el = line;
     var text = svgEl('text', { class: 'edge-label', 'text-anchor': 'middle' });
     text.textContent = l.label;
@@ -301,6 +317,10 @@ function draw() {
     g.addEventListener('keydown', function (ev) {
       if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); loadGraph(n.id); }
     });
+    g.addEventListener('pointerenter', function () { highlightLinks(function (edge) { return edge.source === n; }); });
+    g.addEventListener('pointerleave', function () { highlightLinks(null); });
+    g.addEventListener('focus', function () { highlightLinks(function (edge) { return edge.source === n; }); });
+    g.addEventListener('blur', function () { highlightLinks(null); });
     gNodes.appendChild(g);
     n.el = g;
   });
@@ -322,6 +342,7 @@ function update() {
     var end = shorten(l.source, l.target, l.target.id === state.focus ? 12 : 9);
     l.el.setAttribute('x1', l.source.x.toFixed(1)); l.el.setAttribute('y1', l.source.y.toFixed(1));
     l.el.setAttribute('x2', end.x.toFixed(1)); l.el.setAttribute('y2', end.y.toFixed(1));
+    ['x1', 'y1', 'x2', 'y2'].forEach(function (attr) { l.hitEl.setAttribute(attr, l.el.getAttribute(attr)); });
     var mx = (l.source.x + l.target.x) / 2, my = (l.source.y + l.target.y) / 2 - 3;
     var ang = Math.atan2(l.target.y - l.source.y, l.target.x - l.source.x) * 180 / Math.PI;
     if (ang > 90) ang -= 180; else if (ang < -90) ang += 180;
