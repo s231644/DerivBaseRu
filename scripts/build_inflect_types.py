@@ -37,6 +37,9 @@ print("root-family refinements:", sum(r["changed"] for r in root_audit))
 from verb_type2_policy import apply_type2
 out, type2_changes = apply_type2(out, words)
 print("explicit type-2 assignments:", len(type2_changes))
+from apply_verb_inflect_llm_review import apply_review
+out, reviewed_nonreflexive = apply_review(out)
+print("reviewed non-reflexive paradigms:", len(reviewed_nonreflexive))
 print('csv types:', len(csv_map), '| overrode/added:', len(out) - before)
 json.dump(out, open('data/verb_inflect_types.json','w',encoding='utf-8'), ensure_ascii=False)
 print('verbs:', len(words), '| with types:', len(out))

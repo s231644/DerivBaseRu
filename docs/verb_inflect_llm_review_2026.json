@@ -1,0 +1,15 @@
+{
+  "reviewer": "LLM",
+  "reviewed_nonreflexive": 285,
+  "statuses": {
+    "retained_variants": 68,
+    "resolved": 206,
+    "pending": 11
+  },
+  "changed_assignments": 206,
+  "multitype_before": 607,
+  "multitype_after": 401,
+  "before_sha256": "29bb9bd55a55d5bca92b03a7ceccc24df31c6af83614a3d73df2e62e9584f6ff",
+  "after_sha256": "3f08f33b53a749e83442efa043c2dd506484e4124dd45f11bd993a508762a5ef",
+  "policy_sha256": "4b896d31a0a395567896b8370474c8ddfc87581996d1836d2db9bc89ee06c281"
+}

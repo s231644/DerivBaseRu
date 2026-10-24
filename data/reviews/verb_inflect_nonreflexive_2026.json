@@ -1,0 +1,7190 @@
+{
+  "schema": 1,
+  "reviewer": "LLM",
+  "scope": "285 non-reflexive lemmas from the original 607 multitype assignments",
+  "rows": [
+    {
+      "word": "брызгать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Бры́згаю и бры́зжу — реальные парадигматические варианты; не сводить к одному типу по шаблону.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#брызгать",
+        "https://ru.wiktionary.org/wiki/брызгать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "бры́згать",
+          "per1_sg": "бры́згаю",
+          "meaning": "опрыскивать"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "бры́згать",
+          "per1_sg": "бры́зжу",
+          "meaning": "сыпать брызгами"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "ввязать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Две засвидетельствованные леммы: ввязнуть/вязнуть и связать; ударение инфинитива одинаковое.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#ввязать",
+        "https://en.wiktionary.org/wiki/ввязать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "ввяза́ть",
+          "per1_sg": "ввяза́ю",
+          "meaning": "вязнуть, застревать"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "ввяза́ть",
+          "per1_sg": "ввяжу́",
+          "meaning": "ввязать нить, вовлечь"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "взаимоувязать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#взаимоувязать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "взаимоувяза́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "взорать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#взорать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "взора́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "взрезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#взрезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "взреза́ть",
+          "per1_sg": "взреза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "взре́зать",
+          "per1_sg": "взре́жу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "возблестеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#возблестеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "возблесте́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "волить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "4"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#волить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "4",
+          "infinitive": "во́лить"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "восплакать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#восплакать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "воспла́кать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "восплясать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#восплясать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "воспляса́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "восшуметь",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#восшуметь"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "восшуме́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "врезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#врезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "вреза́ть",
+          "per1_sg": "вреза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "вре́зать",
+          "per1_sg": "вре́жу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "всесть",
+      "before": [
+        "7д",
+        "есть"
+      ],
+      "types": [
+        "7д"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#всесть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "7д",
+          "infinitive": "всесть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "вспеть",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "types": [
+        "12петь"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#вспеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "12петь",
+          "infinitive": "вспеть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "всплакать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#всплакать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "вспла́кать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "встрепетать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#встрепетать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "встрепета́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "всыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#всыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "всыпа́ть",
+          "per1_sg": "всыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "всы́пать",
+          "per1_sg": "всы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "выбормотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#выбормотать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "вы́бормотать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "выбрюзжать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#выбрюзжать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "вы́брюзжать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "выветреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#выветреть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "вы́ветреть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "выкакать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#выкакать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "вы́какать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "выкликать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#выкликать",
+        "https://ru.wikisource.org/wiki/ТСД2/Выкликать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "выклика́ть",
+          "per1_sg": "выклика́ю",
+          "meaning": "вызывать, выкрикивать"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "вы́кликать",
+          "per1_sg": "вы́кличу",
+          "meaning": "вызвать криком"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "выкричать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#выкричать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "вы́кричать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "выметать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Вы́метаю (шитьё), вы́мечу (метание/икра), вымета́ю (убирать метлой): одного ударения недостаточно для всех значений.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#выметать",
+        "https://gramota.ru/poisk?dicts%5B0%5D=42&mode=slovari&query=выметать&simple=0"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "вы́метать",
+          "per1_sg": "вы́метаю",
+          "meaning": "обшить петли"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "вы́метать",
+          "per1_sg": "вы́мечу",
+          "meaning": "отложить икру, выбросить"
+        },
+        {
+          "inflect_type": "1",
+          "infinitive": "вымета́ть",
+          "per1_sg": "вымета́ю",
+          "meaning": "убирать метлой"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "выпродать",
+      "before": [
+        "6",
+        "дать"
+      ],
+      "types": [
+        "дать"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Производное продать: вы́продам, а не форма по типу 6.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#выпродать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "дать",
+          "infinitive": "вы́продать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "выравнять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#выравнять"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "вы́равнять"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "выразуметь",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#выразуметь"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "вы́разуметь"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "вырезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#вырезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "выреза́ть",
+          "per1_sg": "выреза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "вы́резать",
+          "per1_sg": "вы́режу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "высесть",
+      "before": [
+        "7д",
+        "есть"
+      ],
+      "types": [
+        "7д"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#высесть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "7д",
+          "infinitive": "вы́сесть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "высыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#высыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "высыпа́ть",
+          "per1_sg": "высыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "вы́сыпать",
+          "per1_sg": "вы́сыплю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "вытискать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#вытискать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "вы́тискать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "вытушевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#вытушевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "вы́тушевать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "гракать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Гра́каю: тип 1; форма зафиксирована в этимологическом словаре Преображенского.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#гракать",
+        "https://www.slovorod.ru/etym-preobrazh/_pdf/preobrazhensky-1.pdf"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "гракать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "дожать",
+      "before": [
+        "14м",
+        "14н"
+      ],
+      "types": [
+        "14м",
+        "14н"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#дожать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14м",
+          "infinitive": "дожа́ть",
+          "per1_sg": "дожму́",
+          "meaning": "сжимать"
+        },
+        {
+          "inflect_type": "14н",
+          "infinitive": "дожа́ть",
+          "per1_sg": "дожну́",
+          "meaning": "жать хлеб, убирать урожай"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "дозаписать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#дозаписать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "дозаписа́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "дорезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#дорезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "дореза́ть",
+          "per1_sg": "дореза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "доре́зать",
+          "per1_sg": "доре́жу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "досыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#досыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "досыпа́ть",
+          "per1_sg": "досыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "досы́пать",
+          "per1_sg": "досы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "забрызгать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#забрызгать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "забры́згать",
+          "per1_sg": "забры́згаю",
+          "meaning": "покрыть брызгами"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "забры́згать",
+          "per1_sg": "забры́зжу",
+          "meaning": "начать брызгать"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "завязать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#завязать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "завяза́ть",
+          "per1_sg": "завяза́ю",
+          "meaning": "вязнуть, застревать"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "завяза́ть",
+          "per1_sg": "завяжу́",
+          "meaning": "сделать узел"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "зажать",
+      "before": [
+        "14м",
+        "14н"
+      ],
+      "types": [
+        "14м",
+        "14н"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#зажать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14м",
+          "infinitive": "зажа́ть",
+          "per1_sg": "зажму́",
+          "meaning": "сжимать"
+        },
+        {
+          "inflect_type": "14н",
+          "infinitive": "зажа́ть",
+          "per1_sg": "зажну́",
+          "meaning": "жать хлеб, убирать урожай"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "зазреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#зазреть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "зазре́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "закликать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#закликать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "заклика́ть",
+          "per1_sg": "заклика́ю",
+          "meaning": "зазывать"
+        },
+        {
+          "inflect_type": "1",
+          "infinitive": "закли́кать",
+          "per1_sg": "закли́каю",
+          "meaning": "начать кликать"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "закли́кать",
+          "per1_sg": "закли́чу",
+          "meaning": "зазвать"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "закудакать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#закудакать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "закуда́кать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "заметать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#заметать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "замета́ть",
+          "per1_sg": "замета́ю",
+          "meaning": "подметать, сметать; наметать шов"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "замета́ть",
+          "per1_sg": "замечу́",
+          "meaning": "начать метать"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "записать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#записать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "записа́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "зарезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#зарезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "зареза́ть",
+          "per1_sg": "зареза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "заре́зать",
+          "per1_sg": "заре́жу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "засыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#засыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "засыпа́ть",
+          "per1_sg": "засыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "засы́пать",
+          "per1_sg": "засы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "затрепыхать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#затрепыхать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "затрепыха́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "затыкать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#затыкать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "затыка́ть",
+          "per1_sg": "затыка́ю",
+          "meaning": "закрывать отверстие"
+        },
+        {
+          "inflect_type": "1",
+          "infinitive": "заты́кать",
+          "per1_sg": "заты́каю",
+          "meaning": "начать обращаться на ты"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "заты́кать",
+          "per1_sg": "заты́чу",
+          "meaning": "начать тыкать"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "зачичереветь",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Зачи́черевею: тип 1; номер 2 в локальном шаблоне несовместим с его основами и окончанием -еть.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#зачичереветь"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "зачи́череветь",
+          "per1_sg": "зачи́черевею"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "зреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "1",
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#зреть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "зре́ть",
+          "per1_sg": "зре́ю",
+          "meaning": "созревать"
+        },
+        {
+          "inflect_type": "5",
+          "infinitive": "зре́ть",
+          "per1_sg": "зрю́",
+          "meaning": "смотреть, видеть"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "избрызгать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#избрызгать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "избры́згать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "изговнять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#изговнять"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "изговня́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "излупцевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#излупцевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "излупцева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "измежевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#измежевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "измежева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "исплакать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#исплакать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "испла́кать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "исхудеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#исхудеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "исхуде́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "клопотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#клопотать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "клопота́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "навтыкать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#навтыкать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "навтыка́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "навязать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#навязать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "навяза́ть",
+          "per1_sg": "навяза́ю",
+          "meaning": "прилипать, набиваться"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "навяза́ть",
+          "per1_sg": "навяжу́",
+          "meaning": "связать много; принудительно предложить"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "надклевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#надклевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "надклева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "надрезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#надрезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "надреза́ть",
+          "per1_sg": "надреза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "надре́зать",
+          "per1_sg": "надре́жу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "надсыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#надсыпать",
+        "https://kak-pishetsya.com/надсыпанными"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "надсыпа́ть",
+          "per1_sg": "надсыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "надсы́пать",
+          "per1_sg": "надсы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "назанять",
+      "before": [
+        "1",
+        "14йм"
+      ],
+      "types": [
+        "14йм"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#назанять"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14йм",
+          "infinitive": "назаня́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "накликать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#накликать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "наклика́ть",
+          "per1_sg": "наклика́ю",
+          "meaning": "навлекать разговорами"
+        },
+        {
+          "inflect_type": "1",
+          "infinitive": "накли́кать",
+          "per1_sg": "накли́каю",
+          "meaning": "сделать кликами"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "накли́кать",
+          "per1_sg": "накли́чу",
+          "meaning": "навлечь разговорами"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "намахать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Оба варианта личных форм фиксируются орфографическим словарём.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#намахать",
+        "https://dazor.narod.ru/russkie/slovari/orfograficheskij/orfograficheskij-slovar-n.htm"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "намаха́ть",
+          "per1_sg": "намаха́ю",
+          "meaning": "сделать много маховых движений; написать много"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "намаха́ть",
+          "per1_sg": "намашу́",
+          "meaning": "вариант той же парадигмы"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "наметать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#наметать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "намета́ть",
+          "per1_sg": "намета́ю",
+          "meaning": "мести, сметать; наметать шов"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "намета́ть",
+          "per1_sg": "намечу́",
+          "meaning": "набросать, отложить икру"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "намурлыкать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#намурлыкать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "намурлы́кать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "напринять",
+      "before": [
+        "1",
+        "14им"
+      ],
+      "types": [
+        "14им"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#напринять"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14им",
+          "infinitive": "наприня́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "нарезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#нарезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "нареза́ть",
+          "per1_sg": "нареза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "наре́зать",
+          "per1_sg": "наре́жу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "нарыскать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#нарыскать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "нарыскать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "насопеть",
+      "before": [
+        "12петь",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#насопеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "насопе́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "наспеть",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#наспеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "наспе́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "насыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#насыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "насыпа́ть",
+          "per1_sg": "насыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "насы́пать",
+          "per1_sg": "насы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "натрахать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#натрахать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "натра́хать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "нахлыстать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#нахлыстать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "нахлыста́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "нахолодать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#нахолодать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "нахолода́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "недожать",
+      "before": [
+        "14м",
+        "14н"
+      ],
+      "types": [
+        "14м",
+        "14н"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#недожать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14м",
+          "infinitive": "недожа́ть",
+          "per1_sg": "недожму́",
+          "meaning": "сжимать"
+        },
+        {
+          "inflect_type": "14н",
+          "infinitive": "недожа́ть",
+          "per1_sg": "недожну́",
+          "meaning": "жать хлеб, убирать урожай"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "недозреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#недозреть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "недозре́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "недописать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#недописать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "недописа́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "недорезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Недоре́зать — недоре́жу (сов.); недореза́ть — недореза́ю (несов.).",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#недорезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "недореза́ть",
+          "per1_sg": "недореза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "недоре́зать",
+          "per1_sg": "недоре́жу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "недоспеть",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#недоспеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "недоспе́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "оббрызгать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#оббрызгать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "оббры́згать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "обголодать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#обголодать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "обголода́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "обдержать",
+      "before": [
+        "5",
+        "6"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#обдержать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "обдержа́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "обжать",
+      "before": [
+        "14м",
+        "14н"
+      ],
+      "types": [
+        "14м",
+        "14н"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#обжать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14м",
+          "infinitive": "обжа́ть",
+          "per1_sg": "обожму́",
+          "meaning": "сжимать"
+        },
+        {
+          "inflect_type": "14н",
+          "infinitive": "обжа́ть",
+          "per1_sg": "обожну́",
+          "meaning": "жать хлеб, убирать урожай"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "обмалевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#обмалевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "обмалева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "обметать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Обмета́ю (обметать/сметать пыль), обмечу́ (обшить): различие значения и парадигмы при одинаковом ударении инфинитива.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#обметать",
+        "https://slovar.cc/rus/efremova/192727.html"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "обмета́ть",
+          "per1_sg": "обмета́ю",
+          "meaning": "очищать поверхность от пыли"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "обмета́ть",
+          "per1_sg": "обмечу́",
+          "meaning": "обшить края"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "обожить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "types": [
+        "4"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#обожить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "4",
+          "infinitive": "обо́жить"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "оборать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#оборать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "обора́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "оборжать",
+      "before": [
+        "5",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#оборжать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "оборжа́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "обрасопить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "4"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#обрасопить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "4",
+          "infinitive": "обрасо́пить"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "обрезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#обрезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "обреза́ть",
+          "per1_sg": "обреза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "обре́зать",
+          "per1_sg": "обре́жу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "обсвистать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Личная форма обсвищу согласуется с основой свист-/свищ-; локальный шаблон 1 исправлен.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#обсвистать",
+        "https://rustxt.ru/synonym/обсвиставший"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "обсвиста́ть",
+          "per1_sg": "обсвищу́",
+          "meaning": "освистать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "обсыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#обсыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "обсыпа́ть",
+          "per1_sg": "обсыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "обсы́пать",
+          "per1_sg": "обсы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "обхлопотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#обхлопотать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "обхлопота́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "огустеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#огустеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "огусте́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "одолить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "4"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#одолить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "4",
+          "infinitive": "одо́лить"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "озреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#озреть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "озре́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "осопеть",
+      "before": [
+        "12петь",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#осопеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "осопе́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "осыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#осыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "осыпа́ть",
+          "per1_sg": "осыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "осы́пать",
+          "per1_sg": "осы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "отбренчать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#отбренчать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "отбренча́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "отглянцевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#отглянцевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "отглянцева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "отдеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "types": [
+        "15"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#отдеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "15",
+          "infinitive": "отде́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "отдышать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#отдышать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "отдыша́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "отжать",
+      "before": [
+        "14м",
+        "14н"
+      ],
+      "types": [
+        "14м",
+        "14н"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#отжать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14м",
+          "infinitive": "отжа́ть",
+          "per1_sg": "отожму́",
+          "meaning": "сжимать"
+        },
+        {
+          "inflect_type": "14н",
+          "infinitive": "отжа́ть",
+          "per1_sg": "отожну́",
+          "meaning": "жать хлеб, убирать урожай"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "откликать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "У Даля непосредственно представлены откличешь и откликаешься; сохраняются совершенная и несовершенная парадигмы.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#откликать",
+        "local:dahl.jsonl.gz#откликать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "отклика́ть",
+          "per1_sg": "отклика́ю",
+          "meaning": "отзывать многократно"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "откли́кать",
+          "per1_sg": "откли́чу",
+          "meaning": "отозвать зовом"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "отолстеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#отолстеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "отолсте́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "оторцевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#оторцевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "оторцева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "отплакать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#отплакать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "отпла́кать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "отплевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#отплевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "отплева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "отрезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#отрезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "отреза́ть",
+          "per1_sg": "отреза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "отре́зать",
+          "per1_sg": "отре́жу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "отрокотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#отрокотать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "отрокота́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "отрыскать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "pending",
+      "reason": "Не хватает независимых данных о личных формах редкой леммы; исходные варианты сохранены.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#отрыскать"
+      ],
+      "variants": [],
+      "changed": false
+    },
+    {
+      "word": "отсвистать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#отсвистать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "отсвиста́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "отстрекотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#отстрекотать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "отстрекота́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "отсыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#отсыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "отсыпа́ть",
+          "per1_sg": "отсыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "отсы́пать",
+          "per1_sg": "отсы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "оттрахать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#оттрахать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "оттра́хать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "отциклевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#отциклевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "отциклева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "отшуршать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#отшуршать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "отшурша́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "охлестать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Грамота, ответ 318764: охлещу/охлещешь; локальный шаблон 1 ошибочен.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#охлестать",
+        "https://gramota.ru/poisk?mode=spravka&page=2&query=СВ"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "охлеста́ть",
+          "per1_sg": "охлещу́",
+          "meaning": "отхлестать, обдать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "охлопотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#охлопотать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "охлопота́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "охолодать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#охолодать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "охолода́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "переговнять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#переговнять"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "переговня́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "пережать",
+      "before": [
+        "14м",
+        "14н"
+      ],
+      "types": [
+        "14м",
+        "14н"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#пережать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14м",
+          "infinitive": "пережа́ть",
+          "per1_sg": "пережму́",
+          "meaning": "сжимать"
+        },
+        {
+          "inflect_type": "14н",
+          "infinitive": "пережа́ть",
+          "per1_sg": "пережну́",
+          "meaning": "жать хлеб, убирать урожай"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "перерезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#перерезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "перереза́ть",
+          "per1_sg": "перереза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "перере́зать",
+          "per1_sg": "перере́жу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "пересыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#пересыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "пересыпа́ть",
+          "per1_sg": "пересыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "пересы́пать",
+          "per1_sg": "пересы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "писать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#писать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "пи́сать",
+          "per1_sg": "пи́саю",
+          "meaning": "мочиться"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "писа́ть",
+          "per1_sg": "пишу́",
+          "meaning": "создавать письменный текст"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "побалдеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#побалдеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "побалде́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поблевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поблевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "поблева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поборать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поборать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "побора́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "побрызгать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Сохраняются известные варианты брызгаю/брызжу с приставкой по-.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#побрызгать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "побры́згать",
+          "per1_sg": "побры́згаю",
+          "meaning": "брызгать некоторое время"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "побры́згать",
+          "per1_sg": "побры́зжу",
+          "meaning": "вариант той же парадигмы"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "поверещать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поверещать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "повереща́ть",
+          "per1_sg": "поверещу́"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поволить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "4"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поволить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "4",
+          "infinitive": "пово́лить"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "повопить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "4"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#повопить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "4",
+          "infinitive": "повопи́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "повстать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "types": [
+        "15"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#повстать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "15",
+          "infinitive": "повста́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "повтыкать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#повтыкать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "повтыка́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "повыдать",
+      "before": [
+        "1",
+        "дать"
+      ],
+      "types": [
+        "дать"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Повы́дам: многократность/распределительность не меняет парадигму дать.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#повыдать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "дать",
+          "infinitive": "повы́дать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "повыписать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Повы́пишу: распределительная приставка по- сохраняет тип 6 глагола выписать; локальный шаблон 1 ошибочен.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#повыписать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "повы́писать",
+          "per1_sg": "повы́пишу"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "повырезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#повырезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "повы́резать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "повыскакать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#повыскакать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "повы́скакать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "повысушить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "4"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#повысушить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "4",
+          "infinitive": "повы́сушить"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "повысыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Повы́сыплю: сохраняется тип 6 глагола высыпать; локальный шаблон 1 не отражает эту парадигму.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#повысыпать",
+        "https://kak-pishetsya.com/повысыпавшею"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "повы́сыпать",
+          "per1_sg": "повы́сыплю"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "повыхлестать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "pending",
+      "reason": "Не хватает независимых данных о личных формах редкой леммы; исходные варианты сохранены.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#повыхлестать"
+      ],
+      "variants": [],
+      "changed": false
+    },
+    {
+      "word": "погорчать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#погорчать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "погорча́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поджать",
+      "before": [
+        "14м",
+        "14н"
+      ],
+      "types": [
+        "14м",
+        "14н"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поджать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14м",
+          "infinitive": "поджа́ть",
+          "per1_sg": "подожму́",
+          "meaning": "сжимать"
+        },
+        {
+          "inflect_type": "14н",
+          "infinitive": "поджа́ть",
+          "per1_sg": "подожну́",
+          "meaning": "жать хлеб, убирать урожай"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "подзабить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подзабить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "11",
+          "infinitive": "подзаби́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "подзагустеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подзагустеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "подзагусте́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "подзадеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "types": [
+        "15"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подзадеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "15",
+          "infinitive": "подзаде́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "подзажать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "types": [
+        "14м"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подзажать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14м",
+          "infinitive": "подзажа́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "подзанять",
+      "before": [
+        "1",
+        "14йм"
+      ],
+      "types": [
+        "14йм"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подзанять"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14йм",
+          "infinitive": "подзаня́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "подзашить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подзашить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "11",
+          "infinitive": "подзаши́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "подкочевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подкочевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "подкочева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "подмухлевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подмухлевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "подмухлева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поднадеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "types": [
+        "15"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поднадеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "15",
+          "infinitive": "поднаде́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поднасыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Поднасы́плю: тип 6, несмотря на локальный шаблон 1.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поднасыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "поднасы́пать",
+          "per1_sg": "поднасы́плю"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "подобить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11",
+        "4"
+      ],
+      "reviewer": "LLM",
+      "status": "pending",
+      "reason": "Не хватает независимых данных о личных формах редкой леммы; исходные варианты сохранены.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подобить"
+      ],
+      "variants": [],
+      "changed": false
+    },
+    {
+      "word": "пододеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "types": [
+        "15"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#пододеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "15",
+          "infinitive": "пододе́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "подозреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подозреть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "подозре́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "подотстать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "types": [
+        "15"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подотстать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "15",
+          "infinitive": "подотста́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "подпрыскать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "pending",
+      "reason": "Не хватает независимых данных о личных формах редкой леммы; исходные варианты сохранены.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подпрыскать"
+      ],
+      "variants": [],
+      "changed": false
+    },
+    {
+      "word": "подрезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подрезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "подреза́ть",
+          "per1_sg": "подреза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "подре́зать",
+          "per1_sg": "подре́жу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "подснять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "types": [
+        "14ним"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подснять"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14ним",
+          "infinitive": "подсня́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "подсудобить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "4"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подсудобить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "4",
+          "infinitive": "подсудо́бить"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "подсыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подсыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "подсыпа́ть",
+          "per1_sg": "подсыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "подсы́пать",
+          "per1_sg": "подсы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "подтанцевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подтанцевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "подтанцева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "подубить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11",
+        "4"
+      ],
+      "reviewer": "LLM",
+      "status": "pending",
+      "reason": "Не хватает независимых данных о личных формах редкой леммы; исходные варианты сохранены.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подубить"
+      ],
+      "variants": [],
+      "changed": false
+    },
+    {
+      "word": "подустать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "types": [
+        "15"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подустать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "15",
+          "infinitive": "подуста́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "подшуметь",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#подшуметь"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "подшуме́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "пожать",
+      "before": [
+        "14м",
+        "14н"
+      ],
+      "types": [
+        "14м",
+        "14н"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#пожать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14м",
+          "infinitive": "пожа́ть",
+          "per1_sg": "пожму́",
+          "meaning": "сжимать"
+        },
+        {
+          "inflect_type": "14н",
+          "infinitive": "пожа́ть",
+          "per1_sg": "пожну́",
+          "meaning": "жать хлеб, убирать урожай"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "позабить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#позабить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "11",
+          "infinitive": "позаби́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "позавить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#позавить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "11",
+          "infinitive": "позави́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "позанять",
+      "before": [
+        "1",
+        "14йм"
+      ],
+      "types": [
+        "14йм"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#позанять"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14йм",
+          "infinitive": "позаня́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поистязать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поистязать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "поистяза́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "покурлыкать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#покурлыкать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "покурлы́кать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "полузасыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Полузасы́пать (покрыть наполовину) и полузасыпа́ть (находиться в полусне).",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#полузасыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "полузасыпа́ть",
+          "per1_sg": "полузасыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "полузасы́пать",
+          "per1_sg": "полузасы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "понабить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#понабить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "11",
+          "infinitive": "понаби́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "понадеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "types": [
+        "15"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#понадеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "15",
+          "infinitive": "понаде́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "понаписать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#понаписать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "понаписа́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "понасыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Понасы́плю: тип 6, несмотря на локальный шаблон 1.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#понасыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "понасы́пать",
+          "per1_sg": "понасы́плю"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "понашить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#понашить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "11",
+          "infinitive": "понаши́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поночевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поночевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "поночева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "пообжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "types": [
+        "16"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#пообжить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "16",
+          "infinitive": "пообжи́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "пообрезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#пообрезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "пообре́зать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поодеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "types": [
+        "15"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поодеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "15",
+          "infinitive": "пооде́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поотнять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "types": [
+        "14ним"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поотнять"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14ним",
+          "infinitive": "поотня́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поотстать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "types": [
+        "15"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поотстать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "15",
+          "infinitive": "поотста́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поперебить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поперебить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "11",
+          "infinitive": "попереби́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "попищать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#попищать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "попища́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поприбить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поприбить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "11",
+          "infinitive": "поприби́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "попривить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#попривить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "11",
+          "infinitive": "поприви́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "попризанять",
+      "before": [
+        "1",
+        "14йм"
+      ],
+      "types": [
+        "14йм"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#попризанять"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14йм",
+          "infinitive": "попризаня́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поприодеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "types": [
+        "15"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поприодеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "15",
+          "infinitive": "поприоде́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "попристать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "types": [
+        "15"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Поприста́ну: приставка по- не превращает пристать в тип 1.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#попристать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "15",
+          "infinitive": "поприста́ть",
+          "per1_sg": "поприста́ну"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "попродать",
+      "before": [
+        "6",
+        "дать"
+      ],
+      "types": [
+        "дать"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Производное продать: попрода́м; особая парадигма дать.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#попродать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "дать",
+          "infinitive": "попрода́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "попыхать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#попыхать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "попы́хать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "порокотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#порокотать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "порокота́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "посдержать",
+      "before": [
+        "5",
+        "6"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#посдержать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "посдержа́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "посесть",
+      "before": [
+        "7д",
+        "есть"
+      ],
+      "types": [
+        "7д"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#посесть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "7д",
+          "infinitive": "посе́сть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поснять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "types": [
+        "14ним"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поснять"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14ним",
+          "infinitive": "посня́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "постеснять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#постеснять"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "постесня́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "посыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#посыпать",
+        "https://gramota.ru/meta/posypat"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "посыпа́ть",
+          "per1_sg": "посыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "посы́пать",
+          "per1_sg": "посы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "потопотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#потопотать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "потопота́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "потрахать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#потрахать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "потра́хать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "потрепетать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#потрепетать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "потрепета́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поубить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поубить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "11",
+          "infinitive": "поуби́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поугорать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поугорать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "поугора́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поугрюметь",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поугрюметь"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "поугрю́меть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поунять",
+      "before": [
+        "1",
+        "14йм"
+      ],
+      "types": [
+        "14йм"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поунять"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14йм",
+          "infinitive": "поуня́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поурезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поурезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "поуре́зать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "поустать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "types": [
+        "15"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#поустать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "15",
+          "infinitive": "поуста́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "похотеть",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "У Даля два значения: пожелать (похочу) и испытывать похоть (похотею). Для хочу/хочет используется существующий внутренний тип 6 проекта; общая парадигма хотеть разноспрягаемая.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#похотеть",
+        "https://www.culture.ru/lectures/dictionaries/83678/pokhotet"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "похоте́ть",
+          "per1_sg": "похоте́ю",
+          "meaning": "испытывать похоть; у Даля"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "похоте́ть",
+          "per1_sg": "похочу́",
+          "meaning": "пожелать; внутренняя метка проекта для хотеть"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "пошуршать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#пошуршать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "пошурша́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "прибалдеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#прибалдеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "прибалде́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "пригрохотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#пригрохотать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "пригрохота́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "примахать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "pending",
+      "reason": "Не хватает независимых данных о личных формах редкой леммы; исходные варианты сохранены.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#примахать"
+      ],
+      "variants": [],
+      "changed": false
+    },
+    {
+      "word": "приобнять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "types": [
+        "14ним"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#приобнять"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14ним",
+          "infinitive": "приобня́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "припеть",
+      "before": [
+        "12петь",
+        "5"
+      ],
+      "types": [
+        "12петь"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#припеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "12петь",
+          "infinitive": "припе́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "припить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#припить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "11",
+          "infinitive": "припи́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "прирезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#прирезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "приреза́ть",
+          "per1_sg": "приреза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "прире́зать",
+          "per1_sg": "прире́жу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "присвистать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "pending",
+      "reason": "Не хватает независимых данных о личных формах редкой леммы; исходные варианты сохранены.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#присвистать"
+      ],
+      "variants": [],
+      "changed": false
+    },
+    {
+      "word": "присыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#присыпать",
+        "https://ruslang.ru/sites/default/files/doc/normativnyje_slovari/orfoepicheskij_slovar.pdf"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "присыпа́ть",
+          "per1_sg": "присыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "присы́пать",
+          "per1_sg": "присы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "притискать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#притискать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "прити́скать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "прифальцевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#прифальцевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "прифальцева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "проблестеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#проблестеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "проблесте́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "провтыкать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#провтыкать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "провтыка́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "прогоревать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#прогоревать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "прогорева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "продневать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#продневать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "проднева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "прокликать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "pending",
+      "reason": "Не хватает независимых данных о личных формах редкой леммы; исходные варианты сохранены.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#прокликать"
+      ],
+      "variants": [],
+      "changed": false
+    },
+    {
+      "word": "промахать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "pending",
+      "reason": "Не хватает независимых данных о личных формах редкой леммы; исходные варианты сохранены.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#промахать"
+      ],
+      "variants": [],
+      "changed": false
+    },
+    {
+      "word": "проночевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#проночевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "проночева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "прорезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#прорезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "прореза́ть",
+          "per1_sg": "прореза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "проре́зать",
+          "per1_sg": "проре́жу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "просыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#просыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "просыпа́ть",
+          "per1_sg": "просыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "просы́пать",
+          "per1_sg": "просы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "протакать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#протакать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "прота́кать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "протрепать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#протрепать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "протрепа́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "прохохотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#прохохотать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "прохохота́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "прошприцевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#прошприцевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "прошприцева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "проштилевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#проштилевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "проштилева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "пышать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#пышать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "пы́шать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "раздостать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "types": [
+        "15"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Раздоста́ну: производное достать, тип 15.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#раздостать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "15",
+          "infinitive": "раздоста́ть",
+          "per1_sg": "раздоста́ну"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "разметать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#разметать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "размета́ть",
+          "per1_sg": "размета́ю",
+          "meaning": "мести, разносить"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "размета́ть",
+          "per1_sg": "размечу́",
+          "meaning": "разбросать"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "разорать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#разорать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "разора́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "разрезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#разрезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "разреза́ть",
+          "per1_sg": "разреза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "разре́зать",
+          "per1_sg": "разре́жу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "расколебать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "pending",
+      "reason": "Не хватает независимых данных о личных формах редкой леммы; исходные варианты сохранены.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#расколебать"
+      ],
+      "variants": [],
+      "changed": false
+    },
+    {
+      "word": "раскричать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#раскричать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "раскрича́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "расплевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#расплевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "расплева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "располоскать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#располоскать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "располоска́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "распочать",
+      "before": [
+        "1",
+        "14н"
+      ],
+      "types": [
+        "14н"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#распочать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14н",
+          "infinitive": "распоча́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "распошить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#распошить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "11",
+          "infinitive": "распоши́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "рассолить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "4"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#рассолить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "4",
+          "infinitive": "рассоли́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "рассушить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "4"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#рассушить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "4",
+          "infinitive": "рассуши́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "рассыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#рассыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "рассыпа́ть",
+          "per1_sg": "рассыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "рассы́пать",
+          "per1_sg": "рассы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "растанцевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#растанцевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "растанцева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "расфальцевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#расфальцевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "расфальцева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "расшуметь",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#расшуметь"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "расшуме́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "расщекотать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#расщекотать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "расщекота́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "сбахать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#сбахать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "сба́хать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "сговнять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#сговнять"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "сговня́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "сдеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "types": [
+        "15"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#сдеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "15",
+          "infinitive": "сде́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "сдодать",
+      "before": [
+        "6",
+        "дать"
+      ],
+      "types": [
+        "дать"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Редкое производное дать; специальный шаблон ^b/c, не тип 6.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#сдодать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "дать",
+          "infinitive": "сдода́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "сжать",
+      "before": [
+        "14м",
+        "14н"
+      ],
+      "types": [
+        "14м",
+        "14н"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#сжать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "14м",
+          "infinitive": "сжа́ть",
+          "per1_sg": "сожму́",
+          "meaning": "сжимать"
+        },
+        {
+          "inflect_type": "14н",
+          "infinitive": "сжа́ть",
+          "per1_sg": "сожну́",
+          "meaning": "жать хлеб, убирать урожай"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "скликать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#скликать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "склика́ть",
+          "per1_sg": "склика́ю",
+          "meaning": "сзывать"
+        },
+        {
+          "inflect_type": "1",
+          "infinitive": "скли́кать",
+          "per1_sg": "скли́каю",
+          "meaning": "выполнить клики"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "скли́кать",
+          "per1_sg": "скли́чу",
+          "meaning": "созвать криком"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "скричать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#скричать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "скрича́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "сметать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#сметать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "смета́ть",
+          "per1_sg": "смета́ю",
+          "meaning": "удалять метлой; соединить крупными стежками"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "смета́ть",
+          "per1_sg": "смечу́",
+          "meaning": "сложить стог"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "совить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#совить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "11",
+          "infinitive": "сови́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "спеть",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "types": [
+        "1",
+        "12петь"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#спеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "спе́ть",
+          "per1_sg": "спе́ю",
+          "meaning": "созревать"
+        },
+        {
+          "inflect_type": "12петь",
+          "infinitive": "спе́ть",
+          "per1_sg": "спою́",
+          "meaning": "исполнить песню"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "сполоскать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#сполоскать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "сполоска́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "срезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#срезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "среза́ть",
+          "per1_sg": "среза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "сре́зать",
+          "per1_sg": "сре́жу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "ссыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#ссыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "ссыпа́ть",
+          "per1_sg": "ссыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "ссы́пать",
+          "per1_sg": "ссы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "стискать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#стискать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "сти́скать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "стрелевать",
+      "before": [
+        "1",
+        "2"
+      ],
+      "types": [
+        "2"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#стрелевать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "2",
+          "infinitive": "стрелева́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "счуметь",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#счуметь"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "счуме́ть",
+          "per1_sg": "счуме́ю"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "сыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#сыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "6",
+          "infinitive": "сы́пать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "увязать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#увязать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "увяза́ть",
+          "per1_sg": "увяза́ю",
+          "meaning": "вязнуть"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "увяза́ть",
+          "per1_sg": "увяжу́",
+          "meaning": "связать; согласовать"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "удовлить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "4"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#удовлить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "4",
+          "infinitive": "удовли́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "удоволить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "4"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#удоволить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "4",
+          "infinitive": "удово́лить"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "улить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#улить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "11",
+          "infinitive": "ули́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "умахать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "pending",
+      "reason": "Не хватает независимых данных о личных формах редкой леммы; исходные варианты сохранены.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#умахать"
+      ],
+      "variants": [],
+      "changed": false
+    },
+    {
+      "word": "умозреть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#умозреть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "умозре́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "упакать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#упакать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "упа́кать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "упить",
+      "before": [
+        "11",
+        "4"
+      ],
+      "types": [
+        "11"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#упить"
+      ],
+      "variants": [
+        {
+          "inflect_type": "11",
+          "infinitive": "упи́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "урезать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#урезать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "уреза́ть",
+          "per1_sg": "уреза́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "уре́зать",
+          "per1_sg": "уре́жу",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "усыпать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1",
+        "6"
+      ],
+      "reviewer": "LLM",
+      "status": "retained_variants",
+      "reason": "Разные значения/парадигмы подтверждаются; объединение типов сохранено.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#усыпать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "усыпа́ть",
+          "per1_sg": "усыпа́ю",
+          "meaning": "несовершенный вид; для -сыпать также возможна омонимия со сном"
+        },
+        {
+          "inflect_type": "6",
+          "infinitive": "усы́пать",
+          "per1_sg": "усы́плю",
+          "meaning": "совершенный вид: резание / сыпание"
+        }
+      ],
+      "changed": false
+    },
+    {
+      "word": "ухайдакать",
+      "before": [
+        "1",
+        "6"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#ухайдакать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "ухайда́кать"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "ушуршать",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "1"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#ушуршать"
+      ],
+      "variants": [
+        {
+          "inflect_type": "1",
+          "infinitive": "ушурша́ть"
+        }
+      ],
+      "changed": true
+    },
+    {
+      "word": "шурстеть",
+      "before": [
+        "1",
+        "5"
+      ],
+      "types": [
+        "5"
+      ],
+      "reviewer": "LLM",
+      "status": "resolved",
+      "reason": "Ручная проверка LLM: согласованы значение, основа и словарная парадигма; лишний вариант отвергнут.",
+      "sources": [
+        "local:parsed_ru.jsonl.gz#шурстеть"
+      ],
+      "variants": [
+        {
+          "inflect_type": "5",
+          "infinitive": "шурсте́ть"
+        }
+      ],
+      "changed": true
+    }
+  ],
+  "notes": "LLM reviewed every row using local dictionary evidence; template errors manually corrected. Pending rows are not applied. Reflexive lemmas outside scope."
+}
