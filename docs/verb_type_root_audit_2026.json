@@ -1,0 +1,9849 @@
+{
+  "applied": true,
+  "before_sha256": "a3925a0d511e4424bbfd29cf677f477f1d9ea5c74afa313fad42cecffeb37a91",
+  "proposed_sha256": "f9aebe6f6764ffd7a56504faa1cae983263ea7074969b5903bc7699dc410aa0e",
+  "inventory_sha256": "9a62f3215a189de3914d3c244faeeaabbae970ae101db88988879bbd71d5294d",
+  "before_multitype": 1303,
+  "after_multitype": 1057,
+  "changed": 265,
+  "statuses": {
+    "unresolved": 305,
+    "narrowed": 265
+  },
+  "records": [
+    {
+      "word": "багреть",
+      "before": [
+        "12греть"
+      ],
+      "after": [
+        "12греть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "12греть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "барыжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "бежаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "бечь",
+      "before": [
+        "8к"
+      ],
+      "after": [
+        "8к"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8к"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "бздеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "бодяжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "божить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "бомжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "брунжать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "булыжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "бурдеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "вверстаться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "ввестись",
+      "before": [
+        "7д",
+        "7с"
+      ],
+      "after": [
+        "7д"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7д": {
+          "root": "вести",
+          "surface": "вести",
+          "prefixes": [
+            "в"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "взбресть",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "взвидеть",
+      "before": [
+        "15",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "взгнести",
+      "before": [
+        "7с",
+        "7т"
+      ],
+      "after": [
+        "7т"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7т": {
+          "root": "гнести",
+          "surface": "гнести",
+          "prefixes": [
+            "вз"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "взорвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "взорваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "взять",
+      "before": [
+        "14ьм"
+      ],
+      "after": [
+        "14ьм"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ьм"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "взяться",
+      "before": [
+        "14ьм"
+      ],
+      "after": [
+        "14ьм"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ьм"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "виражить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "вкрашиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "внушиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "внять",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "возвестись",
+      "before": [
+        "7д",
+        "7с"
+      ],
+      "after": [
+        "7д"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7д": {
+          "root": "вести",
+          "surface": "вести",
+          "prefixes": [
+            "воз"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "воззвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "воззваться",
+      "before": [
+        "1",
+        "16"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "возражаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "ворвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "ворваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "воскипеть",
+      "before": [
+        "12петь",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "воспринять",
+      "before": [
+        "14им"
+      ],
+      "after": [
+        "14им"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14им"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "восприняться",
+      "before": [
+        "1",
+        "14им"
+      ],
+      "after": [
+        "1",
+        "14им"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14им"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "воспрять",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "воссоздавать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "воссоздаваться",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "воссоздать",
+      "before": [
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "дать"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "воссоздаться",
+      "before": [
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "дать"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "восставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "врастаться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "врастись",
+      "before": [
+        "7с"
+      ],
+      "after": [
+        "7с"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "вставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "всхрапеть",
+      "before": [
+        "12петь",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "выбуздать",
+      "before": [
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "дать"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "выверстать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "выгнести",
+      "before": [
+        "7с",
+        "7т"
+      ],
+      "after": [
+        "7т"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7т": {
+          "root": "гнести",
+          "surface": "гнести",
+          "prefixes": [
+            "вы"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "выгнесть",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "выдудеть",
+      "before": [
+        "15",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "выебсти",
+      "before": [
+        "7с"
+      ],
+      "after": [
+        "7с"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "вызвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "вызваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "вызначаться",
+      "before": [
+        "1",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "выкружить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "вылезти",
+      "before": [
+        "7з"
+      ],
+      "after": [
+        "7з"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "7з"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "вымозжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "вымолоть",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "вымолоться",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "выпердеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "выпиздеться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "выпластать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "выравнять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "after": [
+        "1",
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "вырвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "вырваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "высвистаться",
+      "before": [
+        "1",
+        "15",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "выскрестись",
+      "before": [
+        "7б",
+        "7с"
+      ],
+      "after": [
+        "7б"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7б": {
+          "root": "скрести",
+          "surface": "скрести",
+          "prefixes": [
+            "вы"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "выскресть",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "выстужаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "вытерпеться",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "выцвесть",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "вычесться",
+      "before": [
+        "7т",
+        "есть"
+      ],
+      "after": [
+        "7т"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {
+        "7т": {
+          "root": "честь",
+          "surface": "честь",
+          "prefixes": [
+            "вы"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "гваздать",
+      "before": [
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "дать"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "гундеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "дамажить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "движить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "дебажить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "добресть",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "добыться",
+      "before": [
+        "12ы"
+      ],
+      "after": [
+        "12ы"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "12ы"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "доджить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "доебсти",
+      "before": [
+        "7с"
+      ],
+      "after": [
+        "7с"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "дозваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "домолоть",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "домолоться",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "допиздеться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "дорвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "дорваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "досипеться",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "доснять",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "досняться",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "досоздавать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "досоздаваться",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "досоздать",
+      "before": [
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "дать"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "доставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "доставаться",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "дюжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "ебашиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "ебошиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "ебсти",
+      "before": [
+        "7с"
+      ],
+      "after": [
+        "7с"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "ебстись",
+      "before": [
+        "7с"
+      ],
+      "after": [
+        "7с"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "есть-пить",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "жундеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "забздеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "забидеть",
+      "before": [
+        "15",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "загресть",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "задренажить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "задристать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "зазвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "закрашиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "залотошиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "залужить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "зальдеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "замолоть",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "замолоться",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "занемочь",
+      "before": [
+        "8г"
+      ],
+      "after": [
+        "8г"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8г"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "запердеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "запиздеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "запиздеться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "запречь",
+      "before": [
+        "8г"
+      ],
+      "after": [
+        "8г"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8г"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "запречься",
+      "before": [
+        "8к"
+      ],
+      "after": [
+        "8к"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8к"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "запыжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "зарваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "заснять",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "засняться",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "заставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "застонать",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "затаможить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "зауздать",
+      "before": [
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "дать"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "захавать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "захлюстать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "зашебаршиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "зашипеться",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "звать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "зваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "звездеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "зудеться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "избечь",
+      "before": [
+        "8к"
+      ],
+      "after": [
+        "8к"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8к"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "изгваздать",
+      "before": [
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "дать"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "изглядеть",
+      "before": [
+        "15",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "изглядеться",
+      "before": [
+        "1",
+        "15",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "изговнять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "after": [
+        "1",
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "издрожаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "излежаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "измолоть",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "измолоться",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "изнемочь",
+      "before": [
+        "8г"
+      ],
+      "after": [
+        "8г"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8г"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "изорвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "изорваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "изъять",
+      "before": [
+        "14ым"
+      ],
+      "after": [
+        "14ым"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ым"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "изыйти",
+      "before": [
+        "идти"
+      ],
+      "after": [
+        "идти"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "идти"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "испиздеться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "испластать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "испужать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "испужаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "исхудеть",
+      "before": [
+        "1",
+        "15",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "карёжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "копышиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "крыжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "крэшиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "кулажить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "куражить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "ложить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "лотошиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "макияжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "мандеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "молоться",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "мочься",
+      "before": [
+        "8к"
+      ],
+      "after": [
+        "8к"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8к"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "мудеть",
+      "before": [
+        "15",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "набздеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "набресть",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "наверстаться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "навестись",
+      "before": [
+        "7д",
+        "7с"
+      ],
+      "after": [
+        "7д"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7д": {
+          "root": "вести",
+          "surface": "вести",
+          "prefixes": [
+            "на"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "навидеться",
+      "before": [
+        "1",
+        "15",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "наглядеть",
+      "before": [
+        "15",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "надорвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "надорваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "надрожаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "надружиться",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "надсажать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "надсажаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "наебашиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "нажужжаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "назвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "назваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "налажать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "намолоть",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "намолоться",
+      "before": [
+        "10ел",
+        "10ол"
+      ],
+      "after": [
+        "10ел",
+        "10ол"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {
+        "10ол": {
+          "root": "молоть",
+          "surface": "молоть",
+          "prefixes": [
+            "на"
+          ]
+        }
+      },
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "напердеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "напиздеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "напиздеться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "напластаться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "наплестись",
+      "before": [
+        "7с",
+        "7т"
+      ],
+      "after": [
+        "7т"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7т": {
+          "root": "плести",
+          "surface": "плести",
+          "prefixes": [
+            "на"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "наплесть",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "напринять",
+      "before": [
+        "1",
+        "14им"
+      ],
+      "after": [
+        "1",
+        "14им"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14им"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "напужать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "напужаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "напыжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "нарвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "нарваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "нарожаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "насажаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "наскрестись",
+      "before": [
+        "7б",
+        "7с"
+      ],
+      "after": [
+        "7б"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7б": {
+          "root": "скрести",
+          "surface": "скрести",
+          "prefixes": [
+            "на"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "наснять",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "наставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "настопиздеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "настужаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "натружаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "нахлыстать",
+      "before": [
+        "1",
+        "15",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "нахолодеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "нахрапеться",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "начесться",
+      "before": [
+        "7т",
+        "есть"
+      ],
+      "after": [
+        "7т"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {
+        "7т": {
+          "root": "честь",
+          "surface": "честь",
+          "prefixes": [
+            "на"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "недоставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "нейти",
+      "before": [
+        "идти"
+      ],
+      "after": [
+        "идти"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "идти"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "ничтожить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "нудеть",
+      "before": [
+        "15",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "оббежаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "обвестись",
+      "before": [
+        "7д",
+        "7с"
+      ],
+      "after": [
+        "7д"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7д": {
+          "root": "вести",
+          "surface": "вести",
+          "prefixes": [
+            "об"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "обдержать",
+      "before": [
+        "14м",
+        "14н",
+        "5",
+        "6"
+      ],
+      "after": [
+        "5",
+        "6"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "обдержаться",
+      "before": [
+        "1",
+        "14м",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "обдристать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "обдристаться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "обезрожить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "облажать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "облажаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "облечь",
+      "before": [
+        "8к"
+      ],
+      "after": [
+        "8к"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8к"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "облечься",
+      "before": [
+        "8к"
+      ],
+      "after": [
+        "8к"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8к"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "обматереть",
+      "before": [
+        "1",
+        "9"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "9"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "обмолоть",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "обмолоться",
+      "before": [
+        "10ел",
+        "10ол"
+      ],
+      "after": [
+        "10ел",
+        "10ол"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {
+        "10ол": {
+          "root": "молоть",
+          "surface": "молоть",
+          "prefixes": [
+            "об"
+          ]
+        }
+      },
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "обнять",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "обняться",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "обозвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "обозваться",
+      "before": [
+        "1",
+        "16"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "оболочь",
+      "before": [
+        "8к"
+      ],
+      "after": [
+        "8к"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8к"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "оболочься",
+      "before": [
+        "8к"
+      ],
+      "after": [
+        "8к"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8к"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "оборвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "оборваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "оборжать",
+      "before": [
+        "14м",
+        "14н",
+        "5",
+        "6"
+      ],
+      "after": [
+        "5",
+        "6"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "обресть",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "обрехать",
+      "before": [
+        "6",
+        "ехать"
+      ],
+      "after": [
+        "6"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "ехать"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "обсвистать",
+      "before": [
+        "1",
+        "15",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "обслужиться",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "обставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "обставаться",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "овладеться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "огнести",
+      "before": [
+        "7с",
+        "7т"
+      ],
+      "after": [
+        "7т"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7т": {
+          "root": "гнести",
+          "surface": "гнести",
+          "prefixes": [
+            "о"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "огорошиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "одержаться",
+      "before": [
+        "1",
+        "14м",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "окружиться",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "омоложаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "опешиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "оплестись",
+      "before": [
+        "7с",
+        "7т"
+      ],
+      "after": [
+        "7т"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7т": {
+          "root": "плести",
+          "surface": "плести",
+          "prefixes": [
+            "о"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "оплыться",
+      "before": [
+        "12ы"
+      ],
+      "after": [
+        "12ы"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "12ы"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "опрастаться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "опупеть",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "осержаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "осипеть",
+      "before": [
+        "12петь",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "оснежаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "оставаться",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "остопиздеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "отблажить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "отбыться",
+      "before": [
+        "12ы"
+      ],
+      "after": [
+        "12ы"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "12ы"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "отверзтись",
+      "before": [
+        "7з"
+      ],
+      "after": [
+        "7з"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "7з"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "отворожить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "отглядеть",
+      "before": [
+        "15",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "отжужжать",
+      "before": [
+        "14м",
+        "14н",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "откешиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "откружить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "откружиться",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "открыжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "отмолоть",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "отмолоться",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "отнять",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "отняться",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "отозвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "отозваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "оторвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "оторваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "отпиздеться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "отпречь",
+      "before": [
+        "8г"
+      ],
+      "after": [
+        "8г"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8г"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "отпречься",
+      "before": [
+        "8к"
+      ],
+      "after": [
+        "8к"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8к"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "отречь",
+      "before": [
+        "8г"
+      ],
+      "after": [
+        "8г"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8г"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "отрожать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "отсвистать",
+      "before": [
+        "1",
+        "15",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "отскрестись",
+      "before": [
+        "7б",
+        "7с"
+      ],
+      "after": [
+        "7б"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7б": {
+          "root": "скрести",
+          "surface": "скрести",
+          "prefixes": [
+            "от"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "отснять",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "отсняться",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "after": [
+        "1",
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "отставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "оттерпеться",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "отхлыстаться",
+      "before": [
+        "1",
+        "15",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "отхрапеть",
+      "before": [
+        "12петь",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "отчесть",
+      "before": [
+        "7т",
+        "есть"
+      ],
+      "after": [
+        "7т"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {
+        "7т": {
+          "root": "честь",
+          "surface": "честь",
+          "prefixes": [
+            "от"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "охалпеть",
+      "before": [
+        "12петь",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "охереть",
+      "before": [
+        "9"
+      ],
+      "after": [
+        "9"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "9"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "охлестать",
+      "before": [
+        "1",
+        "15",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "охлестаться",
+      "before": [
+        "1",
+        "15",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "ошарашиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "оягнить",
+      "before": [
+        "12и"
+      ],
+      "after": [
+        "12и"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "12и"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "пердеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пердеться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "перебздеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "переговнять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "after": [
+        "1",
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "перезвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "перемолоть",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "перемолоться",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "переобнять",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "переобняться",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "перепиздеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "перепужать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "перепужаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "перервать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "перерваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "пересмехать",
+      "before": [
+        "ехать"
+      ],
+      "after": [
+        "ехать"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "ехать"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "переснять",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "пересняться",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "пересоздавать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "пересоздаваться",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "пересоздать",
+      "before": [
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "дать"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "пересоздаться",
+      "before": [
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "дать"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "переставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "перестужаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "перетаможить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пиздеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "пиздеться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пить-есть",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "плыться",
+      "before": [
+        "12ы"
+      ],
+      "after": [
+        "12ы"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "12ы"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "побалдеть",
+      "before": [
+        "1",
+        "15",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "побечь",
+      "before": [
+        "8к"
+      ],
+      "after": [
+        "8к"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8к"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "повидеть",
+      "before": [
+        "15",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "повидеться",
+      "before": [
+        "1",
+        "15",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "повставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "повывестись",
+      "before": [
+        "7д",
+        "7с"
+      ],
+      "after": [
+        "7д"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7д": {
+          "root": "вести",
+          "surface": "вести",
+          "prefixes": [
+            "по",
+            "вы"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "повызвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "повылезти",
+      "before": [
+        "7з"
+      ],
+      "after": [
+        "7з"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "7з"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "повырвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "погордеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "погрестись",
+      "before": [
+        "7б",
+        "7с"
+      ],
+      "after": [
+        "7б"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7б": {
+          "root": "грести",
+          "surface": "грести",
+          "prefixes": [
+            "по"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "подважить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "подвестись",
+      "before": [
+        "7д",
+        "7с"
+      ],
+      "after": [
+        "7д"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7д": {
+          "root": "вести",
+          "surface": "вести",
+          "prefixes": [
+            "под"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "поджечься",
+      "before": [
+        "8г",
+        "8к"
+      ],
+      "after": [
+        "8г"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "8к"
+      ],
+      "supported_rare_types": {
+        "8г": {
+          "root": "жечь",
+          "surface": "жечь",
+          "prefixes": [
+            "под"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "подзабыться",
+      "before": [
+        "12ы",
+        "быть"
+      ],
+      "after": [
+        "быть"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12ы"
+      ],
+      "supported_rare_types": {
+        "быть": {
+          "root": "быть",
+          "surface": "быть",
+          "prefixes": [
+            "под",
+            "за"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "подзавестись",
+      "before": [
+        "7д",
+        "7с"
+      ],
+      "after": [
+        "7д"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7д": {
+          "root": "вести",
+          "surface": "вести",
+          "prefixes": [
+            "под",
+            "за"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "подкипеть",
+      "before": [
+        "12петь",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "подлежаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "подмолоть",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "поднадорвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "поднять",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "подняться",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "подозвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "подорвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "подорваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "подорожить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "подоставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "подснять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "after": [
+        "1",
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "подставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "подуставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "подюжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "поебстись",
+      "before": [
+        "7с"
+      ],
+      "after": [
+        "7с"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "позвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "позваться",
+      "before": [
+        "1",
+        "16"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "поизорвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "поизорваться",
+      "before": [
+        "1",
+        "16"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "ползть",
+      "before": [
+        "7з"
+      ],
+      "after": [
+        "7з"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "7з"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "полуобнять",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "полуобняться",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "полуоторвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "поматереть",
+      "before": [
+        "1",
+        "9"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "9"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "помолоть",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "помолоться",
+      "before": [
+        "10ел",
+        "10ол"
+      ],
+      "after": [
+        "10ел",
+        "10ол"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {
+        "10ол": {
+          "root": "молоть",
+          "surface": "молоть",
+          "prefixes": [
+            "по"
+          ]
+        }
+      },
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "поназвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "понудеть",
+      "before": [
+        "15",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пообидеть",
+      "before": [
+        "15",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пообидеться",
+      "before": [
+        "1",
+        "15",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пообижаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пооборвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "пооборваться",
+      "before": [
+        "1",
+        "16"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "поотнять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "after": [
+        "1",
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "пооторвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "пооторваться",
+      "before": [
+        "1",
+        "16"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "попердеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "попиздеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "поприставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "попужать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "поразбрестись",
+      "before": [
+        "7д",
+        "7с"
+      ],
+      "after": [
+        "7д"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7д": {
+          "root": "брести",
+          "surface": "брести",
+          "prefixes": [
+            "по",
+            "раз"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "порвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "порваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "поряжаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "посажаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "поснять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "after": [
+        "1",
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "постеречься",
+      "before": [
+        "8к"
+      ],
+      "after": [
+        "8к"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8к"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "постеснять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "after": [
+        "1",
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "пострелить",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "потужиться",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "поуезжать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "поунижать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "поунижаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "похавать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "похлестаться",
+      "before": [
+        "1",
+        "15",
+        "6"
+      ],
+      "after": [
+        "1",
+        "6"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "почесться",
+      "before": [
+        "7т",
+        "есть"
+      ],
+      "after": [
+        "7т"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {
+        "7т": {
+          "root": "честь",
+          "surface": "честь",
+          "prefixes": [
+            "по"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "почужать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пошастать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "предображаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "предпринять",
+      "before": [
+        "14им"
+      ],
+      "after": [
+        "14им"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14им"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "предприняться",
+      "before": [
+        "14им"
+      ],
+      "after": [
+        "14им"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14им"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "представать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "преподнесть",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "прервать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "прерваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "преставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "приближить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "привставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "пригружаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "придти",
+      "before": [
+        "идти"
+      ],
+      "after": [
+        "идти"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "идти"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "придтись",
+      "before": [
+        "идти"
+      ],
+      "after": [
+        "идти"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "идти"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "приезжаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "прижечься",
+      "before": [
+        "8г",
+        "8к"
+      ],
+      "after": [
+        "8г"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "8к"
+      ],
+      "supported_rare_types": {
+        "8г": {
+          "root": "жечь",
+          "surface": "жечь",
+          "prefixes": [
+            "при"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "призабыться",
+      "before": [
+        "12ы",
+        "быть"
+      ],
+      "after": [
+        "быть"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12ы"
+      ],
+      "supported_rare_types": {
+        "быть": {
+          "root": "быть",
+          "surface": "быть",
+          "prefixes": [
+            "при",
+            "за"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "призвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "призваться",
+      "before": [
+        "1",
+        "16"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "примолоть",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "примолоться",
+      "before": [
+        "10ел",
+        "10ол"
+      ],
+      "after": [
+        "10ел",
+        "10ол"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {
+        "10ол": {
+          "root": "молоть",
+          "surface": "молоть",
+          "prefixes": [
+            "при"
+          ]
+        }
+      },
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "принесть",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "принять",
+      "before": [
+        "14им"
+      ],
+      "after": [
+        "14им"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14им"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "приняться",
+      "before": [
+        "14им"
+      ],
+      "after": [
+        "14им"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14им"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "приобнять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "after": [
+        "1",
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "приобрестись",
+      "before": [
+        "7с",
+        "7т"
+      ],
+      "after": [
+        "7т"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7т": {
+          "root": "обрести",
+          "surface": "обрести",
+          "prefixes": [
+            "при"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "приобресться",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "приотставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "припиздеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "приплесть",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "приподнять",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "приподняться",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "прискрестись",
+      "before": [
+        "7б",
+        "7с"
+      ],
+      "after": [
+        "7б"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7б": {
+          "root": "скрести",
+          "surface": "скрести",
+          "prefixes": [
+            "при"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "приставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "притужить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "притупеть",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "приуставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "причесться",
+      "before": [
+        "7т",
+        "есть"
+      ],
+      "after": [
+        "7т"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {
+        "7т": {
+          "root": "честь",
+          "surface": "честь",
+          "prefixes": [
+            "при"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пробдеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пробздеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "пробздеться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пробрехать",
+      "before": [
+        "6",
+        "ехать"
+      ],
+      "after": [
+        "6"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "ехать"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "провестись",
+      "before": [
+        "7д",
+        "7с"
+      ],
+      "after": [
+        "7д"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7д": {
+          "root": "вести",
+          "surface": "вести",
+          "prefixes": [
+            "про"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "прогружаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "прозвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "прозваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "произвестись",
+      "before": [
+        "7д",
+        "7с"
+      ],
+      "after": [
+        "7д"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7д": {
+          "root": "вести",
+          "surface": "вести",
+          "prefixes": [
+            "про",
+            "из"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пролежаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пролистаться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "промолоть",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "промолоться",
+      "before": [
+        "10ел",
+        "10ол"
+      ],
+      "after": [
+        "10ел",
+        "10ол"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {
+        "10ол": {
+          "root": "молоть",
+          "surface": "молоть",
+          "prefixes": [
+            "про"
+          ]
+        }
+      },
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "промудеть",
+      "before": [
+        "15",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пропиздеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "прорвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "прорваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "проредеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "просидеться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "простонать",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "протесняться",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "after": [
+        "1",
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "противостать",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "процвесть",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "прочесться",
+      "before": [
+        "7т",
+        "есть"
+      ],
+      "after": [
+        "7т"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {
+        "7т": {
+          "root": "честь",
+          "surface": "честь",
+          "prefixes": [
+            "про"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "прошипеться",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пружиться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "пряжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пужаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "пыжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "развидеть",
+      "before": [
+        "15",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "разгудеться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "раздобыться",
+      "before": [
+        "12ы"
+      ],
+      "after": [
+        "12ы"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "12ы"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "размежить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "размолоть",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "размолоться",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "разнемочься",
+      "before": [
+        "8г"
+      ],
+      "after": [
+        "8г"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8г"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "разнять",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "разняться",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "разорвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "разорваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "разордеться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "разредеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "распиздеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "расплесть",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "распружаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "расставаться",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "расцвесть",
+      "before": [
+        "есть"
+      ],
+      "after": [
+        "есть"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "расшипеться",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "рвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "рваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "рейджить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "самовзорваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "самоназваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "самообслужиться",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "свежить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "сговнять",
+      "before": [
+        "1",
+        "14ним"
+      ],
+      "after": [
+        "1",
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "сдюжать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "сипеться",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "скарёжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "скидавать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "скипеть",
+      "before": [
+        "12петь",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "скружить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "скружиться",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "скубсти",
+      "before": [
+        "7с"
+      ],
+      "after": [
+        "7с"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "смолоть",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "смолоться",
+      "before": [
+        "10ел"
+      ],
+      "after": [
+        "10ел"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "10ел"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "смурыжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "сновидеть",
+      "before": [
+        "15",
+        "5"
+      ],
+      "after": [
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "снять",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "сняться",
+      "before": [
+        "14ним"
+      ],
+      "after": [
+        "14ним"
+      ],
+      "changed": false,
+      "unsupported_types": [],
+      "supported_rare_types": {},
+      "unavailable_inventory": [
+        "14ним"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "соблюстись",
+      "before": [
+        "7д",
+        "7с"
+      ],
+      "after": [
+        "7д"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7д": {
+          "root": "блюсти",
+          "surface": "блюсти",
+          "prefixes": [
+            "со"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "созвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "созваться",
+      "before": [
+        "1",
+        "16"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "создавать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "создаваться",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "создать",
+      "before": [
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "дать"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "создаться",
+      "before": [
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "дать"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "соплестись",
+      "before": [
+        "7с",
+        "7т"
+      ],
+      "after": [
+        "7т"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7т": {
+          "root": "плести",
+          "surface": "плести",
+          "prefixes": [
+            "со"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "сорвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "сорваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "соскрестись",
+      "before": [
+        "7б",
+        "7с"
+      ],
+      "after": [
+        "7б"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7б": {
+          "root": "скрести",
+          "surface": "скрести",
+          "prefixes": [
+            "со"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "спиздеть",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "ставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "стонать",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "стречь",
+      "before": [
+        "8г"
+      ],
+      "after": [
+        "8г"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8г"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "строжать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "строжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "стужаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "сутюжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "схавать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "схвастать",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "твердеться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "тележить",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "телешить",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "тиражить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "торопеть",
+      "before": [
+        "12петь"
+      ],
+      "after": [
+        "12петь"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "трендеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "трындеть",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "убечь",
+      "before": [
+        "8к"
+      ],
+      "after": [
+        "8к"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "8к"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "убожить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "угваздать",
+      "before": [
+        "дать"
+      ],
+      "after": [
+        "дать"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "дать"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "углядеться",
+      "before": [
+        "1",
+        "15",
+        "5"
+      ],
+      "after": [
+        "1",
+        "5"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "угобжаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "угрестись",
+      "before": [
+        "7б",
+        "7с"
+      ],
+      "after": [
+        "7б"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {
+        "7б": {
+          "root": "грести",
+          "surface": "грести",
+          "prefixes": [
+            "у"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "удружиться",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "укокошиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "уматереть",
+      "before": [
+        "1",
+        "9"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "9"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "упластаться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "урвать",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "урваться",
+      "before": [
+        "16"
+      ],
+      "after": [
+        "16"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "урежаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "уржаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "усидеться",
+      "before": [
+        "1",
+        "15"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "уставать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "устрожаться",
+      "before": [
+        "1",
+        "14м"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "утоньшиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "учесться",
+      "before": [
+        "7т",
+        "есть"
+      ],
+      "after": [
+        "7т"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "есть"
+      ],
+      "supported_rare_types": {
+        "7т": {
+          "root": "честь",
+          "surface": "честь",
+          "prefixes": [
+            "у"
+          ]
+        }
+      },
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "фуфлыжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "хавать",
+      "before": [
+        "13"
+      ],
+      "after": [
+        "13"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "13"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "хорошиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "хуюжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "цвестись",
+      "before": [
+        "7д",
+        "7с"
+      ],
+      "after": [
+        "7д",
+        "7с"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "7д",
+        "7с"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "чакрыжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "чекошиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "шарашиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "шебаршиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "шипеться",
+      "before": [
+        "1",
+        "12петь"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "12петь"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "шмонать",
+      "before": [
+        "15"
+      ],
+      "after": [
+        "15"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "15"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "шмурыжить",
+      "before": [
+        "16",
+        "4"
+      ],
+      "after": [
+        "4"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "16"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "шпрехать",
+      "before": [
+        "ехать"
+      ],
+      "after": [
+        "ехать"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "ехать"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "шубуршиться",
+      "before": [
+        "11"
+      ],
+      "after": [
+        "11"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "11"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    },
+    {
+      "word": "южать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "юзжать",
+      "before": [
+        "1",
+        "14м",
+        "14н"
+      ],
+      "after": [
+        "1"
+      ],
+      "changed": true,
+      "unsupported_types": [
+        "14м",
+        "14н"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "narrowed"
+    },
+    {
+      "word": "ясти",
+      "before": [
+        "7с"
+      ],
+      "after": [
+        "7с"
+      ],
+      "changed": false,
+      "unsupported_types": [
+        "7с"
+      ],
+      "supported_rare_types": {},
+      "unavailable_inventory": [],
+      "status": "unresolved"
+    }
+  ]
+}
