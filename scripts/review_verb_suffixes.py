@@ -16,6 +16,8 @@ ROOT = Path(__file__).resolve().parents[1]
 RULES = ROOT / 'derivbase_ru/rules/rus/verb/simple/verb=verb+sfx.json'
 POLICY = ROOT / 'data/reviews/verb_sfx_policy.json'
 
+from verb_suffix_type_review import RARE_DECISIONS, rare_decisions, strong_signature, group_pending
+
 
 def normalize(text):
     return re.sub('[\u0301\u0300\u00b4]', '', text.lower()).replace('ё', 'е')
@@ -47,6 +49,9 @@ def classify(record, links, explicit, policy):
         for decision in policy[status]:
             if (rule, parent, word) == (decision['rule'], decision['parent'], decision['word']):
                 return status, 'manual_semantics', decision['reason']
+    manual = policy.get('_rare_decisions', {}).get((rule, parent, word))
+    if manual:
+        return manual['status'], 'explicit_rare_type_review', manual['reason']
     if rule == 'rule930':
         return 'accepted', 'regular_rule_user', 'Регулярное присоединение -ся/-сь; проверка не требуется по указанию пользователя.'
     if rule in {'rule846', 'rule847', 'rule848', 'rule849', 'rule850'}:
@@ -67,6 +72,9 @@ def classify(record, links, explicit, policy):
             evidence.append(word + ':соотв→' + parent)
         if evidence:
             return 'accepted', 'wiktionary_correspondence', '; '.join(evidence)
+        signature = strong_signature(record)
+        if signature:
+            return signature
         return 'pending', 'missing_pair_evidence', 'Нет явного соответствия в соотв; требуется отдельная семантическая проверка.'
     return 'untouched', '', ''
 
@@ -78,6 +86,7 @@ def review(output, dictionary):
     explicit = {r['rule_id'].split('(')[0]: {tuple(pair.split(';')) for pair in r.get('rare', [])}
                 for r in rules}
     policy = json.loads(POLICY.read_text())
+    policy['_rare_decisions'] = rare_decisions()
     links = correspondences(dictionary)
     paths = {'main': output, 'pending': output.with_suffix('.semantic_pending.jsonl'),
              'rejected': output.with_suffix('.semantic_rejected.jsonl'),
@@ -85,6 +94,7 @@ def review(output, dictionary):
     temporary = {name: path.with_name(path.name + '.tmp') for name, path in paths.items()}
     handles = {name: path.open('w', encoding='utf-8') for name, path in temporary.items()}
     counts = defaultdict(Counter)
+    methods = defaultdict(Counter)
     try:
         with gzip.open(raw, 'rt', encoding='utf-8') as stream:
             for line in stream:
@@ -93,6 +103,7 @@ def review(output, dictionary):
                     continue
                 status, method, reason = classify(record, links, explicit, policy)
                 counts[key(record)[0]][status] += 1
+                methods[method or 'untouched'][status] += 1
                 if status != 'untouched':
                     record.update(verified=status == 'accepted', review_status=status,
                                   review_method=method, review_reason=reason)
@@ -107,8 +118,12 @@ def review(output, dictionary):
             handle.close()
     for name, path in paths.items():
         temporary[name].replace(path)
-    files = {'raw': raw, 'dictionary': Path(dictionary), 'rules': RULES, 'policy': POLICY, 'review_script': Path(__file__), **paths}
-    report = {'scope': 'rule930 regular; rule846–850 reviewed; rule842 explicit pair evidence; rule836/840 untouched',
+    grouped = group_pending(output)
+    files = {'raw': raw, 'dictionary': Path(dictionary), 'rules': RULES, 'policy': POLICY, 'review_script': Path(__file__), 'type_review_script': ROOT / 'scripts/verb_suffix_type_review.py',
+             'rare_decisions': RARE_DECISIONS, **paths}
+    report = {'scope': 'rule930 regular; rule846–850 reviewed; rule842 dictionary evidence, explicit rare-type decisions and conservative signatures; rule836/840 untouched',
+              'methods': {method: dict(values) for method, values in sorted(methods.items())},
+              'pending_type_groups': len(grouped['groups']),
               'rules': {rule: dict(values) for rule, values in sorted(counts.items())},
               'files': {name: {'path': str(path), 'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
                         for name, path in files.items()}}
