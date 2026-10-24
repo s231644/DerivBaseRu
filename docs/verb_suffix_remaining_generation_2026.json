@@ -1,0 +1,69 @@
+{
+  "scope": "Candidates, not semantically verified relations; raw includes unattested results.",
+  "pages": 468829,
+  "source_verbs": 47460,
+  "sources_with_types": 46884,
+  "rules": {
+    "rule836(verb + ну2(ть) -> verb)": {
+      "generated": 75914,
+      "candidates": 2820,
+      "wiktionary_verb": 2041,
+      "dahl_token": 2150,
+      "doubtful_token_only": 666,
+      "dahl_head": 329
+    },
+    "rule840(verb + ану(ть) -> verb)": {
+      "generated": 43501,
+      "candidates": 208,
+      "wiktionary_verb": 189,
+      "dahl_token": 34,
+      "doubtful_token_only": 11,
+      "dahl_head": 11
+    }
+  },
+  "skipped_complex_only": [],
+  "totals": {
+    "generated": 119415,
+    "candidates": 3028,
+    "wiktionary_verb": 2230,
+    "dahl_token": 2184,
+    "doubtful_token_only": 677,
+    "dahl_head": 340
+  },
+  "inputs": {
+    "dictionary": {
+      "path": "data/wiktionary/parsed_ru.jsonl.gz",
+      "sha256": "9b9d8694e8338a3eb4ef388f3144351568dd21436fd13ba94e1b1a56454aa56d"
+    },
+    "dahl": {
+      "path": "data/dahl/dahl.jsonl.gz",
+      "sha256": "8b348e8028aec9f9e4e685d2b2d301ba277c9a8f8754dfb239bf69df07435be3"
+    },
+    "inflect_types": {
+      "path": "data/verbs_registry.jsonl.gz",
+      "sha256": "097f2db123aff6759cbce8a2f78bcaa28a2396668646e7d628dfa2bf6a0e549d"
+    },
+    "rules": {
+      "path": "derivbase_ru/rules/rus/verb/simple/verb=verb+sfx.json",
+      "sha256": "03f3f6be9f8183b7b895b474770406803b064ba15b1dd5a65d4392660c0ed09b"
+    },
+    "pseudo_lemmas": {
+      "path": "data/pseudo_lemmas.txt",
+      "sha256": "8e3afaa4b1a7f8d22041814c3f5cfc0fd581a7879f699c2229c892a3d89adb6a"
+    }
+  },
+  "outputs": {
+    "candidates": {
+      "path": "data/derived/verb_sfx.remaining.jsonl",
+      "sha256": "f0d48ecaa67455a0760497d474dab03cfdaacba63bd8c3f4c3cde580ff8eae4c"
+    },
+    "raw": {
+      "path": "data/derived/verb_sfx.remaining.raw.jsonl.gz",
+      "sha256": "caa4771f8a48fbe3e26f9d26ff008aac3250aab2a6220bf6a66bb63098c7ce52"
+    },
+    "doubtful": {
+      "path": "data/derived/verb_sfx.remaining.doubtful.jsonl",
+      "sha256": "49cefaa7c81ca542afa85c6d6ec8d5c22e0959fbf1c579459c11a1bb84ce0d82"
+    }
+  }
+}
