@@ -115,3 +115,16 @@ test('лечь/ложить/полечь/положить remain a rendered para
   L.layout(reversed, [...edges].reverse(), catalogue);
   for (const n of reversed) { const o = nodes.find(o => o.id === n.id); close(n.x, o.x); close(n.y, o.y); }
 });
+
+test('edited suffix short labels update display without changing affix geometry', () => {
+  const rule = { rule_id: 'rule988(adv + овато -> adv)', info: 'SFX', short_id: '-оват-' };
+  const updated = L.buildCatalogue([rule]);
+  const previous = L.buildCatalogue([{ ...rule, short_id: '-овато' }]);
+  assert.equal(updated.affixes['sfx:овато'].label, '-оват-');
+  assert.equal(updated.affixes['sfx:овато'].surface, 'овато');
+  assert.deepEqual(L.edgeVector({ source: 'бедно', target: 'бедновато', rule: rule.rule_id, kind: 'sfx' }, updated),
+                   L.edgeVector({ source: 'бедно', target: 'бедновато', rule: rule.rule_id, kind: 'sfx' }, previous));
+  for (const [key, label] of [['овато', '-оват-'], ['онько', '-оньк-'], ['охонько', '-охоньк-'], ['ком', '-к-']]) {
+    assert.equal(catalogue.affixes['sfx:' + key].label, label);
+  }
+});

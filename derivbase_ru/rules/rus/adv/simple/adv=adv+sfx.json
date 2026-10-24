@@ -2,7 +2,7 @@
   "data": [
     {
       "rule_id": "rule988(adv + овато -> adv)",
-      "short_id": "-овато",
+      "short_id": "-оват-",
       "info": "SFX",
       "pos_b": "adv",
       "pos_a": "adv",
@@ -15,7 +15,7 @@
     },
     {
       "rule_id": "rule989(adv + онько -> adv)",
-      "short_id": "-онько",
+      "short_id": "-оньк-",
       "info": "SFX",
       "pos_b": "adv",
       "pos_a": "adv",
@@ -28,7 +28,7 @@
     },
     {
       "rule_id": "rule990(adv + охонько -> adv)",
-      "short_id": "-охонько",
+      "short_id": "-охоньк-",
       "info": "SFX",
       "pos_b": "adv",
       "pos_a": "adv",
@@ -41,7 +41,7 @@
     },
     {
       "rule_id": "rule991(adv + ком -> adv)",
-      "short_id": "-ком",
+      "short_id": "-к-",
       "info": "SFX",
       "pos_b": "adv",
       "pos_a": "adv",

@@ -62,6 +62,12 @@
     rules.slice().sort(function (a, b) { return cmp(a.rule_id, b.rule_id); }).forEach(function (rule) {
       if (!rule.rule_id || !rule.rule_id.includes('->')) return;
       var groups = descriptor(rule.rule_id, rule.info || 'other');
+      // A rule's short label is editorial metadata; it must not change the
+      // canonical affix key, matching surface, or stable geometry.
+      if (rule.info === 'SFX' && typeof rule.short_id === 'string' &&
+          groups.length === 1 && groups[0].length === 1) {
+        groups[0][0].label = rule.short_id.replace(/[0-9]/g, function (digit) { return '₀₁₂₃₄₅₆₇₈₉'[Number(digit)]; });
+      }
       definitions[rule.rule_id] = groups;
       groups.forEach(function (group) { group.forEach(function (affix) { entries[affix.key] = affix; }); });
     });
