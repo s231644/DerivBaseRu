@@ -1,0 +1,27 @@
+{
+  "scope": "208 rule840 relations only; source candidates and other rules unchanged",
+  "input_sha256": "f0d48ecaa67455a0760497d474dab03cfdaacba63bd8c3f4c3cde580ff8eae4c",
+  "policy_sha256": "16cc2d2eb93fec2a02a8645ef5e71588a49d997ee58d765344d95c8eea276f48",
+  "counts": {
+    "accepted": 159,
+    "pending": 26,
+    "rejected": 23
+  },
+  "outputs": {
+    "accepted": {
+      "path": "data/derived/verb_sfx.rule840.accepted.jsonl",
+      "rows": 159,
+      "sha256": "eb9a7042c3e37844514b3584e94536251a19bd68ad05e93dc24087c76eba86fc"
+    },
+    "rejected": {
+      "path": "data/derived/verb_sfx.rule840.rejected.jsonl",
+      "rows": 23,
+      "sha256": "8ec9ced38fcc53f0f9fabd8ed452983d4832121becf67d86f5460a6188e80fc5"
+    },
+    "pending": {
+      "path": "data/derived/verb_sfx.rule840.pending.jsonl",
+      "rows": 26,
+      "sha256": "8e5c9306a3cfa63103485534d160a0587766d39ecd4f29f4ae7ecbbbf6f34f92"
+    }
+  }
+}
