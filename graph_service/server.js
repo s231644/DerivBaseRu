@@ -315,7 +315,7 @@ function subgraph(ds, focusId, depth, maxNodes, upToRoot) {
 }
 
 function versionToken() {
-  const files = ['index.html', 'app.js', 'styles.css'];
+  const files = ['index.html', 'app.js', 'styles.css', 'affix-layout.js', 'affix-vectors.json'];
   const h = crypto.createHash('sha1');
   for (const f of files) {
     const p = path.join(PUBLIC_DIR, f);

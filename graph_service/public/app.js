@@ -12,6 +12,7 @@ function relationKey(kind) {
 }
 var POS_FULL = { noun: 'Существительное', adj: 'Прилагательное', verb: 'Глагол', adv: 'Наречие', num: 'Числительное' };
 var DATASET_LABELS = { '*': 'Все наборы данных', 'unified.jsonl': 'Общий граф', 'verb_pfx.jsonl': 'Глаголы · приставочные', 'verb_compound.jsonl': 'Глаголы · сложения', 'verb_sfx.jsonl': 'Глаголы · суффиксальные', 'verb_complex.jsonl': 'Глаголы · приставка + суффикс', 'num.jsonl': 'Числительные', 'adv.rare.verified.jsonl': 'Наречия · исключения', 'adv_pfx.final.clean.jsonl': 'Наречия · приставочные', 'adv_sfx.clean.jsonl': 'Наречия · суффиксальные', 'adv_g1.final.clean.jsonl': 'Наречия · группа 1', 'adv_g2.final.clean.jsonl': 'Наречия · группа 2', 'adv_g5.clean.jsonl': 'Наречия · сложения', 'adv_ymx.clean.jsonl': 'Наречия · усилительные' };
+var affixCatalogue = { affixes: {}, rules: {} };
 var datasetInfo = {}, searchVersion = 0, graphVersion = 0;
 var state = { dataset: null, depth: 1, nodes: [], links: [], focus: null, raf: null, alpha: 1, active: null, bounds: { w: 800, h: 600 }, view: { x: 0, y: 0, w: 800, h: 600 } };
 
@@ -205,130 +206,15 @@ function buildGraph(g) {
     s.isParent = true;
     return { source: s, target: t, rule: l.rule, kind: l.kind, label: linkLabel(l), pos: t.pos };
   }).filter(Boolean);
-  state.alpha = 1;
+  state.layout = AffixLayout.layout(state.nodes, state.links, affixCatalogue);
+  state.links.forEach(function (link) {
+    var labels = link.affixVector.affixes.map(function (key) { return affixCatalogue.affixes[key] ? affixCatalogue.affixes[key].label : ''; }).filter(Boolean);
+    if (labels.length) link.label = labels.join(' + ');
+  });
   draw();
   renderLegend();
-  layoutRadial();
   fitView();
   update();
-}
-
-/* Layered layout: rank by BFS distance from the focus (ancestors left, descendants
-   right), then order nodes inside each rank with the barycenter heuristic to
-   reduce edge crossings (a planar-ish, deterministic layout). */
-function layoutLayered() {
-  var nodes = state.nodes, links = state.links, focus = state.focus;
-  var byId = new Map(); nodes.forEach(function (n) { byId.set(n.id, n); });
-  if (!byId.has(focus)) return;
-  var outAdj = {}, inAdj = {};
-  nodes.forEach(function (n) { outAdj[n.id] = []; inAdj[n.id] = []; });
-  links.forEach(function (l) { outAdj[l.source.id].push(l.target.id); inAdj[l.target.id].push(l.source.id); });
-  function bfs(start, adj) {
-    var dist = {}, q = [start]; dist[start] = 0;
-    while (q.length) {
-      var u = q.shift();
-      (adj[u] || []).forEach(function (v) { if (dist[v] === undefined) { dist[v] = dist[u] + 1; q.push(v); } });
-    }
-    return dist;
-  }
-  var down = bfs(focus, outAdj), up = bfs(focus, inAdj);
-  nodes.forEach(function (n) {
-    var d = down[n.id], u = up[n.id];
-    if (d === undefined && u === undefined) n.layer = 0;
-    else if (d !== undefined && u !== undefined) n.layer = (d <= u) ? d : -u;
-    else if (d !== undefined) n.layer = d;
-    else n.layer = -u;
-  });
-  var layers = {};
-  nodes.forEach(function (n) { (layers[n.layer] = layers[n.layer] || []).push(n); });
-  var keys = Object.keys(layers).map(Number).sort(function (a, b) { return a - b; });
-  var orderIndex = {};
-  keys.forEach(function (k) {
-    layers[k].sort(function (a, b) { return a.word.localeCompare(b.word, 'ru'); });
-    layers[k].forEach(function (n, i) { orderIndex[n.id] = i; });
-  });
-  function sweep(ks) {
-    ks.forEach(function (k) {
-      var arr = layers[k];
-      arr.forEach(function (n) {
-        var nb = outAdj[n.id].concat(inAdj[n.id]).filter(function (v) { return byId.has(v) && byId.get(v).layer !== n.layer; });
-        if (!nb.length) { n.bary = orderIndex[n.id]; return; }
-        var s = 0; nb.forEach(function (v) { s += (orderIndex[v] || 0); });
-        n.bary = s / nb.length;
-      });
-      arr.sort(function (a, b) { return (a.bary - b.bary) || a.word.localeCompare(b.word, 'ru'); });
-      arr.forEach(function (n, i) { orderIndex[n.id] = i; });
-    });
-  }
-  for (var it = 0; it < 6; it++) { sweep(keys.slice().reverse()); sweep(keys); }
-  var w = state.bounds.w, h = state.bounds.h, cx = w / 2, cy = h / 2;
-  var maxAbs = 1; keys.forEach(function (k) { maxAbs = Math.max(maxAbs, Math.abs(k)); });
-  var xGap = Math.min(170, (w - 120) / (2 * maxAbs + 1));
-  var maxCount = 1; keys.forEach(function (k) { maxCount = Math.max(maxCount, layers[k].length); });
-  var yGap = Math.min(46, (h - 60) / Math.max(1, maxCount));
-  keys.forEach(function (k) {
-    var arr = layers[k];
-    arr.forEach(function (n, i) {
-      n.x = cx + k * xGap;
-      n.y = cy + (i - (arr.length - 1) / 2) * yGap;
-    });
-  });
-}
-
-/* Radial layout: the focus (root) sits in the centre; every other node is placed
-   on the ring of its BFS distance from the root. Nodes inside a ring are ordered
-   by the barycentre of their neighbours on the inner ring (fewer crossings), and
-   ring radii grow so that vertices keep a generous angular distance. */
-function layoutRadial() {
-  var nodes = state.nodes, links = state.links, focus = state.focus;
-  var byId = new Map(); nodes.forEach(function (n) { byId.set(n.id, n); });
-  if (!byId.has(focus)) return;
-  var adj = {};
-  nodes.forEach(function (n) { adj[n.id] = []; });
-  links.forEach(function (l) { adj[l.source.id].push(l.target.id); adj[l.target.id].push(l.source.id); });
-  var dist = {}, q = [focus]; dist[focus] = 0;
-  while (q.length) {
-    var u = q.shift();
-    (adj[u] || []).forEach(function (v) { if (dist[v] === undefined) { dist[v] = dist[u] + 1; q.push(v); } });
-  }
-  nodes.forEach(function (n) { n.ring = (dist[n.id] === undefined) ? 0 : dist[n.id]; });
-  var rings = {};
-  nodes.forEach(function (n) { (rings[n.ring] = rings[n.ring] || []).push(n); });
-  var keys = Object.keys(rings).map(Number).sort(function (a, b) { return a - b; });
-  var orderIndex = {};
-  rings[0] = rings[0] || [];
-  rings[0].sort(function (a, b) { return (a.id === focus ? -1 : b.id === focus ? 1 : a.word.localeCompare(b.word, 'ru')); });
-  rings[0].forEach(function (n, i) { orderIndex[n.id] = i; });
-  keys.forEach(function (k) {
-    if (k === 0) return;
-    rings[k].forEach(function (n) {
-      var nb = (adj[n.id] || []).filter(function (v) { return dist[v] === k - 1 && orderIndex[v] !== undefined; });
-      if (!nb.length) { n.bary = Infinity; return; }
-      var s = 0; nb.forEach(function (v) { s += orderIndex[v]; });
-      n.bary = s / nb.length;
-    });
-    rings[k].sort(function (a, b) { return (a.bary - b.bary) || a.word.localeCompare(b.word, 'ru'); });
-    rings[k].forEach(function (n, i) { orderIndex[n.id] = i; });
-  });
-  var w = state.bounds.w, h = state.bounds.h, cx = w / 2, cy = h / 2;
-  var BASE = 150, STEP = 185, MIN_ARC = 58, R0_INNER = 80;
-  keys.forEach(function (k) {
-    var arr = rings[k], count = arr.length;
-    if (k === 0) {
-      if (count === 1) { arr[0].x = cx; arr[0].y = cy; return; }
-      arr.forEach(function (n, i) {
-        var a = (i / count) * Math.PI * 2 - Math.PI / 2;
-        n.x = cx + Math.cos(a) * R0_INNER; n.y = cy + Math.sin(a) * R0_INNER;
-      });
-      return;
-    }
-    var need = count <= 1 ? 0 : (count * MIN_ARC) / (2 * Math.PI);
-    var r = Math.max(BASE + (k - 1) * STEP, need, k * STEP * 0.7);
-    arr.forEach(function (n, i) {
-      var a = (i / Math.max(1, count)) * Math.PI * 2 - Math.PI / 2;
-      n.x = cx + Math.cos(a) * r; n.y = cy + Math.sin(a) * r;
-    });
-  });
 }
 
 /* Fit the current layout into the viewport with a margin. */
@@ -350,6 +236,18 @@ function fitView() {
   applyView();
 }
 
+function drawAffixAxes() {
+  var maxX = 400, maxY = 400;
+  state.nodes.forEach(function (n) { maxX = Math.max(maxX, n.x + n.word.length * 8 + 60); maxY = Math.max(maxY, n.y + 60); });
+  var group = svgEl('g', { class: 'affix-axes', 'aria-hidden': 'true' });
+  group.appendChild(svgEl('path', { d: 'M -55 ' + maxY + ' V -55 H ' + maxX }));
+  for (var x = 0; x < maxX; x += 200) group.appendChild(svgEl('path', { class: 'axis-tick', d: 'M ' + x + ' -60 v 10' }));
+  for (var y = 0; y < maxY; y += 200) group.appendChild(svgEl('path', { class: 'axis-tick', d: 'M -60 ' + y + ' h 10' }));
+  var suffix = svgEl('text', { x: 12, y: -72 }); suffix.textContent = 'СУФФИКСЫ →'; group.appendChild(suffix);
+  var prefix = svgEl('text', { x: -78, y: 12, transform: 'rotate(-90 -78 12)', 'text-anchor': 'end' }); prefix.textContent = 'ПРИСТАВКИ ↓'; group.appendChild(prefix);
+  svg.appendChild(group);
+}
+
 function draw() {
   while (svg.firstChild) svg.removeChild(svg.firstChild);
   var defs = svgEl('defs', {});
@@ -362,16 +260,20 @@ function draw() {
     defs.appendChild(marker);
   });
   svg.appendChild(defs);
+  drawAffixAxes();
 
   var gLinks = svgEl('g', { class: 'links' });
   var gLabels = svgEl('g', { class: 'labels' });
   var gNodes = svgEl('g', { class: 'nodes' });
   state.links.forEach(function (l) {
     var key = relationKey(l.kind);
-    var line = svgEl('line', { class: 'link relation-' + key, 'marker-end': 'url(#arrow-' + key + ')' });
+    var line = svgEl('line', { class: 'link relation-' + key + (l.layoutConflict ? ' layout-conflict' : ''), 'marker-end': 'url(#arrow-' + key + ')' });
     line.style.setProperty('--relation-color', RELATION_COLORS[key]);
     var title = svgEl('title');
-    title.textContent = RELATION_LABELS[key] + ': ' + (l.rule || l.label);
+    title.textContent = RELATION_LABELS[key] + ': ' + (l.rule || l.label) +
+      '\nВектор аффиксов: (' + l.affixVector.x.toFixed(1) + '; ' + l.affixVector.y.toFixed(1) + ')' +
+      (l.layoutConflict ? '\nРазные разборы расходятся: отклонение от вектора ' + l.layoutResidual.toFixed(1) : '') +
+      (l.affixVector.ambiguous ? '\nВариант аффикса неоднозначен; использовано направление правила.' : '');
     line.appendChild(title);
     gLinks.appendChild(line);
     l.el = line;
@@ -381,8 +283,16 @@ function draw() {
     l.labelEl = text;
   });
   state.nodes.forEach(function (n) {
-    var g = svgEl('g', { class: 'node pos-' + posKey(n.pos) + (n.id === state.focus ? ' focus' : ''),
+    n.positionLeader = svgEl('line', { class: 'position-leader', x1: n.semanticX, y1: n.semanticY, x2: n.x, y2: n.y });
+    n.semanticPoint = svgEl('circle', { class: 'semantic-point', cx: n.semanticX, cy: n.semanticY, r: 2 });
+    gLinks.appendChild(n.positionLeader);
+    gLinks.appendChild(n.semanticPoint);
+    var g = svgEl('g', { class: 'node pos-' + posKey(n.pos) + (n.layoutRoot ? ' layout-root' : '') + (n.id === state.focus ? ' focus' : ''),
       tabindex: '0', role: 'button', 'aria-label': 'Показать связи: ' + n.word });
+    var nodeTitle = svgEl('title');
+    nodeTitle.textContent = n.word + (n.layoutRoot ? (n.rootUncertain ? '\nОпорная точка замкнутой цепи' : '\nОснова в показанном графе') : '') + '\nАффиксная позиция: (' + n.semanticX.toFixed(1) + '; ' + n.semanticY.toFixed(1) + ')';
+    g.appendChild(nodeTitle);
+    if (n.layoutRoot) g.appendChild(svgEl('circle', { class: 'base-halo', r: 16 }));
     g.appendChild(svgEl('circle', { r: n.id === state.focus ? 10 : 7 }));
     var t = svgEl('text', { dx: 11, dy: 4 });
     t.textContent = n.word;
@@ -420,6 +330,10 @@ function update() {
     l.labelEl.setAttribute('transform', 'rotate(' + ang.toFixed(1) + ' ' + mx.toFixed(1) + ' ' + my.toFixed(1) + ')');
   });
   state.nodes.forEach(function (n) {
+    var shifted = Math.hypot(n.x - n.semanticX, n.y - n.semanticY) > 1;
+    n.positionLeader.setAttribute('visibility', shifted ? 'visible' : 'hidden');
+    n.semanticPoint.setAttribute('visibility', shifted ? 'visible' : 'hidden');
+    n.positionLeader.setAttribute('x2', n.x); n.positionLeader.setAttribute('y2', n.y);
     n.el.setAttribute('transform', 'translate(' + n.x.toFixed(1) + ',' + n.y.toFixed(1) + ')');
   });
 }
@@ -434,49 +348,15 @@ function renderLegend() {
   var links = Object.keys(RELATION_COLORS).filter(function (key) { return present.has(key); }).map(function (key) {
     return '<span><i class="relation-key" style="color:' + RELATION_COLORS[key] + '"></i>' + RELATION_LABELS[key] + '</span>';
   }).join('');
+  var keys = Array.from(new Set(state.links.flatMap(function (link) { return link.affixVector.affixes; }))).sort();
+  el('affixVectorList').innerHTML = keys.map(function (key) {
+    var affix = affixCatalogue.affixes[key];
+    if (!affix) return '';
+    var length = Math.hypot(affix.x, affix.y);
+    return '<div class="affix-vector-row"><span>' + escapeHtml(affix.label) + '</span><svg viewBox="0 0 40 28" aria-hidden="true"><line x1="3" y1="3" x2="' + (3 + affix.x / length * 24).toFixed(1) + '" y2="' + (3 + affix.y / length * 24).toFixed(1) + '" stroke="' + (RELATION_COLORS[affix.category] || RELATION_COLORS.other) + '" stroke-width="2"/></svg><code>(' + Math.round(affix.x) + '; ' + Math.round(affix.y) + ')</code></div>';
+  }).join('');
   el('legend').innerHTML = '<div class="legend-group"><b>Вершины</b>' + nodes + '</div>' +
     (links ? '<div class="legend-group"><b>Связи</b>' + links + '</div>' : '');
-}
-
-function step() {
-  var b = state.bounds;
-  var nodes = state.nodes, links = state.links, k = 70, a = state.alpha;
-  for (var i = 0; i < nodes.length; i++) {
-    for (var j = i + 1; j < nodes.length; j++) {
-      var dx = nodes[i].x - nodes[j].x, dy = nodes[i].y - nodes[j].y;
-      var d2 = dx * dx + dy * dy || 0.01, d = Math.sqrt(d2);
-      var f = (k * k) / d2 * a;
-      var fx = dx / d * f, fy = dy / d * f;
-      nodes[i].x += fx; nodes[i].y += fy; nodes[j].x -= fx; nodes[j].y -= fy;
-    }
-  }
-  links.forEach(function (l) {
-    var dx = l.target.x - l.source.x, dy = l.target.y - l.source.y;
-    var d = Math.sqrt(dx * dx + dy * dy) || 0.01;
-    var f = (d * d) / k * 0.015 * a;
-    var fx = dx / d * f, fy = dy / d * f;
-    l.target.x -= fx; l.target.y -= fy; l.source.x += fx; l.source.y += fy;
-  });
-  nodes.forEach(function (n) {
-    if (n.pinned) return;
-    n.x += (b.w / 2 - n.x) * 0.012 * a;
-    n.y += (b.h / 2 - n.y) * 0.012 * a;
-    n.x = Math.max(20, Math.min(b.w - 20, n.x));
-    n.y = Math.max(20, Math.min(b.h - 20, n.y));
-  });
-}
-
-function runSim() {
-  if (state.raf) cancelAnimationFrame(state.raf);
-  var frames = 0;
-  function loop() {
-    step();
-    state.alpha = Math.max(0.02, state.alpha * 0.985);
-    update();
-    frames++;
-    if (frames < 400) state.raf = requestAnimationFrame(loop);
-  }
-  loop();
 }
 
 /* ---------- interaction: drag nodes, pan, zoom ---------- */
@@ -588,5 +468,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 100);
   });
   enableInteraction();
-  initDatasets();
+  fetch('/affix-vectors.json?v=' + encodeURIComponent(document.querySelector('script[src*="app.js"]').src.split('v=')[1] || '1'))
+    .then(function (r) { if (!r.ok) throw new Error('Не удалось загрузить векторы аффиксов'); return r.json(); })
+    .then(function (catalogue) { affixCatalogue = catalogue; return initDatasets(); })
+    .catch(function (e) { setStatus(e.message); });
 });

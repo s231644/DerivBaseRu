@@ -924,3 +924,21 @@ svg.hide-labels .labels {
     bottom:14px;
   }
 }
+
+/* Affix coordinate plane and separation of semantic/rendered positions. */
+.affix-axes { pointer-events:none; }
+.affix-axes path { fill:none; stroke:#d8dfe6; stroke-width:1; }
+.affix-axes text { fill:#8793a3; font-size:11px; letter-spacing:1.3px; }
+.affix-axes .axis-tick { stroke:#e2e7ed; }
+.node .base-halo { fill:none !important; stroke:#7a899b !important; stroke-width:1.5 !important; }
+.node.layout-root text { font-weight:700; }
+.position-leader { stroke:#aebbc8; stroke-dasharray:3 4; stroke-width:1; opacity:.65; pointer-events:none; }
+.semantic-point { fill:#9caaba; opacity:.65; pointer-events:none; }
+
+.link.layout-conflict { stroke-dasharray:7 4; opacity:.55; }
+.affix-vectors { margin-top:18px; font-size:11px; color:var(--muted); }
+.affix-vectors summary { cursor:pointer; line-height:1.6; }
+.affix-vector-row { display:grid; grid-template-columns:minmax(0,1fr) 40px auto; align-items:center; gap:5px; min-height:30px; }
+.affix-vector-row span { overflow-wrap:anywhere; }
+.affix-vector-row svg { width:40px; height:28px; }
+.affix-vector-row code { font-size:10px; white-space:nowrap; }

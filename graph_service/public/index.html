@@ -36,7 +36,7 @@
       <label for="depth">Глубина <select id="depth"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select></label>
       <span class="toolbar-divider" aria-hidden="true"></span>
       <label class="checkbox-label"><input type="checkbox" id="labels" checked>Подписи связей</label>
-      <span class="toolbar-hint">Основа <span aria-hidden="true">→</span> производное слово</span>
+      <span class="toolbar-hint">↓ приставки · суффиксы →</span>
     </div>
     <section id="stage" aria-label="Интерактивный граф">
       <svg id="graph" aria-label="Граф словообразовательных связей"></svg>
@@ -49,9 +49,10 @@
   <aside class="inspector" aria-label="Сведения о выбранном слове">
     <div class="inspector-heading"><span class="eyebrow">ВЫБРАННОЕ СЛОВО</span><span class="inspector-icon" aria-hidden="true">↗</span></div>
     <div id="info" class="info"><div class="inspector-placeholder">От слова — к его истории</div><p>Выберите слово в поиске или нажмите на вершину графа.</p></div>
-    <div class="reading-guide"><span class="eyebrow">КАК ЧИТАТЬ ГРАФ</span><div class="guide-line"><i></i><span>→</span><i class="guide-derived"></i></div><p>Стрелка направлена от производящей основы к производному слову.</p><p>Оранжевый контур отмечает выбранное слово. Цвет вершины обозначает часть речи, а цвет стрелки — тип словообразовательного отношения.</p></div>
+    <div class="reading-guide"><span class="eyebrow">КАК ЧИТАТЬ ГРАФ</span><div class="guide-line"><i></i><span>→</span><i class="guide-derived"></i></div><p>Основа с двойным контуром находится вверху слева. Приставки ведут вниз, суффиксы — вправо; каждый аффикс задаёт постоянное направление и длину шага.</p><p>При сочетании аффиксов их векторы складываются. Если у слова несколько разных разборов, положение согласуется со всеми. Близкие точки слегка разнесены для читаемости; тонкий серый пунктир указывает их исходную позицию. Цветная пунктирная стрелка обозначает разбор, расходящийся с общей геометрией.</p><p>Оранжевый контур отмечает выбранное слово. Цвет вершины обозначает часть речи, а цвет стрелки — тип словообразовательного отношения.</p><details class="affix-vectors"><summary>Векторы аффиксов в этом графе</summary><div id="affixVectorList"></div></details></div>
   </aside>
 </main>
+<script src="/affix-layout.js?v=__V__"></script>
 <script src="/app.js?v=__V__"></script>
 </body>
 </html>

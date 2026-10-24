@@ -91,3 +91,48 @@ from traversal and component statistics, so their word families do not bridge
 otherwise separate graphs. Original JSONL derivations retain all parents.
 Component sidecars for the viewer must be built with
 `--exclude-compound-modifiers` (included in `prepare_graph_viewer.py`).
+
+## Affix coordinate layout
+
+The viewer places visible producing bases at the top left instead of centring
+on the selected word. Prefix vectors point mostly down; suffix vectors mostly
+right. Postfixes and other relation kinds occupy separate diagonal sectors.
+Confixes add their prefix/suffix/postfix vectors. Alternative suffixes are
+selected from the pair rather than added together (including -ива-/-ыва-
+allomorphy and the distinction between -ива- and -ва- in пить → пивать).
+Numbered homonymous affixes remain distinct and show their indices as subscripts.
+
+`public/affix-vectors.json` is the shared catalogue: 467 unique vectors from 979
+Russian rule descriptions. A stable key determines each angle and length;
+collisions are resolved when building the complete sorted catalogue. Vectors
+do not depend on the focus, visible subset, viewport or input ordering. Regenerate
+the catalogue after changing the rule inventory:
+
+    node scripts/build_affix_vectors.js
+
+`public/affix-layout.js` is shared by the browser, builder and Node tests. It finds
+source strongly connected components, uses actual zero-indegree bases when
+available, and chooses an explicitly marked reference point for cyclic data.
+Several roots are anchored along the top. A root here means a base in the loaded
+graph, not a claim that no derivation exists outside the loaded dataset/depth.
+
+Coordinates solve an anchored least-squares problem for edge vector constraints
+in the positive quadrant. Compatible alternative paths add exactly (a prefix
+then a suffix reaches the same point as the opposite order); contradictory
+analyses are reconciled. Coloured dashed arrows mark geometric residuals over
+20% of the intended step (minimum 60 coordinate units). This is a layout conflict,
+not an automatic linguistic rejection of the derivation.
+
+Semantic coordinates remain separate from rendered positions. A deterministic
+spatial index spreads overlapping word labels; fine grey leaders and dots retain
+the original affix positions. Dragging nodes also preserves these reference
+positions. The reading guide has an expandable list of the current affix vectors;
+edge/node tooltips show intended offsets and semantic coordinates. Colour still
+encodes relation kind and node POS, and compound modifiers stay excluded.
+
+Validation:
+
+    node --test tests/test_affix_layout.cjs
+
+Tests cover stable unique vectors, additive diamonds/confixes, allomorph choice,
+cycles, contradictory paths and 500 coincident derivations without label overlap.
