@@ -8,6 +8,7 @@ from pathlib import Path
 import re
 
 from run_pipeline import Derivation, build_record, parent, read_dictionary, single_word
+from verb_registry import DEFAULT_REGISTRY, load_inflect_types
 
 ROOT = Path(__file__).resolve().parents[1]
 RULES = ROOT / 'derivbase_ru/rules/rus/verb/simple/verb=verb+pfx.json'
@@ -60,7 +61,7 @@ def run(dictionary, dahl, inflect_types, output, rules_path=RULES, allowed_info=
         include_rules=None):
     rules, skipped = verb_rules(Derivation(lang='rus'), rules_path, allowed_info, include_rules)
     buckets, known, pages = read_dictionary(str(dictionary))
-    types = json.loads(Path(inflect_types).read_text())
+    types = load_inflect_types(inflect_types)
     excluded = {line.split('#', 1)[0].strip()
                 for line in (ROOT / 'data/pseudo_lemmas.txt').read_text().splitlines()}
     sources = sorted(w for w in buckets['verb'] if single_word(w) and w not in excluded)
@@ -138,7 +139,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--dict', default=str(ROOT / 'data/wiktionary/parsed_ru.jsonl.gz'))
     parser.add_argument('--dahl', default=str(ROOT / 'data/dahl/dahl.jsonl.gz'))
-    parser.add_argument('--inflect-types', default=str(ROOT / 'data/verb_inflect_types.json'))
+    parser.add_argument('--inflect-types', default=str(DEFAULT_REGISTRY))
     parser.add_argument('--out', default=str(ROOT / 'data/derived/verb_pfx.jsonl'))
     parser.add_argument('--accept-dahl-token', action='store_true',
                         help='apply the user-authorized acceptance policy for Dahl-token candidates')

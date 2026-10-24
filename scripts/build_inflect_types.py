@@ -44,5 +44,8 @@ from inherit_reflexive_verb_types import inherit_types
 out, reflexive_inheritance = inherit_types(out)
 print("reflexive type inheritance:", sum(r["status"] == "copied" for r in reflexive_inheritance))
 print('csv types:', len(csv_map), '| overrode/added:', len(out) - before)
-json.dump(out, open('data/verb_inflect_types.json','w',encoding='utf-8'), ensure_ascii=False)
+with open('data/verb_inflect_types.json', 'w', encoding='utf-8') as type_stream:
+    json.dump(out, type_stream, ensure_ascii=False)
+from build_verb_registry import export_registry
+print('registry verbs:', export_registry()['verbs'])
 print('verbs:', len(words), '| with types:', len(out))

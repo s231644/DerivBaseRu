@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "verbs": 46895,
+  "multitype": 143,
+  "ambiguity": {
+    "none": 46752,
+    "confirmed_variants": 91,
+    "unresolved": 52
+  },
+  "generation_excluded": 0,
+  "review_status": {
+    "explicit_user_rule": 6661,
+    "automatic": 39528,
+    "explicit_csv": 99,
+    "inherited": 283,
+    "retained_variants": 68,
+    "resolved": 206,
+    "pending_missing_base": 39,
+    "pending": 11
+  },
+  "inputs": {
+    "data/verb_inflect_types.json": "ea687417242270979093bda31176d7cfc534a4ab53302067c8f52456b2f4f54d",
+    "data/reviews/verb_inflect_nonreflexive_2026.json": "4b896d31a0a395567896b8370474c8ddfc87581996d1836d2db9bc89ee06c281",
+    "data/verbs_roots.csv": "9a62f3215a189de3914d3c244faeeaabbae970ae101db88988879bbd71d5294d",
+    "data/pseudo_lemmas.txt": "8e3afaa4b1a7f8d22041814c3f5cfc0fd581a7879f699c2229c892a3d89adb6a",
+    "docs/verb_reflexive_type_inheritance_2026.json": "a7720f9eded74d451c2eec44871b087034e55759b56f7a7f596f26c4538671b9",
+    "docs/verb_inflect_type_refinement_2026.json": "c292461b763bf6a16b2e226caf648a9eab182d733b30ae5201b1afb8cc472dbc",
+    "docs/verb_type_root_audit_2026.json": "ac0218a447abae36420032abc1de73e9ddd39411fb428b831bff94e037fc9c05"
+  },
+  "outputs": {
+    "data/verbs_registry.jsonl.gz": "097f2db123aff6759cbce8a2f78bcaa28a2396668646e7d628dfa2bf6a0e549d",
+    "data/verbs_registry.tsv": "080a12b07ba9722fcdfa7f9e9fcbac8b1cc0e25a254666a771bc15fbb099154d"
+  }
+}

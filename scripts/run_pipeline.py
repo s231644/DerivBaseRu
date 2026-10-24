@@ -345,8 +345,8 @@ def run(args) -> dict:
     )
     inflect_types = None
     if args.inflect_types:
-        with open(args.inflect_types, encoding="utf-8") as fh:
-            inflect_types = json.load(fh)
+        from verb_registry import load_inflect_types
+        inflect_types = load_inflect_types(args.inflect_types)
         print("inflect-types: %d слов" % len(inflect_types), flush=True)
 
     wanted = set(a.strip() for a in args.pos_a.split(",") if a.strip())
@@ -371,6 +371,12 @@ def run(args) -> dict:
         rules = [r for r in rules if not r.name.startswith(bad)]
     flat_rules = [r for r in rules if not isinstance(r, CompoundRule)]
     compound_rules = [r for r in rules if isinstance(r, CompoundRule)]
+    default_verb_types = None
+    if (not args.inflect_types and not args.guesser and args.lang == 'rus'
+            and any(r.pos_b == 'verb' for r in flat_rules)):
+        from verb_registry import load_inflect_types
+        default_verb_types = load_inflect_types()
+        print('verb registry: %d words' % len(default_verb_types), flush=True)
     print("complexities=%s pos_a=%s rules=%d (flat=%d, compound=%d, only_complex skipped=%d)" % (
         ",".join(sorted(complexities)), sorted(wanted), len(rules),
         len(flat_rules), len(compound_rules), len(skipped_complex)), flush=True)
@@ -389,10 +395,15 @@ def run(args) -> dict:
             if args.limit:
                 source_words = source_words[:args.limit]
             emitted = 0
+            selected_types = inflect_types
+            if selected_types is None and rule.pos_b == 'verb':
+                selected_types = default_verb_types
             for word_b in source_words:
                 tags = None
-                if inflect_types is not None:
-                    tt = inflect_types.get(word_b)
+                if selected_types is not None:
+                    tt = selected_types.get(word_b)
+                    if rule.pos_b == 'verb' and not tt:
+                        continue
                     tags = {"form": ["inf"], "inflect_type": tt} if tt else None
                 res = der.derive(
                     word_b=word_b,
@@ -546,7 +557,7 @@ def main(argv=None):
     ap.add_argument("--guesser", action="store_true",
                     help="use the Zaliznyak guesser for inflect_type tags (tags_b filtering)")
     ap.add_argument("--inflect-types", default=None,
-                    help="precomputed {word: [inflect_type]} map (built once) — faster than --guesser")
+                    help="verb registry JSONL(.gz) or legacy {word: [inflect_type]} JSON; Russian verbs use registry by default")
     ap.add_argument("--force-complex", action="store_true",
                     help="also apply rules flagged only_complex on their own")
     ap.add_argument("--no-rare", dest="use_rare", action="store_false",
