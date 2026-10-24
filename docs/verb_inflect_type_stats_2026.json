@@ -3,21 +3,21 @@
   "scope": "Stored final assignments; CSV overrides excluded from automatic group",
   "all": {
     "verbs": 46895,
-    "multiple_types": 1057,
-    "multiple_percent": 2.254,
+    "multiple_types": 607,
+    "multiple_percent": 1.2944,
     "type_count_histogram": {
-      "1": 45838,
-      "2": 1056,
+      "1": 46288,
+      "2": 606,
       "3": 1
     }
   },
   "automatic": {
     "verbs": 46796,
-    "multiple_types": 1057,
-    "multiple_percent": 2.2587,
+    "multiple_types": 607,
+    "multiple_percent": 1.2971,
     "type_count_histogram": {
-      "1": 45739,
-      "2": 1056,
+      "1": 46189,
+      "2": 606,
       "3": 1
     }
   },
@@ -31,25 +31,6 @@
   },
   "override_mismatches": [],
   "automatic_multitype_combinations": [
-    {
-      "types": [
-        "1",
-        "2"
-      ],
-      "verbs": 510,
-      "examples": [
-        "аблактироваться",
-        "абортироваться",
-        "абрадироваться",
-        "абрютироваться",
-        "авизироваться",
-        "автомобилизироваться",
-        "агентироваться",
-        "адоптироваться",
-        "ажиотироваться",
-        "ажитироваться"
-      ]
-    },
     {
       "types": [
         "1",
@@ -105,6 +86,25 @@
         "надбиться",
         "надубиться",
         "насолиться"
+      ]
+    },
+    {
+      "types": [
+        "1",
+        "2"
+      ],
+      "verbs": 60,
+      "examples": [
+        "бомжеваться",
+        "выклеваться",
+        "выкорчеваться",
+        "вымалеваться",
+        "вытушевать",
+        "гужеваться",
+        "излупцевать",
+        "измежевать",
+        "изрубцеваться",
+        "исклеваться"
       ]
     },
     {
@@ -367,59 +367,11 @@
   "inputs": {
     "types": {
       "path": "data/verb_inflect_types.json",
-      "sha256": "f9aebe6f6764ffd7a56504faa1cae983263ea7074969b5903bc7699dc410aa0e"
+      "sha256": "29bb9bd55a55d5bca92b03a7ceccc24df31c6af83614a3d73df2e62e9584f6ff"
     },
     "csv_overrides": {
       "path": "data/verbs_roots.csv",
       "sha256": "9a62f3215a189de3914d3c244faeeaabbae970ae101db88988879bbd71d5294d"
-    },
-    "remaining_candidates": {
-      "path": "data/derived/verb_sfx.remaining.jsonl",
-      "sha256": "3c8a080dd291df4f0e24f0cf7c4f9ac916600db2153625c2118beafec15fbbb7"
-    }
-  },
-  "remaining_candidates": {
-    "unique_parent_words": 2753,
-    "automatic_parents": {
-      "verbs": 2736,
-      "multiple_types": 87,
-      "multiple_percent": 3.1798,
-      "type_count_histogram": {
-        "1": 2649,
-        "2": 86,
-        "3": 1
-      }
-    },
-    "by_rule": {
-      "rule836": {
-        "unique_parent_words": 2659,
-        "automatic_parents": {
-          "verbs": 2644,
-          "multiple_types": 86,
-          "multiple_percent": 3.2526,
-          "type_count_histogram": {
-            "1": 2558,
-            "2": 85,
-            "3": 1
-          }
-        },
-        "relations": 2823,
-        "relations_with_automatic_multitype_parent": 91
-      },
-      "rule840": {
-        "unique_parent_words": 206,
-        "automatic_parents": {
-          "verbs": 199,
-          "multiple_types": 4,
-          "multiple_percent": 2.0101,
-          "type_count_histogram": {
-            "1": 195,
-            "2": 4
-          }
-        },
-        "relations": 209,
-        "relations_with_automatic_multitype_parent": 4
-      }
     }
   }
 }
