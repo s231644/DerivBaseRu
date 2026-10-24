@@ -25,3 +25,16 @@ def test_suffix_generation_respects_type_and_keeps_reflexive_rule():
     assert not generate(rule, 'мыть', None)
     rule = engine.rules_dict['rule842(verb + ива(ть)/ва(ть)/а3(ть) -> verb)']
     assert 'сжигать' in generate(rule, 'сжечь', ['8г'])
+
+
+def test_select_remaining_rules_and_reject_unknown_selectors():
+    engine = Derivation(lang='rus')
+    rules, skipped = verb_rules(engine, RULES, {'SFX', 'PTFX'}, ['rule836', 'rule840'])
+    assert {r.name.split('(', 1)[0] for r in rules} == {'rule836', 'rule840'}
+    assert not skipped
+    try:
+        verb_rules(engine, RULES, {'SFX', 'PTFX'}, ['rule836', 'rule999999'])
+    except ValueError as error:
+        assert 'rule999999' in str(error)
+    else:
+        raise AssertionError('Unknown selector must not trigger partial generation')

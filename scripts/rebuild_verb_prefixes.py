@@ -23,8 +23,18 @@ def lexical_evidence(word, wiki, heads, tokens):
                                      ('dahl_token', tokens)] if word in words]
 
 
-def verb_rules(engine, path, allowed_info):
+def verb_rules(engine, path, allowed_info, include_rules=None):
     names = [r['rule_id'] for r in json.loads(Path(path).read_text())['data']]
+    if include_rules is not None:
+        requested = set(include_rules)
+        matched = {token for token in requested
+                   if any(token in {name, name.split('(', 1)[0]} for name in names)}
+        if requested - matched:
+            raise ValueError('Unknown rule selectors: ' + ', '.join(sorted(requested - matched)))
+        names = [name for name in names
+                 if requested & {name, name.split('(', 1)[0]}]
+        if not names:
+            raise ValueError('No rules selected')
     rules, skipped = [], []
     for name in names:
         rule = engine.rules_dict[name]
@@ -46,7 +56,9 @@ def generate(rule, word, types):
     return rule.apply(word, use_rare=True, form=['inf'], inflect_type=types or [])
 
 
-def run(dictionary, dahl, inflect_types, output, rules_path=RULES, allowed_info=('PFX',)):
+def run(dictionary, dahl, inflect_types, output, rules_path=RULES, allowed_info=('PFX',),
+        include_rules=None):
+    rules, skipped = verb_rules(Derivation(lang='rus'), rules_path, allowed_info, include_rules)
     buckets, known, pages = read_dictionary(str(dictionary))
     types = json.loads(Path(inflect_types).read_text())
     excluded = {line.split('#', 1)[0].strip()
@@ -60,7 +72,6 @@ def run(dictionary, dahl, inflect_types, output, rules_path=RULES, allowed_info=
             if entry.get('word'):
                 heads.add(normalize(entry['word']))
             tokens.update(re.findall('[а-яё-]{2,}', normalize(entry.get('text') or '')))
-    rules, skipped = verb_rules(Derivation(lang='rus'), rules_path, allowed_info)
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
     paths = {'candidates': output,
