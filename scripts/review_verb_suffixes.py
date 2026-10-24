@@ -16,7 +16,8 @@ ROOT = Path(__file__).resolve().parents[1]
 RULES = ROOT / 'derivbase_ru/rules/rus/verb/simple/verb=verb+sfx.json'
 POLICY = ROOT / 'data/reviews/verb_sfx_policy.json'
 
-from verb_suffix_type_review import RARE_DECISIONS, rare_decisions, strong_signature, group_pending
+from verb_suffix_type_review import (RARE_DECISIONS, TYPE7_DECISIONS, rare_decisions,
+                                     type7_decisions, strong_signature, group_pending)
 
 
 def normalize(text):
@@ -45,8 +46,11 @@ def key(record):
 
 def classify(record, links, explicit, policy):
     rule, parent, word = key(record)
-    for status in ('rejected', 'pending'):
-        for decision in policy[status]:
+    latest = policy.get('_type7_decisions', {}).get((rule, parent, word))
+    if latest:
+        return latest['status'], 'explicit_type7plus_review', latest['reason']
+    for status in ('rejected', 'pending', 'accepted'):
+        for decision in policy.get(status, []):
             if (rule, parent, word) == (decision['rule'], decision['parent'], decision['word']):
                 return status, 'manual_semantics', decision['reason']
     manual = policy.get('_rare_decisions', {}).get((rule, parent, word))
@@ -87,6 +91,7 @@ def review(output, dictionary):
                 for r in rules}
     policy = json.loads(POLICY.read_text())
     policy['_rare_decisions'] = rare_decisions()
+    policy['_type7_decisions'] = type7_decisions()
     links = correspondences(dictionary)
     paths = {'main': output, 'pending': output.with_suffix('.semantic_pending.jsonl'),
              'rejected': output.with_suffix('.semantic_rejected.jsonl'),
@@ -120,8 +125,8 @@ def review(output, dictionary):
         temporary[name].replace(path)
     grouped = group_pending(output)
     files = {'raw': raw, 'dictionary': Path(dictionary), 'rules': RULES, 'policy': POLICY, 'review_script': Path(__file__), 'type_review_script': ROOT / 'scripts/verb_suffix_type_review.py',
-             'rare_decisions': RARE_DECISIONS, **paths}
-    report = {'scope': 'rule930 regular; rule846–850 reviewed; rule842 dictionary evidence, explicit rare-type decisions and conservative signatures; rule836/840 untouched',
+             'rare_decisions': RARE_DECISIONS, 'type7_decisions': TYPE7_DECISIONS, **paths}
+    report = {'scope': 'rule930 regular; rule846–850 reviewed; rule842 dictionary evidence, explicit rare-type/type7+ decisions and conservative signatures; rule836/840 untouched',
               'methods': {method: dict(values) for method, values in sorted(methods.items())},
               'pending_type_groups': len(grouped['groups']),
               'rules': {rule: dict(values) for rule, values in sorted(counts.items())},

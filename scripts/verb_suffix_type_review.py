@@ -9,6 +9,7 @@ from pathlib import Path
 import re
 
 RARE_DECISIONS = Path(__file__).resolve().parents[1] / 'data/reviews/verb_sfx_rare_types.jsonl'
+TYPE7_DECISIONS = RARE_DECISIONS.with_name('verb_sfx_type7plus.jsonl')
 
 
 def normalize(word):
@@ -34,6 +35,11 @@ def types_of(record):
 
 def rare_decisions():
     with RARE_DECISIONS.open(encoding='utf-8') as stream:
+        return {(r['rule'], r['parent'], r['word']): r for r in map(json.loads, stream)}
+
+
+def type7_decisions():
+    with TYPE7_DECISIONS.open(encoding='utf-8') as stream:
         return {(r['rule'], r['parent'], r['word']): r for r in map(json.loads, stream)}
 
 
