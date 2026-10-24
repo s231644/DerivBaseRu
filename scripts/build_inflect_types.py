@@ -27,6 +27,10 @@ with open('data/verbs_roots.csv', encoding='utf-8') as fh:
             csv_map[lm] = [x.strip() for x in it.split(',') if x.strip()]
 before = len(out)
 out.update(csv_map)
+from refine_verb_inflect_types import refine_mapping
+out, refinement = refine_mapping(out, "data/wiktionary/parsed_ru.jsonl.gz",
+                                 "data/verbs_roots.csv", guesser=g)
+print("refined assignments:", sum(r["changed"] for r in refinement))
 print('csv types:', len(csv_map), '| overrode/added:', len(out) - before)
 json.dump(out, open('data/verb_inflect_types.json','w',encoding='utf-8'), ensure_ascii=False)
 print('verbs:', len(words), '| with types:', len(out))
